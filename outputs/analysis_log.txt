@@ -1,0 +1,57 @@
+Analytic sample: 105 Sub-ICB locations (3 re-apportioned across 2024->2026 boundary changes)
+
+Covariate-only model (IRR per SD):
+                   IRR      p
+const            0.000  0.000
+pct_non_uk_born  1.398  0.000
+imd_score        1.035  0.591
+pct_age_65plus   0.673  0.000
+pct_age_15_44    0.942  0.573
+diabetes_prev    1.140  0.023
+alpha            1.088  0.000
+
+IRR per SD of prescribing rate (95% CI, robust SE):
+model                          unadjusted          adjusted adjusted + region adjusted, boundary-stable areas adjusted, excluding London
+drug                                                                                                                                    
+antituberculosis         0.96 (0.60-1.51)  0.89 (0.79-1.00)  0.91 (0.80-1.03)                0.89 (0.78-1.00)           0.90 (0.79-1.02)
+oral_corticosteroids     0.59 (0.53-0.66)  0.97 (0.82-1.14)  0.96 (0.81-1.15)                0.97 (0.82-1.14)           0.94 (0.81-1.09)
+inhaled_corticosteroids  0.73 (0.64-0.83)  1.02 (0.90-1.15)  1.00 (0.87-1.13)                1.02 (0.91-1.15)           1.03 (0.92-1.14)
+immunosuppressants       0.68 (0.61-0.77)  1.01 (0.93-1.09)  1.02 (0.94-1.11)                1.01 (0.93-1.09)           0.96 (0.89-1.03)
+proton_pump_inhibitors   0.66 (0.59-0.75)  0.89 (0.80-1.00)  0.93 (0.82-1.07)                0.90 (0.80-1.00)           0.94 (0.85-1.04)
+statins                  0.67 (0.60-0.75)  0.93 (0.85-1.02)  0.95 (0.86-1.06)                0.93 (0.85-1.02)           0.95 (0.88-1.04)
+metformin                1.24 (1.05-1.46)  0.98 (0.89-1.08)  1.04 (0.93-1.16)                0.98 (0.89-1.08)           1.02 (0.93-1.12)
+insulins                 0.94 (0.75-1.18)  0.97 (0.87-1.08)  0.90 (0.79-1.02)                0.97 (0.87-1.08)           0.93 (0.83-1.04)
+fluoroquinolones         0.77 (0.66-0.89)  0.97 (0.90-1.03)  0.95 (0.87-1.03)                0.97 (0.90-1.03)           0.95 (0.88-1.02)
+all_antibacterials       0.65 (0.56-0.74)  0.89 (0.78-1.01)  0.89 (0.76-1.04)                0.89 (0.78-1.02)           0.91 (0.81-1.03)
+vitamin_d                0.73 (0.65-0.83)  0.95 (0.88-1.02)  0.98 (0.91-1.06)                0.95 (0.88-1.02)           0.97 (0.91-1.04)
+levothyroxine            0.64 (0.57-0.72)  0.94 (0.88-1.00)  0.95 (0.88-1.03)                0.94 (0.88-1.00)           0.94 (0.88-1.00)
+
+Adjusted model p / FDR q:
+                   drug      p  q_fdr  converged
+       antituberculosis 0.0501 0.2003       True
+   oral_corticosteroids 0.6935 0.8322       True
+inhaled_corticosteroids 0.7704 0.8405       True
+     immunosuppressants 0.8517 0.8517       True
+ proton_pump_inhibitors 0.0430 0.2003       True
+                statins 0.1171 0.2811       True
+              metformin 0.6476 0.8322       True
+               insulins 0.5911 0.8322       True
+       fluoroquinolones 0.3208 0.5499       True
+     all_antibacterials 0.0775 0.2326       True
+              vitamin_d 0.1642 0.3283       True
+          levothyroxine 0.0367 0.2003       True
+
+Spearman correlations:
+                   drug  mean_items_per_1000  rho_tb_rate  rho_pct_non_uk_born  rho_imd
+       antituberculosis                 0.02         0.19                 0.07     0.23
+   oral_corticosteroids                 8.98        -0.63                -0.66     0.03
+inhaled_corticosteroids                40.52        -0.45                -0.69     0.46
+     immunosuppressants                 4.69        -0.48                -0.31    -0.38
+ proton_pump_inhibitors               116.92        -0.51                -0.72     0.36
+                statins               146.03        -0.48                -0.64     0.23
+              metformin                39.15         0.14                -0.16     0.64
+               insulins                12.47        -0.25                -0.48     0.47
+       fluoroquinolones                 0.41        -0.30                -0.13    -0.34
+     all_antibacterials                39.11        -0.54                -0.73     0.24
+              vitamin_d                42.75        -0.33                -0.46     0.24
+          levothyroxine                51.06        -0.58                -0.62    -0.03

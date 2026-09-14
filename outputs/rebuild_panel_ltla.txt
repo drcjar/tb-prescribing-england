@@ -1,0 +1,58 @@
+Months extracted per year: {2014: 12, 2015: 12, 2016: 12, 2017: 12, 2018: 12, 2019: 12, 2020: 12, 2021: 12, 2022: 12, 2023: 12, 2024: 12}
+Postcodes looked up: 0 new, 0 not in ONSPD
+Share of items linked to an area by year: {2014: 0.9813, 2015: 0.9808, 2016: 0.9807, 2017: 0.9804, 2018: 0.9804, 2019: 0.9805, 2020: 0.9807, 2021: 0.9809, 2022: 0.9811, 2023: 0.981, 2024: 0.981}
+
+Mean annual items per 1,000 residents across areas, by year:
+year                          2011  2012  2013     2014     2015     2016     2017     2018     2019     2020     2021     2022     2023     2024  2025
+rate_total_items               NaN   NaN   NaN  19317.6  19521.2  19764.6  19701.3  19680.7  19791.8  19878.5  19854.4  20241.2  20673.8  21268.6   NaN
+rate_antituberculosis          NaN   NaN   NaN      0.9      0.9      0.9      0.8      0.8      0.7      0.6      0.4      0.4      0.4      0.3   NaN
+rate_oral_corticosteroids      NaN   NaN   NaN    145.9    146.8    148.7    147.3    144.2    146.0    132.0    127.0    134.1    133.4    131.9   NaN
+rate_inhaled_corticosteroids   NaN   NaN   NaN    363.0    367.7    373.5    375.8    375.3    378.0    406.1    390.2    390.2    389.4    392.9   NaN
+rate_immunosuppressants        NaN   NaN   NaN     66.5     66.6     66.3     64.9     64.2     63.5     64.2     62.7     61.6     61.0     60.5   NaN
+rate_proton_pump_inhibitors    NaN   NaN   NaN    979.4   1022.6   1052.0   1067.5   1079.1   1116.9   1218.0   1257.2   1276.8   1300.5   1327.2   NaN
+rate_statins                   NaN   NaN   NaN   1198.5   1214.0   1226.4   1250.1   1275.5   1300.8   1338.4   1345.6   1390.0   1471.7   1579.0   NaN
+rate_metformin                 NaN   NaN   NaN    342.1    355.0    368.0    374.6    384.6    392.6    402.2    406.0    414.8    426.1    440.6   NaN
+rate_insulins                  NaN   NaN   NaN    122.2    125.1    127.3    128.7    131.5    134.7    136.4    136.2    139.9    142.8    148.7   NaN
+rate_fluoroquinolones          NaN   NaN   NaN     14.2     13.0     12.3     12.1     12.0     10.4      9.7      9.0      8.6      8.3      7.0   NaN
+rate_all_antibacterials        NaN   NaN   NaN    681.9    643.1    634.3    609.1    583.2    567.7    495.9    501.6    575.2    588.4    575.0   NaN
+rate_vitamin_d                 NaN   NaN   NaN    324.3    352.3    379.3    400.8    411.5    417.3    425.4    433.5    440.6    447.8    467.0   NaN
+rate_levothyroxine             NaN   NaN   NaN    547.1    559.9    575.8    584.4    593.8    604.8    612.8    604.2    601.6    600.8    606.0   NaN
+
+Non-missing values per column:
+ population                       4410
+pct_age_65plus                   4410
+pct_age_15_44                    4410
+international_in                 3822
+intl_in_per_1000                 3822
+asylum_supported                 2842
+asylum_per_1000                  2842
+diabetes_prev                    3821
+hiv_prev                         4116
+items_total                      3212
+items_antituberculosis           3212
+items_oral_corticosteroids       3212
+items_inhaled_corticosteroids    3212
+items_immunosuppressants         3212
+items_proton_pump_inhibitors     3212
+items_statins                    3212
+items_metformin                  3212
+items_insulins                   3212
+items_fluoroquinolones           3212
+items_all_antibacterials         3212
+items_vitamin_d                  3212
+items_levothyroxine              3212
+rate_total_items                 3212
+rate_antituberculosis            3212
+rate_oral_corticosteroids        3212
+rate_inhaled_corticosteroids     3212
+rate_immunosuppressants          3212
+rate_proton_pump_inhibitors      3212
+rate_statins                     3212
+rate_metformin                   3212
+rate_insulins                    3212
+rate_fluoroquinolones            3212
+rate_all_antibacterials          3212
+rate_vitamin_d                   3212
+rate_levothyroxine               3212
+
+Wrote 4410 rows (294 areas) to /home/drcjar/jack-tb-prescribing-balls/data/processed/ltla_panel_annual.csv

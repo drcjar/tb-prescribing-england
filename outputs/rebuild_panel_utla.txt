@@ -1,0 +1,62 @@
+TB windows with missing/suppressed counts: 61
+Months extracted per year: {2014: 12, 2015: 12, 2016: 12, 2017: 12, 2018: 12, 2019: 12, 2020: 12, 2021: 12, 2022: 12, 2023: 12, 2024: 12}
+Postcodes looked up: 0 new, 0 not in ONSPD
+Share of items linked to an area by year: {2014: 0.9813, 2015: 0.9808, 2016: 0.9807, 2017: 0.9804, 2018: 0.9804, 2019: 0.9805, 2020: 0.9807, 2021: 0.9809, 2022: 0.9811, 2023: 0.981, 2024: 0.981}
+
+Mean annual items per 1,000 residents across areas, by year:
+year                          2011  2012  2013     2014     2015     2016     2017     2018     2019     2020     2021     2022     2023     2024  2025
+rate_total_items               NaN   NaN   NaN  19278.7  19444.2  19695.8  19641.4  19612.5  19711.2  19746.8  19784.4  20161.1  20588.5  21234.1   NaN
+rate_antituberculosis          NaN   NaN   NaN      1.0      1.0      1.0      1.0      1.0      0.8      0.7      0.5      0.4      0.4      0.3   NaN
+rate_oral_corticosteroids      NaN   NaN   NaN    138.7    139.2    141.3    139.2    136.4    138.3    124.3    119.6    126.7    126.2    125.1   NaN
+rate_inhaled_corticosteroids   NaN   NaN   NaN    359.2    363.7    369.6    372.0    370.9    373.1    399.6    385.1    385.0    383.8    387.3   NaN
+rate_immunosuppressants        NaN   NaN   NaN     62.1     62.1     61.7     60.2     59.4     58.7     59.2     58.0     56.7     56.0     55.6   NaN
+rate_proton_pump_inhibitors    NaN   NaN   NaN    968.2   1009.6   1039.5   1055.8   1067.3   1103.8   1201.1   1242.8   1262.6   1285.9   1315.9   NaN
+rate_statins                   NaN   NaN   NaN   1194.7   1208.4   1223.1   1247.3   1272.2   1296.5   1332.3   1342.3   1385.0   1462.2   1567.9   NaN
+rate_metformin                 NaN   NaN   NaN    356.0    369.9    385.0    393.6    404.9    414.6    425.2    431.7    441.7    453.9    471.5   NaN
+rate_insulins                  NaN   NaN   NaN    120.2    123.2    125.7    127.3    129.9    133.2    135.3    135.8    139.5    142.5    148.6   NaN
+rate_fluoroquinolones          NaN   NaN   NaN     13.4     12.1     11.3     11.2     11.0      9.5      8.9      8.3      7.9      7.7      6.5   NaN
+rate_all_antibacterials        NaN   NaN   NaN    686.0    643.9    632.8    605.1    578.3    562.7    488.8    497.3    569.4    582.1    569.4   NaN
+rate_vitamin_d                 NaN   NaN   NaN    339.3    366.4    394.0    415.2    426.8    432.9    437.8    447.3    454.5    462.7    484.3   NaN
+rate_levothyroxine             NaN   NaN   NaN    517.9    530.5    546.9    556.5    566.6    577.8    586.0    580.0    578.0    577.8    583.7   NaN
+
+Non-missing values per column:
+ population                       2265
+pct_age_65plus                   2265
+pct_age_15_44                    2265
+international_in                 1963
+intl_in_per_1000                 1963
+asylum_supported                 1679
+asylum_per_1000                  1679
+diabetes_prev                    1962
+hiv_prev                         2114
+area_name                        2250
+tb_count                         2064
+tb_denominator                   2064
+items_total                      1639
+items_antituberculosis           1639
+items_oral_corticosteroids       1639
+items_inhaled_corticosteroids    1639
+items_immunosuppressants         1639
+items_proton_pump_inhibitors     1639
+items_statins                    1639
+items_metformin                  1639
+items_insulins                   1639
+items_fluoroquinolones           1639
+items_all_antibacterials         1639
+items_vitamin_d                  1639
+items_levothyroxine              1639
+rate_total_items                 1639
+rate_antituberculosis            1639
+rate_oral_corticosteroids        1639
+rate_inhaled_corticosteroids     1639
+rate_immunosuppressants          1639
+rate_proton_pump_inhibitors      1639
+rate_statins                     1639
+rate_metformin                   1639
+rate_insulins                    1639
+rate_fluoroquinolones            1639
+rate_all_antibacterials          1639
+rate_vitamin_d                   1639
+rate_levothyroxine               1639
+
+Wrote 2265 rows (151 areas) to /home/drcjar/jack-tb-prescribing-balls/data/processed/utla_panel_annual.csv

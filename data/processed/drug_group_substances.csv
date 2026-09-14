@@ -1,0 +1,147 @@
+BNF_CHEMICAL_SUBSTANCE_CODE,BNF_CHEMICAL_SUBSTANCE,ITEMS,group
+0501013B0,Amoxicillin,399007,all_antibacterials
+0501012G0,Flucloxacillin sodium,337550,all_antibacterials
+0501130R0,Nitrofurantoin,287541,all_antibacterials
+0501030I0,Doxycycline hyclate,270911,all_antibacterials
+0501011P0,Phenoxymethylpenicillin (Penicillin V),162303,all_antibacterials
+0501050B0,Clarithromycin,125504,all_antibacterials
+0501080W0,Trimethoprim,122374,all_antibacterials
+0501013K0,Co-amoxiclav (Amoxicillin/clavulanic acid),95754,all_antibacterials
+0501130H0,Methenamine hippurate,86124,all_antibacterials
+0501050A0,Azithromycin,76297,all_antibacterials
+0501021L0,Cefalexin,74452,all_antibacterials
+0501030L0,Lymecycline,65001,all_antibacterials
+0501110C0,Metronidazole,38372,all_antibacterials
+0501015P0,Pivmecillinam hydrochloride,29575,all_antibacterials
+0501080D0,Co-trimoxazole(Trimethoprim/sulfamethoxazole),26708,all_antibacterials
+0501120L0,Ciprofloxacin,19758,all_antibacterials
+0501070AE,Fosfomycin trometamol,17087,all_antibacterials
+0501050C0,Erythromycin,16545,all_antibacterials
+0501070X0,Rifaximin,12071,all_antibacterials
+0501030T0,Oxytetracycline,9312,all_antibacterials
+0501050H0,Erythromycin ethylsuccinate,8092,all_antibacterials
+0501030Z0,Doxycycline monohydrate,5389,all_antibacterials
+0501060D0,Clindamycin hydrochloride,4984,all_antibacterials
+0501120P0,Ofloxacin,3708,all_antibacterials
+0501070I0,Colistimethate sodium,2472,all_antibacterials
+0501120X0,Levofloxacin,1999,all_antibacterials
+0501100H0,Dapsone,1656,all_antibacterials
+0501030V0,Tetracycline,1292,all_antibacterials
+0501090R0,Rifampicin,781,all_antibacterials
+0501070U0,Vancomycin hydrochloride,766,all_antibacterials
+0501021M0,Cefradine,688,all_antibacterials
+0501050N0,Erythromycin stearate,380,all_antibacterials
+0501030P0,Minocycline hydrochloride,346,all_antibacterials
+0501030F0,Demeclocycline hydrochloride,311,all_antibacterials
+0501090K0,Isoniazid,205,all_antibacterials
+0501040H0,Gentamicin sulfate,162,all_antibacterials
+0501021A0,Cefaclor,150,all_antibacterials
+0501120Y0,Moxifloxacin,150,all_antibacterials
+0501070W0,Linezolid,134,all_antibacterials
+0501021K0,Cefuroxime axetil,120,all_antibacterials
+0501090H0,Ethambutol hydrochloride,116,all_antibacterials
+0501070AC,Fidaxomicin,112,all_antibacterials
+0501040U0,Tobramycin,43,all_antibacterials
+0501090S0,Rifampicin combined preparations,34,all_antibacterials
+0501021G0,Ceftriaxone sodium,29,all_antibacterials
+0501070T0,Teicoplanin,25,all_antibacterials
+0501021C0,Cefixime,17,all_antibacterials
+0501090Q0,Rifabutin,12,all_antibacterials
+0501011J0,Benzylpenicillin sodium (Penicillin G),11,all_antibacterials
+0501021B0,Cefadroxil,9,all_antibacterials
+0501013E0,Ampicillin,7,all_antibacterials
+0501022B0,Ertapenem sodium,6,all_antibacterials
+0501013C0,Amoxicillin sodium,5,all_antibacterials
+0501022A0,Meropenem,4,all_antibacterials
+0501014S0,Piperacillin sodium/tazobactam sodium,3,all_antibacterials
+0501070N0,Sodium fusidate,3,all_antibacterials
+0501080J0,Sulfadiazine,3,all_antibacterials
+0501100C0,Clofazimine,3,all_antibacterials
+0501021H0,Ceftazidime pentahydrate,2,all_antibacterials
+0501070M0,Fusidic acid,2,all_antibacterials
+0501021D0,Cefotaxime sodium,1,all_antibacterials
+0501021J0,Cefuroxime sodium,1,all_antibacterials
+0501070F0,Chloramphenicol,1,all_antibacterials
+0501070Z0,Pristinamycin,1,all_antibacterials
+0501130S0,Fosfomycin calcium,1,all_antibacterials
+0501090R0,Rifampicin,781,antituberculosis
+0501090K0,Isoniazid,205,antituberculosis
+0501090H0,Ethambutol hydrochloride,116,antituberculosis
+0501090S0,Rifampicin combined preparations,34,antituberculosis
+0501090Q0,Rifabutin,12,antituberculosis
+0501120L0,Ciprofloxacin,19758,fluoroquinolones
+0501120P0,Ofloxacin,3708,fluoroquinolones
+0501120X0,Levofloxacin,1999,fluoroquinolones
+0501120Y0,Moxifloxacin,150,fluoroquinolones
+1001030U0,Methotrexate,184450,immunosuppressants
+0802010G0,Azathioprine,51756,immunosuppressants
+0802010M0,Mycophenolate mofetil,20372,immunosuppressants
+1001030L0,Leflunomide,16264,immunosuppressants
+0802020T0,Tacrolimus,6078,immunosuppressants
+0801030P0,Methotrexate,3268,immunosuppressants
+0802020G0,Ciclosporin,2085,immunosuppressants
+0802010N0,Mycophenolic sodium,584,immunosuppressants
+0802020U0,Sirolimus,260,immunosuppressants
+1001030AC,Baricitinib,4,immunosuppressants
+0302000AB,BeclometDiprop/Formoterol,796949,inhaled_corticosteroids
+0302000K0,Budesonide,451708,inhaled_corticosteroids
+0302000AA,BeclometDiprop/Formoterol/Glycopyrronium (Corticosteroids),333368,inhaled_corticosteroids
+0302000C0,Beclometasone dipropionate,261611,inhaled_corticosteroids
+0302000N0,Fluticasone propionate (Inhalation),163978,inhaled_corticosteroids
+0302000Z0,Fluticasone/umeclidinium/vilanterol,140004,inhaled_corticosteroids
+0302000V0,Fluticasone furoate/vilanterol,66670,inhaled_corticosteroids
+0302000Y0,Formoterol/glycopyrronium/budesonide,43346,inhaled_corticosteroids
+0302000U0,Ciclesonide,3458,inhaled_corticosteroids
+0302000W0,Mometasone/glycopyrronium/indacaterol,2548,inhaled_corticosteroids
+0302000R0,Mometasone furoate,25,inhaled_corticosteroids
+0601011A0,Insulin aspart,242126,insulins
+0601012V0,Insulin glargine,188289,insulins
+0601012Z0,Insulin degludec,64399,insulins
+0601012S0,Isophane insulin,58408,insulins
+0601012D0,Biphasic isophane insulin,54886,insulins
+0601012W0,Biphasic insulin aspart,49494,insulins
+0601011L0,Insulin Lispro,42714,insulins
+0601012X0,Insulin detemir,18983,insulins
+0601012F0,Biphasic insulin lispro,16978,insulins
+0601011P0,Insulin glulisine,6190,insulins
+0601011N0,Soluble insulin (Neutral insulin),1730,insulins
+0601011R0,Insulin human,8,insulins
+0602010V0,Levothyroxine sodium,2973467,levothyroxine
+0602010Z0,Levothyroxine sodium and liothyronine,163,levothyroxine
+0601022B0,Metformin hydrochloride,2352447,metformin
+0601023AR,Empagliflozin/metformin,11071,metformin
+0601023AL,Dapagliflozin/metformin,9547,metformin
+0601023AD,Metformin hydrochloride/sitagliptin,9051,metformin
+0601023AF,Linagliptin/metformin,3523,metformin
+0601023AJ,Alogliptin/metformin,3414,metformin
+0601023Z0,Metformin hydrochloride/vildagliptin,2051,metformin
+0601023W0,Metformin hydrochloride/pioglitazone,576,metformin
+0601023AP,Canagliflozin/metformin,467,metformin
+0601023AH,Saxagliptin/metformin,1,metformin
+0603020T0,Prednisolone,452173,oral_corticosteroids
+0603020J0,Hydrocortisone,48448,oral_corticosteroids
+0603020G0,Dexamethasone,16090,oral_corticosteroids
+0603020C0,Betamethasone sodium phosphate,5352,oral_corticosteroids
+0603020M0,Hydrocortisone sodium succinate,1826,oral_corticosteroids
+0603020AA,Dexamethasone phosphate,1568,oral_corticosteroids
+0603020L0,Hydrocortisone sodium phosphate,448,oral_corticosteroids
+0603020I0,Deflazacort,424,oral_corticosteroids
+0603020S0,Methylprednisolone,219,oral_corticosteroids
+0603020K0,Methylprednisolone sodium succinate,19,oral_corticosteroids
+0603020H0,Dexamethasone sodium phosphate,15,oral_corticosteroids
+0603020B0,Betamethasone,3,oral_corticosteroids
+0603020F0,Cortisone acetate,1,oral_corticosteroids
+0103050L0,Lansoprazole,3233811,proton_pump_inhibitors
+0103050P0,Omeprazole,2924503,proton_pump_inhibitors
+0103050E0,Esomeprazole,245657,proton_pump_inhibitors
+0103050R0,Pantoprazole,167967,proton_pump_inhibitors
+0103050T0,Rabeprazole sodium,23658,proton_pump_inhibitors
+0103050A0,Helicobacter pylori eradication therapy,232,proton_pump_inhibitors
+0212000B0,Atorvastatin,6787762,statins
+0212000Y0,Simvastatin,781010,statins
+0212000AA,Rosuvastatin calcium,703102,statins
+0212000X0,Pravastatin sodium,167354,statins
+0212000M0,Fluvastatin sodium,5528,statins
+0212000AC,Simvastatin and ezetimibe,518,statins
+0906040G0,Colecalciferol,2512153,vitamin_d
+0906040N0,Ergocalciferol,2777,vitamin_d

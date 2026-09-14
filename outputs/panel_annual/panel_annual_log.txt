@@ -1,0 +1,83 @@
+utla primary: t-3..t-1: 1191 area-years, 149 areas, outcome years 2017-2024
+utla lag: t-1 only: 1489 area-years, 149 areas, outcome years 2015-2024
+utla concurrent: t: 1638 area-years, 149 areas, outcome years 2014-2024
+utla lead (falsification): t+1..t+3: 1340 area-years, 149 areas, outcome years 2013-2021
+
+IRR per 10% within-area increase in prescribing — utla, annual outcome, exposure primary: t-3..t-1
+model                      FE + time-varying FE + time-varying + total prescribing FE + time-varying, excluding 2020-21              FE only
+drug                                                                                                                                        
+antituberculosis         1.004 (0.999-1.009)                   1.004 (0.999-1.009)                  1.004 (0.998-1.011)  1.006 (1.001-1.011)
+oral_corticosteroids     0.986 (0.940-1.034)                   0.971 (0.924-1.021)                  0.985 (0.936-1.036)  0.977 (0.930-1.026)
+inhaled_corticosteroids  0.968 (0.909-1.030)                   0.953 (0.893-1.018)                  0.962 (0.901-1.026)  0.951 (0.900-1.004)
+immunosuppressants       1.010 (0.985-1.035)                   1.009 (0.985-1.033)                  1.011 (0.988-1.036)  1.009 (0.983-1.036)
+proton_pump_inhibitors   0.967 (0.914-1.023)                   0.895 (0.827-0.969)                  0.966 (0.911-1.026)  0.960 (0.908-1.015)
+statins                  1.012 (0.951-1.076)                   1.012 (0.924-1.109)                  1.014 (0.953-1.080)  0.995 (0.942-1.052)
+metformin                0.979 (0.928-1.032)                   0.939 (0.877-1.006)                  0.983 (0.929-1.040)  0.969 (0.924-1.017)
+insulins                 0.989 (0.924-1.058)                   0.981 (0.910-1.057)                  0.986 (0.913-1.065)  0.986 (0.924-1.053)
+fluoroquinolones         1.000 (0.979-1.021)                   0.999 (0.978-1.021)                  0.996 (0.974-1.017)  1.001 (0.979-1.023)
+all_antibacterials       0.995 (0.952-1.041)                   0.988 (0.945-1.033)                  0.995 (0.950-1.042)  0.991 (0.944-1.041)
+vitamin_d                1.010 (0.982-1.039)                   1.010 (0.981-1.040)                  1.019 (0.989-1.049)  1.010 (0.984-1.038)
+levothyroxine            0.967 (0.928-1.008)                   0.941 (0.896-0.988)                  0.968 (0.924-1.013)  0.961 (0.926-0.998)
+
+IRR per 10% within-area increase in prescribing — utla, annual outcome, exposure lag: t-1 only
+model                      FE + time-varying              FE only
+drug                                                             
+antituberculosis         1.001 (0.997-1.004)  1.003 (0.999-1.007)
+oral_corticosteroids     0.982 (0.941-1.026)  0.971 (0.923-1.022)
+inhaled_corticosteroids  0.967 (0.923-1.012)  0.945 (0.902-0.990)
+immunosuppressants       1.002 (0.983-1.022)  1.007 (0.987-1.027)
+proton_pump_inhibitors   0.985 (0.943-1.029)  0.966 (0.921-1.013)
+statins                  0.999 (0.957-1.044)  0.980 (0.937-1.024)
+metformin                0.963 (0.927-1.000)  0.947 (0.911-0.984)
+insulins                 0.984 (0.940-1.031)  0.980 (0.934-1.029)
+fluoroquinolones         1.001 (0.988-1.014)  1.005 (0.990-1.020)
+all_antibacterials       0.995 (0.961-1.030)  0.994 (0.950-1.039)
+vitamin_d                1.008 (0.986-1.030)  1.013 (0.990-1.037)
+levothyroxine            0.967 (0.934-1.002)  0.951 (0.920-0.984)
+
+IRR per 10% within-area increase in prescribing — utla, annual outcome, exposure concurrent: t
+model                      FE + time-varying              FE only
+drug                                                             
+antituberculosis         1.000 (0.996-1.003)  1.002 (0.998-1.006)
+oral_corticosteroids     0.972 (0.934-1.013)  0.963 (0.918-1.011)
+inhaled_corticosteroids  0.955 (0.914-0.998)  0.933 (0.892-0.976)
+immunosuppressants       1.005 (0.983-1.027)  1.006 (0.985-1.029)
+proton_pump_inhibitors   0.992 (0.949-1.037)  0.969 (0.923-1.017)
+statins                  0.996 (0.954-1.039)  0.974 (0.930-1.020)
+metformin                0.968 (0.939-0.999)  0.948 (0.916-0.981)
+insulins                 0.967 (0.927-1.008)  0.961 (0.919-1.005)
+fluoroquinolones         1.002 (0.987-1.017)  1.006 (0.990-1.023)
+all_antibacterials       0.996 (0.963-1.031)  0.995 (0.953-1.039)
+vitamin_d                1.009 (0.987-1.031)  1.013 (0.989-1.037)
+levothyroxine            0.963 (0.932-0.994)  0.948 (0.919-0.979)
+
+IRR per 10% within-area increase in prescribing — utla, annual outcome, exposure lead (falsification): t+1..t+3
+model                      FE + time-varying              FE only
+drug                                                             
+antituberculosis         1.001 (0.996-1.007)  1.006 (1.000-1.012)
+oral_corticosteroids     1.003 (0.954-1.053)  0.974 (0.915-1.036)
+inhaled_corticosteroids  0.967 (0.914-1.023)  0.933 (0.878-0.991)
+immunosuppressants       1.005 (0.976-1.035)  1.007 (0.978-1.037)
+proton_pump_inhibitors   1.044 (0.991-1.100)  0.988 (0.930-1.050)
+statins                  1.034 (0.984-1.087)  0.984 (0.926-1.045)
+metformin                1.015 (0.972-1.059)  0.962 (0.915-1.011)
+insulins                 0.949 (0.899-1.002)  0.931 (0.873-0.992)
+fluoroquinolones         0.996 (0.976-1.016)  1.004 (0.982-1.025)
+all_antibacterials       1.009 (0.972-1.048)  1.010 (0.961-1.062)
+vitamin_d                1.025 (0.999-1.051)  1.030 (0.999-1.063)
+levothyroxine            0.973 (0.929-1.019)  0.938 (0.895-0.983)
+
+Primary model p / FDR q:
+                   drug      p  q_fdr  converged
+       antituberculosis 0.1063 0.7089       True
+   oral_corticosteroids 0.5502 0.8253       True
+inhaled_corticosteroids 0.3005 0.8253       True
+     immunosuppressants 0.4434 0.8253       True
+ proton_pump_inhibitors 0.2441 0.8253       True
+                statins 0.7064 0.8938       True
+              metformin 0.4250 0.8253       True
+               insulins 0.7448 0.8938       True
+       fluoroquinolones 0.9916 0.9916       True
+     all_antibacterials 0.8323 0.9080       True
+              vitamin_d 0.4912 0.8253       True
+          levothyroxine 0.1181 0.7089       True

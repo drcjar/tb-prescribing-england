@@ -1,0 +1,2593 @@
+year,age_group,birthplace,tb_count,region_name
+2001,0 to 14,Non-UK born,3.0,East Midlands
+2001,0 to 14,UK born,14.0,East Midlands
+2001,0 to 14,All places of birth,17.0,East Midlands
+2001,15 to 44,Non-UK born,54.0,East Midlands
+2001,15 to 44,UK born,45.0,East Midlands
+2001,15 to 44,All places of birth,99.0,East Midlands
+2001,45 to 64,Non-UK born,30.0,East Midlands
+2001,45 to 64,UK born,19.0,East Midlands
+2001,45 to 64,All places of birth,49.0,East Midlands
+2001,65 and older,Non-UK born,13.0,East Midlands
+2001,65 and older,UK born,42.0,East Midlands
+2001,65 and older,All places of birth,55.0,East Midlands
+2002,0 to 14,Non-UK born,3.0,East Midlands
+2002,0 to 14,UK born,12.0,East Midlands
+2002,0 to 14,All places of birth,15.0,East Midlands
+2002,15 to 44,Non-UK born,81.0,East Midlands
+2002,15 to 44,UK born,45.0,East Midlands
+2002,15 to 44,All places of birth,126.0,East Midlands
+2002,45 to 64,Non-UK born,20.0,East Midlands
+2002,45 to 64,UK born,29.0,East Midlands
+2002,45 to 64,All places of birth,49.0,East Midlands
+2002,65 and older,Non-UK born,12.0,East Midlands
+2002,65 and older,UK born,39.0,East Midlands
+2002,65 and older,All places of birth,51.0,East Midlands
+2003,0 to 14,Non-UK born,5.0,East Midlands
+2003,0 to 14,UK born,12.0,East Midlands
+2003,0 to 14,All places of birth,17.0,East Midlands
+2003,15 to 44,Non-UK born,120.0,East Midlands
+2003,15 to 44,UK born,33.0,East Midlands
+2003,15 to 44,All places of birth,153.0,East Midlands
+2003,45 to 64,Non-UK born,40.0,East Midlands
+2003,45 to 64,UK born,32.0,East Midlands
+2003,45 to 64,All places of birth,72.0,East Midlands
+2003,65 and older,Non-UK born,15.0,East Midlands
+2003,65 and older,UK born,39.0,East Midlands
+2003,65 and older,All places of birth,54.0,East Midlands
+2004,0 to 14,Non-UK born,4.0,East Midlands
+2004,0 to 14,UK born,10.0,East Midlands
+2004,0 to 14,All places of birth,14.0,East Midlands
+2004,15 to 44,Non-UK born,161.0,East Midlands
+2004,15 to 44,UK born,46.0,East Midlands
+2004,15 to 44,All places of birth,207.0,East Midlands
+2004,45 to 64,Non-UK born,34.0,East Midlands
+2004,45 to 64,UK born,23.0,East Midlands
+2004,45 to 64,All places of birth,57.0,East Midlands
+2004,65 and older,Non-UK born,23.0,East Midlands
+2004,65 and older,UK born,31.0,East Midlands
+2004,65 and older,All places of birth,54.0,East Midlands
+2005,0 to 14,Non-UK born,5.0,East Midlands
+2005,0 to 14,UK born,13.0,East Midlands
+2005,0 to 14,All places of birth,18.0,East Midlands
+2005,15 to 44,Non-UK born,196.0,East Midlands
+2005,15 to 44,UK born,33.0,East Midlands
+2005,15 to 44,All places of birth,229.0,East Midlands
+2005,45 to 64,Non-UK born,65.0,East Midlands
+2005,45 to 64,UK born,14.0,East Midlands
+2005,45 to 64,All places of birth,79.0,East Midlands
+2005,65 and older,Non-UK born,25.0,East Midlands
+2005,65 and older,UK born,35.0,East Midlands
+2005,65 and older,All places of birth,60.0,East Midlands
+2006,0 to 14,Non-UK born,4.0,East Midlands
+2006,0 to 14,UK born,10.0,East Midlands
+2006,0 to 14,All places of birth,14.0,East Midlands
+2006,15 to 44,Non-UK born,166.0,East Midlands
+2006,15 to 44,UK born,39.0,East Midlands
+2006,15 to 44,All places of birth,205.0,East Midlands
+2006,45 to 64,Non-UK born,34.0,East Midlands
+2006,45 to 64,UK born,35.0,East Midlands
+2006,45 to 64,All places of birth,69.0,East Midlands
+2006,65 and older,Non-UK born,29.0,East Midlands
+2006,65 and older,UK born,30.0,East Midlands
+2006,65 and older,All places of birth,59.0,East Midlands
+2007,0 to 14,Non-UK born,4.0,East Midlands
+2007,0 to 14,UK born,12.0,East Midlands
+2007,0 to 14,All places of birth,16.0,East Midlands
+2007,15 to 44,Non-UK born,192.0,East Midlands
+2007,15 to 44,UK born,45.0,East Midlands
+2007,15 to 44,All places of birth,237.0,East Midlands
+2007,45 to 64,Non-UK born,51.0,East Midlands
+2007,45 to 64,UK born,36.0,East Midlands
+2007,45 to 64,All places of birth,87.0,East Midlands
+2007,65 and older,Non-UK born,31.0,East Midlands
+2007,65 and older,UK born,25.0,East Midlands
+2007,65 and older,All places of birth,56.0,East Midlands
+2008,0 to 14,Non-UK born,3.0,East Midlands
+2008,0 to 14,UK born,16.0,East Midlands
+2008,0 to 14,All places of birth,19.0,East Midlands
+2008,15 to 44,Non-UK born,192.0,East Midlands
+2008,15 to 44,UK born,51.0,East Midlands
+2008,15 to 44,All places of birth,243.0,East Midlands
+2008,45 to 64,Non-UK born,60.0,East Midlands
+2008,45 to 64,UK born,27.0,East Midlands
+2008,45 to 64,All places of birth,87.0,East Midlands
+2008,65 and older,Non-UK born,41.0,East Midlands
+2008,65 and older,UK born,24.0,East Midlands
+2008,65 and older,All places of birth,65.0,East Midlands
+2009,0 to 14,Non-UK born,5.0,East Midlands
+2009,0 to 14,UK born,13.0,East Midlands
+2009,0 to 14,All places of birth,18.0,East Midlands
+2009,15 to 44,Non-UK born,228.0,East Midlands
+2009,15 to 44,UK born,63.0,East Midlands
+2009,15 to 44,All places of birth,291.0,East Midlands
+2009,45 to 64,Non-UK born,70.0,East Midlands
+2009,45 to 64,UK born,35.0,East Midlands
+2009,45 to 64,All places of birth,105.0,East Midlands
+2009,65 and older,Non-UK born,36.0,East Midlands
+2009,65 and older,UK born,36.0,East Midlands
+2009,65 and older,All places of birth,72.0,East Midlands
+2010,0 to 14,Non-UK born,4.0,East Midlands
+2010,0 to 14,UK born,10.0,East Midlands
+2010,0 to 14,All places of birth,14.0,East Midlands
+2010,15 to 44,Non-UK born,230.0,East Midlands
+2010,15 to 44,UK born,70.0,East Midlands
+2010,15 to 44,All places of birth,300.0,East Midlands
+2010,45 to 64,Non-UK born,86.0,East Midlands
+2010,45 to 64,UK born,18.0,East Midlands
+2010,45 to 64,All places of birth,104.0,East Midlands
+2010,65 and older,Non-UK born,31.0,East Midlands
+2010,65 and older,UK born,24.0,East Midlands
+2010,65 and older,All places of birth,55.0,East Midlands
+2011,0 to 14,Non-UK born,6.0,East Midlands
+2011,0 to 14,UK born,5.0,East Midlands
+2011,0 to 14,All places of birth,11.0,East Midlands
+2011,15 to 44,Non-UK born,212.0,East Midlands
+2011,15 to 44,UK born,64.0,East Midlands
+2011,15 to 44,All places of birth,276.0,East Midlands
+2011,45 to 64,Non-UK born,86.0,East Midlands
+2011,45 to 64,UK born,32.0,East Midlands
+2011,45 to 64,All places of birth,118.0,East Midlands
+2011,65 and older,Non-UK born,27.0,East Midlands
+2011,65 and older,UK born,41.0,East Midlands
+2011,65 and older,All places of birth,68.0,East Midlands
+2012,0 to 14,Non-UK born,7.0,East Midlands
+2012,0 to 14,UK born,9.0,East Midlands
+2012,0 to 14,All places of birth,16.0,East Midlands
+2012,15 to 44,Non-UK born,231.0,East Midlands
+2012,15 to 44,UK born,45.0,East Midlands
+2012,15 to 44,All places of birth,276.0,East Midlands
+2012,45 to 64,Non-UK born,75.0,East Midlands
+2012,45 to 64,UK born,32.0,East Midlands
+2012,45 to 64,All places of birth,107.0,East Midlands
+2012,65 and older,Non-UK born,41.0,East Midlands
+2012,65 and older,UK born,41.0,East Midlands
+2012,65 and older,All places of birth,82.0,East Midlands
+2013,0 to 14,Non-UK born,9.0,East Midlands
+2013,0 to 14,UK born,10.0,East Midlands
+2013,0 to 14,All places of birth,19.0,East Midlands
+2013,15 to 44,Non-UK born,174.0,East Midlands
+2013,15 to 44,UK born,45.0,East Midlands
+2013,15 to 44,All places of birth,219.0,East Midlands
+2013,45 to 64,Non-UK born,76.0,East Midlands
+2013,45 to 64,UK born,35.0,East Midlands
+2013,45 to 64,All places of birth,111.0,East Midlands
+2013,65 and older,Non-UK born,33.0,East Midlands
+2013,65 and older,UK born,26.0,East Midlands
+2013,65 and older,All places of birth,59.0,East Midlands
+2014,0 to 14,Non-UK born,2.0,East Midlands
+2014,0 to 14,UK born,12.0,East Midlands
+2014,0 to 14,All places of birth,14.0,East Midlands
+2014,15 to 44,Non-UK born,160.0,East Midlands
+2014,15 to 44,UK born,50.0,East Midlands
+2014,15 to 44,All places of birth,210.0,East Midlands
+2014,45 to 64,Non-UK born,62.0,East Midlands
+2014,45 to 64,UK born,32.0,East Midlands
+2014,45 to 64,All places of birth,94.0,East Midlands
+2014,65 and older,Non-UK born,34.0,East Midlands
+2014,65 and older,UK born,38.0,East Midlands
+2014,65 and older,All places of birth,72.0,East Midlands
+2015,0 to 14,Non-UK born,4.0,East Midlands
+2015,0 to 14,UK born,8.0,East Midlands
+2015,0 to 14,All places of birth,12.0,East Midlands
+2015,15 to 44,Non-UK born,159.0,East Midlands
+2015,15 to 44,UK born,42.0,East Midlands
+2015,15 to 44,All places of birth,201.0,East Midlands
+2015,45 to 64,Non-UK born,55.0,East Midlands
+2015,45 to 64,UK born,29.0,East Midlands
+2015,45 to 64,All places of birth,84.0,East Midlands
+2015,65 and older,Non-UK born,34.0,East Midlands
+2015,65 and older,UK born,20.0,East Midlands
+2015,65 and older,All places of birth,54.0,East Midlands
+2016,0 to 14,Non-UK born,2.0,East Midlands
+2016,0 to 14,UK born,19.0,East Midlands
+2016,0 to 14,All places of birth,21.0,East Midlands
+2016,15 to 44,Non-UK born,161.0,East Midlands
+2016,15 to 44,UK born,26.0,East Midlands
+2016,15 to 44,All places of birth,187.0,East Midlands
+2016,45 to 64,Non-UK born,56.0,East Midlands
+2016,45 to 64,UK born,28.0,East Midlands
+2016,45 to 64,All places of birth,84.0,East Midlands
+2016,65 and older,Non-UK born,22.0,East Midlands
+2016,65 and older,UK born,21.0,East Midlands
+2016,65 and older,All places of birth,43.0,East Midlands
+2017,0 to 14,Non-UK born,6.0,East Midlands
+2017,0 to 14,UK born,11.0,East Midlands
+2017,0 to 14,All places of birth,17.0,East Midlands
+2017,15 to 44,Non-UK born,138.0,East Midlands
+2017,15 to 44,UK born,44.0,East Midlands
+2017,15 to 44,All places of birth,182.0,East Midlands
+2017,45 to 64,Non-UK born,56.0,East Midlands
+2017,45 to 64,UK born,32.0,East Midlands
+2017,45 to 64,All places of birth,88.0,East Midlands
+2017,65 and older,Non-UK born,25.0,East Midlands
+2017,65 and older,UK born,25.0,East Midlands
+2017,65 and older,All places of birth,50.0,East Midlands
+2018,0 to 14,Non-UK born,1.0,East Midlands
+2018,0 to 14,UK born,7.0,East Midlands
+2018,0 to 14,All places of birth,8.0,East Midlands
+2018,15 to 44,Non-UK born,163.0,East Midlands
+2018,15 to 44,UK born,31.0,East Midlands
+2018,15 to 44,All places of birth,194.0,East Midlands
+2018,45 to 64,Non-UK born,64.0,East Midlands
+2018,45 to 64,UK born,24.0,East Midlands
+2018,45 to 64,All places of birth,88.0,East Midlands
+2018,65 and older,Non-UK born,29.0,East Midlands
+2018,65 and older,UK born,14.0,East Midlands
+2018,65 and older,All places of birth,43.0,East Midlands
+2019,0 to 14,Non-UK born,6.0,East Midlands
+2019,0 to 14,UK born,7.0,East Midlands
+2019,0 to 14,All places of birth,13.0,East Midlands
+2019,15 to 44,Non-UK born,168.0,East Midlands
+2019,15 to 44,UK born,28.0,East Midlands
+2019,15 to 44,All places of birth,196.0,East Midlands
+2019,45 to 64,Non-UK born,77.0,East Midlands
+2019,45 to 64,UK born,22.0,East Midlands
+2019,45 to 64,All places of birth,99.0,East Midlands
+2019,65 and older,Non-UK born,25.0,East Midlands
+2019,65 and older,UK born,16.0,East Midlands
+2019,65 and older,All places of birth,41.0,East Midlands
+2020,0 to 14,Non-UK born,6.0,East Midlands
+2020,0 to 14,UK born,5.0,East Midlands
+2020,0 to 14,All places of birth,11.0,East Midlands
+2020,15 to 44,Non-UK born,141.0,East Midlands
+2020,15 to 44,UK born,30.0,East Midlands
+2020,15 to 44,All places of birth,171.0,East Midlands
+2020,45 to 64,Non-UK born,62.0,East Midlands
+2020,45 to 64,UK born,26.0,East Midlands
+2020,45 to 64,All places of birth,88.0,East Midlands
+2020,65 and older,Non-UK born,19.0,East Midlands
+2020,65 and older,UK born,23.0,East Midlands
+2020,65 and older,All places of birth,42.0,East Midlands
+2021,0 to 14,Non-UK born,3.0,East Midlands
+2021,0 to 14,UK born,1.0,East Midlands
+2021,0 to 14,All places of birth,4.0,East Midlands
+2021,15 to 44,Non-UK born,178.0,East Midlands
+2021,15 to 44,UK born,33.0,East Midlands
+2021,15 to 44,All places of birth,211.0,East Midlands
+2021,45 to 64,Non-UK born,74.0,East Midlands
+2021,45 to 64,UK born,18.0,East Midlands
+2021,45 to 64,All places of birth,92.0,East Midlands
+2021,65 and older,Non-UK born,20.0,East Midlands
+2021,65 and older,UK born,22.0,East Midlands
+2021,65 and older,All places of birth,42.0,East Midlands
+2022,0 to 14,Non-UK born,6.0,East Midlands
+2022,0 to 14,UK born,5.0,East Midlands
+2022,0 to 14,All places of birth,11.0,East Midlands
+2022,15 to 44,Non-UK born,177.0,East Midlands
+2022,15 to 44,UK born,34.0,East Midlands
+2022,15 to 44,All places of birth,211.0,East Midlands
+2022,45 to 64,Non-UK born,84.0,East Midlands
+2022,45 to 64,UK born,26.0,East Midlands
+2022,45 to 64,All places of birth,110.0,East Midlands
+2022,65 and older,Non-UK born,35.0,East Midlands
+2022,65 and older,UK born,16.0,East Midlands
+2022,65 and older,All places of birth,51.0,East Midlands
+2023,0 to 14,Non-UK born,5.0,East Midlands
+2023,0 to 14,UK born,5.0,East Midlands
+2023,0 to 14,All places of birth,10.0,East Midlands
+2023,15 to 44,Non-UK born,194.0,East Midlands
+2023,15 to 44,UK born,29.0,East Midlands
+2023,15 to 44,All places of birth,223.0,East Midlands
+2023,45 to 64,Non-UK born,82.0,East Midlands
+2023,45 to 64,UK born,28.0,East Midlands
+2023,45 to 64,All places of birth,110.0,East Midlands
+2023,65 and older,Non-UK born,30.0,East Midlands
+2023,65 and older,UK born,22.0,East Midlands
+2023,65 and older,All places of birth,52.0,East Midlands
+2024,0 to 14,Non-UK born,6.0,East Midlands
+2024,0 to 14,UK born,7.0,East Midlands
+2024,0 to 14,All places of birth,13.0,East Midlands
+2024,15 to 44,Non-UK born,229.0,East Midlands
+2024,15 to 44,UK born,33.0,East Midlands
+2024,15 to 44,All places of birth,262.0,East Midlands
+2024,45 to 64,Non-UK born,83.0,East Midlands
+2024,45 to 64,UK born,13.0,East Midlands
+2024,45 to 64,All places of birth,96.0,East Midlands
+2024,65 and older,Non-UK born,35.0,East Midlands
+2024,65 and older,UK born,15.0,East Midlands
+2024,65 and older,All places of birth,50.0,East Midlands
+2001,0 to 14,Non-UK born,4.0,East of England
+2001,0 to 14,UK born,12.0,East of England
+2001,0 to 14,All places of birth,16.0,East of England
+2001,15 to 44,Non-UK born,116.0,East of England
+2001,15 to 44,UK born,43.0,East of England
+2001,15 to 44,All places of birth,159.0,East of England
+2001,45 to 64,Non-UK born,25.0,East of England
+2001,45 to 64,UK born,23.0,East of England
+2001,45 to 64,All places of birth,48.0,East of England
+2001,65 and older,Non-UK born,18.0,East of England
+2001,65 and older,UK born,33.0,East of England
+2001,65 and older,All places of birth,51.0,East of England
+2002,0 to 14,Non-UK born,1.0,East of England
+2002,0 to 14,UK born,10.0,East of England
+2002,0 to 14,All places of birth,11.0,East of England
+2002,15 to 44,Non-UK born,147.0,East of England
+2002,15 to 44,UK born,38.0,East of England
+2002,15 to 44,All places of birth,185.0,East of England
+2002,45 to 64,Non-UK born,48.0,East of England
+2002,45 to 64,UK born,21.0,East of England
+2002,45 to 64,All places of birth,69.0,East of England
+2002,65 and older,Non-UK born,13.0,East of England
+2002,65 and older,UK born,36.0,East of England
+2002,65 and older,All places of birth,49.0,East of England
+2003,0 to 14,Non-UK born,3.0,East of England
+2003,0 to 14,UK born,8.0,East of England
+2003,0 to 14,All places of birth,11.0,East of England
+2003,15 to 44,Non-UK born,162.0,East of England
+2003,15 to 44,UK born,30.0,East of England
+2003,15 to 44,All places of birth,192.0,East of England
+2003,45 to 64,Non-UK born,21.0,East of England
+2003,45 to 64,UK born,29.0,East of England
+2003,45 to 64,All places of birth,50.0,East of England
+2003,65 and older,Non-UK born,11.0,East of England
+2003,65 and older,UK born,30.0,East of England
+2003,65 and older,All places of birth,41.0,East of England
+2004,0 to 14,Non-UK born,7.0,East of England
+2004,0 to 14,UK born,11.0,East of England
+2004,0 to 14,All places of birth,18.0,East of England
+2004,15 to 44,Non-UK born,204.0,East of England
+2004,15 to 44,UK born,36.0,East of England
+2004,15 to 44,All places of birth,240.0,East of England
+2004,45 to 64,Non-UK born,36.0,East of England
+2004,45 to 64,UK born,19.0,East of England
+2004,45 to 64,All places of birth,55.0,East of England
+2004,65 and older,Non-UK born,22.0,East of England
+2004,65 and older,UK born,35.0,East of England
+2004,65 and older,All places of birth,57.0,East of England
+2005,0 to 14,Non-UK born,9.0,East of England
+2005,0 to 14,UK born,18.0,East of England
+2005,0 to 14,All places of birth,27.0,East of England
+2005,15 to 44,Non-UK born,223.0,East of England
+2005,15 to 44,UK born,40.0,East of England
+2005,15 to 44,All places of birth,263.0,East of England
+2005,45 to 64,Non-UK born,43.0,East of England
+2005,45 to 64,UK born,35.0,East of England
+2005,45 to 64,All places of birth,78.0,East of England
+2005,65 and older,Non-UK born,29.0,East of England
+2005,65 and older,UK born,36.0,East of England
+2005,65 and older,All places of birth,65.0,East of England
+2006,0 to 14,Non-UK born,7.0,East of England
+2006,0 to 14,UK born,10.0,East of England
+2006,0 to 14,All places of birth,17.0,East of England
+2006,15 to 44,Non-UK born,245.0,East of England
+2006,15 to 44,UK born,39.0,East of England
+2006,15 to 44,All places of birth,284.0,East of England
+2006,45 to 64,Non-UK born,49.0,East of England
+2006,45 to 64,UK born,25.0,East of England
+2006,45 to 64,All places of birth,74.0,East of England
+2006,65 and older,Non-UK born,23.0,East of England
+2006,65 and older,UK born,24.0,East of England
+2006,65 and older,All places of birth,47.0,East of England
+2007,0 to 14,Non-UK born,9.0,East of England
+2007,0 to 14,UK born,30.0,East of England
+2007,0 to 14,All places of birth,39.0,East of England
+2007,15 to 44,Non-UK born,203.0,East of England
+2007,15 to 44,UK born,31.0,East of England
+2007,15 to 44,All places of birth,234.0,East of England
+2007,45 to 64,Non-UK born,46.0,East of England
+2007,45 to 64,UK born,16.0,East of England
+2007,45 to 64,All places of birth,62.0,East of England
+2007,65 and older,Non-UK born,17.0,East of England
+2007,65 and older,UK born,34.0,East of England
+2007,65 and older,All places of birth,51.0,East of England
+2008,0 to 14,Non-UK born,11.0,East of England
+2008,0 to 14,UK born,23.0,East of England
+2008,0 to 14,All places of birth,34.0,East of England
+2008,15 to 44,Non-UK born,231.0,East of England
+2008,15 to 44,UK born,49.0,East of England
+2008,15 to 44,All places of birth,280.0,East of England
+2008,45 to 64,Non-UK born,42.0,East of England
+2008,45 to 64,UK born,37.0,East of England
+2008,45 to 64,All places of birth,79.0,East of England
+2008,65 and older,Non-UK born,24.0,East of England
+2008,65 and older,UK born,39.0,East of England
+2008,65 and older,All places of birth,63.0,East of England
+2009,0 to 14,Non-UK born,7.0,East of England
+2009,0 to 14,UK born,15.0,East of England
+2009,0 to 14,All places of birth,22.0,East of England
+2009,15 to 44,Non-UK born,241.0,East of England
+2009,15 to 44,UK born,36.0,East of England
+2009,15 to 44,All places of birth,277.0,East of England
+2009,45 to 64,Non-UK born,66.0,East of England
+2009,45 to 64,UK born,27.0,East of England
+2009,45 to 64,All places of birth,93.0,East of England
+2009,65 and older,Non-UK born,24.0,East of England
+2009,65 and older,UK born,54.0,East of England
+2009,65 and older,All places of birth,78.0,East of England
+2010,0 to 14,Non-UK born,5.0,East of England
+2010,0 to 14,UK born,20.0,East of England
+2010,0 to 14,All places of birth,25.0,East of England
+2010,15 to 44,Non-UK born,253.0,East of England
+2010,15 to 44,UK born,35.0,East of England
+2010,15 to 44,All places of birth,288.0,East of England
+2010,45 to 64,Non-UK born,58.0,East of England
+2010,45 to 64,UK born,45.0,East of England
+2010,45 to 64,All places of birth,103.0,East of England
+2010,65 and older,Non-UK born,30.0,East of England
+2010,65 and older,UK born,35.0,East of England
+2010,65 and older,All places of birth,65.0,East of England
+2011,0 to 14,Non-UK born,6.0,East of England
+2011,0 to 14,UK born,15.0,East of England
+2011,0 to 14,All places of birth,21.0,East of England
+2011,15 to 44,Non-UK born,281.0,East of England
+2011,15 to 44,UK born,55.0,East of England
+2011,15 to 44,All places of birth,336.0,East of England
+2011,45 to 64,Non-UK born,72.0,East of England
+2011,45 to 64,UK born,38.0,East of England
+2011,45 to 64,All places of birth,110.0,East of England
+2011,65 and older,Non-UK born,28.0,East of England
+2011,65 and older,UK born,39.0,East of England
+2011,65 and older,All places of birth,67.0,East of England
+2012,0 to 14,Non-UK born,1.0,East of England
+2012,0 to 14,UK born,11.0,East of England
+2012,0 to 14,All places of birth,12.0,East of England
+2012,15 to 44,Non-UK born,246.0,East of England
+2012,15 to 44,UK born,42.0,East of England
+2012,15 to 44,All places of birth,288.0,East of England
+2012,45 to 64,Non-UK born,62.0,East of England
+2012,45 to 64,UK born,38.0,East of England
+2012,45 to 64,All places of birth,100.0,East of England
+2012,65 and older,Non-UK born,36.0,East of England
+2012,65 and older,UK born,37.0,East of England
+2012,65 and older,All places of birth,73.0,East of England
+2013,0 to 14,Non-UK born,4.0,East of England
+2013,0 to 14,UK born,12.0,East of England
+2013,0 to 14,All places of birth,16.0,East of England
+2013,15 to 44,Non-UK born,221.0,East of England
+2013,15 to 44,UK born,43.0,East of England
+2013,15 to 44,All places of birth,264.0,East of England
+2013,45 to 64,Non-UK born,61.0,East of England
+2013,45 to 64,UK born,31.0,East of England
+2013,45 to 64,All places of birth,92.0,East of England
+2013,65 and older,Non-UK born,28.0,East of England
+2013,65 and older,UK born,34.0,East of England
+2013,65 and older,All places of birth,62.0,East of England
+2014,0 to 14,Non-UK born,4.0,East of England
+2014,0 to 14,UK born,9.0,East of England
+2014,0 to 14,All places of birth,13.0,East of England
+2014,15 to 44,Non-UK born,207.0,East of England
+2014,15 to 44,UK born,39.0,East of England
+2014,15 to 44,All places of birth,246.0,East of England
+2014,45 to 64,Non-UK born,82.0,East of England
+2014,45 to 64,UK born,27.0,East of England
+2014,45 to 64,All places of birth,109.0,East of England
+2014,65 and older,Non-UK born,20.0,East of England
+2014,65 and older,UK born,35.0,East of England
+2014,65 and older,All places of birth,55.0,East of England
+2015,0 to 14,Non-UK born,2.0,East of England
+2015,0 to 14,UK born,13.0,East of England
+2015,0 to 14,All places of birth,15.0,East of England
+2015,15 to 44,Non-UK born,185.0,East of England
+2015,15 to 44,UK born,32.0,East of England
+2015,15 to 44,All places of birth,217.0,East of England
+2015,45 to 64,Non-UK born,69.0,East of England
+2015,45 to 64,UK born,26.0,East of England
+2015,45 to 64,All places of birth,95.0,East of England
+2015,65 and older,Non-UK born,22.0,East of England
+2015,65 and older,UK born,31.0,East of England
+2015,65 and older,All places of birth,53.0,East of England
+2016,0 to 14,Non-UK born,3.0,East of England
+2016,0 to 14,UK born,6.0,East of England
+2016,0 to 14,All places of birth,9.0,East of England
+2016,15 to 44,Non-UK born,209.0,East of England
+2016,15 to 44,UK born,43.0,East of England
+2016,15 to 44,All places of birth,252.0,East of England
+2016,45 to 64,Non-UK born,74.0,East of England
+2016,45 to 64,UK born,33.0,East of England
+2016,45 to 64,All places of birth,107.0,East of England
+2016,65 and older,Non-UK born,19.0,East of England
+2016,65 and older,UK born,37.0,East of England
+2016,65 and older,All places of birth,56.0,East of England
+2017,0 to 14,Non-UK born,2.0,East of England
+2017,0 to 14,UK born,4.0,East of England
+2017,0 to 14,All places of birth,6.0,East of England
+2017,15 to 44,Non-UK born,188.0,East of England
+2017,15 to 44,UK born,45.0,East of England
+2017,15 to 44,All places of birth,233.0,East of England
+2017,45 to 64,Non-UK born,62.0,East of England
+2017,45 to 64,UK born,39.0,East of England
+2017,45 to 64,All places of birth,101.0,East of England
+2017,65 and older,Non-UK born,29.0,East of England
+2017,65 and older,UK born,32.0,East of England
+2017,65 and older,All places of birth,61.0,East of England
+2018,0 to 14,Non-UK born,2.0,East of England
+2018,0 to 14,UK born,4.0,East of England
+2018,0 to 14,All places of birth,6.0,East of England
+2018,15 to 44,Non-UK born,179.0,East of England
+2018,15 to 44,UK born,35.0,East of England
+2018,15 to 44,All places of birth,214.0,East of England
+2018,45 to 64,Non-UK born,63.0,East of England
+2018,45 to 64,UK born,23.0,East of England
+2018,45 to 64,All places of birth,86.0,East of England
+2018,65 and older,Non-UK born,11.0,East of England
+2018,65 and older,UK born,25.0,East of England
+2018,65 and older,All places of birth,36.0,East of England
+2019,0 to 14,Non-UK born,5.0,East of England
+2019,0 to 14,UK born,13.0,East of England
+2019,0 to 14,All places of birth,18.0,East of England
+2019,15 to 44,Non-UK born,167.0,East of England
+2019,15 to 44,UK born,38.0,East of England
+2019,15 to 44,All places of birth,205.0,East of England
+2019,45 to 64,Non-UK born,85.0,East of England
+2019,45 to 64,UK born,42.0,East of England
+2019,45 to 64,All places of birth,127.0,East of England
+2019,65 and older,Non-UK born,28.0,East of England
+2019,65 and older,UK born,30.0,East of England
+2019,65 and older,All places of birth,58.0,East of England
+2020,0 to 14,Non-UK born,5.0,East of England
+2020,0 to 14,UK born,15.0,East of England
+2020,0 to 14,All places of birth,20.0,East of England
+2020,15 to 44,Non-UK born,154.0,East of England
+2020,15 to 44,UK born,43.0,East of England
+2020,15 to 44,All places of birth,197.0,East of England
+2020,45 to 64,Non-UK born,79.0,East of England
+2020,45 to 64,UK born,26.0,East of England
+2020,45 to 64,All places of birth,105.0,East of England
+2020,65 and older,Non-UK born,20.0,East of England
+2020,65 and older,UK born,23.0,East of England
+2020,65 and older,All places of birth,43.0,East of England
+2021,0 to 14,Non-UK born,7.0,East of England
+2021,0 to 14,UK born,8.0,East of England
+2021,0 to 14,All places of birth,15.0,East of England
+2021,15 to 44,Non-UK born,169.0,East of England
+2021,15 to 44,UK born,37.0,East of England
+2021,15 to 44,All places of birth,206.0,East of England
+2021,45 to 64,Non-UK born,71.0,East of England
+2021,45 to 64,UK born,26.0,East of England
+2021,45 to 64,All places of birth,97.0,East of England
+2021,65 and older,Non-UK born,22.0,East of England
+2021,65 and older,UK born,23.0,East of England
+2021,65 and older,All places of birth,45.0,East of England
+2022,0 to 14,Non-UK born,1.0,East of England
+2022,0 to 14,UK born,5.0,East of England
+2022,0 to 14,All places of birth,6.0,East of England
+2022,15 to 44,Non-UK born,186.0,East of England
+2022,15 to 44,UK born,32.0,East of England
+2022,15 to 44,All places of birth,218.0,East of England
+2022,45 to 64,Non-UK born,71.0,East of England
+2022,45 to 64,UK born,26.0,East of England
+2022,45 to 64,All places of birth,97.0,East of England
+2022,65 and older,Non-UK born,28.0,East of England
+2022,65 and older,UK born,17.0,East of England
+2022,65 and older,All places of birth,45.0,East of England
+2023,0 to 14,Non-UK born,6.0,East of England
+2023,0 to 14,UK born,5.0,East of England
+2023,0 to 14,All places of birth,11.0,East of England
+2023,15 to 44,Non-UK born,197.0,East of England
+2023,15 to 44,UK born,36.0,East of England
+2023,15 to 44,All places of birth,233.0,East of England
+2023,45 to 64,Non-UK born,90.0,East of England
+2023,45 to 64,UK born,25.0,East of England
+2023,45 to 64,All places of birth,115.0,East of England
+2023,65 and older,Non-UK born,40.0,East of England
+2023,65 and older,UK born,15.0,East of England
+2023,65 and older,All places of birth,55.0,East of England
+2024,0 to 14,Non-UK born,6.0,East of England
+2024,0 to 14,UK born,6.0,East of England
+2024,0 to 14,All places of birth,12.0,East of England
+2024,15 to 44,Non-UK born,246.0,East of England
+2024,15 to 44,UK born,26.0,East of England
+2024,15 to 44,All places of birth,272.0,East of England
+2024,45 to 64,Non-UK born,74.0,East of England
+2024,45 to 64,UK born,34.0,East of England
+2024,45 to 64,All places of birth,108.0,East of England
+2024,65 and older,Non-UK born,37.0,East of England
+2024,65 and older,UK born,17.0,East of England
+2024,65 and older,All places of birth,54.0,East of England
+2001,0 to 14,Non-UK born,60.0,London
+2001,0 to 14,UK born,71.0,London
+2001,0 to 14,All places of birth,131.0,London
+2001,15 to 44,Non-UK born,1270.0,London
+2001,15 to 44,UK born,209.0,London
+2001,15 to 44,All places of birth,1479.0,London
+2001,45 to 64,Non-UK born,370.0,London
+2001,45 to 64,UK born,64.0,London
+2001,45 to 64,All places of birth,434.0,London
+2001,65 and older,Non-UK born,159.0,London
+2001,65 and older,UK born,75.0,London
+2001,65 and older,All places of birth,234.0,London
+2002,0 to 14,Non-UK born,70.0,London
+2002,0 to 14,UK born,79.0,London
+2002,0 to 14,All places of birth,149.0,London
+2002,15 to 44,Non-UK born,1627.0,London
+2002,15 to 44,UK born,256.0,London
+2002,15 to 44,All places of birth,1883.0,London
+2002,45 to 64,Non-UK born,359.0,London
+2002,45 to 64,UK born,106.0,London
+2002,45 to 64,All places of birth,465.0,London
+2002,65 and older,Non-UK born,204.0,London
+2002,65 and older,UK born,100.0,London
+2002,65 and older,All places of birth,304.0,London
+2003,0 to 14,Non-UK born,74.0,London
+2003,0 to 14,UK born,62.0,London
+2003,0 to 14,All places of birth,136.0,London
+2003,15 to 44,Non-UK born,1685.0,London
+2003,15 to 44,UK born,242.0,London
+2003,15 to 44,All places of birth,1927.0,London
+2003,45 to 64,Non-UK born,389.0,London
+2003,45 to 64,UK born,82.0,London
+2003,45 to 64,All places of birth,471.0,London
+2003,65 and older,Non-UK born,177.0,London
+2003,65 and older,UK born,94.0,London
+2003,65 and older,All places of birth,271.0,London
+2004,0 to 14,Non-UK born,60.0,London
+2004,0 to 14,UK born,111.0,London
+2004,0 to 14,All places of birth,171.0,London
+2004,15 to 44,Non-UK born,1674.0,London
+2004,15 to 44,UK born,243.0,London
+2004,15 to 44,All places of birth,1917.0,London
+2004,45 to 64,Non-UK born,387.0,London
+2004,45 to 64,UK born,96.0,London
+2004,45 to 64,All places of birth,483.0,London
+2004,65 and older,Non-UK born,176.0,London
+2004,65 and older,UK born,85.0,London
+2004,65 and older,All places of birth,261.0,London
+2005,0 to 14,Non-UK born,80.0,London
+2005,0 to 14,UK born,113.0,London
+2005,0 to 14,All places of birth,193.0,London
+2005,15 to 44,Non-UK born,1848.0,London
+2005,15 to 44,UK born,310.0,London
+2005,15 to 44,All places of birth,2158.0,London
+2005,45 to 64,Non-UK born,423.0,London
+2005,45 to 64,UK born,79.0,London
+2005,45 to 64,All places of birth,502.0,London
+2005,65 and older,Non-UK born,229.0,London
+2005,65 and older,UK born,76.0,London
+2005,65 and older,All places of birth,305.0,London
+2006,0 to 14,Non-UK born,72.0,London
+2006,0 to 14,UK born,97.0,London
+2006,0 to 14,All places of birth,169.0,London
+2006,15 to 44,Non-UK born,1844.0,London
+2006,15 to 44,UK born,283.0,London
+2006,15 to 44,All places of birth,2127.0,London
+2006,45 to 64,Non-UK born,428.0,London
+2006,45 to 64,UK born,81.0,London
+2006,45 to 64,All places of birth,509.0,London
+2006,65 and older,Non-UK born,212.0,London
+2006,65 and older,UK born,85.0,London
+2006,65 and older,All places of birth,297.0,London
+2007,0 to 14,Non-UK born,74.0,London
+2007,0 to 14,UK born,114.0,London
+2007,0 to 14,All places of birth,188.0,London
+2007,15 to 44,Non-UK born,1816.0,London
+2007,15 to 44,UK born,239.0,London
+2007,15 to 44,All places of birth,2055.0,London
+2007,45 to 64,Non-UK born,457.0,London
+2007,45 to 64,UK born,90.0,London
+2007,45 to 64,All places of birth,547.0,London
+2007,65 and older,Non-UK born,226.0,London
+2007,65 and older,UK born,77.0,London
+2007,65 and older,All places of birth,303.0,London
+2008,0 to 14,Non-UK born,77.0,London
+2008,0 to 14,UK born,118.0,London
+2008,0 to 14,All places of birth,195.0,London
+2008,15 to 44,Non-UK born,1853.0,London
+2008,15 to 44,UK born,284.0,London
+2008,15 to 44,All places of birth,2137.0,London
+2008,45 to 64,Non-UK born,514.0,London
+2008,45 to 64,UK born,88.0,London
+2008,45 to 64,All places of birth,602.0,London
+2008,65 and older,Non-UK born,226.0,London
+2008,65 and older,UK born,62.0,London
+2008,65 and older,All places of birth,288.0,London
+2009,0 to 14,Non-UK born,47.0,London
+2009,0 to 14,UK born,89.0,London
+2009,0 to 14,All places of birth,136.0,London
+2009,15 to 44,Non-UK born,1904.0,London
+2009,15 to 44,UK born,279.0,London
+2009,15 to 44,All places of birth,2183.0,London
+2009,45 to 64,Non-UK born,529.0,London
+2009,45 to 64,UK born,89.0,London
+2009,45 to 64,All places of birth,618.0,London
+2009,65 and older,Non-UK born,274.0,London
+2009,65 and older,UK born,54.0,London
+2009,65 and older,All places of birth,328.0,London
+2010,0 to 14,Non-UK born,43.0,London
+2010,0 to 14,UK born,99.0,London
+2010,0 to 14,All places of birth,142.0,London
+2010,15 to 44,Non-UK born,1909.0,London
+2010,15 to 44,UK born,249.0,London
+2010,15 to 44,All places of birth,2158.0,London
+2010,45 to 64,Non-UK born,511.0,London
+2010,45 to 64,UK born,97.0,London
+2010,45 to 64,All places of birth,608.0,London
+2010,65 and older,Non-UK born,233.0,London
+2010,65 and older,UK born,58.0,London
+2010,65 and older,All places of birth,291.0,London
+2011,0 to 14,Non-UK born,53.0,London
+2011,0 to 14,UK born,79.0,London
+2011,0 to 14,All places of birth,132.0,London
+2011,15 to 44,Non-UK born,2050.0,London
+2011,15 to 44,UK born,279.0,London
+2011,15 to 44,All places of birth,2329.0,London
+2011,45 to 64,Non-UK born,588.0,London
+2011,45 to 64,UK born,90.0,London
+2011,45 to 64,All places of birth,678.0,London
+2011,65 and older,Non-UK born,238.0,London
+2011,65 and older,UK born,57.0,London
+2011,65 and older,All places of birth,295.0,London
+2012,0 to 14,Non-UK born,45.0,London
+2012,0 to 14,UK born,108.0,London
+2012,0 to 14,All places of birth,153.0,London
+2012,15 to 44,Non-UK born,1975.0,London
+2012,15 to 44,UK born,283.0,London
+2012,15 to 44,All places of birth,2258.0,London
+2012,45 to 64,Non-UK born,520.0,London
+2012,45 to 64,UK born,120.0,London
+2012,45 to 64,All places of birth,640.0,London
+2012,65 and older,Non-UK born,259.0,London
+2012,65 and older,UK born,50.0,London
+2012,65 and older,All places of birth,309.0,London
+2013,0 to 14,Non-UK born,26.0,London
+2013,0 to 14,UK born,79.0,London
+2013,0 to 14,All places of birth,105.0,London
+2013,15 to 44,Non-UK born,1694.0,London
+2013,15 to 44,UK born,246.0,London
+2013,15 to 44,All places of birth,1940.0,London
+2013,45 to 64,Non-UK born,508.0,London
+2013,45 to 64,UK born,114.0,London
+2013,45 to 64,All places of birth,622.0,London
+2013,65 and older,Non-UK born,237.0,London
+2013,65 and older,UK born,46.0,London
+2013,65 and older,All places of birth,283.0,London
+2014,0 to 14,Non-UK born,28.0,London
+2014,0 to 14,UK born,83.0,London
+2014,0 to 14,All places of birth,111.0,London
+2014,15 to 44,Non-UK born,1357.0,London
+2014,15 to 44,UK born,251.0,London
+2014,15 to 44,All places of birth,1608.0,London
+2014,45 to 64,Non-UK born,487.0,London
+2014,45 to 64,UK born,94.0,London
+2014,45 to 64,All places of birth,581.0,London
+2014,65 and older,Non-UK born,205.0,London
+2014,65 and older,UK born,49.0,London
+2014,65 and older,All places of birth,254.0,London
+2015,0 to 14,Non-UK born,21.0,London
+2015,0 to 14,UK born,61.0,London
+2015,0 to 14,All places of birth,82.0,London
+2015,15 to 44,Non-UK born,1168.0,London
+2015,15 to 44,UK born,240.0,London
+2015,15 to 44,All places of birth,1408.0,London
+2015,45 to 64,Non-UK born,428.0,London
+2015,45 to 64,UK born,77.0,London
+2015,45 to 64,All places of birth,505.0,London
+2015,65 and older,Non-UK born,228.0,London
+2015,65 and older,UK born,42.0,London
+2015,65 and older,All places of birth,270.0,London
+2016,0 to 14,Non-UK born,16.0,London
+2016,0 to 14,UK born,65.0,London
+2016,0 to 14,All places of birth,81.0,London
+2016,15 to 44,Non-UK born,1085.0,London
+2016,15 to 44,UK born,193.0,London
+2016,15 to 44,All places of birth,1278.0,London
+2016,45 to 64,Non-UK born,450.0,London
+2016,45 to 64,UK born,94.0,London
+2016,45 to 64,All places of birth,544.0,London
+2016,65 and older,Non-UK born,230.0,London
+2016,65 and older,UK born,47.0,London
+2016,65 and older,All places of birth,277.0,London
+2017,0 to 14,Non-UK born,16.0,London
+2017,0 to 14,UK born,36.0,London
+2017,0 to 14,All places of birth,52.0,London
+2017,15 to 44,Non-UK born,901.0,London
+2017,15 to 44,UK born,202.0,London
+2017,15 to 44,All places of birth,1103.0,London
+2017,45 to 64,Non-UK born,395.0,London
+2017,45 to 64,UK born,85.0,London
+2017,45 to 64,All places of birth,480.0,London
+2017,65 and older,Non-UK born,205.0,London
+2017,65 and older,UK born,49.0,London
+2017,65 and older,All places of birth,254.0,London
+2018,0 to 14,Non-UK born,13.0,London
+2018,0 to 14,UK born,32.0,London
+2018,0 to 14,All places of birth,45.0,London
+2018,15 to 44,Non-UK born,789.0,London
+2018,15 to 44,UK born,162.0,London
+2018,15 to 44,All places of birth,951.0,London
+2018,45 to 64,Non-UK born,378.0,London
+2018,45 to 64,UK born,69.0,London
+2018,45 to 64,All places of birth,447.0,London
+2018,65 and older,Non-UK born,188.0,London
+2018,65 and older,UK born,42.0,London
+2018,65 and older,All places of birth,230.0,London
+2019,0 to 14,Non-UK born,10.0,London
+2019,0 to 14,UK born,38.0,London
+2019,0 to 14,All places of birth,48.0,London
+2019,15 to 44,Non-UK born,791.0,London
+2019,15 to 44,UK born,158.0,London
+2019,15 to 44,All places of birth,949.0,London
+2019,45 to 64,Non-UK born,368.0,London
+2019,45 to 64,UK born,71.0,London
+2019,45 to 64,All places of birth,439.0,London
+2019,65 and older,Non-UK born,186.0,London
+2019,65 and older,UK born,25.0,London
+2019,65 and older,All places of birth,211.0,London
+2020,0 to 14,Non-UK born,11.0,London
+2020,0 to 14,UK born,27.0,London
+2020,0 to 14,All places of birth,38.0,London
+2020,15 to 44,Non-UK born,662.0,London
+2020,15 to 44,UK born,172.0,London
+2020,15 to 44,All places of birth,834.0,London
+2020,45 to 64,Non-UK born,360.0,London
+2020,45 to 64,UK born,63.0,London
+2020,45 to 64,All places of birth,423.0,London
+2020,65 and older,Non-UK born,128.0,London
+2020,65 and older,UK born,30.0,London
+2020,65 and older,All places of birth,158.0,London
+2021,0 to 14,Non-UK born,17.0,London
+2021,0 to 14,UK born,19.0,London
+2021,0 to 14,All places of birth,36.0,London
+2021,15 to 44,Non-UK born,758.0,London
+2021,15 to 44,UK born,138.0,London
+2021,15 to 44,All places of birth,896.0,London
+2021,45 to 64,Non-UK born,351.0,London
+2021,45 to 64,UK born,67.0,London
+2021,45 to 64,All places of birth,418.0,London
+2021,65 and older,Non-UK born,181.0,London
+2021,65 and older,UK born,26.0,London
+2021,65 and older,All places of birth,207.0,London
+2022,0 to 14,Non-UK born,16.0,London
+2022,0 to 14,UK born,20.0,London
+2022,0 to 14,All places of birth,36.0,London
+2022,15 to 44,Non-UK born,779.0,London
+2022,15 to 44,UK born,127.0,London
+2022,15 to 44,All places of birth,906.0,London
+2022,45 to 64,Non-UK born,358.0,London
+2022,45 to 64,UK born,58.0,London
+2022,45 to 64,All places of birth,416.0,London
+2022,65 and older,Non-UK born,191.0,London
+2022,65 and older,UK born,20.0,London
+2022,65 and older,All places of birth,211.0,London
+2023,0 to 14,Non-UK born,18.0,London
+2023,0 to 14,UK born,29.0,London
+2023,0 to 14,All places of birth,47.0,London
+2023,15 to 44,Non-UK born,875.0,London
+2023,15 to 44,UK born,110.0,London
+2023,15 to 44,All places of birth,985.0,London
+2023,45 to 64,Non-UK born,359.0,London
+2023,45 to 64,UK born,60.0,London
+2023,45 to 64,All places of birth,419.0,London
+2023,65 and older,Non-UK born,167.0,London
+2023,65 and older,UK born,32.0,London
+2023,65 and older,All places of birth,199.0,London
+2024,0 to 14,Non-UK born,18.0,London
+2024,0 to 14,UK born,25.0,London
+2024,0 to 14,All places of birth,43.0,London
+2024,15 to 44,Non-UK born,1057.0,London
+2024,15 to 44,UK born,140.0,London
+2024,15 to 44,All places of birth,1197.0,London
+2024,45 to 64,Non-UK born,366.0,London
+2024,45 to 64,UK born,60.0,London
+2024,45 to 64,All places of birth,426.0,London
+2024,65 and older,Non-UK born,184.0,London
+2024,65 and older,UK born,26.0,London
+2024,65 and older,All places of birth,210.0,London
+2001,0 to 14,Non-UK born,3.0,North East
+2001,0 to 14,UK born,9.0,North East
+2001,0 to 14,All places of birth,12.0,North East
+2001,15 to 44,Non-UK born,43.0,North East
+2001,15 to 44,UK born,14.0,North East
+2001,15 to 44,All places of birth,57.0,North East
+2001,45 to 64,Non-UK born,7.0,North East
+2001,45 to 64,UK born,34.0,North East
+2001,45 to 64,All places of birth,41.0,North East
+2001,65 and older,Non-UK born,6.0,North East
+2001,65 and older,UK born,35.0,North East
+2001,65 and older,All places of birth,41.0,North East
+2002,0 to 14,Non-UK born,0.0,North East
+2002,0 to 14,UK born,6.0,North East
+2002,0 to 14,All places of birth,6.0,North East
+2002,15 to 44,Non-UK born,39.0,North East
+2002,15 to 44,UK born,18.0,North East
+2002,15 to 44,All places of birth,57.0,North East
+2002,45 to 64,Non-UK born,12.0,North East
+2002,45 to 64,UK born,27.0,North East
+2002,45 to 64,All places of birth,39.0,North East
+2002,65 and older,Non-UK born,5.0,North East
+2002,65 and older,UK born,40.0,North East
+2002,65 and older,All places of birth,45.0,North East
+2003,0 to 14,Non-UK born,1.0,North East
+2003,0 to 14,UK born,4.0,North East
+2003,0 to 14,All places of birth,5.0,North East
+2003,15 to 44,Non-UK born,46.0,North East
+2003,15 to 44,UK born,14.0,North East
+2003,15 to 44,All places of birth,60.0,North East
+2003,45 to 64,Non-UK born,6.0,North East
+2003,45 to 64,UK born,18.0,North East
+2003,45 to 64,All places of birth,24.0,North East
+2003,65 and older,Non-UK born,7.0,North East
+2003,65 and older,UK born,31.0,North East
+2003,65 and older,All places of birth,38.0,North East
+2004,0 to 14,Non-UK born,3.0,North East
+2004,0 to 14,UK born,4.0,North East
+2004,0 to 14,All places of birth,7.0,North East
+2004,15 to 44,Non-UK born,50.0,North East
+2004,15 to 44,UK born,14.0,North East
+2004,15 to 44,All places of birth,64.0,North East
+2004,45 to 64,Non-UK born,4.0,North East
+2004,45 to 64,UK born,24.0,North East
+2004,45 to 64,All places of birth,28.0,North East
+2004,65 and older,Non-UK born,2.0,North East
+2004,65 and older,UK born,26.0,North East
+2004,65 and older,All places of birth,28.0,North East
+2005,0 to 14,Non-UK born,6.0,North East
+2005,0 to 14,UK born,2.0,North East
+2005,0 to 14,All places of birth,8.0,North East
+2005,15 to 44,Non-UK born,40.0,North East
+2005,15 to 44,UK born,14.0,North East
+2005,15 to 44,All places of birth,54.0,North East
+2005,45 to 64,Non-UK born,11.0,North East
+2005,45 to 64,UK born,20.0,North East
+2005,45 to 64,All places of birth,31.0,North East
+2005,65 and older,Non-UK born,3.0,North East
+2005,65 and older,UK born,19.0,North East
+2005,65 and older,All places of birth,22.0,North East
+2006,0 to 14,Non-UK born,2.0,North East
+2006,0 to 14,UK born,10.0,North East
+2006,0 to 14,All places of birth,12.0,North East
+2006,15 to 44,Non-UK born,42.0,North East
+2006,15 to 44,UK born,20.0,North East
+2006,15 to 44,All places of birth,62.0,North East
+2006,45 to 64,Non-UK born,7.0,North East
+2006,45 to 64,UK born,15.0,North East
+2006,45 to 64,All places of birth,22.0,North East
+2006,65 and older,Non-UK born,6.0,North East
+2006,65 and older,UK born,21.0,North East
+2006,65 and older,All places of birth,27.0,North East
+2007,0 to 14,Non-UK born,2.0,North East
+2007,0 to 14,UK born,6.0,North East
+2007,0 to 14,All places of birth,8.0,North East
+2007,15 to 44,Non-UK born,68.0,North East
+2007,15 to 44,UK born,28.0,North East
+2007,15 to 44,All places of birth,96.0,North East
+2007,45 to 64,Non-UK born,13.0,North East
+2007,45 to 64,UK born,19.0,North East
+2007,45 to 64,All places of birth,32.0,North East
+2007,65 and older,Non-UK born,6.0,North East
+2007,65 and older,UK born,26.0,North East
+2007,65 and older,All places of birth,32.0,North East
+2008,0 to 14,Non-UK born,0.0,North East
+2008,0 to 14,UK born,2.0,North East
+2008,0 to 14,All places of birth,2.0,North East
+2008,15 to 44,Non-UK born,55.0,North East
+2008,15 to 44,UK born,13.0,North East
+2008,15 to 44,All places of birth,68.0,North East
+2008,45 to 64,Non-UK born,11.0,North East
+2008,45 to 64,UK born,19.0,North East
+2008,45 to 64,All places of birth,30.0,North East
+2008,65 and older,Non-UK born,6.0,North East
+2008,65 and older,UK born,29.0,North East
+2008,65 and older,All places of birth,35.0,North East
+2009,0 to 14,Non-UK born,4.0,North East
+2009,0 to 14,UK born,4.0,North East
+2009,0 to 14,All places of birth,8.0,North East
+2009,15 to 44,Non-UK born,51.0,North East
+2009,15 to 44,UK born,15.0,North East
+2009,15 to 44,All places of birth,66.0,North East
+2009,45 to 64,Non-UK born,9.0,North East
+2009,45 to 64,UK born,19.0,North East
+2009,45 to 64,All places of birth,28.0,North East
+2009,65 and older,Non-UK born,6.0,North East
+2009,65 and older,UK born,17.0,North East
+2009,65 and older,All places of birth,23.0,North East
+2010,0 to 14,Non-UK born,2.0,North East
+2010,0 to 14,UK born,3.0,North East
+2010,0 to 14,All places of birth,5.0,North East
+2010,15 to 44,Non-UK born,60.0,North East
+2010,15 to 44,UK born,13.0,North East
+2010,15 to 44,All places of birth,73.0,North East
+2010,45 to 64,Non-UK born,14.0,North East
+2010,45 to 64,UK born,19.0,North East
+2010,45 to 64,All places of birth,33.0,North East
+2010,65 and older,Non-UK born,5.0,North East
+2010,65 and older,UK born,18.0,North East
+2010,65 and older,All places of birth,23.0,North East
+2011,0 to 14,Non-UK born,0.0,North East
+2011,0 to 14,UK born,1.0,North East
+2011,0 to 14,All places of birth,1.0,North East
+2011,15 to 44,Non-UK born,56.0,North East
+2011,15 to 44,UK born,11.0,North East
+2011,15 to 44,All places of birth,67.0,North East
+2011,45 to 64,Non-UK born,10.0,North East
+2011,45 to 64,UK born,16.0,North East
+2011,45 to 64,All places of birth,26.0,North East
+2011,65 and older,Non-UK born,5.0,North East
+2011,65 and older,UK born,11.0,North East
+2011,65 and older,All places of birth,16.0,North East
+2012,0 to 14,Non-UK born,1.0,North East
+2012,0 to 14,UK born,6.0,North East
+2012,0 to 14,All places of birth,7.0,North East
+2012,15 to 44,Non-UK born,68.0,North East
+2012,15 to 44,UK born,16.0,North East
+2012,15 to 44,All places of birth,84.0,North East
+2012,45 to 64,Non-UK born,15.0,North East
+2012,45 to 64,UK born,14.0,North East
+2012,45 to 64,All places of birth,29.0,North East
+2012,65 and older,Non-UK born,11.0,North East
+2012,65 and older,UK born,22.0,North East
+2012,65 and older,All places of birth,33.0,North East
+2013,0 to 14,Non-UK born,1.0,North East
+2013,0 to 14,UK born,3.0,North East
+2013,0 to 14,All places of birth,4.0,North East
+2013,15 to 44,Non-UK born,58.0,North East
+2013,15 to 44,UK born,12.0,North East
+2013,15 to 44,All places of birth,70.0,North East
+2013,45 to 64,Non-UK born,11.0,North East
+2013,45 to 64,UK born,16.0,North East
+2013,45 to 64,All places of birth,27.0,North East
+2013,65 and older,Non-UK born,5.0,North East
+2013,65 and older,UK born,17.0,North East
+2013,65 and older,All places of birth,22.0,North East
+2014,0 to 14,Non-UK born,1.0,North East
+2014,0 to 14,UK born,10.0,North East
+2014,0 to 14,All places of birth,11.0,North East
+2014,15 to 44,Non-UK born,53.0,North East
+2014,15 to 44,UK born,22.0,North East
+2014,15 to 44,All places of birth,75.0,North East
+2014,45 to 64,Non-UK born,11.0,North East
+2014,45 to 64,UK born,20.0,North East
+2014,45 to 64,All places of birth,31.0,North East
+2014,65 and older,Non-UK born,10.0,North East
+2014,65 and older,UK born,28.0,North East
+2014,65 and older,All places of birth,38.0,North East
+2015,0 to 14,Non-UK born,1.0,North East
+2015,0 to 14,UK born,5.0,North East
+2015,0 to 14,All places of birth,6.0,North East
+2015,15 to 44,Non-UK born,49.0,North East
+2015,15 to 44,UK born,15.0,North East
+2015,15 to 44,All places of birth,64.0,North East
+2015,45 to 64,Non-UK born,16.0,North East
+2015,45 to 64,UK born,15.0,North East
+2015,45 to 64,All places of birth,31.0,North East
+2015,65 and older,Non-UK born,6.0,North East
+2015,65 and older,UK born,20.0,North East
+2015,65 and older,All places of birth,26.0,North East
+2016,0 to 14,Non-UK born,2.0,North East
+2016,0 to 14,UK born,4.0,North East
+2016,0 to 14,All places of birth,6.0,North East
+2016,15 to 44,Non-UK born,51.0,North East
+2016,15 to 44,UK born,13.0,North East
+2016,15 to 44,All places of birth,64.0,North East
+2016,45 to 64,Non-UK born,13.0,North East
+2016,45 to 64,UK born,16.0,North East
+2016,45 to 64,All places of birth,29.0,North East
+2016,65 and older,Non-UK born,5.0,North East
+2016,65 and older,UK born,17.0,North East
+2016,65 and older,All places of birth,22.0,North East
+2017,0 to 14,Non-UK born,3.0,North East
+2017,0 to 14,UK born,4.0,North East
+2017,0 to 14,All places of birth,7.0,North East
+2017,15 to 44,Non-UK born,50.0,North East
+2017,15 to 44,UK born,10.0,North East
+2017,15 to 44,All places of birth,60.0,North East
+2017,45 to 64,Non-UK born,3.0,North East
+2017,45 to 64,UK born,16.0,North East
+2017,45 to 64,All places of birth,19.0,North East
+2017,65 and older,Non-UK born,8.0,North East
+2017,65 and older,UK born,14.0,North East
+2017,65 and older,All places of birth,22.0,North East
+2018,0 to 14,Non-UK born,1.0,North East
+2018,0 to 14,UK born,3.0,North East
+2018,0 to 14,All places of birth,4.0,North East
+2018,15 to 44,Non-UK born,45.0,North East
+2018,15 to 44,UK born,16.0,North East
+2018,15 to 44,All places of birth,61.0,North East
+2018,45 to 64,Non-UK born,14.0,North East
+2018,45 to 64,UK born,11.0,North East
+2018,45 to 64,All places of birth,25.0,North East
+2018,65 and older,Non-UK born,6.0,North East
+2018,65 and older,UK born,23.0,North East
+2018,65 and older,All places of birth,29.0,North East
+2019,0 to 14,Non-UK born,0.0,North East
+2019,0 to 14,UK born,1.0,North East
+2019,0 to 14,All places of birth,1.0,North East
+2019,15 to 44,Non-UK born,36.0,North East
+2019,15 to 44,UK born,8.0,North East
+2019,15 to 44,All places of birth,44.0,North East
+2019,45 to 64,Non-UK born,11.0,North East
+2019,45 to 64,UK born,7.0,North East
+2019,45 to 64,All places of birth,18.0,North East
+2019,65 and older,Non-UK born,5.0,North East
+2019,65 and older,UK born,8.0,North East
+2019,65 and older,All places of birth,13.0,North East
+2020,0 to 14,Non-UK born,2.0,North East
+2020,0 to 14,UK born,4.0,North East
+2020,0 to 14,All places of birth,6.0,North East
+2020,15 to 44,Non-UK born,26.0,North East
+2020,15 to 44,UK born,13.0,North East
+2020,15 to 44,All places of birth,39.0,North East
+2020,45 to 64,Non-UK born,8.0,North East
+2020,45 to 64,UK born,9.0,North East
+2020,45 to 64,All places of birth,17.0,North East
+2020,65 and older,Non-UK born,5.0,North East
+2020,65 and older,UK born,17.0,North East
+2020,65 and older,All places of birth,22.0,North East
+2021,0 to 14,Non-UK born,3.0,North East
+2021,0 to 14,UK born,3.0,North East
+2021,0 to 14,All places of birth,6.0,North East
+2021,15 to 44,Non-UK born,45.0,North East
+2021,15 to 44,UK born,3.0,North East
+2021,15 to 44,All places of birth,48.0,North East
+2021,45 to 64,Non-UK born,8.0,North East
+2021,45 to 64,UK born,6.0,North East
+2021,45 to 64,All places of birth,14.0,North East
+2021,65 and older,Non-UK born,1.0,North East
+2021,65 and older,UK born,11.0,North East
+2021,65 and older,All places of birth,12.0,North East
+2022,0 to 14,Non-UK born,1.0,North East
+2022,0 to 14,UK born,0.0,North East
+2022,0 to 14,All places of birth,1.0,North East
+2022,15 to 44,Non-UK born,40.0,North East
+2022,15 to 44,UK born,4.0,North East
+2022,15 to 44,All places of birth,44.0,North East
+2022,45 to 64,Non-UK born,11.0,North East
+2022,45 to 64,UK born,7.0,North East
+2022,45 to 64,All places of birth,18.0,North East
+2022,65 and older,Non-UK born,6.0,North East
+2022,65 and older,UK born,5.0,North East
+2022,65 and older,All places of birth,11.0,North East
+2023,0 to 14,Non-UK born,1.0,North East
+2023,0 to 14,UK born,1.0,North East
+2023,0 to 14,All places of birth,2.0,North East
+2023,15 to 44,Non-UK born,63.0,North East
+2023,15 to 44,UK born,4.0,North East
+2023,15 to 44,All places of birth,67.0,North East
+2023,45 to 64,Non-UK born,16.0,North East
+2023,45 to 64,UK born,10.0,North East
+2023,45 to 64,All places of birth,26.0,North East
+2023,65 and older,Non-UK born,4.0,North East
+2023,65 and older,UK born,12.0,North East
+2023,65 and older,All places of birth,16.0,North East
+2024,0 to 14,Non-UK born,5.0,North East
+2024,0 to 14,UK born,7.0,North East
+2024,0 to 14,All places of birth,12.0,North East
+2024,15 to 44,Non-UK born,71.0,North East
+2024,15 to 44,UK born,9.0,North East
+2024,15 to 44,All places of birth,80.0,North East
+2024,45 to 64,Non-UK born,15.0,North East
+2024,45 to 64,UK born,6.0,North East
+2024,45 to 64,All places of birth,21.0,North East
+2024,65 and older,Non-UK born,2.0,North East
+2024,65 and older,UK born,8.0,North East
+2024,65 and older,All places of birth,10.0,North East
+2001,0 to 14,Non-UK born,6.0,North West
+2001,0 to 14,UK born,20.0,North West
+2001,0 to 14,All places of birth,26.0,North West
+2001,15 to 44,Non-UK born,195.0,North West
+2001,15 to 44,UK born,129.0,North West
+2001,15 to 44,All places of birth,324.0,North West
+2001,45 to 64,Non-UK born,77.0,North West
+2001,45 to 64,UK born,61.0,North West
+2001,45 to 64,All places of birth,138.0,North West
+2001,65 and older,Non-UK born,49.0,North West
+2001,65 and older,UK born,88.0,North West
+2001,65 and older,All places of birth,137.0,North West
+2002,0 to 14,Non-UK born,12.0,North West
+2002,0 to 14,UK born,19.0,North West
+2002,0 to 14,All places of birth,31.0,North West
+2002,15 to 44,Non-UK born,245.0,North West
+2002,15 to 44,UK born,101.0,North West
+2002,15 to 44,All places of birth,346.0,North West
+2002,45 to 64,Non-UK born,55.0,North West
+2002,45 to 64,UK born,73.0,North West
+2002,45 to 64,All places of birth,128.0,North West
+2002,65 and older,Non-UK born,40.0,North West
+2002,65 and older,UK born,65.0,North West
+2002,65 and older,All places of birth,105.0,North West
+2003,0 to 14,Non-UK born,1.0,North West
+2003,0 to 14,UK born,18.0,North West
+2003,0 to 14,All places of birth,19.0,North West
+2003,15 to 44,Non-UK born,225.0,North West
+2003,15 to 44,UK born,79.0,North West
+2003,15 to 44,All places of birth,304.0,North West
+2003,45 to 64,Non-UK born,67.0,North West
+2003,45 to 64,UK born,65.0,North West
+2003,45 to 64,All places of birth,132.0,North West
+2003,65 and older,Non-UK born,37.0,North West
+2003,65 and older,UK born,73.0,North West
+2003,65 and older,All places of birth,110.0,North West
+2004,0 to 14,Non-UK born,8.0,North West
+2004,0 to 14,UK born,15.0,North West
+2004,0 to 14,All places of birth,23.0,North West
+2004,15 to 44,Non-UK born,228.0,North West
+2004,15 to 44,UK born,79.0,North West
+2004,15 to 44,All places of birth,307.0,North West
+2004,45 to 64,Non-UK born,80.0,North West
+2004,45 to 64,UK born,54.0,North West
+2004,45 to 64,All places of birth,134.0,North West
+2004,65 and older,Non-UK born,42.0,North West
+2004,65 and older,UK born,50.0,North West
+2004,65 and older,All places of birth,92.0,North West
+2005,0 to 14,Non-UK born,14.0,North West
+2005,0 to 14,UK born,22.0,North West
+2005,0 to 14,All places of birth,36.0,North West
+2005,15 to 44,Non-UK born,318.0,North West
+2005,15 to 44,UK born,114.0,North West
+2005,15 to 44,All places of birth,432.0,North West
+2005,45 to 64,Non-UK born,77.0,North West
+2005,45 to 64,UK born,58.0,North West
+2005,45 to 64,All places of birth,135.0,North West
+2005,65 and older,Non-UK born,59.0,North West
+2005,65 and older,UK born,49.0,North West
+2005,65 and older,All places of birth,108.0,North West
+2006,0 to 14,Non-UK born,9.0,North West
+2006,0 to 14,UK born,24.0,North West
+2006,0 to 14,All places of birth,33.0,North West
+2006,15 to 44,Non-UK born,278.0,North West
+2006,15 to 44,UK born,115.0,North West
+2006,15 to 44,All places of birth,393.0,North West
+2006,45 to 64,Non-UK born,90.0,North West
+2006,45 to 64,UK born,44.0,North West
+2006,45 to 64,All places of birth,134.0,North West
+2006,65 and older,Non-UK born,50.0,North West
+2006,65 and older,UK born,47.0,North West
+2006,65 and older,All places of birth,97.0,North West
+2007,0 to 14,Non-UK born,18.0,North West
+2007,0 to 14,UK born,29.0,North West
+2007,0 to 14,All places of birth,47.0,North West
+2007,15 to 44,Non-UK born,301.0,North West
+2007,15 to 44,UK born,122.0,North West
+2007,15 to 44,All places of birth,423.0,North West
+2007,45 to 64,Non-UK born,93.0,North West
+2007,45 to 64,UK born,61.0,North West
+2007,45 to 64,All places of birth,154.0,North West
+2007,65 and older,Non-UK born,46.0,North West
+2007,65 and older,UK born,40.0,North West
+2007,65 and older,All places of birth,86.0,North West
+2008,0 to 14,Non-UK born,17.0,North West
+2008,0 to 14,UK born,33.0,North West
+2008,0 to 14,All places of birth,50.0,North West
+2008,15 to 44,Non-UK born,325.0,North West
+2008,15 to 44,UK born,106.0,North West
+2008,15 to 44,All places of birth,431.0,North West
+2008,45 to 64,Non-UK born,92.0,North West
+2008,45 to 64,UK born,51.0,North West
+2008,45 to 64,All places of birth,143.0,North West
+2008,65 and older,Non-UK born,40.0,North West
+2008,65 and older,UK born,41.0,North West
+2008,65 and older,All places of birth,81.0,North West
+2009,0 to 14,Non-UK born,15.0,North West
+2009,0 to 14,UK born,34.0,North West
+2009,0 to 14,All places of birth,49.0,North West
+2009,15 to 44,Non-UK born,317.0,North West
+2009,15 to 44,UK born,104.0,North West
+2009,15 to 44,All places of birth,421.0,North West
+2009,45 to 64,Non-UK born,112.0,North West
+2009,45 to 64,UK born,69.0,North West
+2009,45 to 64,All places of birth,181.0,North West
+2009,65 and older,Non-UK born,50.0,North West
+2009,65 and older,UK born,48.0,North West
+2009,65 and older,All places of birth,98.0,North West
+2010,0 to 14,Non-UK born,10.0,North West
+2010,0 to 14,UK born,42.0,North West
+2010,0 to 14,All places of birth,52.0,North West
+2010,15 to 44,Non-UK born,334.0,North West
+2010,15 to 44,UK born,112.0,North West
+2010,15 to 44,All places of birth,446.0,North West
+2010,45 to 64,Non-UK born,92.0,North West
+2010,45 to 64,UK born,58.0,North West
+2010,45 to 64,All places of birth,150.0,North West
+2010,65 and older,Non-UK born,55.0,North West
+2010,65 and older,UK born,58.0,North West
+2010,65 and older,All places of birth,113.0,North West
+2011,0 to 14,Non-UK born,18.0,North West
+2011,0 to 14,UK born,39.0,North West
+2011,0 to 14,All places of birth,57.0,North West
+2011,15 to 44,Non-UK born,336.0,North West
+2011,15 to 44,UK born,105.0,North West
+2011,15 to 44,All places of birth,441.0,North West
+2011,45 to 64,Non-UK born,103.0,North West
+2011,45 to 64,UK born,62.0,North West
+2011,45 to 64,All places of birth,165.0,North West
+2011,65 and older,Non-UK born,64.0,North West
+2011,65 and older,UK born,53.0,North West
+2011,65 and older,All places of birth,117.0,North West
+2012,0 to 14,Non-UK born,22.0,North West
+2012,0 to 14,UK born,26.0,North West
+2012,0 to 14,All places of birth,48.0,North West
+2012,15 to 44,Non-UK born,305.0,North West
+2012,15 to 44,UK born,109.0,North West
+2012,15 to 44,All places of birth,414.0,North West
+2012,45 to 64,Non-UK born,99.0,North West
+2012,45 to 64,UK born,62.0,North West
+2012,45 to 64,All places of birth,161.0,North West
+2012,65 and older,Non-UK born,68.0,North West
+2012,65 and older,UK born,65.0,North West
+2012,65 and older,All places of birth,133.0,North West
+2013,0 to 14,Non-UK born,8.0,North West
+2013,0 to 14,UK born,19.0,North West
+2013,0 to 14,All places of birth,27.0,North West
+2013,15 to 44,Non-UK born,277.0,North West
+2013,15 to 44,UK born,114.0,North West
+2013,15 to 44,All places of birth,391.0,North West
+2013,45 to 64,Non-UK born,109.0,North West
+2013,45 to 64,UK born,57.0,North West
+2013,45 to 64,All places of birth,166.0,North West
+2013,65 and older,Non-UK born,53.0,North West
+2013,65 and older,UK born,65.0,North West
+2013,65 and older,All places of birth,118.0,North West
+2014,0 to 14,Non-UK born,9.0,North West
+2014,0 to 14,UK born,21.0,North West
+2014,0 to 14,All places of birth,30.0,North West
+2014,15 to 44,Non-UK born,243.0,North West
+2014,15 to 44,UK born,81.0,North West
+2014,15 to 44,All places of birth,324.0,North West
+2014,45 to 64,Non-UK born,94.0,North West
+2014,45 to 64,UK born,73.0,North West
+2014,45 to 64,All places of birth,167.0,North West
+2014,65 and older,Non-UK born,59.0,North West
+2014,65 and older,UK born,51.0,North West
+2014,65 and older,All places of birth,110.0,North West
+2015,0 to 14,Non-UK born,7.0,North West
+2015,0 to 14,UK born,16.0,North West
+2015,0 to 14,All places of birth,23.0,North West
+2015,15 to 44,Non-UK born,242.0,North West
+2015,15 to 44,UK born,84.0,North West
+2015,15 to 44,All places of birth,326.0,North West
+2015,45 to 64,Non-UK born,86.0,North West
+2015,45 to 64,UK born,49.0,North West
+2015,45 to 64,All places of birth,135.0,North West
+2015,65 and older,Non-UK born,33.0,North West
+2015,65 and older,UK born,36.0,North West
+2015,65 and older,All places of birth,69.0,North West
+2016,0 to 14,Non-UK born,10.0,North West
+2016,0 to 14,UK born,25.0,North West
+2016,0 to 14,All places of birth,35.0,North West
+2016,15 to 44,Non-UK born,224.0,North West
+2016,15 to 44,UK born,75.0,North West
+2016,15 to 44,All places of birth,299.0,North West
+2016,45 to 64,Non-UK born,93.0,North West
+2016,45 to 64,UK born,67.0,North West
+2016,45 to 64,All places of birth,160.0,North West
+2016,65 and older,Non-UK born,42.0,North West
+2016,65 and older,UK born,42.0,North West
+2016,65 and older,All places of birth,84.0,North West
+2017,0 to 14,Non-UK born,8.0,North West
+2017,0 to 14,UK born,21.0,North West
+2017,0 to 14,All places of birth,29.0,North West
+2017,15 to 44,Non-UK born,196.0,North West
+2017,15 to 44,UK born,70.0,North West
+2017,15 to 44,All places of birth,266.0,North West
+2017,45 to 64,Non-UK born,105.0,North West
+2017,45 to 64,UK born,51.0,North West
+2017,45 to 64,All places of birth,156.0,North West
+2017,65 and older,Non-UK born,31.0,North West
+2017,65 and older,UK born,33.0,North West
+2017,65 and older,All places of birth,64.0,North West
+2018,0 to 14,Non-UK born,6.0,North West
+2018,0 to 14,UK born,14.0,North West
+2018,0 to 14,All places of birth,20.0,North West
+2018,15 to 44,Non-UK born,173.0,North West
+2018,15 to 44,UK born,60.0,North West
+2018,15 to 44,All places of birth,233.0,North West
+2018,45 to 64,Non-UK born,81.0,North West
+2018,45 to 64,UK born,49.0,North West
+2018,45 to 64,All places of birth,130.0,North West
+2018,65 and older,Non-UK born,33.0,North West
+2018,65 and older,UK born,38.0,North West
+2018,65 and older,All places of birth,71.0,North West
+2019,0 to 14,Non-UK born,9.0,North West
+2019,0 to 14,UK born,18.0,North West
+2019,0 to 14,All places of birth,27.0,North West
+2019,15 to 44,Non-UK born,227.0,North West
+2019,15 to 44,UK born,58.0,North West
+2019,15 to 44,All places of birth,285.0,North West
+2019,45 to 64,Non-UK born,91.0,North West
+2019,45 to 64,UK born,51.0,North West
+2019,45 to 64,All places of birth,142.0,North West
+2019,65 and older,Non-UK born,44.0,North West
+2019,65 and older,UK born,17.0,North West
+2019,65 and older,All places of birth,61.0,North West
+2020,0 to 14,Non-UK born,9.0,North West
+2020,0 to 14,UK born,14.0,North West
+2020,0 to 14,All places of birth,23.0,North West
+2020,15 to 44,Non-UK born,182.0,North West
+2020,15 to 44,UK born,63.0,North West
+2020,15 to 44,All places of birth,245.0,North West
+2020,45 to 64,Non-UK born,83.0,North West
+2020,45 to 64,UK born,32.0,North West
+2020,45 to 64,All places of birth,115.0,North West
+2020,65 and older,Non-UK born,44.0,North West
+2020,65 and older,UK born,24.0,North West
+2020,65 and older,All places of birth,68.0,North West
+2021,0 to 14,Non-UK born,9.0,North West
+2021,0 to 14,UK born,10.0,North West
+2021,0 to 14,All places of birth,19.0,North West
+2021,15 to 44,Non-UK born,202.0,North West
+2021,15 to 44,UK born,46.0,North West
+2021,15 to 44,All places of birth,248.0,North West
+2021,45 to 64,Non-UK born,91.0,North West
+2021,45 to 64,UK born,47.0,North West
+2021,45 to 64,All places of birth,138.0,North West
+2021,65 and older,Non-UK born,43.0,North West
+2021,65 and older,UK born,24.0,North West
+2021,65 and older,All places of birth,67.0,North West
+2022,0 to 14,Non-UK born,6.0,North West
+2022,0 to 14,UK born,27.0,North West
+2022,0 to 14,All places of birth,33.0,North West
+2022,15 to 44,Non-UK born,208.0,North West
+2022,15 to 44,UK born,49.0,North West
+2022,15 to 44,All places of birth,257.0,North West
+2022,45 to 64,Non-UK born,115.0,North West
+2022,45 to 64,UK born,30.0,North West
+2022,45 to 64,All places of birth,145.0,North West
+2022,65 and older,Non-UK born,48.0,North West
+2022,65 and older,UK born,10.0,North West
+2022,65 and older,All places of birth,58.0,North West
+2023,0 to 14,Non-UK born,12.0,North West
+2023,0 to 14,UK born,10.0,North West
+2023,0 to 14,All places of birth,22.0,North West
+2023,15 to 44,Non-UK born,281.0,North West
+2023,15 to 44,UK born,48.0,North West
+2023,15 to 44,All places of birth,329.0,North West
+2023,45 to 64,Non-UK born,107.0,North West
+2023,45 to 64,UK born,45.0,North West
+2023,45 to 64,All places of birth,152.0,North West
+2023,65 and older,Non-UK born,45.0,North West
+2023,65 and older,UK born,37.0,North West
+2023,65 and older,All places of birth,82.0,North West
+2024,0 to 14,Non-UK born,16.0,North West
+2024,0 to 14,UK born,17.0,North West
+2024,0 to 14,All places of birth,33.0,North West
+2024,15 to 44,Non-UK born,329.0,North West
+2024,15 to 44,UK born,46.0,North West
+2024,15 to 44,All places of birth,375.0,North West
+2024,45 to 64,Non-UK born,128.0,North West
+2024,45 to 64,UK born,39.0,North West
+2024,45 to 64,All places of birth,167.0,North West
+2024,65 and older,Non-UK born,57.0,North West
+2024,65 and older,UK born,25.0,North West
+2024,65 and older,All places of birth,82.0,North West
+2001,0 to 14,Non-UK born,1.0,South East
+2001,0 to 14,UK born,10.0,South East
+2001,0 to 14,All places of birth,11.0,South East
+2001,15 to 44,Non-UK born,161.0,South East
+2001,15 to 44,UK born,60.0,South East
+2001,15 to 44,All places of birth,221.0,South East
+2001,45 to 64,Non-UK born,44.0,South East
+2001,45 to 64,UK born,32.0,South East
+2001,45 to 64,All places of birth,76.0,South East
+2001,65 and older,Non-UK born,21.0,South East
+2001,65 and older,UK born,49.0,South East
+2001,65 and older,All places of birth,70.0,South East
+2002,0 to 14,Non-UK born,8.0,South East
+2002,0 to 14,UK born,17.0,South East
+2002,0 to 14,All places of birth,25.0,South East
+2002,15 to 44,Non-UK born,202.0,South East
+2002,15 to 44,UK born,41.0,South East
+2002,15 to 44,All places of birth,243.0,South East
+2002,45 to 64,Non-UK born,40.0,South East
+2002,45 to 64,UK born,34.0,South East
+2002,45 to 64,All places of birth,74.0,South East
+2002,65 and older,Non-UK born,40.0,South East
+2002,65 and older,UK born,51.0,South East
+2002,65 and older,All places of birth,91.0,South East
+2003,0 to 14,Non-UK born,6.0,South East
+2003,0 to 14,UK born,10.0,South East
+2003,0 to 14,All places of birth,16.0,South East
+2003,15 to 44,Non-UK born,280.0,South East
+2003,15 to 44,UK born,40.0,South East
+2003,15 to 44,All places of birth,320.0,South East
+2003,45 to 64,Non-UK born,51.0,South East
+2003,45 to 64,UK born,22.0,South East
+2003,45 to 64,All places of birth,73.0,South East
+2003,65 and older,Non-UK born,25.0,South East
+2003,65 and older,UK born,45.0,South East
+2003,65 and older,All places of birth,70.0,South East
+2004,0 to 14,Non-UK born,9.0,South East
+2004,0 to 14,UK born,20.0,South East
+2004,0 to 14,All places of birth,29.0,South East
+2004,15 to 44,Non-UK born,250.0,South East
+2004,15 to 44,UK born,57.0,South East
+2004,15 to 44,All places of birth,307.0,South East
+2004,45 to 64,Non-UK born,53.0,South East
+2004,45 to 64,UK born,37.0,South East
+2004,45 to 64,All places of birth,90.0,South East
+2004,65 and older,Non-UK born,30.0,South East
+2004,65 and older,UK born,49.0,South East
+2004,65 and older,All places of birth,79.0,South East
+2005,0 to 14,Non-UK born,8.0,South East
+2005,0 to 14,UK born,8.0,South East
+2005,0 to 14,All places of birth,16.0,South East
+2005,15 to 44,Non-UK born,311.0,South East
+2005,15 to 44,UK born,45.0,South East
+2005,15 to 44,All places of birth,356.0,South East
+2005,45 to 64,Non-UK born,56.0,South East
+2005,45 to 64,UK born,24.0,South East
+2005,45 to 64,All places of birth,80.0,South East
+2005,65 and older,Non-UK born,40.0,South East
+2005,65 and older,UK born,52.0,South East
+2005,65 and older,All places of birth,92.0,South East
+2006,0 to 14,Non-UK born,7.0,South East
+2006,0 to 14,UK born,4.0,South East
+2006,0 to 14,All places of birth,11.0,South East
+2006,15 to 44,Non-UK born,294.0,South East
+2006,15 to 44,UK born,51.0,South East
+2006,15 to 44,All places of birth,345.0,South East
+2006,45 to 64,Non-UK born,73.0,South East
+2006,45 to 64,UK born,31.0,South East
+2006,45 to 64,All places of birth,104.0,South East
+2006,65 and older,Non-UK born,37.0,South East
+2006,65 and older,UK born,47.0,South East
+2006,65 and older,All places of birth,84.0,South East
+2007,0 to 14,Non-UK born,10.0,South East
+2007,0 to 14,UK born,18.0,South East
+2007,0 to 14,All places of birth,28.0,South East
+2007,15 to 44,Non-UK born,293.0,South East
+2007,15 to 44,UK born,66.0,South East
+2007,15 to 44,All places of birth,359.0,South East
+2007,45 to 64,Non-UK born,67.0,South East
+2007,45 to 64,UK born,33.0,South East
+2007,45 to 64,All places of birth,100.0,South East
+2007,65 and older,Non-UK born,44.0,South East
+2007,65 and older,UK born,48.0,South East
+2007,65 and older,All places of birth,92.0,South East
+2008,0 to 14,Non-UK born,7.0,South East
+2008,0 to 14,UK born,13.0,South East
+2008,0 to 14,All places of birth,20.0,South East
+2008,15 to 44,Non-UK born,328.0,South East
+2008,15 to 44,UK born,43.0,South East
+2008,15 to 44,All places of birth,371.0,South East
+2008,45 to 64,Non-UK born,72.0,South East
+2008,45 to 64,UK born,39.0,South East
+2008,45 to 64,All places of birth,111.0,South East
+2008,65 and older,Non-UK born,34.0,South East
+2008,65 and older,UK born,43.0,South East
+2008,65 and older,All places of birth,77.0,South East
+2009,0 to 14,Non-UK born,6.0,South East
+2009,0 to 14,UK born,16.0,South East
+2009,0 to 14,All places of birth,22.0,South East
+2009,15 to 44,Non-UK born,343.0,South East
+2009,15 to 44,UK born,67.0,South East
+2009,15 to 44,All places of birth,410.0,South East
+2009,45 to 64,Non-UK born,83.0,South East
+2009,45 to 64,UK born,44.0,South East
+2009,45 to 64,All places of birth,127.0,South East
+2009,65 and older,Non-UK born,42.0,South East
+2009,65 and older,UK born,53.0,South East
+2009,65 and older,All places of birth,95.0,South East
+2010,0 to 14,Non-UK born,10.0,South East
+2010,0 to 14,UK born,14.0,South East
+2010,0 to 14,All places of birth,24.0,South East
+2010,15 to 44,Non-UK born,361.0,South East
+2010,15 to 44,UK born,50.0,South East
+2010,15 to 44,All places of birth,411.0,South East
+2010,45 to 64,Non-UK born,85.0,South East
+2010,45 to 64,UK born,36.0,South East
+2010,45 to 64,All places of birth,121.0,South East
+2010,65 and older,Non-UK born,42.0,South East
+2010,65 and older,UK born,48.0,South East
+2010,65 and older,All places of birth,90.0,South East
+2011,0 to 14,Non-UK born,14.0,South East
+2011,0 to 14,UK born,20.0,South East
+2011,0 to 14,All places of birth,34.0,South East
+2011,15 to 44,Non-UK born,397.0,South East
+2011,15 to 44,UK born,77.0,South East
+2011,15 to 44,All places of birth,474.0,South East
+2011,45 to 64,Non-UK born,99.0,South East
+2011,45 to 64,UK born,58.0,South East
+2011,45 to 64,All places of birth,157.0,South East
+2011,65 and older,Non-UK born,67.0,South East
+2011,65 and older,UK born,49.0,South East
+2011,65 and older,All places of birth,116.0,South East
+2012,0 to 14,Non-UK born,8.0,South East
+2012,0 to 14,UK born,24.0,South East
+2012,0 to 14,All places of birth,32.0,South East
+2012,15 to 44,Non-UK born,365.0,South East
+2012,15 to 44,UK born,88.0,South East
+2012,15 to 44,All places of birth,453.0,South East
+2012,45 to 64,Non-UK born,102.0,South East
+2012,45 to 64,UK born,58.0,South East
+2012,45 to 64,All places of birth,160.0,South East
+2012,65 and older,Non-UK born,56.0,South East
+2012,65 and older,UK born,60.0,South East
+2012,65 and older,All places of birth,116.0,South East
+2013,0 to 14,Non-UK born,4.0,South East
+2013,0 to 14,UK born,16.0,South East
+2013,0 to 14,All places of birth,20.0,South East
+2013,15 to 44,Non-UK born,354.0,South East
+2013,15 to 44,UK born,57.0,South East
+2013,15 to 44,All places of birth,411.0,South East
+2013,45 to 64,Non-UK born,90.0,South East
+2013,45 to 64,UK born,43.0,South East
+2013,45 to 64,All places of birth,133.0,South East
+2013,65 and older,Non-UK born,58.0,South East
+2013,65 and older,UK born,56.0,South East
+2013,65 and older,All places of birth,114.0,South East
+2014,0 to 14,Non-UK born,8.0,South East
+2014,0 to 14,UK born,14.0,South East
+2014,0 to 14,All places of birth,22.0,South East
+2014,15 to 44,Non-UK born,322.0,South East
+2014,15 to 44,UK born,60.0,South East
+2014,15 to 44,All places of birth,382.0,South East
+2014,45 to 64,Non-UK born,111.0,South East
+2014,45 to 64,UK born,37.0,South East
+2014,45 to 64,All places of birth,148.0,South East
+2014,65 and older,Non-UK born,51.0,South East
+2014,65 and older,UK born,49.0,South East
+2014,65 and older,All places of birth,100.0,South East
+2015,0 to 14,Non-UK born,7.0,South East
+2015,0 to 14,UK born,5.0,South East
+2015,0 to 14,All places of birth,12.0,South East
+2015,15 to 44,Non-UK born,258.0,South East
+2015,15 to 44,UK born,61.0,South East
+2015,15 to 44,All places of birth,319.0,South East
+2015,45 to 64,Non-UK born,87.0,South East
+2015,45 to 64,UK born,43.0,South East
+2015,45 to 64,All places of birth,130.0,South East
+2015,65 and older,Non-UK born,53.0,South East
+2015,65 and older,UK born,58.0,South East
+2015,65 and older,All places of birth,111.0,South East
+2016,0 to 14,Non-UK born,1.0,South East
+2016,0 to 14,UK born,14.0,South East
+2016,0 to 14,All places of birth,15.0,South East
+2016,15 to 44,Non-UK born,253.0,South East
+2016,15 to 44,UK born,48.0,South East
+2016,15 to 44,All places of birth,301.0,South East
+2016,45 to 64,Non-UK born,104.0,South East
+2016,45 to 64,UK born,38.0,South East
+2016,45 to 64,All places of birth,142.0,South East
+2016,65 and older,Non-UK born,61.0,South East
+2016,65 and older,UK born,32.0,South East
+2016,65 and older,All places of birth,93.0,South East
+2017,0 to 14,Non-UK born,4.0,South East
+2017,0 to 14,UK born,11.0,South East
+2017,0 to 14,All places of birth,15.0,South East
+2017,15 to 44,Non-UK born,234.0,South East
+2017,15 to 44,UK born,68.0,South East
+2017,15 to 44,All places of birth,302.0,South East
+2017,45 to 64,Non-UK born,85.0,South East
+2017,45 to 64,UK born,34.0,South East
+2017,45 to 64,All places of birth,119.0,South East
+2017,65 and older,Non-UK born,55.0,South East
+2017,65 and older,UK born,39.0,South East
+2017,65 and older,All places of birth,94.0,South East
+2018,0 to 14,Non-UK born,4.0,South East
+2018,0 to 14,UK born,12.0,South East
+2018,0 to 14,All places of birth,16.0,South East
+2018,15 to 44,Non-UK born,193.0,South East
+2018,15 to 44,UK born,62.0,South East
+2018,15 to 44,All places of birth,255.0,South East
+2018,45 to 64,Non-UK born,86.0,South East
+2018,45 to 64,UK born,39.0,South East
+2018,45 to 64,All places of birth,125.0,South East
+2018,65 and older,Non-UK born,47.0,South East
+2018,65 and older,UK born,49.0,South East
+2018,65 and older,All places of birth,96.0,South East
+2019,0 to 14,Non-UK born,1.0,South East
+2019,0 to 14,UK born,7.0,South East
+2019,0 to 14,All places of birth,8.0,South East
+2019,15 to 44,Non-UK born,200.0,South East
+2019,15 to 44,UK born,52.0,South East
+2019,15 to 44,All places of birth,252.0,South East
+2019,45 to 64,Non-UK born,104.0,South East
+2019,45 to 64,UK born,50.0,South East
+2019,45 to 64,All places of birth,154.0,South East
+2019,65 and older,Non-UK born,51.0,South East
+2019,65 and older,UK born,32.0,South East
+2019,65 and older,All places of birth,83.0,South East
+2020,0 to 14,Non-UK born,3.0,South East
+2020,0 to 14,UK born,9.0,South East
+2020,0 to 14,All places of birth,12.0,South East
+2020,15 to 44,Non-UK born,201.0,South East
+2020,15 to 44,UK born,40.0,South East
+2020,15 to 44,All places of birth,241.0,South East
+2020,45 to 64,Non-UK born,75.0,South East
+2020,45 to 64,UK born,31.0,South East
+2020,45 to 64,All places of birth,106.0,South East
+2020,65 and older,Non-UK born,42.0,South East
+2020,65 and older,UK born,39.0,South East
+2020,65 and older,All places of birth,81.0,South East
+2021,0 to 14,Non-UK born,5.0,South East
+2021,0 to 14,UK born,3.0,South East
+2021,0 to 14,All places of birth,8.0,South East
+2021,15 to 44,Non-UK born,252.0,South East
+2021,15 to 44,UK born,42.0,South East
+2021,15 to 44,All places of birth,294.0,South East
+2021,45 to 64,Non-UK born,90.0,South East
+2021,45 to 64,UK born,33.0,South East
+2021,45 to 64,All places of birth,123.0,South East
+2021,65 and older,Non-UK born,56.0,South East
+2021,65 and older,UK born,23.0,South East
+2021,65 and older,All places of birth,79.0,South East
+2022,0 to 14,Non-UK born,6.0,South East
+2022,0 to 14,UK born,8.0,South East
+2022,0 to 14,All places of birth,14.0,South East
+2022,15 to 44,Non-UK born,241.0,South East
+2022,15 to 44,UK born,34.0,South East
+2022,15 to 44,All places of birth,275.0,South East
+2022,45 to 64,Non-UK born,100.0,South East
+2022,45 to 64,UK born,32.0,South East
+2022,45 to 64,All places of birth,132.0,South East
+2022,65 and older,Non-UK born,35.0,South East
+2022,65 and older,UK born,24.0,South East
+2022,65 and older,All places of birth,59.0,South East
+2023,0 to 14,Non-UK born,6.0,South East
+2023,0 to 14,UK born,8.0,South East
+2023,0 to 14,All places of birth,14.0,South East
+2023,15 to 44,Non-UK born,269.0,South East
+2023,15 to 44,UK born,44.0,South East
+2023,15 to 44,All places of birth,313.0,South East
+2023,45 to 64,Non-UK born,112.0,South East
+2023,45 to 64,UK born,36.0,South East
+2023,45 to 64,All places of birth,148.0,South East
+2023,65 and older,Non-UK born,40.0,South East
+2023,65 and older,UK born,17.0,South East
+2023,65 and older,All places of birth,57.0,South East
+2024,0 to 14,Non-UK born,2.0,South East
+2024,0 to 14,UK born,6.0,South East
+2024,0 to 14,All places of birth,8.0,South East
+2024,15 to 44,Non-UK born,322.0,South East
+2024,15 to 44,UK born,35.0,South East
+2024,15 to 44,All places of birth,357.0,South East
+2024,45 to 64,Non-UK born,115.0,South East
+2024,45 to 64,UK born,30.0,South East
+2024,45 to 64,All places of birth,145.0,South East
+2024,65 and older,Non-UK born,49.0,South East
+2024,65 and older,UK born,28.0,South East
+2024,65 and older,All places of birth,77.0,South East
+2001,0 to 14,Non-UK born,1.0,South West
+2001,0 to 14,UK born,3.0,South West
+2001,0 to 14,All places of birth,4.0,South West
+2001,15 to 44,Non-UK born,47.0,South West
+2001,15 to 44,UK born,28.0,South West
+2001,15 to 44,All places of birth,75.0,South West
+2001,45 to 64,Non-UK born,8.0,South West
+2001,45 to 64,UK born,31.0,South West
+2001,45 to 64,All places of birth,39.0,South West
+2001,65 and older,Non-UK born,5.0,South West
+2001,65 and older,UK born,61.0,South West
+2001,65 and older,All places of birth,66.0,South West
+2002,0 to 14,Non-UK born,3.0,South West
+2002,0 to 14,UK born,3.0,South West
+2002,0 to 14,All places of birth,6.0,South West
+2002,15 to 44,Non-UK born,62.0,South West
+2002,15 to 44,UK born,23.0,South West
+2002,15 to 44,All places of birth,85.0,South West
+2002,45 to 64,Non-UK born,13.0,South West
+2002,45 to 64,UK born,24.0,South West
+2002,45 to 64,All places of birth,37.0,South West
+2002,65 and older,Non-UK born,11.0,South West
+2002,65 and older,UK born,49.0,South West
+2002,65 and older,All places of birth,60.0,South West
+2003,0 to 14,Non-UK born,3.0,South West
+2003,0 to 14,UK born,0.0,South West
+2003,0 to 14,All places of birth,3.0,South West
+2003,15 to 44,Non-UK born,70.0,South West
+2003,15 to 44,UK born,20.0,South West
+2003,15 to 44,All places of birth,90.0,South West
+2003,45 to 64,Non-UK born,14.0,South West
+2003,45 to 64,UK born,36.0,South West
+2003,45 to 64,All places of birth,50.0,South West
+2003,65 and older,Non-UK born,5.0,South West
+2003,65 and older,UK born,31.0,South West
+2003,65 and older,All places of birth,36.0,South West
+2004,0 to 14,Non-UK born,2.0,South West
+2004,0 to 14,UK born,7.0,South West
+2004,0 to 14,All places of birth,9.0,South West
+2004,15 to 44,Non-UK born,99.0,South West
+2004,15 to 44,UK born,32.0,South West
+2004,15 to 44,All places of birth,131.0,South West
+2004,45 to 64,Non-UK born,21.0,South West
+2004,45 to 64,UK born,24.0,South West
+2004,45 to 64,All places of birth,45.0,South West
+2004,65 and older,Non-UK born,12.0,South West
+2004,65 and older,UK born,35.0,South West
+2004,65 and older,All places of birth,47.0,South West
+2005,0 to 14,Non-UK born,4.0,South West
+2005,0 to 14,UK born,3.0,South West
+2005,0 to 14,All places of birth,7.0,South West
+2005,15 to 44,Non-UK born,94.0,South West
+2005,15 to 44,UK born,31.0,South West
+2005,15 to 44,All places of birth,125.0,South West
+2005,45 to 64,Non-UK born,19.0,South West
+2005,45 to 64,UK born,37.0,South West
+2005,45 to 64,All places of birth,56.0,South West
+2005,65 and older,Non-UK born,7.0,South West
+2005,65 and older,UK born,52.0,South West
+2005,65 and older,All places of birth,59.0,South West
+2006,0 to 14,Non-UK born,3.0,South West
+2006,0 to 14,UK born,4.0,South West
+2006,0 to 14,All places of birth,7.0,South West
+2006,15 to 44,Non-UK born,123.0,South West
+2006,15 to 44,UK born,21.0,South West
+2006,15 to 44,All places of birth,144.0,South West
+2006,45 to 64,Non-UK born,24.0,South West
+2006,45 to 64,UK born,26.0,South West
+2006,45 to 64,All places of birth,50.0,South West
+2006,65 and older,Non-UK born,10.0,South West
+2006,65 and older,UK born,36.0,South West
+2006,65 and older,All places of birth,46.0,South West
+2007,0 to 14,Non-UK born,2.0,South West
+2007,0 to 14,UK born,6.0,South West
+2007,0 to 14,All places of birth,8.0,South West
+2007,15 to 44,Non-UK born,115.0,South West
+2007,15 to 44,UK born,30.0,South West
+2007,15 to 44,All places of birth,145.0,South West
+2007,45 to 64,Non-UK born,25.0,South West
+2007,45 to 64,UK born,24.0,South West
+2007,45 to 64,All places of birth,49.0,South West
+2007,65 and older,Non-UK born,8.0,South West
+2007,65 and older,UK born,37.0,South West
+2007,65 and older,All places of birth,45.0,South West
+2008,0 to 14,Non-UK born,4.0,South West
+2008,0 to 14,UK born,4.0,South West
+2008,0 to 14,All places of birth,8.0,South West
+2008,15 to 44,Non-UK born,106.0,South West
+2008,15 to 44,UK born,33.0,South West
+2008,15 to 44,All places of birth,139.0,South West
+2008,45 to 64,Non-UK born,21.0,South West
+2008,45 to 64,UK born,24.0,South West
+2008,45 to 64,All places of birth,45.0,South West
+2008,65 and older,Non-UK born,10.0,South West
+2008,65 and older,UK born,30.0,South West
+2008,65 and older,All places of birth,40.0,South West
+2009,0 to 14,Non-UK born,8.0,South West
+2009,0 to 14,UK born,8.0,South West
+2009,0 to 14,All places of birth,16.0,South West
+2009,15 to 44,Non-UK born,109.0,South West
+2009,15 to 44,UK born,30.0,South West
+2009,15 to 44,All places of birth,139.0,South West
+2009,45 to 64,Non-UK born,18.0,South West
+2009,45 to 64,UK born,32.0,South West
+2009,45 to 64,All places of birth,50.0,South West
+2009,65 and older,Non-UK born,11.0,South West
+2009,65 and older,UK born,29.0,South West
+2009,65 and older,All places of birth,40.0,South West
+2010,0 to 14,Non-UK born,3.0,South West
+2010,0 to 14,UK born,2.0,South West
+2010,0 to 14,All places of birth,5.0,South West
+2010,15 to 44,Non-UK born,88.0,South West
+2010,15 to 44,UK born,29.0,South West
+2010,15 to 44,All places of birth,117.0,South West
+2010,45 to 64,Non-UK born,26.0,South West
+2010,45 to 64,UK born,30.0,South West
+2010,45 to 64,All places of birth,56.0,South West
+2010,65 and older,Non-UK born,8.0,South West
+2010,65 and older,UK born,47.0,South West
+2010,65 and older,All places of birth,55.0,South West
+2011,0 to 14,Non-UK born,1.0,South West
+2011,0 to 14,UK born,6.0,South West
+2011,0 to 14,All places of birth,7.0,South West
+2011,15 to 44,Non-UK born,112.0,South West
+2011,15 to 44,UK born,44.0,South West
+2011,15 to 44,All places of birth,156.0,South West
+2011,45 to 64,Non-UK born,30.0,South West
+2011,45 to 64,UK born,29.0,South West
+2011,45 to 64,All places of birth,59.0,South West
+2011,65 and older,Non-UK born,7.0,South West
+2011,65 and older,UK born,48.0,South West
+2011,65 and older,All places of birth,55.0,South West
+2012,0 to 14,Non-UK born,2.0,South West
+2012,0 to 14,UK born,9.0,South West
+2012,0 to 14,All places of birth,11.0,South West
+2012,15 to 44,Non-UK born,129.0,South West
+2012,15 to 44,UK born,40.0,South West
+2012,15 to 44,All places of birth,169.0,South West
+2012,45 to 64,Non-UK born,27.0,South West
+2012,45 to 64,UK born,34.0,South West
+2012,45 to 64,All places of birth,61.0,South West
+2012,65 and older,Non-UK born,9.0,South West
+2012,65 and older,UK born,31.0,South West
+2012,65 and older,All places of birth,40.0,South West
+2013,0 to 14,Non-UK born,3.0,South West
+2013,0 to 14,UK born,8.0,South West
+2013,0 to 14,All places of birth,11.0,South West
+2013,15 to 44,Non-UK born,107.0,South West
+2013,15 to 44,UK born,42.0,South West
+2013,15 to 44,All places of birth,149.0,South West
+2013,45 to 64,Non-UK born,29.0,South West
+2013,45 to 64,UK born,45.0,South West
+2013,45 to 64,All places of birth,74.0,South West
+2013,65 and older,Non-UK born,17.0,South West
+2013,65 and older,UK born,56.0,South West
+2013,65 and older,All places of birth,73.0,South West
+2014,0 to 14,Non-UK born,8.0,South West
+2014,0 to 14,UK born,3.0,South West
+2014,0 to 14,All places of birth,11.0,South West
+2014,15 to 44,Non-UK born,118.0,South West
+2014,15 to 44,UK born,46.0,South West
+2014,15 to 44,All places of birth,164.0,South West
+2014,45 to 64,Non-UK born,34.0,South West
+2014,45 to 64,UK born,35.0,South West
+2014,45 to 64,All places of birth,69.0,South West
+2014,65 and older,Non-UK born,11.0,South West
+2014,65 and older,UK born,49.0,South West
+2014,65 and older,All places of birth,60.0,South West
+2015,0 to 14,Non-UK born,0.0,South West
+2015,0 to 14,UK born,6.0,South West
+2015,0 to 14,All places of birth,6.0,South West
+2015,15 to 44,Non-UK born,108.0,South West
+2015,15 to 44,UK born,39.0,South West
+2015,15 to 44,All places of birth,147.0,South West
+2015,45 to 64,Non-UK born,29.0,South West
+2015,45 to 64,UK born,38.0,South West
+2015,45 to 64,All places of birth,67.0,South West
+2015,65 and older,Non-UK born,11.0,South West
+2015,65 and older,UK born,40.0,South West
+2015,65 and older,All places of birth,51.0,South West
+2016,0 to 14,Non-UK born,1.0,South West
+2016,0 to 14,UK born,1.0,South West
+2016,0 to 14,All places of birth,2.0,South West
+2016,15 to 44,Non-UK born,98.0,South West
+2016,15 to 44,UK born,31.0,South West
+2016,15 to 44,All places of birth,129.0,South West
+2016,45 to 64,Non-UK born,27.0,South West
+2016,45 to 64,UK born,26.0,South West
+2016,45 to 64,All places of birth,53.0,South West
+2016,65 and older,Non-UK born,12.0,South West
+2016,65 and older,UK born,36.0,South West
+2016,65 and older,All places of birth,48.0,South West
+2017,0 to 14,Non-UK born,2.0,South West
+2017,0 to 14,UK born,8.0,South West
+2017,0 to 14,All places of birth,10.0,South West
+2017,15 to 44,Non-UK born,79.0,South West
+2017,15 to 44,UK born,31.0,South West
+2017,15 to 44,All places of birth,110.0,South West
+2017,45 to 64,Non-UK born,25.0,South West
+2017,45 to 64,UK born,34.0,South West
+2017,45 to 64,All places of birth,59.0,South West
+2017,65 and older,Non-UK born,11.0,South West
+2017,65 and older,UK born,32.0,South West
+2017,65 and older,All places of birth,43.0,South West
+2018,0 to 14,Non-UK born,2.0,South West
+2018,0 to 14,UK born,8.0,South West
+2018,0 to 14,All places of birth,10.0,South West
+2018,15 to 44,Non-UK born,66.0,South West
+2018,15 to 44,UK born,27.0,South West
+2018,15 to 44,All places of birth,93.0,South West
+2018,45 to 64,Non-UK born,21.0,South West
+2018,45 to 64,UK born,25.0,South West
+2018,45 to 64,All places of birth,46.0,South West
+2018,65 and older,Non-UK born,4.0,South West
+2018,65 and older,UK born,34.0,South West
+2018,65 and older,All places of birth,38.0,South West
+2019,0 to 14,Non-UK born,1.0,South West
+2019,0 to 14,UK born,8.0,South West
+2019,0 to 14,All places of birth,9.0,South West
+2019,15 to 44,Non-UK born,86.0,South West
+2019,15 to 44,UK born,30.0,South West
+2019,15 to 44,All places of birth,116.0,South West
+2019,45 to 64,Non-UK born,32.0,South West
+2019,45 to 64,UK born,28.0,South West
+2019,45 to 64,All places of birth,60.0,South West
+2019,65 and older,Non-UK born,8.0,South West
+2019,65 and older,UK born,36.0,South West
+2019,65 and older,All places of birth,44.0,South West
+2020,0 to 14,Non-UK born,0.0,South West
+2020,0 to 14,UK born,5.0,South West
+2020,0 to 14,All places of birth,5.0,South West
+2020,15 to 44,Non-UK born,72.0,South West
+2020,15 to 44,UK born,21.0,South West
+2020,15 to 44,All places of birth,93.0,South West
+2020,45 to 64,Non-UK born,22.0,South West
+2020,45 to 64,UK born,21.0,South West
+2020,45 to 64,All places of birth,43.0,South West
+2020,65 and older,Non-UK born,6.0,South West
+2020,65 and older,UK born,18.0,South West
+2020,65 and older,All places of birth,24.0,South West
+2021,0 to 14,Non-UK born,1.0,South West
+2021,0 to 14,UK born,7.0,South West
+2021,0 to 14,All places of birth,8.0,South West
+2021,15 to 44,Non-UK born,64.0,South West
+2021,15 to 44,UK born,21.0,South West
+2021,15 to 44,All places of birth,85.0,South West
+2021,45 to 64,Non-UK born,29.0,South West
+2021,45 to 64,UK born,15.0,South West
+2021,45 to 64,All places of birth,44.0,South West
+2021,65 and older,Non-UK born,4.0,South West
+2021,65 and older,UK born,18.0,South West
+2021,65 and older,All places of birth,22.0,South West
+2022,0 to 14,Non-UK born,0.0,South West
+2022,0 to 14,UK born,1.0,South West
+2022,0 to 14,All places of birth,1.0,South West
+2022,15 to 44,Non-UK born,73.0,South West
+2022,15 to 44,UK born,17.0,South West
+2022,15 to 44,All places of birth,90.0,South West
+2022,45 to 64,Non-UK born,34.0,South West
+2022,45 to 64,UK born,11.0,South West
+2022,45 to 64,All places of birth,45.0,South West
+2022,65 and older,Non-UK born,11.0,South West
+2022,65 and older,UK born,14.0,South West
+2022,65 and older,All places of birth,25.0,South West
+2023,0 to 14,Non-UK born,3.0,South West
+2023,0 to 14,UK born,3.0,South West
+2023,0 to 14,All places of birth,6.0,South West
+2023,15 to 44,Non-UK born,106.0,South West
+2023,15 to 44,UK born,20.0,South West
+2023,15 to 44,All places of birth,126.0,South West
+2023,45 to 64,Non-UK born,36.0,South West
+2023,45 to 64,UK born,12.0,South West
+2023,45 to 64,All places of birth,48.0,South West
+2023,65 and older,Non-UK born,12.0,South West
+2023,65 and older,UK born,16.0,South West
+2023,65 and older,All places of birth,28.0,South West
+2024,0 to 14,Non-UK born,3.0,South West
+2024,0 to 14,UK born,2.0,South West
+2024,0 to 14,All places of birth,5.0,South West
+2024,15 to 44,Non-UK born,126.0,South West
+2024,15 to 44,UK born,17.0,South West
+2024,15 to 44,All places of birth,143.0,South West
+2024,45 to 64,Non-UK born,39.0,South West
+2024,45 to 64,UK born,17.0,South West
+2024,45 to 64,All places of birth,56.0,South West
+2024,65 and older,Non-UK born,16.0,South West
+2024,65 and older,UK born,25.0,South West
+2024,65 and older,All places of birth,41.0,South West
+2001,0 to 14,Non-UK born,14.0,West Midlands
+2001,0 to 14,UK born,44.0,West Midlands
+2001,0 to 14,All places of birth,58.0,West Midlands
+2001,15 to 44,Non-UK born,179.0,West Midlands
+2001,15 to 44,UK born,149.0,West Midlands
+2001,15 to 44,All places of birth,328.0,West Midlands
+2001,45 to 64,Non-UK born,94.0,West Midlands
+2001,45 to 64,UK born,63.0,West Midlands
+2001,45 to 64,All places of birth,157.0,West Midlands
+2001,65 and older,Non-UK born,71.0,West Midlands
+2001,65 and older,UK born,69.0,West Midlands
+2001,65 and older,All places of birth,140.0,West Midlands
+2002,0 to 14,Non-UK born,30.0,West Midlands
+2002,0 to 14,UK born,44.0,West Midlands
+2002,0 to 14,All places of birth,74.0,West Midlands
+2002,15 to 44,Non-UK born,227.0,West Midlands
+2002,15 to 44,UK born,147.0,West Midlands
+2002,15 to 44,All places of birth,374.0,West Midlands
+2002,45 to 64,Non-UK born,99.0,West Midlands
+2002,45 to 64,UK born,44.0,West Midlands
+2002,45 to 64,All places of birth,143.0,West Midlands
+2002,65 and older,Non-UK born,92.0,West Midlands
+2002,65 and older,UK born,65.0,West Midlands
+2002,65 and older,All places of birth,157.0,West Midlands
+2003,0 to 14,Non-UK born,17.0,West Midlands
+2003,0 to 14,UK born,42.0,West Midlands
+2003,0 to 14,All places of birth,59.0,West Midlands
+2003,15 to 44,Non-UK born,247.0,West Midlands
+2003,15 to 44,UK born,157.0,West Midlands
+2003,15 to 44,All places of birth,404.0,West Midlands
+2003,45 to 64,Non-UK born,96.0,West Midlands
+2003,45 to 64,UK born,48.0,West Midlands
+2003,45 to 64,All places of birth,144.0,West Midlands
+2003,65 and older,Non-UK born,76.0,West Midlands
+2003,65 and older,UK born,55.0,West Midlands
+2003,65 and older,All places of birth,131.0,West Midlands
+2004,0 to 14,Non-UK born,10.0,West Midlands
+2004,0 to 14,UK born,59.0,West Midlands
+2004,0 to 14,All places of birth,69.0,West Midlands
+2004,15 to 44,Non-UK born,352.0,West Midlands
+2004,15 to 44,UK born,151.0,West Midlands
+2004,15 to 44,All places of birth,503.0,West Midlands
+2004,45 to 64,Non-UK born,111.0,West Midlands
+2004,45 to 64,UK born,56.0,West Midlands
+2004,45 to 64,All places of birth,167.0,West Midlands
+2004,65 and older,Non-UK born,78.0,West Midlands
+2004,65 and older,UK born,55.0,West Midlands
+2004,65 and older,All places of birth,133.0,West Midlands
+2005,0 to 14,Non-UK born,8.0,West Midlands
+2005,0 to 14,UK born,33.0,West Midlands
+2005,0 to 14,All places of birth,41.0,West Midlands
+2005,15 to 44,Non-UK born,359.0,West Midlands
+2005,15 to 44,UK born,145.0,West Midlands
+2005,15 to 44,All places of birth,504.0,West Midlands
+2005,45 to 64,Non-UK born,134.0,West Midlands
+2005,45 to 64,UK born,51.0,West Midlands
+2005,45 to 64,All places of birth,185.0,West Midlands
+2005,65 and older,Non-UK born,100.0,West Midlands
+2005,65 and older,UK born,42.0,West Midlands
+2005,65 and older,All places of birth,142.0,West Midlands
+2006,0 to 14,Non-UK born,12.0,West Midlands
+2006,0 to 14,UK born,30.0,West Midlands
+2006,0 to 14,All places of birth,42.0,West Midlands
+2006,15 to 44,Non-UK born,366.0,West Midlands
+2006,15 to 44,UK born,144.0,West Midlands
+2006,15 to 44,All places of birth,510.0,West Midlands
+2006,45 to 64,Non-UK born,124.0,West Midlands
+2006,45 to 64,UK born,59.0,West Midlands
+2006,45 to 64,All places of birth,183.0,West Midlands
+2006,65 and older,Non-UK born,78.0,West Midlands
+2006,65 and older,UK born,49.0,West Midlands
+2006,65 and older,All places of birth,127.0,West Midlands
+2007,0 to 14,Non-UK born,12.0,West Midlands
+2007,0 to 14,UK born,53.0,West Midlands
+2007,0 to 14,All places of birth,65.0,West Midlands
+2007,15 to 44,Non-UK born,327.0,West Midlands
+2007,15 to 44,UK born,157.0,West Midlands
+2007,15 to 44,All places of birth,484.0,West Midlands
+2007,45 to 64,Non-UK born,106.0,West Midlands
+2007,45 to 64,UK born,32.0,West Midlands
+2007,45 to 64,All places of birth,138.0,West Midlands
+2007,65 and older,Non-UK born,88.0,West Midlands
+2007,65 and older,UK born,35.0,West Midlands
+2007,65 and older,All places of birth,123.0,West Midlands
+2008,0 to 14,Non-UK born,15.0,West Midlands
+2008,0 to 14,UK born,52.0,West Midlands
+2008,0 to 14,All places of birth,67.0,West Midlands
+2008,15 to 44,Non-UK born,377.0,West Midlands
+2008,15 to 44,UK born,197.0,West Midlands
+2008,15 to 44,All places of birth,574.0,West Midlands
+2008,45 to 64,Non-UK born,112.0,West Midlands
+2008,45 to 64,UK born,47.0,West Midlands
+2008,45 to 64,All places of birth,159.0,West Midlands
+2008,65 and older,Non-UK born,95.0,West Midlands
+2008,65 and older,UK born,54.0,West Midlands
+2008,65 and older,All places of birth,149.0,West Midlands
+2009,0 to 14,Non-UK born,17.0,West Midlands
+2009,0 to 14,UK born,49.0,West Midlands
+2009,0 to 14,All places of birth,66.0,West Midlands
+2009,15 to 44,Non-UK born,375.0,West Midlands
+2009,15 to 44,UK born,167.0,West Midlands
+2009,15 to 44,All places of birth,542.0,West Midlands
+2009,45 to 64,Non-UK born,147.0,West Midlands
+2009,45 to 64,UK born,56.0,West Midlands
+2009,45 to 64,All places of birth,203.0,West Midlands
+2009,65 and older,Non-UK born,99.0,West Midlands
+2009,65 and older,UK born,45.0,West Midlands
+2009,65 and older,All places of birth,144.0,West Midlands
+2010,0 to 14,Non-UK born,10.0,West Midlands
+2010,0 to 14,UK born,24.0,West Midlands
+2010,0 to 14,All places of birth,34.0,West Midlands
+2010,15 to 44,Non-UK born,323.0,West Midlands
+2010,15 to 44,UK born,139.0,West Midlands
+2010,15 to 44,All places of birth,462.0,West Midlands
+2010,45 to 64,Non-UK born,127.0,West Midlands
+2010,45 to 64,UK born,57.0,West Midlands
+2010,45 to 64,All places of birth,184.0,West Midlands
+2010,65 and older,Non-UK born,99.0,West Midlands
+2010,65 and older,UK born,63.0,West Midlands
+2010,65 and older,All places of birth,162.0,West Midlands
+2011,0 to 14,Non-UK born,13.0,West Midlands
+2011,0 to 14,UK born,32.0,West Midlands
+2011,0 to 14,All places of birth,45.0,West Midlands
+2011,15 to 44,Non-UK born,389.0,West Midlands
+2011,15 to 44,UK born,161.0,West Midlands
+2011,15 to 44,All places of birth,550.0,West Midlands
+2011,45 to 64,Non-UK born,157.0,West Midlands
+2011,45 to 64,UK born,58.0,West Midlands
+2011,45 to 64,All places of birth,215.0,West Midlands
+2011,65 and older,Non-UK born,106.0,West Midlands
+2011,65 and older,UK born,65.0,West Midlands
+2011,65 and older,All places of birth,171.0,West Midlands
+2012,0 to 14,Non-UK born,16.0,West Midlands
+2012,0 to 14,UK born,36.0,West Midlands
+2012,0 to 14,All places of birth,52.0,West Midlands
+2012,15 to 44,Non-UK born,437.0,West Midlands
+2012,15 to 44,UK born,159.0,West Midlands
+2012,15 to 44,All places of birth,596.0,West Midlands
+2012,45 to 64,Non-UK born,152.0,West Midlands
+2012,45 to 64,UK born,85.0,West Midlands
+2012,45 to 64,All places of birth,237.0,West Midlands
+2012,65 and older,Non-UK born,98.0,West Midlands
+2012,65 and older,UK born,55.0,West Midlands
+2012,65 and older,All places of birth,153.0,West Midlands
+2013,0 to 14,Non-UK born,8.0,West Midlands
+2013,0 to 14,UK born,25.0,West Midlands
+2013,0 to 14,All places of birth,33.0,West Midlands
+2013,15 to 44,Non-UK born,396.0,West Midlands
+2013,15 to 44,UK born,140.0,West Midlands
+2013,15 to 44,All places of birth,536.0,West Midlands
+2013,45 to 64,Non-UK born,155.0,West Midlands
+2013,45 to 64,UK born,85.0,West Midlands
+2013,45 to 64,All places of birth,240.0,West Midlands
+2013,65 and older,Non-UK born,84.0,West Midlands
+2013,65 and older,UK born,63.0,West Midlands
+2013,65 and older,All places of birth,147.0,West Midlands
+2014,0 to 14,Non-UK born,4.0,West Midlands
+2014,0 to 14,UK born,22.0,West Midlands
+2014,0 to 14,All places of birth,26.0,West Midlands
+2014,15 to 44,Non-UK born,278.0,West Midlands
+2014,15 to 44,UK born,131.0,West Midlands
+2014,15 to 44,All places of birth,409.0,West Midlands
+2014,45 to 64,Non-UK born,126.0,West Midlands
+2014,45 to 64,UK born,55.0,West Midlands
+2014,45 to 64,All places of birth,181.0,West Midlands
+2014,65 and older,Non-UK born,93.0,West Midlands
+2014,65 and older,UK born,59.0,West Midlands
+2014,65 and older,All places of birth,152.0,West Midlands
+2015,0 to 14,Non-UK born,7.0,West Midlands
+2015,0 to 14,UK born,22.0,West Midlands
+2015,0 to 14,All places of birth,29.0,West Midlands
+2015,15 to 44,Non-UK born,265.0,West Midlands
+2015,15 to 44,UK born,111.0,West Midlands
+2015,15 to 44,All places of birth,376.0,West Midlands
+2015,45 to 64,Non-UK born,101.0,West Midlands
+2015,45 to 64,UK born,66.0,West Midlands
+2015,45 to 64,All places of birth,167.0,West Midlands
+2015,65 and older,Non-UK born,68.0,West Midlands
+2015,65 and older,UK born,54.0,West Midlands
+2015,65 and older,All places of birth,122.0,West Midlands
+2016,0 to 14,Non-UK born,4.0,West Midlands
+2016,0 to 14,UK born,19.0,West Midlands
+2016,0 to 14,All places of birth,23.0,West Midlands
+2016,15 to 44,Non-UK born,287.0,West Midlands
+2016,15 to 44,UK born,93.0,West Midlands
+2016,15 to 44,All places of birth,380.0,West Midlands
+2016,45 to 64,Non-UK born,114.0,West Midlands
+2016,45 to 64,UK born,66.0,West Midlands
+2016,45 to 64,All places of birth,180.0,West Midlands
+2016,65 and older,Non-UK born,82.0,West Midlands
+2016,65 and older,UK born,49.0,West Midlands
+2016,65 and older,All places of birth,131.0,West Midlands
+2017,0 to 14,Non-UK born,4.0,West Midlands
+2017,0 to 14,UK born,21.0,West Midlands
+2017,0 to 14,All places of birth,25.0,West Midlands
+2017,15 to 44,Non-UK born,216.0,West Midlands
+2017,15 to 44,UK born,114.0,West Midlands
+2017,15 to 44,All places of birth,330.0,West Midlands
+2017,45 to 64,Non-UK born,110.0,West Midlands
+2017,45 to 64,UK born,66.0,West Midlands
+2017,45 to 64,All places of birth,176.0,West Midlands
+2017,65 and older,Non-UK born,80.0,West Midlands
+2017,65 and older,UK born,43.0,West Midlands
+2017,65 and older,All places of birth,123.0,West Midlands
+2018,0 to 14,Non-UK born,2.0,West Midlands
+2018,0 to 14,UK born,17.0,West Midlands
+2018,0 to 14,All places of birth,19.0,West Midlands
+2018,15 to 44,Non-UK born,224.0,West Midlands
+2018,15 to 44,UK born,110.0,West Midlands
+2018,15 to 44,All places of birth,334.0,West Midlands
+2018,45 to 64,Non-UK born,91.0,West Midlands
+2018,45 to 64,UK born,61.0,West Midlands
+2018,45 to 64,All places of birth,152.0,West Midlands
+2018,65 and older,Non-UK born,72.0,West Midlands
+2018,65 and older,UK born,33.0,West Midlands
+2018,65 and older,All places of birth,105.0,West Midlands
+2019,0 to 14,Non-UK born,8.0,West Midlands
+2019,0 to 14,UK born,19.0,West Midlands
+2019,0 to 14,All places of birth,27.0,West Midlands
+2019,15 to 44,Non-UK born,226.0,West Midlands
+2019,15 to 44,UK born,78.0,West Midlands
+2019,15 to 44,All places of birth,304.0,West Midlands
+2019,45 to 64,Non-UK born,78.0,West Midlands
+2019,45 to 64,UK born,70.0,West Midlands
+2019,45 to 64,All places of birth,148.0,West Midlands
+2019,65 and older,Non-UK born,62.0,West Midlands
+2019,65 and older,UK born,33.0,West Midlands
+2019,65 and older,All places of birth,95.0,West Midlands
+2020,0 to 14,Non-UK born,7.0,West Midlands
+2020,0 to 14,UK born,6.0,West Midlands
+2020,0 to 14,All places of birth,13.0,West Midlands
+2020,15 to 44,Non-UK born,208.0,West Midlands
+2020,15 to 44,UK born,74.0,West Midlands
+2020,15 to 44,All places of birth,282.0,West Midlands
+2020,45 to 64,Non-UK born,98.0,West Midlands
+2020,45 to 64,UK born,54.0,West Midlands
+2020,45 to 64,All places of birth,152.0,West Midlands
+2020,65 and older,Non-UK born,55.0,West Midlands
+2020,65 and older,UK born,29.0,West Midlands
+2020,65 and older,All places of birth,84.0,West Midlands
+2021,0 to 14,Non-UK born,7.0,West Midlands
+2021,0 to 14,UK born,14.0,West Midlands
+2021,0 to 14,All places of birth,21.0,West Midlands
+2021,15 to 44,Non-UK born,220.0,West Midlands
+2021,15 to 44,UK born,83.0,West Midlands
+2021,15 to 44,All places of birth,303.0,West Midlands
+2021,45 to 64,Non-UK born,96.0,West Midlands
+2021,45 to 64,UK born,58.0,West Midlands
+2021,45 to 64,All places of birth,154.0,West Midlands
+2021,65 and older,Non-UK born,54.0,West Midlands
+2021,65 and older,UK born,26.0,West Midlands
+2021,65 and older,All places of birth,80.0,West Midlands
+2022,0 to 14,Non-UK born,5.0,West Midlands
+2022,0 to 14,UK born,14.0,West Midlands
+2022,0 to 14,All places of birth,19.0,West Midlands
+2022,15 to 44,Non-UK born,220.0,West Midlands
+2022,15 to 44,UK born,75.0,West Midlands
+2022,15 to 44,All places of birth,295.0,West Midlands
+2022,45 to 64,Non-UK born,82.0,West Midlands
+2022,45 to 64,UK born,49.0,West Midlands
+2022,45 to 64,All places of birth,131.0,West Midlands
+2022,65 and older,Non-UK born,62.0,West Midlands
+2022,65 and older,UK born,31.0,West Midlands
+2022,65 and older,All places of birth,93.0,West Midlands
+2023,0 to 14,Non-UK born,7.0,West Midlands
+2023,0 to 14,UK born,12.0,West Midlands
+2023,0 to 14,All places of birth,19.0,West Midlands
+2023,15 to 44,Non-UK born,268.0,West Midlands
+2023,15 to 44,UK born,65.0,West Midlands
+2023,15 to 44,All places of birth,333.0,West Midlands
+2023,45 to 64,Non-UK born,85.0,West Midlands
+2023,45 to 64,UK born,45.0,West Midlands
+2023,45 to 64,All places of birth,130.0,West Midlands
+2023,65 and older,Non-UK born,65.0,West Midlands
+2023,65 and older,UK born,30.0,West Midlands
+2023,65 and older,All places of birth,95.0,West Midlands
+2024,0 to 14,Non-UK born,10.0,West Midlands
+2024,0 to 14,UK born,13.0,West Midlands
+2024,0 to 14,All places of birth,23.0,West Midlands
+2024,15 to 44,Non-UK born,355.0,West Midlands
+2024,15 to 44,UK born,72.0,West Midlands
+2024,15 to 44,All places of birth,427.0,West Midlands
+2024,45 to 64,Non-UK born,98.0,West Midlands
+2024,45 to 64,UK born,59.0,West Midlands
+2024,45 to 64,All places of birth,157.0,West Midlands
+2024,65 and older,Non-UK born,69.0,West Midlands
+2024,65 and older,UK born,32.0,West Midlands
+2024,65 and older,All places of birth,101.0,West Midlands
+2001,0 to 14,Non-UK born,12.0,Yorkshire and the Humber
+2001,0 to 14,UK born,46.0,Yorkshire and the Humber
+2001,0 to 14,All places of birth,58.0,Yorkshire and the Humber
+2001,15 to 44,Non-UK born,146.0,Yorkshire and the Humber
+2001,15 to 44,UK born,81.0,Yorkshire and the Humber
+2001,15 to 44,All places of birth,227.0,Yorkshire and the Humber
+2001,45 to 64,Non-UK born,63.0,Yorkshire and the Humber
+2001,45 to 64,UK born,54.0,Yorkshire and the Humber
+2001,45 to 64,All places of birth,117.0,Yorkshire and the Humber
+2001,65 and older,Non-UK born,47.0,Yorkshire and the Humber
+2001,65 and older,UK born,64.0,Yorkshire and the Humber
+2001,65 and older,All places of birth,111.0,Yorkshire and the Humber
+2002,0 to 14,Non-UK born,11.0,Yorkshire and the Humber
+2002,0 to 14,UK born,38.0,Yorkshire and the Humber
+2002,0 to 14,All places of birth,49.0,Yorkshire and the Humber
+2002,15 to 44,Non-UK born,143.0,Yorkshire and the Humber
+2002,15 to 44,UK born,66.0,Yorkshire and the Humber
+2002,15 to 44,All places of birth,209.0,Yorkshire and the Humber
+2002,45 to 64,Non-UK born,61.0,Yorkshire and the Humber
+2002,45 to 64,UK born,38.0,Yorkshire and the Humber
+2002,45 to 64,All places of birth,99.0,Yorkshire and the Humber
+2002,65 and older,Non-UK born,68.0,Yorkshire and the Humber
+2002,65 and older,UK born,46.0,Yorkshire and the Humber
+2002,65 and older,All places of birth,114.0,Yorkshire and the Humber
+2003,0 to 14,Non-UK born,9.0,Yorkshire and the Humber
+2003,0 to 14,UK born,23.0,Yorkshire and the Humber
+2003,0 to 14,All places of birth,32.0,Yorkshire and the Humber
+2003,15 to 44,Non-UK born,213.0,Yorkshire and the Humber
+2003,15 to 44,UK born,81.0,Yorkshire and the Humber
+2003,15 to 44,All places of birth,294.0,Yorkshire and the Humber
+2003,45 to 64,Non-UK born,61.0,Yorkshire and the Humber
+2003,45 to 64,UK born,42.0,Yorkshire and the Humber
+2003,45 to 64,All places of birth,103.0,Yorkshire and the Humber
+2003,65 and older,Non-UK born,51.0,Yorkshire and the Humber
+2003,65 and older,UK born,55.0,Yorkshire and the Humber
+2003,65 and older,All places of birth,106.0,Yorkshire and the Humber
+2004,0 to 14,Non-UK born,10.0,Yorkshire and the Humber
+2004,0 to 14,UK born,26.0,Yorkshire and the Humber
+2004,0 to 14,All places of birth,36.0,Yorkshire and the Humber
+2004,15 to 44,Non-UK born,211.0,Yorkshire and the Humber
+2004,15 to 44,UK born,68.0,Yorkshire and the Humber
+2004,15 to 44,All places of birth,279.0,Yorkshire and the Humber
+2004,45 to 64,Non-UK born,55.0,Yorkshire and the Humber
+2004,45 to 64,UK born,48.0,Yorkshire and the Humber
+2004,45 to 64,All places of birth,103.0,Yorkshire and the Humber
+2004,65 and older,Non-UK born,54.0,Yorkshire and the Humber
+2004,65 and older,UK born,52.0,Yorkshire and the Humber
+2004,65 and older,All places of birth,106.0,Yorkshire and the Humber
+2005,0 to 14,Non-UK born,,Yorkshire and the Humber
+2005,0 to 14,UK born,36.0,Yorkshire and the Humber
+2005,0 to 14,All places of birth,40.0,Yorkshire and the Humber
+2005,15 to 44,Non-UK born,233.0,Yorkshire and the Humber
+2005,15 to 44,UK born,70.0,Yorkshire and the Humber
+2005,15 to 44,All places of birth,303.0,Yorkshire and the Humber
+2005,45 to 64,Non-UK born,54.0,Yorkshire and the Humber
+2005,45 to 64,UK born,35.0,Yorkshire and the Humber
+2005,45 to 64,All places of birth,89.0,Yorkshire and the Humber
+2005,65 and older,Non-UK born,49.0,Yorkshire and the Humber
+2005,65 and older,UK born,39.0,Yorkshire and the Humber
+2005,65 and older,All places of birth,88.0,Yorkshire and the Humber
+2006,0 to 14,Non-UK born,,Yorkshire and the Humber
+2006,0 to 14,UK born,21.0,Yorkshire and the Humber
+2006,0 to 14,All places of birth,25.0,Yorkshire and the Humber
+2006,15 to 44,Non-UK born,274.0,Yorkshire and the Humber
+2006,15 to 44,UK born,56.0,Yorkshire and the Humber
+2006,15 to 44,All places of birth,330.0,Yorkshire and the Humber
+2006,45 to 64,Non-UK born,71.0,Yorkshire and the Humber
+2006,45 to 64,UK born,41.0,Yorkshire and the Humber
+2006,45 to 64,All places of birth,112.0,Yorkshire and the Humber
+2006,65 and older,Non-UK born,66.0,Yorkshire and the Humber
+2006,65 and older,UK born,54.0,Yorkshire and the Humber
+2006,65 and older,All places of birth,120.0,Yorkshire and the Humber
+2007,0 to 14,Non-UK born,11.0,Yorkshire and the Humber
+2007,0 to 14,UK born,23.0,Yorkshire and the Humber
+2007,0 to 14,All places of birth,34.0,Yorkshire and the Humber
+2007,15 to 44,Non-UK born,238.0,Yorkshire and the Humber
+2007,15 to 44,UK born,85.0,Yorkshire and the Humber
+2007,15 to 44,All places of birth,323.0,Yorkshire and the Humber
+2007,45 to 64,Non-UK born,58.0,Yorkshire and the Humber
+2007,45 to 64,UK born,29.0,Yorkshire and the Humber
+2007,45 to 64,All places of birth,87.0,Yorkshire and the Humber
+2007,65 and older,Non-UK born,49.0,Yorkshire and the Humber
+2007,65 and older,UK born,42.0,Yorkshire and the Humber
+2007,65 and older,All places of birth,91.0,Yorkshire and the Humber
+2008,0 to 14,Non-UK born,10.0,Yorkshire and the Humber
+2008,0 to 14,UK born,32.0,Yorkshire and the Humber
+2008,0 to 14,All places of birth,42.0,Yorkshire and the Humber
+2008,15 to 44,Non-UK born,269.0,Yorkshire and the Humber
+2008,15 to 44,UK born,80.0,Yorkshire and the Humber
+2008,15 to 44,All places of birth,349.0,Yorkshire and the Humber
+2008,45 to 64,Non-UK born,79.0,Yorkshire and the Humber
+2008,45 to 64,UK born,36.0,Yorkshire and the Humber
+2008,45 to 64,All places of birth,115.0,Yorkshire and the Humber
+2008,65 and older,Non-UK born,56.0,Yorkshire and the Humber
+2008,65 and older,UK born,26.0,Yorkshire and the Humber
+2008,65 and older,All places of birth,82.0,Yorkshire and the Humber
+2009,0 to 14,Non-UK born,8.0,Yorkshire and the Humber
+2009,0 to 14,UK born,29.0,Yorkshire and the Humber
+2009,0 to 14,All places of birth,37.0,Yorkshire and the Humber
+2009,15 to 44,Non-UK born,275.0,Yorkshire and the Humber
+2009,15 to 44,UK born,97.0,Yorkshire and the Humber
+2009,15 to 44,All places of birth,372.0,Yorkshire and the Humber
+2009,45 to 64,Non-UK born,70.0,Yorkshire and the Humber
+2009,45 to 64,UK born,40.0,Yorkshire and the Humber
+2009,45 to 64,All places of birth,110.0,Yorkshire and the Humber
+2009,65 and older,Non-UK born,53.0,Yorkshire and the Humber
+2009,65 and older,UK born,46.0,Yorkshire and the Humber
+2009,65 and older,All places of birth,99.0,Yorkshire and the Humber
+2010,0 to 14,Non-UK born,8.0,Yorkshire and the Humber
+2010,0 to 14,UK born,24.0,Yorkshire and the Humber
+2010,0 to 14,All places of birth,32.0,Yorkshire and the Humber
+2010,15 to 44,Non-UK born,218.0,Yorkshire and the Humber
+2010,15 to 44,UK born,77.0,Yorkshire and the Humber
+2010,15 to 44,All places of birth,295.0,Yorkshire and the Humber
+2010,45 to 64,Non-UK born,84.0,Yorkshire and the Humber
+2010,45 to 64,UK born,49.0,Yorkshire and the Humber
+2010,45 to 64,All places of birth,133.0,Yorkshire and the Humber
+2010,65 and older,Non-UK born,56.0,Yorkshire and the Humber
+2010,65 and older,UK born,40.0,Yorkshire and the Humber
+2010,65 and older,All places of birth,96.0,Yorkshire and the Humber
+2011,0 to 14,Non-UK born,22.0,Yorkshire and the Humber
+2011,0 to 14,UK born,37.0,Yorkshire and the Humber
+2011,0 to 14,All places of birth,59.0,Yorkshire and the Humber
+2011,15 to 44,Non-UK born,229.0,Yorkshire and the Humber
+2011,15 to 44,UK born,105.0,Yorkshire and the Humber
+2011,15 to 44,All places of birth,334.0,Yorkshire and the Humber
+2011,45 to 64,Non-UK born,80.0,Yorkshire and the Humber
+2011,45 to 64,UK born,40.0,Yorkshire and the Humber
+2011,45 to 64,All places of birth,120.0,Yorkshire and the Humber
+2011,65 and older,Non-UK born,58.0,Yorkshire and the Humber
+2011,65 and older,UK born,39.0,Yorkshire and the Humber
+2011,65 and older,All places of birth,97.0,Yorkshire and the Humber
+2012,0 to 14,Non-UK born,17.0,Yorkshire and the Humber
+2012,0 to 14,UK born,25.0,Yorkshire and the Humber
+2012,0 to 14,All places of birth,42.0,Yorkshire and the Humber
+2012,15 to 44,Non-UK born,211.0,Yorkshire and the Humber
+2012,15 to 44,UK born,95.0,Yorkshire and the Humber
+2012,15 to 44,All places of birth,306.0,Yorkshire and the Humber
+2012,45 to 64,Non-UK born,73.0,Yorkshire and the Humber
+2012,45 to 64,UK born,37.0,Yorkshire and the Humber
+2012,45 to 64,All places of birth,110.0,Yorkshire and the Humber
+2012,65 and older,Non-UK born,53.0,Yorkshire and the Humber
+2012,65 and older,UK born,32.0,Yorkshire and the Humber
+2012,65 and older,All places of birth,85.0,Yorkshire and the Humber
+2013,0 to 14,Non-UK born,22.0,Yorkshire and the Humber
+2013,0 to 14,UK born,24.0,Yorkshire and the Humber
+2013,0 to 14,All places of birth,46.0,Yorkshire and the Humber
+2013,15 to 44,Non-UK born,222.0,Yorkshire and the Humber
+2013,15 to 44,UK born,84.0,Yorkshire and the Humber
+2013,15 to 44,All places of birth,306.0,Yorkshire and the Humber
+2013,45 to 64,Non-UK born,69.0,Yorkshire and the Humber
+2013,45 to 64,UK born,38.0,Yorkshire and the Humber
+2013,45 to 64,All places of birth,107.0,Yorkshire and the Humber
+2013,65 and older,Non-UK born,47.0,Yorkshire and the Humber
+2013,65 and older,UK born,36.0,Yorkshire and the Humber
+2013,65 and older,All places of birth,83.0,Yorkshire and the Humber
+2014,0 to 14,Non-UK born,8.0,Yorkshire and the Humber
+2014,0 to 14,UK born,13.0,Yorkshire and the Humber
+2014,0 to 14,All places of birth,21.0,Yorkshire and the Humber
+2014,15 to 44,Non-UK born,189.0,Yorkshire and the Humber
+2014,15 to 44,UK born,77.0,Yorkshire and the Humber
+2014,15 to 44,All places of birth,266.0,Yorkshire and the Humber
+2014,45 to 64,Non-UK born,69.0,Yorkshire and the Humber
+2014,45 to 64,UK born,40.0,Yorkshire and the Humber
+2014,45 to 64,All places of birth,109.0,Yorkshire and the Humber
+2014,65 and older,Non-UK born,53.0,Yorkshire and the Humber
+2014,65 and older,UK born,41.0,Yorkshire and the Humber
+2014,65 and older,All places of birth,94.0,Yorkshire and the Humber
+2015,0 to 14,Non-UK born,5.0,Yorkshire and the Humber
+2015,0 to 14,UK born,21.0,Yorkshire and the Humber
+2015,0 to 14,All places of birth,26.0,Yorkshire and the Humber
+2015,15 to 44,Non-UK born,180.0,Yorkshire and the Humber
+2015,15 to 44,UK born,51.0,Yorkshire and the Humber
+2015,15 to 44,All places of birth,231.0,Yorkshire and the Humber
+2015,45 to 64,Non-UK born,81.0,Yorkshire and the Humber
+2015,45 to 64,UK born,35.0,Yorkshire and the Humber
+2015,45 to 64,All places of birth,116.0,Yorkshire and the Humber
+2015,65 and older,Non-UK born,25.0,Yorkshire and the Humber
+2015,65 and older,UK born,20.0,Yorkshire and the Humber
+2015,65 and older,All places of birth,45.0,Yorkshire and the Humber
+2016,0 to 14,Non-UK born,,Yorkshire and the Humber
+2016,0 to 14,UK born,11.0,Yorkshire and the Humber
+2016,0 to 14,All places of birth,15.0,Yorkshire and the Humber
+2016,15 to 44,Non-UK born,181.0,Yorkshire and the Humber
+2016,15 to 44,UK born,52.0,Yorkshire and the Humber
+2016,15 to 44,All places of birth,233.0,Yorkshire and the Humber
+2016,45 to 64,Non-UK born,69.0,Yorkshire and the Humber
+2016,45 to 64,UK born,34.0,Yorkshire and the Humber
+2016,45 to 64,All places of birth,103.0,Yorkshire and the Humber
+2016,65 and older,Non-UK born,33.0,Yorkshire and the Humber
+2016,65 and older,UK born,34.0,Yorkshire and the Humber
+2016,65 and older,All places of birth,67.0,Yorkshire and the Humber
+2017,0 to 14,Non-UK born,,Yorkshire and the Humber
+2017,0 to 14,UK born,11.0,Yorkshire and the Humber
+2017,0 to 14,All places of birth,14.0,Yorkshire and the Humber
+2017,15 to 44,Non-UK born,148.0,Yorkshire and the Humber
+2017,15 to 44,UK born,47.0,Yorkshire and the Humber
+2017,15 to 44,All places of birth,195.0,Yorkshire and the Humber
+2017,45 to 64,Non-UK born,56.0,Yorkshire and the Humber
+2017,45 to 64,UK born,17.0,Yorkshire and the Humber
+2017,45 to 64,All places of birth,73.0,Yorkshire and the Humber
+2017,65 and older,Non-UK born,36.0,Yorkshire and the Humber
+2017,65 and older,UK born,26.0,Yorkshire and the Humber
+2017,65 and older,All places of birth,62.0,Yorkshire and the Humber
+2018,0 to 14,Non-UK born,8.0,Yorkshire and the Humber
+2018,0 to 14,UK born,11.0,Yorkshire and the Humber
+2018,0 to 14,All places of birth,19.0,Yorkshire and the Humber
+2018,15 to 44,Non-UK born,131.0,Yorkshire and the Humber
+2018,15 to 44,UK born,47.0,Yorkshire and the Humber
+2018,15 to 44,All places of birth,178.0,Yorkshire and the Humber
+2018,45 to 64,Non-UK born,58.0,Yorkshire and the Humber
+2018,45 to 64,UK born,30.0,Yorkshire and the Humber
+2018,45 to 64,All places of birth,88.0,Yorkshire and the Humber
+2018,65 and older,Non-UK born,35.0,Yorkshire and the Humber
+2018,65 and older,UK born,29.0,Yorkshire and the Humber
+2018,65 and older,All places of birth,64.0,Yorkshire and the Humber
+2019,0 to 14,Non-UK born,,Yorkshire and the Humber
+2019,0 to 14,UK born,12.0,Yorkshire and the Humber
+2019,0 to 14,All places of birth,16.0,Yorkshire and the Humber
+2019,15 to 44,Non-UK born,146.0,Yorkshire and the Humber
+2019,15 to 44,UK born,62.0,Yorkshire and the Humber
+2019,15 to 44,All places of birth,208.0,Yorkshire and the Humber
+2019,45 to 64,Non-UK born,56.0,Yorkshire and the Humber
+2019,45 to 64,UK born,24.0,Yorkshire and the Humber
+2019,45 to 64,All places of birth,80.0,Yorkshire and the Humber
+2019,65 and older,Non-UK born,21.0,Yorkshire and the Humber
+2019,65 and older,UK born,24.0,Yorkshire and the Humber
+2019,65 and older,All places of birth,45.0,Yorkshire and the Humber
+2020,0 to 14,Non-UK born,,Yorkshire and the Humber
+2020,0 to 14,UK born,15.0,Yorkshire and the Humber
+2020,0 to 14,All places of birth,18.0,Yorkshire and the Humber
+2020,15 to 44,Non-UK born,126.0,Yorkshire and the Humber
+2020,15 to 44,UK born,35.0,Yorkshire and the Humber
+2020,15 to 44,All places of birth,161.0,Yorkshire and the Humber
+2020,45 to 64,Non-UK born,45.0,Yorkshire and the Humber
+2020,45 to 64,UK born,17.0,Yorkshire and the Humber
+2020,45 to 64,All places of birth,62.0,Yorkshire and the Humber
+2020,65 and older,Non-UK born,20.0,Yorkshire and the Humber
+2020,65 and older,UK born,20.0,Yorkshire and the Humber
+2020,65 and older,All places of birth,40.0,Yorkshire and the Humber
+2021,0 to 14,Non-UK born,,Yorkshire and the Humber
+2021,0 to 14,UK born,9.0,Yorkshire and the Humber
+2021,0 to 14,All places of birth,10.0,Yorkshire and the Humber
+2021,15 to 44,Non-UK born,146.0,Yorkshire and the Humber
+2021,15 to 44,UK born,28.0,Yorkshire and the Humber
+2021,15 to 44,All places of birth,174.0,Yorkshire and the Humber
+2021,45 to 64,Non-UK born,65.0,Yorkshire and the Humber
+2021,45 to 64,UK born,31.0,Yorkshire and the Humber
+2021,45 to 64,All places of birth,96.0,Yorkshire and the Humber
+2021,65 and older,Non-UK born,26.0,Yorkshire and the Humber
+2021,65 and older,UK born,19.0,Yorkshire and the Humber
+2021,65 and older,All places of birth,45.0,Yorkshire and the Humber
+2022,0 to 14,Non-UK born,,Yorkshire and the Humber
+2022,0 to 14,UK born,10.0,Yorkshire and the Humber
+2022,0 to 14,All places of birth,14.0,Yorkshire and the Humber
+2022,15 to 44,Non-UK born,132.0,Yorkshire and the Humber
+2022,15 to 44,UK born,40.0,Yorkshire and the Humber
+2022,15 to 44,All places of birth,172.0,Yorkshire and the Humber
+2022,45 to 64,Non-UK born,47.0,Yorkshire and the Humber
+2022,45 to 64,UK born,20.0,Yorkshire and the Humber
+2022,45 to 64,All places of birth,67.0,Yorkshire and the Humber
+2022,65 and older,Non-UK born,29.0,Yorkshire and the Humber
+2022,65 and older,UK born,18.0,Yorkshire and the Humber
+2022,65 and older,All places of birth,47.0,Yorkshire and the Humber
+2023,0 to 14,Non-UK born,6.0,Yorkshire and the Humber
+2023,0 to 14,UK born,,Yorkshire and the Humber
+2023,0 to 14,All places of birth,8.0,Yorkshire and the Humber
+2023,15 to 44,Non-UK born,167.0,Yorkshire and the Humber
+2023,15 to 44,UK born,45.0,Yorkshire and the Humber
+2023,15 to 44,All places of birth,212.0,Yorkshire and the Humber
+2023,45 to 64,Non-UK born,56.0,Yorkshire and the Humber
+2023,45 to 64,UK born,27.0,Yorkshire and the Humber
+2023,45 to 64,All places of birth,83.0,Yorkshire and the Humber
+2023,65 and older,Non-UK born,29.0,Yorkshire and the Humber
+2023,65 and older,UK born,20.0,Yorkshire and the Humber
+2023,65 and older,All places of birth,49.0,Yorkshire and the Humber
+2024,0 to 14,Non-UK born,5.0,Yorkshire and the Humber
+2024,0 to 14,UK born,,Yorkshire and the Humber
+2024,0 to 14,All places of birth,7.0,Yorkshire and the Humber
+2024,15 to 44,Non-UK born,204.0,Yorkshire and the Humber
+2024,15 to 44,UK born,49.0,Yorkshire and the Humber
+2024,15 to 44,All places of birth,253.0,Yorkshire and the Humber
+2024,45 to 64,Non-UK born,80.0,Yorkshire and the Humber
+2024,45 to 64,UK born,32.0,Yorkshire and the Humber
+2024,45 to 64,All places of birth,112.0,Yorkshire and the Humber
+2024,65 and older,Non-UK born,32.0,Yorkshire and the Humber
+2024,65 and older,UK born,17.0,Yorkshire and the Humber
+2024,65 and older,All places of birth,49.0,Yorkshire and the Humber

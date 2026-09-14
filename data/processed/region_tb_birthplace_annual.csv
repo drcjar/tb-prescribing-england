@@ -1,0 +1,451 @@
+region_name,birthplace,year,tb_count,population_lfs
+London,UK born,2000,447,5235904
+London,UK born,2001,422,5283968
+London,UK born,2002,542,5240841
+London,UK born,2003,480,5173148
+London,UK born,2004,535,5182023
+London,UK born,2005,578,5136857
+London,UK born,2006,546,5153923
+London,UK born,2007,520,5073331
+London,UK born,2008,553,5127843
+London,UK born,2009,511,5135029
+London,UK born,2010,503,5234273
+London,UK born,2011,505,5200312
+London,UK born,2012,561,5277240
+London,UK born,2013,485,5274036
+London,UK born,2014,477,5326271
+London,UK born,2015,420,5404243
+London,UK born,2016,399,5352752
+London,UK born,2017,372,5450458
+London,UK born,2018,305,5638467
+London,UK born,2019,292,5659268
+London,UK born,2020,292,5983492
+London,UK born,2021,250,5707709
+London,UK born,2022,225,5735300
+London,UK born,2023,231,5786486
+London,UK born,2024,251,5706310
+London,Non-UK born,2000,1775,1921845
+London,Non-UK born,2001,1864,1959490
+London,Non-UK born,2002,2263,2058072
+London,Non-UK born,2003,2326,2150766
+London,Non-UK born,2004,2298,2177415
+London,Non-UK born,2005,2581,2302388
+London,Non-UK born,2006,2563,2367980
+London,Non-UK born,2007,2577,2539447
+London,Non-UK born,2008,2670,2607098
+London,Non-UK born,2009,2754,2728400
+London,Non-UK born,2010,2697,2751620
+London,Non-UK born,2011,2930,2927805
+London,Non-UK born,2012,2799,2952986
+London,Non-UK born,2013,2466,3061116
+London,Non-UK born,2014,2077,3133896
+London,Non-UK born,2015,1845,3187265
+London,Non-UK born,2016,1781,3391309
+London,Non-UK born,2017,1517,3422960
+London,Non-UK born,2018,1368,3242946
+London,Non-UK born,2019,1355,3304319
+London,Non-UK born,2020,1161,3070342
+London,Non-UK born,2021,1307,3390245
+London,Non-UK born,2022,1344,3398482
+London,Non-UK born,2023,1419,3029182
+London,Non-UK born,2024,1625,3257531
+North West,UK born,2000,292,4850551
+North West,UK born,2001,325,4839816
+North West,UK born,2002,300,4864084
+North West,UK born,2003,302,4864920
+North West,UK born,2004,322,4882170
+North West,UK born,2005,271,4959400
+North West,UK born,2006,282,4885350
+North West,UK born,2007,278,4919605
+North West,UK born,2008,350,4883566
+North West,UK born,2009,317,4858995
+North West,UK born,2010,283,4922286
+North West,UK born,2011,316,4955635
+North West,UK born,2012,335,4972283
+North West,UK born,2013,313,4964049
+North West,UK born,2014,267,4992327
+North West,UK born,2015,253,4981216
+North West,UK born,2016,227,5003161
+North West,UK born,2017,245,4999896
+North West,UK born,2018,221,5006687
+North West,UK born,2019,200,5012446
+North West,UK born,2020,163,5172174
+North West,UK born,2021,181,4976620
+North West,UK born,2022,169,4953400
+North West,UK born,2023,152,4955420
+North West,UK born,2024,176,5072796
+North West,Non-UK born,2000,380,360365
+North West,Non-UK born,2001,358,378965
+North West,Non-UK born,2002,448,374384
+North West,Non-UK born,2003,437,398280
+North West,Non-UK born,2004,551,401678
+North West,Non-UK born,2005,602,357151
+North West,Non-UK born,2006,580,464058
+North West,Non-UK born,2007,535,465656
+North West,Non-UK born,2008,599,544255
+North West,Non-UK born,2009,638,601809
+North West,Non-UK born,2010,559,574002
+North West,Non-UK born,2011,665,582852
+North West,Non-UK born,2012,704,599923
+North West,Non-UK born,2013,643,642126
+North West,Non-UK born,2014,501,650841
+North West,Non-UK born,2015,441,696338
+North West,Non-UK born,2016,487,710132
+North West,Non-UK born,2017,410,739751
+North West,Non-UK born,2018,389,802762
+North West,Non-UK born,2019,374,827814
+North West,Non-UK born,2020,368,693428
+North West,Non-UK born,2021,377,903219
+North West,Non-UK born,2022,369,946135
+North West,Non-UK born,2023,425,1024194
+North West,Non-UK born,2024,532,993194
+West Midlands,UK born,2000,261,6410089
+West Midlands,UK born,2001,299,6402428
+West Midlands,UK born,2002,258,6400909
+West Midlands,UK born,2003,235,6426504
+West Midlands,UK born,2004,198,6426854
+West Midlands,UK born,2005,244,6412510
+West Midlands,UK born,2006,230,6408605
+West Midlands,UK born,2007,252,6369678
+West Midlands,UK born,2008,231,6375008
+West Midlands,UK born,2009,255,6374498
+West Midlands,UK born,2010,270,6393583
+West Midlands,UK born,2011,259,6413754
+West Midlands,UK born,2012,262,6447102
+West Midlands,UK born,2013,255,6437474
+West Midlands,UK born,2014,226,6435211
+West Midlands,UK born,2015,185,6379016
+West Midlands,UK born,2016,209,6436843
+West Midlands,UK born,2017,175,6441481
+West Midlands,UK born,2018,161,6539512
+West Midlands,UK born,2019,144,6501673
+West Midlands,UK born,2020,133,6561021
+West Midlands,UK born,2021,127,6459798
+West Midlands,UK born,2022,116,6447404
+West Midlands,UK born,2023,140,6593464
+West Midlands,UK born,2024,127,6574234
+West Midlands,Non-UK born,2000,348,275407
+West Midlands,Non-UK born,2001,327,281613
+West Midlands,Non-UK born,2002,352,296958
+West Midlands,Non-UK born,2003,330,301304
+West Midlands,Non-UK born,2004,358,324193
+West Midlands,Non-UK born,2005,468,371085
+West Midlands,Non-UK born,2006,427,405964
+West Midlands,Non-UK born,2007,458,473177
+West Midlands,Non-UK born,2008,474,496645
+West Midlands,Non-UK born,2009,494,526405
+West Midlands,Non-UK born,2010,491,542374
+West Midlands,Non-UK born,2011,521,558484
+West Midlands,Non-UK born,2012,494,552261
+West Midlands,Non-UK born,2013,447,582508
+West Midlands,Non-UK born,2014,405,612793
+West Midlands,Non-UK born,2015,368,706430
+West Midlands,Non-UK born,2016,369,663930
+West Midlands,Non-UK born,2017,340,690213
+West Midlands,Non-UK born,2018,293,649289
+West Midlands,Non-UK born,2019,371,716754
+West Midlands,Non-UK born,2020,318,681186
+West Midlands,Non-UK born,2021,345,776972
+West Midlands,Non-UK born,2022,377,817159
+West Midlands,Non-UK born,2023,445,859572
+West Midlands,Non-UK born,2024,530,993772
+South East,UK born,2000,171,7294458
+South East,UK born,2001,152,7306230
+South East,UK born,2002,143,7311479
+South East,UK born,2003,118,7294479
+South East,UK born,2004,163,7345182
+South East,UK born,2005,130,7387422
+South East,UK born,2006,135,7357422
+South East,UK born,2007,165,7413533
+South East,UK born,2008,138,7423278
+South East,UK born,2009,180,7469870
+South East,UK born,2010,148,7482063
+South East,UK born,2011,204,7528225
+South East,UK born,2012,230,7607896
+South East,UK born,2013,172,7595704
+South East,UK born,2014,160,7665129
+South East,UK born,2015,167,7706880
+South East,UK born,2016,132,7693151
+South East,UK born,2017,152,7736535
+South East,UK born,2018,162,7768197
+South East,UK born,2019,141,7788980
+South East,UK born,2020,119,7847482
+South East,UK born,2021,101,7827615
+South East,UK born,2022,98,7842013
+South East,UK born,2023,105,7778035
+South East,UK born,2024,99,7814926
+South East,Non-UK born,2000,211,566200
+South East,Non-UK born,2001,228,585654
+South East,Non-UK born,2002,290,603816
+South East,Non-UK born,2003,365,660192
+South East,Non-UK born,2004,344,652165
+South East,Non-UK born,2005,417,676508
+South East,Non-UK born,2006,414,775408
+South East,Non-UK born,2007,415,795535
+South East,Non-UK born,2008,442,860014
+South East,Non-UK born,2009,474,878802
+South East,Non-UK born,2010,498,948648
+South East,Non-UK born,2011,577,978693
+South East,Non-UK born,2012,531,968603
+South East,Non-UK born,2013,506,1049135
+South East,Non-UK born,2014,493,1058076
+South East,Non-UK born,2015,405,1086862
+South East,Non-UK born,2016,419,1171636
+South East,Non-UK born,2017,378,1203495
+South East,Non-UK born,2018,330,1226056
+South East,Non-UK born,2019,356,1267585
+South East,Non-UK born,2020,321,1265392
+South East,Non-UK born,2021,403,1309588
+South East,Non-UK born,2022,382,1322423
+South East,Non-UK born,2023,427,1490637
+South East,Non-UK born,2024,488,1588620
+East of England,UK born,2000,97,4982348
+East of England,UK born,2001,111,4966019
+East of England,UK born,2002,106,5015053
+East of England,UK born,2003,97,5028703
+East of England,UK born,2004,101,5057720
+East of England,UK born,2005,129,5045260
+East of England,UK born,2006,98,5040313
+East of England,UK born,2007,111,5038757
+East of England,UK born,2008,148,5098831
+East of England,UK born,2009,132,5117280
+East of England,UK born,2010,135,5167151
+East of England,UK born,2011,147,5190970
+East of England,UK born,2012,128,5175905
+East of England,UK born,2013,120,5226096
+East of England,UK born,2014,110,5263094
+East of England,UK born,2015,102,5246932
+East of England,UK born,2016,119,5324454
+East of England,UK born,2017,120,5336813
+East of England,UK born,2018,87,5427292
+East of England,UK born,2019,123,5387421
+East of England,UK born,2020,107,5473386
+East of England,UK born,2021,94,5431321
+East of England,UK born,2022,80,5442659
+East of England,UK born,2023,81,5352866
+East of England,UK born,2024,83,5400527
+East of England,Non-UK born,2000,150,320509
+East of England,Non-UK born,2001,163,360942
+East of England,Non-UK born,2002,209,344222
+East of England,Non-UK born,2003,198,371127
+East of England,Non-UK born,2004,270,377656
+East of England,Non-UK born,2005,304,440798
+East of England,Non-UK born,2006,324,490799
+East of England,Non-UK born,2007,275,537995
+East of England,Non-UK born,2008,309,532352
+East of England,Non-UK born,2009,338,556844
+East of England,Non-UK born,2010,346,562025
+East of England,Non-UK born,2011,387,594481
+East of England,Non-UK born,2012,345,652779
+East of England,Non-UK born,2013,314,648868
+East of England,Non-UK born,2014,313,675433
+East of England,Non-UK born,2015,278,746195
+East of England,Non-UK born,2016,305,719822
+East of England,Non-UK born,2017,281,759889
+East of England,Non-UK born,2018,255,709893
+East of England,Non-UK born,2019,285,797953
+East of England,Non-UK born,2020,258,744864
+East of England,Non-UK born,2021,269,821949
+East of England,Non-UK born,2022,286,832408
+East of England,Non-UK born,2023,333,994687
+East of England,Non-UK born,2024,363,1039204
+East Midlands,UK born,2000,120,3895609
+East Midlands,UK born,2001,120,3909566
+East Midlands,UK born,2002,127,3911749
+East Midlands,UK born,2003,116,3946410
+East Midlands,UK born,2004,111,3982993
+East Midlands,UK born,2005,95,3976675
+East Midlands,UK born,2006,114,3964493
+East Midlands,UK born,2007,118,3976697
+East Midlands,UK born,2008,119,3992279
+East Midlands,UK born,2009,147,4031884
+East Midlands,UK born,2010,122,4033361
+East Midlands,UK born,2011,142,4041039
+East Midlands,UK born,2012,127,4064022
+East Midlands,UK born,2013,116,4072893
+East Midlands,UK born,2014,132,4110504
+East Midlands,UK born,2015,99,4119484
+East Midlands,UK born,2016,94,4133213
+East Midlands,UK born,2017,112,4068197
+East Midlands,UK born,2018,76,4137375
+East Midlands,UK born,2019,73,4159656
+East Midlands,UK born,2020,84,4226215
+East Midlands,UK born,2021,74,4146065
+East Midlands,UK born,2022,81,4132290
+East Midlands,UK born,2023,84,4145086
+East Midlands,UK born,2024,68,4223722
+East Midlands,Non-UK born,2000,102,217582
+East Midlands,Non-UK born,2001,100,223620
+East Midlands,Non-UK born,2002,118,252159
+East Midlands,Non-UK born,2003,181,249712
+East Midlands,Non-UK born,2004,226,249010
+East Midlands,Non-UK born,2005,291,292830
+East Midlands,Non-UK born,2006,233,341254
+East Midlands,Non-UK born,2007,278,367075
+East Midlands,Non-UK born,2008,296,386999
+East Midlands,Non-UK born,2009,340,378811
+East Midlands,Non-UK born,2010,351,411269
+East Midlands,Non-UK born,2011,331,434797
+East Midlands,Non-UK born,2012,354,441010
+East Midlands,Non-UK born,2013,292,461399
+East Midlands,Non-UK born,2014,258,462732
+East Midlands,Non-UK born,2015,252,492905
+East Midlands,Non-UK born,2016,241,502210
+East Midlands,Non-UK born,2017,225,600334
+East Midlands,Non-UK born,2018,257,584860
+East Midlands,Non-UK born,2019,276,590890
+East Midlands,Non-UK born,2020,228,550181
+East Midlands,Non-UK born,2021,275,633284
+East Midlands,Non-UK born,2022,302,664932
+East Midlands,Non-UK born,2023,311,747373
+East Midlands,Non-UK born,2024,353,740715
+Yorkshire and the Humber,UK born,2000,212,4667601
+Yorkshire and the Humber,UK born,2001,245,4666956
+Yorkshire and the Humber,UK born,2002,188,4670618
+Yorkshire and the Humber,UK born,2003,201,4671107
+Yorkshire and the Humber,UK born,2004,194,4710558
+Yorkshire and the Humber,UK born,2005,180,4690874
+Yorkshire and the Humber,UK born,2006,172,4738721
+Yorkshire and the Humber,UK born,2007,179,4722599
+Yorkshire and the Humber,UK born,2008,174,4726382
+Yorkshire and the Humber,UK born,2009,212,4773008
+Yorkshire and the Humber,UK born,2010,190,4810152
+Yorkshire and the Humber,UK born,2011,221,4810285
+Yorkshire and the Humber,UK born,2012,189,4797701
+Yorkshire and the Humber,UK born,2013,182,4820730
+Yorkshire and the Humber,UK born,2014,171,4822634
+Yorkshire and the Humber,UK born,2015,127,4832058
+Yorkshire and the Humber,UK born,2016,131,4822544
+Yorkshire and the Humber,UK born,2017,101,4844540
+Yorkshire and the Humber,UK born,2018,117,4866396
+Yorkshire and the Humber,UK born,2019,122,4928701
+Yorkshire and the Humber,UK born,2020,87,5007495
+Yorkshire and the Humber,UK born,2021,87,4903556
+Yorkshire and the Humber,UK born,2022,88,4897662
+Yorkshire and the Humber,UK born,2023,94,4874816
+Yorkshire and the Humber,UK born,2024,100,4958912
+Yorkshire and the Humber,Non-UK born,2000,259,227290
+Yorkshire and the Humber,Non-UK born,2001,269,242979
+Yorkshire and the Humber,Non-UK born,2002,284,262433
+Yorkshire and the Humber,Non-UK born,2003,334,287653
+Yorkshire and the Humber,Non-UK born,2004,330,285477
+Yorkshire and the Humber,Non-UK born,2005,340,348975
+Yorkshire and the Humber,Non-UK born,2006,415,327630
+Yorkshire and the Humber,Non-UK born,2007,356,374619
+Yorkshire and the Humber,Non-UK born,2008,415,403442
+Yorkshire and the Humber,Non-UK born,2009,406,384060
+Yorkshire and the Humber,Non-UK born,2010,366,377662
+Yorkshire and the Humber,Non-UK born,2011,389,410990
+Yorkshire and the Humber,Non-UK born,2012,354,452211
+Yorkshire and the Humber,Non-UK born,2013,360,450945
+Yorkshire and the Humber,Non-UK born,2014,319,470990
+Yorkshire and the Humber,Non-UK born,2015,291,488419
+Yorkshire and the Humber,Non-UK born,2016,287,522047
+Yorkshire and the Humber,Non-UK born,2017,243,527464
+Yorkshire and the Humber,Non-UK born,2018,232,534275
+Yorkshire and the Humber,Non-UK born,2019,227,494810
+Yorkshire and the Humber,Non-UK born,2020,194,435627
+Yorkshire and the Humber,Non-UK born,2021,238,532649
+Yorkshire and the Humber,Non-UK born,2022,212,559858
+Yorkshire and the Humber,Non-UK born,2023,258,623885
+Yorkshire and the Humber,Non-UK born,2024,321,620752
+South West,UK born,2000,139,4588661
+South West,UK born,2001,123,4613545
+South West,UK born,2002,99,4606786
+South West,UK born,2003,87,4632187
+South West,UK born,2004,98,4694724
+South West,UK born,2005,123,4721492
+South West,UK born,2006,87,4722006
+South West,UK born,2007,97,4713926
+South West,UK born,2008,91,4760530
+South West,UK born,2009,99,4804859
+South West,UK born,2010,108,4815195
+South West,UK born,2011,127,4793720
+South West,UK born,2012,114,4819239
+South West,UK born,2013,151,4882770
+South West,UK born,2014,133,4875434
+South West,UK born,2015,123,4912978
+South West,UK born,2016,94,4962875
+South West,UK born,2017,105,4903153
+South West,UK born,2018,94,4993971
+South West,UK born,2019,102,5052022
+South West,UK born,2020,65,5021520
+South West,UK born,2021,61,5089098
+South West,UK born,2022,43,5094207
+South West,UK born,2023,51,5049131
+South West,UK born,2024,61,5153253
+South West,Non-UK born,2000,70,236133
+South West,Non-UK born,2001,61,236848
+South West,Non-UK born,2002,89,275753
+South West,Non-UK born,2003,92,281855
+South West,Non-UK born,2004,134,250574
+South West,Non-UK born,2005,124,269296
+South West,Non-UK born,2006,160,302997
+South West,Non-UK born,2007,150,358933
+South West,Non-UK born,2008,141,346861
+South West,Non-UK born,2009,146,324884
+South West,Non-UK born,2010,125,349293
+South West,Non-UK born,2011,150,409197
+South West,Non-UK born,2012,167,422175
+South West,Non-UK born,2013,156,396341
+South West,Non-UK born,2014,171,448078
+South West,Non-UK born,2015,148,457835
+South West,Non-UK born,2016,138,443371
+South West,Non-UK born,2017,117,541637
+South West,Non-UK born,2018,93,497818
+South West,Non-UK born,2019,127,477945
+South West,Non-UK born,2020,100,543993
+South West,Non-UK born,2021,98,486889
+South West,Non-UK born,2022,118,507946
+South West,Non-UK born,2023,157,646464
+South West,Non-UK born,2024,184,625514
+North East,UK born,2000,90,2456108
+North East,UK born,2001,92,2440387
+North East,UK born,2002,91,2431324
+North East,UK born,2003,67,2442099
+North East,UK born,2004,68,2422914
+North East,UK born,2005,55,2423585
+North East,UK born,2006,66,2424587
+North East,UK born,2007,79,2434203
+North East,UK born,2008,63,2415130
+North East,UK born,2009,55,2399667
+North East,UK born,2010,53,2432006
+North East,UK born,2011,39,2449782
+North East,UK born,2012,58,2440573
+North East,UK born,2013,48,2422737
+North East,UK born,2014,80,2439317
+North East,UK born,2015,55,2464493
+North East,UK born,2016,50,2431359
+North East,UK born,2017,44,2434151
+North East,UK born,2018,53,2448385
+North East,UK born,2019,24,2481097
+North East,UK born,2020,43,2487472
+North East,UK born,2021,23,2469007
+North East,UK born,2022,16,2469626
+North East,UK born,2023,27,2428468
+North East,UK born,2024,30,2484363
+North East,Non-UK born,2000,35,55190
+North East,Non-UK born,2001,59,66669
+North East,Non-UK born,2002,56,76071
+North East,Non-UK born,2003,60,65917
+North East,Non-UK born,2004,59,85142
+North East,Non-UK born,2005,60,90440
+North East,Non-UK born,2006,57,95028
+North East,Non-UK born,2007,90,94625
+North East,Non-UK born,2008,72,121183
+North East,Non-UK born,2009,70,143229
+North East,Non-UK born,2010,81,122010
+North East,Non-UK born,2011,71,114147
+North East,Non-UK born,2012,95,129397
+North East,Non-UK born,2013,75,154288
+North East,Non-UK born,2014,75,146040
+North East,Non-UK born,2015,72,124989
+North East,Non-UK born,2016,71,168216
+North East,Non-UK born,2017,64,176135
+North East,Non-UK born,2018,66,166186
+North East,Non-UK born,2019,52,139828
+North East,Non-UK born,2020,41,136673
+North East,Non-UK born,2021,57,150671
+North East,Non-UK born,2022,58,159261
+North East,Non-UK born,2023,84,233752
+North East,Non-UK born,2024,93,215977

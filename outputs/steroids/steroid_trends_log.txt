@@ -1,0 +1,60 @@
+Postcodes looked up: 0 new, 0 not in ONSPD
+OCS items linked to a region: 98.38%
+
+National OCS per 1,000 residents per year:
+       items_per_1000_ocs  items_per_1000_other  items_per_1000_prednisolone  items_per_1000_dexamethasone  items_per_1000_hydrocortisone  mg_per_1000_prednisolone_tablets  items_per_1000_prednisolone_tablets  mg_per_prednisolone_tablet_item
+year                                                                                                                                                                                                                                            
+2014               141.5                   1.0                        129.6                           4.2                            6.7                           26497.5                                129.5                            204.6
+2015               142.1                   1.0                        129.8                           4.3                            7.0                           26383.5                                129.6                            203.7
+2016               144.0                   0.9                        131.6                           4.3                            7.2                           26401.6                                131.0                            201.6
+2017               142.3                   0.9                        129.5                           4.4                            7.6                           25735.0                                128.6                            200.1
+2018               139.5                   0.8                        126.7                           4.1                            7.8                           25111.9                                126.1                            199.2
+2019               141.3                   0.8                        128.2                           4.2                            8.1                           25208.6                                127.5                            197.7
+2020               127.5                   0.9                        114.3                           3.9                            8.4                           22632.6                                114.0                            198.6
+2021               122.9                   0.9                        109.6                           4.1                            8.3                           21273.9                                109.2                            194.8
+2022               129.8                   1.0                        115.9                           4.2                            8.7                           22125.5                                115.4                            191.7
+2023               129.0                   1.2                        114.8                           3.8                            9.1                           21715.4                                114.5                            189.7
+2024               127.7                   1.4                        112.8                           4.0                            9.6                           20881.5                                112.5                            185.7
+
+% change 2014 -> 2024:
+ items_per_1000_ocs                     -9.7
+items_per_1000_other                   37.3
+items_per_1000_prednisolone           -12.9
+items_per_1000_dexamethasone           -4.7
+items_per_1000_hydrocortisone          41.9
+mg_per_1000_prednisolone_tablets      -21.2
+items_per_1000_prednisolone_tablets   -13.2
+mg_per_prednisolone_tablet_item        -9.2
+
+England: OCS items/1,000 vs TB incidence (annual)
+   level  lag_years  n_years  r_levels  p_levels  r_year_on_year_change  p_change
+England          0       11     0.633     0.036                  0.226     0.530
+England          1       10     0.401     0.251                 -0.175     0.652
+England          2        9     0.106     0.786                  0.163     0.700
+England          3        8    -0.537     0.170                 -0.535     0.216
+
+Regional annual panel (Poisson, region + year FE; cluster SE, t(8)):
+ outcome             exposure                model  lag_years  n_obs     years  irr_per_10pct  ci_low  ci_high     p leave_one_region_out_range
+ All TB         ocs_per_1000              FE only          1     90 2015-2024          0.879   0.659    1.173 0.334                0.794-0.980
+ All TB         ocs_per_1000 FE + migration + age          1     90 2015-2024          0.997   0.788    1.260 0.976                0.915-1.071
+ All TB         ocs_per_1000              FE only          2     81 2016-2024          0.907   0.714    1.152 0.373                0.857-0.969
+ All TB         ocs_per_1000 FE + migration + age          2     81 2016-2024          1.025   0.816    1.287 0.811                0.971-1.085
+ All TB         ocs_per_1000              FE only          3     72 2017-2024          0.854   0.714    1.021 0.076                0.822-0.889
+ All TB         ocs_per_1000 FE + migration + age          3     72 2017-2024          0.940   0.801    1.103 0.399                0.878-0.982
+ All TB pred_mg_per_resident              FE only          1     90 2015-2024          1.120   0.877    1.431 0.317                0.943-1.195
+ All TB pred_mg_per_resident FE + migration + age          1     90 2015-2024          1.078   0.881    1.318 0.417                0.997-1.171
+ All TB pred_mg_per_resident              FE only          2     81 2016-2024          1.084   0.867    1.355 0.430                0.947-1.157
+ All TB pred_mg_per_resident FE + migration + age          2     81 2016-2024          1.093   0.917    1.302 0.276                1.005-1.172
+ All TB pred_mg_per_resident              FE only          3     72 2017-2024          0.898   0.711    1.135 0.321                0.829-0.974
+ All TB pred_mg_per_resident FE + migration + age          3     72 2017-2024          0.937   0.798    1.099 0.371                0.888-1.003
+
+UTLA long differences (OCS 2014-16 -> 2019-21; TB 2014-16 -> 2022-24):
+ n_utla                                 138.000
+median_pct_change_ocs                   -8.217
+median_pct_change_tb                   -21.730
+spearman_rho                            -0.133
+spearman_p                               0.121
+adj_tb_ratio_per_10pct_ocs_increase      1.000
+ci_low                                   0.934
+ci_high                                  1.072
+p                                        0.992

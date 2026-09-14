@@ -1,0 +1,10 @@
+utla: 1191 area-years, 149 areas; overdispersion alpha = 0.0014
+                    n  power_or_type1  median_irr_10pct  irr_2_5  irr_97_5  true_irr_10pct_direct
+scenario                                                                                         
+No effect (RR 1)  200           0.045            0.9993   0.9654    1.0318                    NaN
+Published RR 4.9  200           0.030            1.0021   0.9689    1.0355                    NaN
+RR 25             200           0.110            1.0167   0.9839    1.0538                    NaN
+RR 100            200           0.565            1.0424   1.0087    1.0777                    NaN
+IRR 1.02 per 10%  200           0.170            1.0201   0.9819    1.0561                   1.02
+IRR 1.05 per 10%  200           0.745            1.0521   1.0135    1.0886                   1.05
+IRR 1.10 per 10%  200           1.000            1.1004   1.0559    1.1401                   1.10

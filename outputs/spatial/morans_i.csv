@@ -1,0 +1,5 @@
+level,quantity,n_areas,morans_i,expected_i,permutation_p
+utla,mean Pearson residual (primary model),149,0.04412215543456078,-0.006756756756756757,0.383
+utla,"mean log TB rate (raw, for comparison)",149,0.4896635533316952,-0.006756756756756757,0.001
+ltla,mean Pearson residual (primary model),292,-0.013832862210044365,-0.003436426116838488,0.695
+ltla,"mean log TB rate (raw, for comparison)",292,0.415376382659302,-0.003436426116838488,0.001
