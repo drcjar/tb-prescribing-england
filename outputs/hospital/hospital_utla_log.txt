@@ -1,0 +1,34 @@
+utla: share of quantity from trusts with catchment data: {'anti_tnf': 0.97, 'antituberculosis': 0.967, 'calcineurin_antiproliferative': 0.974, 'jak_inhibitor': 0.987, 'other_biologic': 0.97, 'systemic_corticosteroid': 0.962}
+utla: 151 areas; mean rates per 1,000 residents per year:
+      rate_antituberculosis  rate_anti_tnf  rate_other_biologic  rate_jak_inhibitor  rate_systemic_corticosteroid  rate_calcineurin_antiproliferative
+year                                                                                                                                                 
+2011                    NaN            NaN                  NaN                 NaN                           NaN                                 NaN
+2012                    NaN            NaN                  NaN                 NaN                           NaN                                 NaN
+2013                    NaN            NaN                  NaN                 NaN                           NaN                                 NaN
+2014                    NaN            NaN                  NaN                 NaN                           NaN                                 NaN
+2015                    NaN            NaN                  NaN                 NaN                           NaN                                 NaN
+2016                    NaN            NaN                  NaN                 NaN                           NaN                                 NaN
+2017                    NaN            NaN                  NaN                 NaN                           NaN                                 NaN
+2018                    NaN            NaN                  NaN                 NaN                           NaN                                 NaN
+2019                   42.1         3589.4               3697.5               408.3                       12290.3                            244611.4
+2020                   38.1         4045.5               3870.1               558.0                       10680.6                            254077.4
+2021                   39.7         4632.7               4685.4               946.0                       12531.6                            283207.3
+2022                   42.9         4842.9               4726.9              2127.1                       12996.0                            293819.2
+2023                   46.5         5449.3               5228.5              3924.0                       13512.9                            305540.4
+2024                   50.6         5901.6               5793.2              5363.9                       14123.9                            318848.9
+design                        cross-sectional 2019-24                              within-area FE                                               
+model                                        adjusted            unadjusted        concurrent (t)            lag (t-1) lead (t+1, falsification)
+drug                                                                                                                                            
+antituberculosis                 1.136 (1.035-1.247)*  1.708 (1.442-2.023)*  1.019 (1.005-1.034)*  0.999 (0.989-1.009)      1.017 (1.003-1.032)*
+anti_tnf                          0.964 (0.909-1.022)  0.798 (0.670-0.951)*   0.993 (0.983-1.002)  0.993 (0.983-1.003)       1.006 (0.991-1.022)
+other_biologic                    0.973 (0.915-1.034)   0.890 (0.785-1.009)   0.992 (0.980-1.004)  0.994 (0.982-1.006)       1.007 (0.990-1.024)
+jak_inhibitor                     0.978 (0.930-1.030)   0.886 (0.775-1.013)  0.990 (0.984-0.996)*  0.995 (0.989-1.001)       0.995 (0.988-1.002)
+systemic_corticosteroid           0.967 (0.928-1.008)   0.978 (0.864-1.108)   0.993 (0.980-1.006)  1.003 (0.989-1.018)       1.005 (0.985-1.025)
+calcineurin_antiproliferative    1.055 (1.001-1.112)*  1.302 (1.126-1.506)*   0.995 (0.987-1.004)  1.003 (0.993-1.012)       0.997 (0.986-1.009)
+drug
+anti_tnf                        -0.259
+antituberculosis                 0.743
+calcineurin_antiproliferative    0.338
+jak_inhibitor                   -0.128
+other_biologic                  -0.198
+systemic_corticosteroid         -0.040

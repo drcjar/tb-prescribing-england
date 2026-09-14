@@ -88,10 +88,11 @@ def main(level="utla", n_sims=200):
 
     tasks = [(label, kind, value, 1000 * i + s) for i, (label, kind, value) in enumerate(SCENARIOS)
              for s in range(n_sims)]
-    # capped: each worker holds a copy of the panel and a GLM design matrix, and more workers
-    # previously exhausted memory when run alongside other jobs
-    workers = min(4, max(1, (os.cpu_count() or 2) - 1))
-    with ProcessPoolExecutor(max_workers=workers, initializer=_init, initargs=(df, covars, mu0, k)) as pool:
+    # Memory grows by several GB per worker over repeated GLM fits, so use few workers and recycle
+    # each one after a handful of tasks
+    workers = min(2, max(1, (os.cpu_count() or 2) - 1))
+    with ProcessPoolExecutor(max_workers=workers, initializer=_init, initargs=(df, covars, mu0, k),
+                             max_tasks_per_child=5) as pool:
         results = pd.DataFrame(list(pool.map(one_sim, tasks, chunksize=4)))
     results.to_csv(OUT / f"simulations_{level}.csv", index=False)
 
