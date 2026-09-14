@@ -38,9 +38,67 @@ def rr_needed(mde, p):
     return 1 + q / p
 
 
-def main(results="outputs/panel/panel_results.csv", window="primary: t-5..t-3", out_name="mde_table.csv"):
-    res = pd.read_csv(ROOT / results)
-    primary = res[(res.exposure_window == window) & (res.model == "FE + time-varying")].set_index("drug")
+def min_detectable_paf(mde):
+    """Population attributable fraction a drug would need for its expected IRR per 10% increase
+    in use to equal the MDE (same model as expected_irr). NaN if unattainable (MDE >= 1.1)."""
+    if mde >= K:
+        return np.nan
+    q = (mde - 1) / (K - mde)
+    return q / (1 + q)
+
+
+# UKHSA TB in England 2025 (chapter 1): of 5,490 notifications in 2024, immunosuppression was
+# recorded for 344, including 30 due to steroids and 54 due to biological therapy.
+RECORDED_2024 = {"total": 5490, "steroids": 30, "biological_therapy": 54}
+# Illustrative age-specific prevalence of current oral glucocorticoid use, anchored to van Staa
+# 2000 (0.9% of adults overall, 2.5% at age 70-79); applied equally to UK-born and non-UK-born.
+OCS_PREVALENCE_BY_AGE = {"0 to 14": 0.001, "15 to 44": 0.004, "45 to 64": 0.010, "65 and over": 0.025}
+
+
+def benchmarks(rr=4.9):
+    """Expected change in TB notifications for a 10% increase in use under two alternatives to the
+    homogeneous calculation: (1) recorded drug-associated cases as the attributable share; (2)
+    stratum-specific prevalence of use and baseline counts by age and place of birth."""
+    rows = []
+    for drug in ("steroids", "biological_therapy"):
+        share = RECORDED_2024[drug] / RECORDED_2024["total"]
+        rows.append(dict(method=f"recorded cases ({drug}), UKHSA 2024", attributable_share_pct=100 * share,
+                         expected_pct_change_10pct=100 * (expected_irr_from_share(share) - 1)))
+    age = pd.read_csv(ROOT / "data" / "processed" / "region_tb_birthplace_age_annual.csv")
+    age = age[(age.year == 2024) & age.birthplace.isin(["UK born", "Non-UK born"])]
+    cases = age.groupby(["birthplace", "age_group"]).tb_count.sum().reset_index()
+    cases["age_key"] = cases.age_group.astype(str).str.replace(r"\s*\(.*\)", "", regex=True)
+    cases["prevalence"] = cases.age_key.map(
+        lambda a: next((v for k, v in OCS_PREVALENCE_BY_AGE.items() if a.startswith(k.split()[0])), np.nan))
+    cases = cases.dropna(subset=["prevalence"])
+    q = cases.prevalence * (rr - 1)
+    paf = (cases.tb_count * q / (1 + q)).sum() / cases.tb_count.sum()
+    irr = (cases.tb_count * expected_irr(rr, cases.prevalence)).sum() / cases.tb_count.sum()
+    rows.append(dict(method=f"stratified by age and birthplace (oral corticosteroids, RR {rr})",
+                     attributable_share_pct=100 * paf, expected_pct_change_10pct=100 * (irr - 1)))
+    homogeneous_q = 0.009 * (rr - 1)
+    rows.append(dict(method=f"homogeneous (oral corticosteroids, RR {rr}, prevalence 0.9%)",
+                     attributable_share_pct=100 * homogeneous_q / (1 + homogeneous_q),
+                     expected_pct_change_10pct=100 * (expected_irr(rr, 0.009) - 1)))
+    out = pd.DataFrame(rows)
+    out.to_csv(OUT / "expected_effect_benchmarks.csv", index=False)
+    print(cases[["birthplace", "age_group", "tb_count", "prevalence"]].to_string(index=False))
+    print(out.round(3).to_string(index=False))
+    return out
+
+
+def expected_irr_from_share(share):
+    """Expected IRR per 10% increase in use when a fraction `share` of cases is attributable."""
+    q = share / (1 - share)
+    return (1 + K * q) / (1 + q)
+
+
+def main(level="ltla", apportion="residence"):
+    """MDE table for the primary annual panel (exposure t-1) at the given level and apportionment."""
+    suffix = "" if apportion == "postcode" else f"_{apportion}"
+    res = pd.read_csv(ROOT / "outputs" / f"panel_annual_{level}{suffix}" / "panel_results.csv")
+    primary = res[(res.model == "primary (t-1)") & (res.term == "exposure_lag1")].set_index("drug")
+    results, window, out_name = f"panel_annual_{level}{suffix}", "primary (t-1)", f"mde_table_{level}{suffix}.csv"
     se = (np.log(primary.ci_high) - np.log(primary.ci_low)) / (2 * norm.ppf(0.975))
     design = pd.DataFrame({"se_log_irr_10pct": se, "mde_irr_10pct_increase": np.exp(Z * se),
                            "mde_irr_10pct_decrease_equiv": np.exp(-Z * se)})
@@ -58,6 +116,7 @@ def main(results="outputs/panel/panel_results.csv", window="primary: t-5..t-3", 
     d["mde_to_expected_ratio"] = np.log(d.mde_irr_10pct_increase) / np.abs(np.log(d.expected_irr_10pct))
     d["rr_needed_for_80pct_power"] = [rr_needed(m, p) if pd.notna(p) else np.nan
                                       for m, p in zip(d.mde_irr_10pct_increase, d.prevalence)]
+    d["min_detectable_paf_pct"] = [100 * min_detectable_paf(m) for m in d.mde_irr_10pct_increase]
     # power actually available for the literature effect
     d["power_for_expected"] = norm.cdf(np.abs(np.log(d.expected_irr_10pct)) / d.se_log_irr_10pct - norm.ppf(0.975))
 
@@ -69,6 +128,9 @@ def main(results="outputs/panel/panel_results.csv", window="primary: t-5..t-3", 
 
 
 if __name__ == "__main__":
-    main()
-    if (ROOT / "outputs" / "panel_annual" / "panel_annual_results.csv").exists():
-        main("outputs/panel_annual/panel_annual_results.csv", "primary: t-3..t-1", "mde_table_annual.csv")
+    for level in ("ltla", "utla"):
+        for apportion in ("residence", "postcode"):
+            suffix = "" if apportion == "postcode" else f"_{apportion}"
+            if (ROOT / "outputs" / f"panel_annual_{level}{suffix}" / "panel_results.csv").exists():
+                main(level, apportion)
+    benchmarks()

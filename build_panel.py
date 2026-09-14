@@ -91,18 +91,49 @@ def gp_practice_codes():
     return set(ep.loc[ep[25] == "RO76", 0])
 
 
-def annual_prescribing(lad_area, gp_only=False):
-    files = sorted((RAW / "epd_practice_monthly").glob("epd_practice_*.csv"))
+PRACTICE_FILES = RAW / "epd_practice_monthly_v2"
+RESIDENCE_SHARES = OUT / "practice_lad23_shares.csv"
+
+
+def annual_prescribing(lad_area, gp_only=True, apportion="postcode"):
+    """Area x year prescribing totals from practice x month extracts (2010-2024).
+
+    gp_only   - keep standard GP practices (ODS prescribing setting RO76), applied identically to the
+                HSCIC (pre-2014) and NHSBSA (2014+) series.
+    apportion - "postcode": each practice's prescribing goes to the LAD containing its postcode;
+                "residence": shared across LADs in proportion to where its registered patients live
+                (NHS Digital practice x LSOA registrations; earliest year's shares used for earlier
+                years, latest year's for later years).
+    """
+    files = sorted(PRACTICE_FILES.glob("epd_practice_*.csv"))
     rx = pd.concat(pd.read_csv(f, dtype={"PRACTICE_CODE": str, "POSTCODE": str}) for f in files)
+    value_cols = [c for c in rx.columns if c.startswith(("items_", "adq_", "mg_"))]
+    rx["year"] = rx.YEAR_MONTH // 100
     if gp_only:
         gp = gp_practice_codes()
-        share = rx.items_total[rx.PRACTICE_CODE.isin(gp)].sum() / rx.items_total.sum()
-        print(f"Restricting to standard GP practices (RO76): {share:.2%} of items")
+        share = (rx[rx.PRACTICE_CODE.isin(gp)].groupby("year").items_total.sum() / rx.groupby("year").items_total.sum())
+        print("Share of items from standard GP practices (RO76) by year:", share.round(4).to_dict())
         rx = rx[rx.PRACTICE_CODE.isin(gp)]
-    rx["year"] = rx.YEAR_MONTH // 100
     n_months = rx.groupby("year").YEAR_MONTH.nunique()
     complete = n_months[n_months == 12].index
     print("Months extracted per year:", n_months.to_dict())
+    rx = rx[rx.year.isin(complete)]
+
+    if apportion == "residence":
+        practice_year = rx.groupby(["PRACTICE_CODE", "year"])[value_cols].sum(min_count=1).reset_index()
+        shares = pd.read_csv(RESIDENCE_SHARES, dtype={"practice_code": str})
+        first, last = shares.year.min(), shares.year.max()
+        practice_year["share_year"] = practice_year.year.clip(first, last)
+        m = practice_year.merge(shares.rename(columns={"practice_code": "PRACTICE_CODE", "year": "share_year"}),
+                                on=["PRACTICE_CODE", "share_year"], how="left")
+        linked = m.lad23cd.notna()
+        print("Share of items apportioned by residence by year:",
+              (m[linked].groupby("year").apply(lambda g: (g.items_total * g.share).sum())
+               / practice_year.groupby("year").items_total.sum()).round(4).to_dict())
+        m = m[linked]
+        m[value_cols] = m[value_cols].mul(m.share, axis=0)
+        m["utla"] = m.lad23cd.replace(MERGES["ltla"]).map(lad_area)
+        return m.dropna(subset=["utla"]).groupby(["utla", "year"])[value_cols].sum(min_count=1)
 
     rx["pcds"] = rx.POSTCODE.map(norm_postcode)
     lad = postcode_to_lad(rx.pcds.dropna().unique())
@@ -110,9 +141,7 @@ def annual_prescribing(lad_area, gp_only=False):
     linked = rx.utla.notna()
     print("Share of items linked to an area by year:",
           (rx[linked].groupby("year").items_total.sum() / rx.groupby("year").items_total.sum()).round(4).to_dict())
-
-    item_cols = ["items_total"] + [f"items_{d}" for d in DRUG_GROUPS]
-    return rx[linked & rx.year.isin(complete)].groupby(["utla", "year"])[item_cols].sum()
+    return rx[linked].groupby(["utla", "year"])[value_cols].sum(min_count=1)
 
 
 def population(lad_area, level="utla"):
@@ -164,7 +193,7 @@ def tb_windows():
     return tb.set_index(["utla", "year"])[["area_name", "tb_count", "tb_denominator"]]
 
 
-def main(level="utla"):
+def main(level="utla", apportion="postcode"):
     lad_area = lad_to_area(level)
     pop = population(lad_area, level)
     grid = pd.MultiIndex.from_product([sorted(pop.index.get_level_values(0).unique()), YEARS],
@@ -173,7 +202,7 @@ def main(level="utla"):
     if level == "utla":
         panel = panel.join(tb_windows())
         panel["area_name"] = panel.groupby(level="utla").area_name.transform("first")
-    panel = panel.join(annual_prescribing(lad_area))
+    panel = panel.join(annual_prescribing(lad_area, apportion=apportion))
 
     for col in [c for c in panel.columns if c.startswith("items_")]:
         name = "rate_total_items" if col == "items_total" else col.replace("items_", "rate_")
@@ -183,10 +212,10 @@ def main(level="utla"):
     print("\nMean annual items per 1,000 residents across areas, by year:")
     print(national.mean().round(1).T.to_string())
     print("\nNon-missing values per column:\n", panel.notna().sum().to_string())
-    path = OUT / f"{level}_panel_annual.csv"
+    path = OUT / f"{level}_panel_annual{'' if apportion == 'postcode' else '_' + apportion}.csv"
     panel.reset_index().to_csv(path, index=False)
     print(f"\nWrote {len(panel)} rows ({panel.index.get_level_values(0).nunique()} areas) to {path}")
 
 
 if __name__ == "__main__":
-    main(*sys.argv[1:2])
+    main(*sys.argv[1:3])

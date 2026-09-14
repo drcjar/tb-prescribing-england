@@ -53,6 +53,33 @@ def log_rate(s):
     return np.log(s.clip(lower=floor))
 
 
+def fit_ppml_multi(df, exposures, covars, area_trends=False, population_covariate=False, cluster="utla"):
+    """Poisson PML with area and year fixed effects and several exposures in one model (e.g. a
+    distributed lag, or lag and lead jointly). Options for sensitivity analyses:
+      area_trends          - area-specific linear time trends;
+      population_covariate - log population as a free covariate instead of an offset (guards
+                             against shared-denominator bias between exposure rate and offset);
+      cluster              - column defining clusters for the robust covariance.
+    Exposure coefficients are named log_<exposure column>."""
+    X = pd.DataFrame({f"log_{e}": log_rate(df[e]) for e in exposures}, index=df.index)
+    for c in covars:
+        X[c] = df[c]
+    areas = pd.get_dummies(df.utla, prefix="a", drop_first=True, dtype=float)
+    X = X.join(areas).join(pd.get_dummies(df.window_end, prefix="t", drop_first=True, dtype=float))
+    if area_trends:
+        centred_year = (df.window_end - df.window_end.mean()).to_numpy()[:, None]
+        X = X.join(pd.DataFrame(areas.to_numpy() * centred_year, index=df.index,
+                                columns=[f"trend_{c}" for c in areas.columns]))
+    offset = None
+    if population_covariate:
+        X["log_population"] = np.log(df.tb_denominator)
+    else:
+        offset = np.log(df.tb_denominator)
+    X = sm.add_constant(X)
+    model = sm.GLM(df.tb_count, X, family=sm.families.Poisson(), offset=offset)
+    return model.fit(cov_type="cluster", cov_kwds={"groups": pd.factorize(df[cluster])[0]}, maxiter=200)
+
+
 def fit_ppml(df, exposure, covars):
     X = pd.DataFrame({"log_exposure": log_rate(df[exposure])}, index=df.index)
     for c in covars:

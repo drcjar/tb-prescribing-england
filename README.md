@@ -35,6 +35,26 @@ them into `data/raw/`. Processed analysis datasets are in `data/processed/` and 
 
 Run the scripts in this order. Python ≥3.12; install dependencies with `pip install -r requirements.txt`.
 
+Revised pipeline after peer review, round 1 (primary analyses):
+
+| Step | Script | Output |
+|---|---|---|
+| Drug group definitions (presentation level) | `drug_groups.py` | — |
+| Practice-month prescribing, 2014–2024 (NHSBSA EPD, SQL via POST) | `fetch_prescribing_panel.py` | `data/raw/epd_practice_monthly_v2/` |
+| Practice-month prescribing, 2010–2013 (HSCIC PDPI) | `fetch_pre2014_practice.py` | `data/raw/epd_practice_monthly_v2/` |
+| Practice → LAD shares by patient residence (NHS Digital LSOA registrations) | `build_practice_lad_shares.py` | `data/processed/practice_lad23_shares.csv` |
+| Annual TB counts | `build_tb_annual.py` | `data/processed/*_tb_annual.csv` |
+| Annual panels (postcode or residence apportionment) | `build_panel.py utla|ltla [postcode|residence]` | `data/processed/*_panel_annual*.csv` |
+| Latent TB programme covariate | `build_ltbi_covariate.py` | `data/processed/ltbi_programme_*.csv` |
+| Annual panel models | `analyze_panel_annual.py utla|ltla [postcode|residence]`, `plot_panel.py` | `outputs/panel_annual_*/` |
+| MDE and expected-effect benchmarks | `mde.py` | `outputs/mde/` |
+| Permutation-based power | `simulate_power.py utla|ltla` | `outputs/power_simulation/` |
+| Spatial dependence by year | `spatial_autocorrelation.py` | `outputs/spatial/` |
+| Hospital medicines: extraction, classification, analysis | `fetch_scmd.py`, `fetch_scmd_negative_control.py`, `build_scmd_classification.py`, `hospital_medicines.py`, `plot_hospital.py` | `outputs/hospital/` |
+| Oral glucocorticoid trends and regional analyses | `steroid_trends.py`, `steroid_ukborn_regional.py` | `outputs/steroids/` |
+
+First-pass pipeline (draft 1–2; retained for transparency):
+
 | Step | Script | Output |
 |---|---|---|
 | Cross-sectional dataset (Sub-ICB, June 2026) | `build_dataset.py` | `data/processed/sicbl26_analysis.csv` |

@@ -1,0 +1,11 @@
+ltla/residence: antituberculosis done
+ltla/residence: oral_glucocorticoids done
+ltla/residence: oral_hydrocortisone done
+ltla/residence: oral_dexamethasone done
+ltla/residence: inhaled_corticosteroids done
+ltla/residence: conventional_dmards done
+ltla/residence: transplant_immunosuppressants done
+ltla/residence: proton_pump_inhibitors done
+ltla/residence: statins done
+ltla/residence: metformin done
+ltla/residence: insulins done

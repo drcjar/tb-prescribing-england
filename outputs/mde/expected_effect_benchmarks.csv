@@ -1,0 +1,5 @@
+method,attributable_share_pct,expected_pct_change_10pct
+"recorded cases (steroids), UKHSA 2024",0.546448087431694,0.05464480874317612
+"recorded cases (biological_therapy), UKHSA 2024",0.9836065573770493,0.09836065573771702
+"stratified by age and birthplace (oral corticosteroids, RR 4.9)",2.9282156078565698,0.2928215607856499
+"homogeneous (oral corticosteroids, RR 4.9, prevalence 0.9%)",3.390976717225389,0.33909767172255467
