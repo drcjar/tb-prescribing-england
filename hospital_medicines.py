@@ -4,12 +4,14 @@ peer review, round 1).
 Exposure: NHS Secondary Care Medicines Data (SCMD; NHSBSA), trust x month x product
 (fetch_scmd.py), classified with data/raw/scmd/vmp_classification.csv (build_scmd_classification.py):
   - quantity in WHO defined daily doses (DDD; documented maintenance doses where WHO has none),
-    expressed as patient-year equivalents per 1,000 residents; prednisolone-equivalent mg for
-    systemic glucocorticoids; intra-articular/depot, topical and oncology forms excluded;
+    expressed as DDD-years per 1,000 residents; systemic glucocorticoids (without dexamethasone and
+    hydrocortisone, reported separately) in prednisolone-equivalent mg; the positive control in
+    pyrazinamide DDD including fixed-dose combinations; intra-articular/depot, topical and oncology
+    forms excluded;
   - trusts that merged during 2019-2024 are reassigned to their successors (trust_successor_map.csv);
   - apportioned to local authorities with OHID acute trust catchment shares (2024, all admissions;
     elective admissions as a sensitivity analysis).
-Controls: active-TB treatment (pyrazinamide/ethambutol-containing products; positive control);
+Controls: active-TB treatment (pyrazinamide, including fixed-dose combinations; positive control);
 low-TB-risk biologics (IL-17, IL-12/23, alpha4beta7 inhibitors, anakinra) and levetiracetam
 (negative control exposures).
 Outcome: annual TB notifications (UKHSA regional reports).
@@ -36,22 +38,23 @@ OUT.mkdir(parents=True, exist_ok=True)
 
 GROUPS = ["antituberculosis_active", "antituberculosis_rifamycin_isoniazid", "tnf_inhibitor", "il6_abatacept",
           "jak_inhibitor_rheum", "rituximab", "transplant_cni_mtor", "antiproliferative", "systemic_glucocorticoid",
-          "low_tb_risk_biologic", "negative_control_levetiracetam"]
+          "glucocorticoid_dexamethasone_hydrocortisone", "low_tb_risk_biologic", "negative_control_levetiracetam"]
 SOURCE_PRIORITY = {"final": 0, "provisional": 1, "retired": 2}
 YEARS = range(2019, 2025)
 K = np.log(1.1)
 LEVETIRACETAM_DDD_MG = 1500
+PYRAZINAMIDE_DDD_MG = 1500
 CROSS_SECTIONAL_COVARS = ["pct_non_uk_born", "pct_age_65plus", "pct_age_15_44", "intl_in_per_1000", "hiv_prev",
                           "diabetes_prev"]
 # Illustrative individual-level relative risks for the expected-effect scenarios (not estimates)
 RR_SCENARIOS = {
-    "tnf_inhibitor": [("RR 4 (unscreened)", 4.0), ("RR 1.7 (with LTBI screening, ~78% reduction)", 1.66)],
+    "tnf_inhibitor": [("RR 4 (illustrative, before LTBI screening)", 4.0),
+                      ("RR 1.5 (illustrative, with LTBI screening; probably nearer 1, so favours detection)", 1.5)],
     "il6_abatacept": [("RR 2", 2.0)],
     "jak_inhibitor_rheum": [("RR 2", 2.0)],
     "rituximab": [("RR 1.5", 1.5)],
     "transplant_cni_mtor": [("RR 10 (solid organ transplant)", 10.0)],
     "antiproliferative": [("RR 2", 2.0)],
-    "systemic_glucocorticoid": [("RR 4.9", 4.9)],
 }
 
 
@@ -68,10 +71,24 @@ def trust_year_quantities():
     v = monthly_products()
     cls = pd.read_csv(SCMD / "vmp_classification.csv", dtype={"vmp_snomed_code": str})
     cls = cls[cls.include.astype(str).str.lower() == "true"]
+    # dm+d renames leave some (code, unit) pairs listed twice; merging on both would double-count them
+    cls = cls.drop_duplicates(["vmp_snomed_code", "unit"])
     m = v.merge(cls, left_on=["VMP_SNOMED_CODE", "UNIT"], right_on=["vmp_snomed_code", "unit"], how="left")
+    assert len(m) == len(v), "classification merge duplicated SCMD rows"
     print(f"SCMD product rows classified as included: {m.new_group.notna().mean():.1%}")
     m = m.dropna(subset=["new_group"])
     m["ddd"] = m.QTY * m.ddd_per_unit
+    # positive control in pyrazinamide DDD, counting fixed-dose combination content, so a day of
+    # intensive-phase treatment counts once whatever the formulation; ethambutol-only products add nothing
+    pza_mg = m.pyrazinamide_mg_per_unit.fillna(
+        m.mg_per_unit.where(m.substances.astype(str).str.strip().str.lower() == "pyrazinamide"))
+    active = m.new_group == "antituberculosis_active"
+    m.loc[active, "ddd"] = m.loc[active, "QTY"] * pza_mg[active].fillna(0) / PYRAZINAMIDE_DDD_MG
+    # candidate glucocorticoid exposure excludes dexamethasone and hydrocortisone (oncology, antiemetic,
+    # COVID-19 and replacement use), which are reported as a separate descriptive group
+    dex_hc = (m.new_group == "systemic_glucocorticoid") & m.substances.astype(str).str.contains(
+        "dexamethasone|hydrocortisone", case=False)
+    m.loc[dex_hc, "new_group"] = "glucocorticoid_dexamethasone_hydrocortisone"
     m["pred_mg"] = np.where(m.new_group == "systemic_glucocorticoid", m.QTY * m.mg_per_unit * m.pred_equiv_factor, 0.0)
     m["year"] = m.YEAR_MONTH // 100
     monthly = m.groupby(["ODS_CODE", "new_group", "YEAR_MONTH", "year"])[["ddd", "pred_mg"]].sum().clip(lower=0)
@@ -146,7 +163,8 @@ def build(level, admission_type="All"):
     df["principal_trust"] = df.utla.map(principal_trust(level))
     for g in GROUPS:
         df[f"rate_{g}"] = df.get(f"ddd_{g}", np.nan) / 365 / df.population * 1000
-    df["rate_glucocorticoid_pred_mg"] = df["pred_mg_systemic_glucocorticoid"] / df.population * 1000
+    # the candidate glucocorticoid exposure is prednisolone-equivalent mg per 1,000 residents per year
+    df["rate_systemic_glucocorticoid"] = df["pred_mg_systemic_glucocorticoid"] / df.population * 1000
     return df, coverage
 
 

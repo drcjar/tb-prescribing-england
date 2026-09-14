@@ -45,9 +45,8 @@ def sheet_rows(path, table):
 def la_annual(level="utla"):
     nomis = pd.read_csv(RAW / POPULATION_FILES[level]).drop_duplicates("GEOGRAPHY_CODE")
     name_to_code = {norm(n): c for n, c in zip(nomis.GEOGRAPHY_NAME, nomis.GEOGRAPHY_CODE)}
-    # UKHSA combines these small areas with a neighbour. At UTLA level City of London is counted with
-    # Hackney here but with Westminster in the population data: a small denominator mismatch, noted
-    # as a limitation. At LTLA level both sources are aligned on Hackney.
+    # UKHSA combines these small areas with a neighbour; build_panel.MERGES aligns population, covariates
+    # and prescribing on the same neighbour (Hackney; Cornwall) at both levels.
     name_to_code[norm("City of London and Hackney")] = "E09000012"
     name_to_code[norm("Cornwall and Isles of Scilly")] = "E06000052"
     frames = []

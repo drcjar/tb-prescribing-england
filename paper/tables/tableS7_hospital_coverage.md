@@ -8,18 +8,24 @@
 | Antiproliferatives | 2022 | 97.7% | 0.7% | 1.6% |
 | Antiproliferatives | 2023 | 97.6% | 0.5% | 1.9% |
 | Antiproliferatives | 2024 | 97.7% | 0.4% | 1.9% |
-| Active-TB treatment (pyrazinamide/ethambutol; positive control) | 2019 | 91.3% | 8.3% | 0.4% |
-| Active-TB treatment (pyrazinamide/ethambutol; positive control) | 2020 | 94.6% | 5.1% | 0.3% |
-| Active-TB treatment (pyrazinamide/ethambutol; positive control) | 2021 | 97.4% | 2.5% | 0.1% |
-| Active-TB treatment (pyrazinamide/ethambutol; positive control) | 2022 | 98.5% | 1.4% | 0.1% |
-| Active-TB treatment (pyrazinamide/ethambutol; positive control) | 2023 | 98.9% | 1.0% | 0.1% |
-| Active-TB treatment (pyrazinamide/ethambutol; positive control) | 2024 | 98.3% | 0.9% | 0.7% |
+| Active-TB treatment (pyrazinamide DDD, including fixed-dose combinations; positive control) | 2019 | 90.9% | 8.9% | 0.3% |
+| Active-TB treatment (pyrazinamide DDD, including fixed-dose combinations; positive control) | 2020 | 94.2% | 5.7% | 0.1% |
+| Active-TB treatment (pyrazinamide DDD, including fixed-dose combinations; positive control) | 2021 | 97.4% | 2.5% | 0.1% |
+| Active-TB treatment (pyrazinamide DDD, including fixed-dose combinations; positive control) | 2022 | 98.8% | 1.1% | 0.0% |
+| Active-TB treatment (pyrazinamide DDD, including fixed-dose combinations; positive control) | 2023 | 98.9% | 1.0% | 0.0% |
+| Active-TB treatment (pyrazinamide DDD, including fixed-dose combinations; positive control) | 2024 | 97.4% | 1.1% | 1.5% |
 | Rifamycin/isoniazid (active and latent TB, other infections) | 2019 | 90.6% | 9.0% | 0.3% |
 | Rifamycin/isoniazid (active and latent TB, other infections) | 2020 | 95.1% | 4.6% | 0.3% |
 | Rifamycin/isoniazid (active and latent TB, other infections) | 2021 | 97.7% | 2.1% | 0.2% |
 | Rifamycin/isoniazid (active and latent TB, other infections) | 2022 | 99.0% | 0.8% | 0.2% |
 | Rifamycin/isoniazid (active and latent TB, other infections) | 2023 | 99.0% | 0.8% | 0.2% |
 | Rifamycin/isoniazid (active and latent TB, other infections) | 2024 | 99.2% | 0.6% | 0.1% |
+| Dexamethasone and hydrocortisone (descriptive) | 2019 | 91.5% | 8.1% | 0.4% |
+| Dexamethasone and hydrocortisone (descriptive) | 2020 | 95.2% | 4.4% | 0.4% |
+| Dexamethasone and hydrocortisone (descriptive) | 2021 | 97.5% | 2.1% | 0.4% |
+| Dexamethasone and hydrocortisone (descriptive) | 2022 | 98.6% | 1.0% | 0.3% |
+| Dexamethasone and hydrocortisone (descriptive) | 2023 | 99.0% | 0.7% | 0.3% |
+| Dexamethasone and hydrocortisone (descriptive) | 2024 | 99.2% | 0.5% | 0.3% |
 | IL-6 inhibitors and abatacept | 2019 | 90.1% | 8.7% | 1.2% |
 | IL-6 inhibitors and abatacept | 2020 | 93.9% | 4.9% | 1.2% |
 | IL-6 inhibitors and abatacept | 2021 | 96.3% | 2.8% | 0.9% |
@@ -50,12 +56,12 @@
 | Rituximab | 2022 | 98.7% | 0.8% | 0.5% |
 | Rituximab | 2023 | 99.0% | 0.4% | 0.5% |
 | Rituximab | 2024 | 99.2% | 0.2% | 0.6% |
-| Systemic glucocorticoids | 2019 | 90.6% | 8.8% | 0.5% |
-| Systemic glucocorticoids | 2020 | 94.6% | 4.8% | 0.6% |
-| Systemic glucocorticoids | 2021 | 97.3% | 2.2% | 0.5% |
-| Systemic glucocorticoids | 2022 | 98.4% | 1.1% | 0.5% |
-| Systemic glucocorticoids | 2023 | 98.8% | 0.7% | 0.5% |
-| Systemic glucocorticoids | 2024 | 99.0% | 0.5% | 0.5% |
+| Systemic glucocorticoids without dexamethasone/hydrocortisone (prednisolone-equivalent mg) | 2019 | 89.8% | 9.5% | 0.7% |
+| Systemic glucocorticoids without dexamethasone/hydrocortisone (prednisolone-equivalent mg) | 2020 | 94.1% | 5.1% | 0.8% |
+| Systemic glucocorticoids without dexamethasone/hydrocortisone (prednisolone-equivalent mg) | 2021 | 97.1% | 2.3% | 0.6% |
+| Systemic glucocorticoids without dexamethasone/hydrocortisone (prednisolone-equivalent mg) | 2022 | 98.2% | 1.1% | 0.6% |
+| Systemic glucocorticoids without dexamethasone/hydrocortisone (prednisolone-equivalent mg) | 2023 | 98.6% | 0.8% | 0.6% |
+| Systemic glucocorticoids without dexamethasone/hydrocortisone (prednisolone-equivalent mg) | 2024 | 98.8% | 0.5% | 0.6% |
 | TNF inhibitors | 2019 | 91.2% | 8.2% | 0.6% |
 | TNF inhibitors | 2020 | 95.3% | 4.1% | 0.6% |
 | TNF inhibitors | 2021 | 97.6% | 2.0% | 0.4% |
@@ -63,8 +69,8 @@
 | TNF inhibitors | 2023 | 98.6% | 0.4% | 0.9% |
 | TNF inhibitors | 2024 | 98.9% | 0.3% | 0.9% |
 | Calcineurin/mTOR inhibitors | 2019 | 92.3% | 7.6% | 0.1% |
-| Calcineurin/mTOR inhibitors | 2020 | 96.3% | 3.6% | 0.1% |
-| Calcineurin/mTOR inhibitors | 2021 | 99.3% | 0.6% | 0.1% |
+| Calcineurin/mTOR inhibitors | 2020 | 96.2% | 3.6% | 0.1% |
+| Calcineurin/mTOR inhibitors | 2021 | 99.2% | 0.6% | 0.1% |
 | Calcineurin/mTOR inhibitors | 2022 | 99.8% | 0.1% | 0.1% |
 | Calcineurin/mTOR inhibitors | 2023 | 99.9% | 0.0% | 0.1% |
 | Calcineurin/mTOR inhibitors | 2024 | 99.9% | 0.0% | 0.1% |

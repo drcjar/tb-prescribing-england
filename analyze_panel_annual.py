@@ -79,6 +79,7 @@ def prior_mean(panel, cols, first=3, last=1):
 def estimate(df, exposures, covars, label, drug, **kwargs):
     d = df.dropna(subset=exposures + covars + ["tb_count", "population"])
     d = d.rename(columns={"year": "window_end", "population": "tb_denominator"})
+    n_before = len(d)
     d = d[(d[exposures] > 0).all(axis=1)]
     res = fit_ppml_multi(d, exposures, covars, **kwargs)
     rows = []
@@ -86,9 +87,21 @@ def estimate(df, exposures, covars, label, drug, **kwargs):
         b, se = res.params[f"log_{e}"], res.bse[f"log_{e}"]
         rows.append(dict(drug=drug, model=label, term=e.replace(rate_name(drug), "exposure"),
                          irr_10pct=np.exp(b * K), ci_low=np.exp((b - 1.96 * se) * K),
-                         ci_high=np.exp((b + 1.96 * se) * K), upper90=np.exp((b + 1.645 * se) * K),
-                         se_log_irr_10pct=se * K, p=res.pvalues[f"log_{e}"], n_obs=int(res.nobs),
+                         ci_high=np.exp((b + 1.96 * se) * K), lower90=np.exp((b - 1.645 * se) * K),
+                         upper90=np.exp((b + 1.645 * se) * K), se_log_irr_10pct=se * K, p=res.pvalues[f"log_{e}"],
+                         n_obs=int(res.nobs), n_dropped_zero_exposure=n_before - len(d),
                          n_areas=d.utla.nunique(), years=f"{d.window_end.min()}-{d.window_end.max()}"))
+    if len(exposures) > 1:
+        # first versus last term (lag versus lead in the falsification models): Wald test of the difference,
+        # and the correlation of the two estimates, strongly negative when the exposures are collinear
+        names = list(res.params.index)
+        first, last = names.index(f"log_{exposures[0]}"), names.index(f"log_{exposures[-1]}")
+        contrast = np.zeros(len(names))
+        contrast[first], contrast[last] = 1, -1
+        V = np.asarray(res.cov_params())
+        for r in rows:
+            r.update(p_first_minus_last=float(np.squeeze(res.t_test(contrast).pvalue)),
+                     corr_first_last=V[first, last] / np.sqrt(V[first, first] * V[last, last]))
     return rows
 
 
@@ -101,6 +114,14 @@ def max_compatible_paf(upper_irr):
         return np.nan
     q = (upper_irr - 1) / (1.1 - upper_irr)
     return q / (1 + q)
+
+
+def max_compatible_prevented_fraction(lower_irr):
+    """Largest prevented fraction compatible with the lower confidence limit, from the same linear model
+    with RR < 1: IRR per 10% = (1 + 1.1q)/(1 + q), q = p(RR - 1) < 0, prevented fraction = -q."""
+    if lower_irr >= 1:
+        return 0.0
+    return -(lower_irr - 1) / (1.1 - lower_irr)
 
 
 def main(level="utla", apportion="postcode"):
@@ -129,6 +150,7 @@ def main(level="utla", apportion="postcode"):
         rows += estimate(df, [lag1], [], "FE only (t-1)", drug)
         rows += estimate(df, [x, lag1, lag2], covars, "distributed lag (t, t-1, t-2)", drug)
         rows += estimate(df, [lag1, lead1], covars, "lag and lead (t-1, t+1)", drug)
+        rows += estimate(df, [lag1, x, lead1], covars, "lag, same year and lead (t-1, t, t+1)", drug)
         rows += estimate(df, [f"{x}_prior3"], covars, "prior 3 years (t-3..t-1)", drug)
         rows += estimate(df, [lag1], covars, "+ area trends (t-1)", drug, area_trends=True)
         rows += estimate(df, [lag1], covars, "population covariate (t-1)", drug, population_covariate=True)
@@ -149,6 +171,12 @@ def main(level="utla", apportion="postcode"):
     primary = (out.model == "primary (t-1)") & ~out.drug.isin(CONTROLS)
     out.loc[primary, "q_fdr"] = multipletests(out.loc[primary, "p"], method="fdr_bh")[1]
     out["max_compatible_paf_pct"] = [100 * max_compatible_paf(u) for u in out.upper90]
+    out["max_compatible_prevented_fraction_pct"] = [100 * max_compatible_prevented_fraction(l) for l in out.lower90]
+    # sensitivity: shift each upper limit by the negative control's estimate from the same model and term,
+    # as if its bias applied equally to every drug
+    nc = out[out.drug == "levothyroxine"].set_index(["model", "term"]).irr_10pct
+    shift = [nc.get((m, t), np.nan) for m, t in zip(out.model, out.term)]
+    out["max_compatible_paf_nc_shifted_pct"] = [100 * max_compatible_paf(u / s) for u, s in zip(out.upper90, shift)]
     out.to_csv(out_dir / "panel_results.csv", index=False)
 
     fmt = out.assign(est=out.apply(lambda r: f"{r.irr_10pct:.3f} ({r.ci_low:.3f}-{r.ci_high:.3f})", axis=1))

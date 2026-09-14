@@ -14,9 +14,13 @@ available at https://github.com/drcjar/tb-prescribing-england.
 
 **Pre-specification.** The analysis developed in stages, and we report the chronology.
 
-1. **First pass.** Before any results were seen, we specified the drug groups (including a
-   negative-control exposure), the cross-sectional design and the first panel design. The first
-   panel design used three-year rolling notifications and exposure in years *t*−5 to *t*−3.
+1. **First pass.** Before any results were seen, we specified the drug groups, including a
+   negative-control exposure (levothyroxine) and a positive control (primary care antituberculosis
+   prescribing), and the cross-sectional design. The first panel design was specified after the
+   cross-sectional results but before any panel results; it used three-year rolling notifications
+   and exposure in years *t*−5 to *t*−3. The pre-specified positive control failed: primary care
+   antituberculosis prescribing did not track notifications, because TB treatment is delivered by
+   specialist services. It was reclassified as descriptive.
 2. **Later additions, made after those analyses gave null results:**
    - annual outcomes;
    - lower-tier authorities;
@@ -30,10 +34,13 @@ available at https://github.com/drcjar/tb-prescribing-england.
    - exposure in year *t*−1 as primary;
    - lag and lead estimated jointly;
    - randomisation inference;
-   - additional covariates.
+   - additional covariates;
+   - after the second round: correction of the GP practice restriction, redefinition of the
+     hospital positive control and glucocorticoid exposure, joint models of previous, same and
+     following years, and randomisation inference on the *t* statistic.
 
-All analyses after the first pass are exploratory. Estimates from the original designs are given
-in the supplement.
+All analyses after the first pass are exploratory. Estimates from the original panel design are
+given in Table S8.
 
 ### Assumed causal structure
 
@@ -55,13 +62,16 @@ We used four sources:
 
 1. **Annual counts by local authority, 2001–2024.**
    - *Source:* UKHSA TB regional reports 2024, supplementary tables.
-   - *Coverage:* upper-tier authorities (UTLAs; 151, of which 149 were analysed) and lower-tier
-     authorities (LTLAs; 294, of which 292 were analysed).
-   - *Boundary handling:* counts are published on April 2023 boundaries. The City of London is
-     combined with Hackney, and the Isles of Scilly with Cornwall.
+   - *Coverage:* upper-tier authorities (UTLAs) and lower-tier authorities (LTLAs) on April 2023
+     boundaries. UKHSA combines the City of London with Hackney and the Isles of Scilly with
+     Cornwall. We combined population, covariates and prescribing in the same way at both levels,
+     giving {{n_areas_utla}} UTLAs and {{n_areas_ltla}} LTLAs.
    - *Consistency:* summed over three years, these counts matched the Fingertips three-year counts
      (r = 0.996). Local authority sums slightly exceed national totals (5,539 vs 5,490 in 2024),
-     reflecting different extract dates.
+     possibly reflecting different extract dates or residence-assignment rules.
+   - *Details not given in the tables:* counts are by year of notification. How people without a
+     residential postcode (for example, no fixed abode) are assigned is not described. Area-years
+     with no notifications were retained.
 2. **Region × place of birth × year, 2000–2024**, with Labour Force Survey denominators: *TB in
    England 2025*, Supplementary Table 12.
 3. **Region × place of birth × age group × year**: regional reports, Table 9.
@@ -81,8 +91,12 @@ Both record items dispensed in the community from primary care prescriptions. We
 month to practice level using identical drug-group rules. For the EPD this was done with
 server-side SQL.
 
-**Practices included.** We restricted to standard GP practices (NHS ODS prescribing setting RO76),
-which accounted for 98–99% of items after 2014.
+**Practices included.** We restricted to standard GP practices: practices with NHS ODS
+prescribing setting RO76, plus practice codes absent from the current ODS file (which omits
+practices closed before 2017) that have the standard GP practice code format (a letter and five
+digits; this format matches 94% of RO76 codes and few codes in other settings). Without this
+addition, prescribing by practices that later closed would have been dropped unevenly over time:
+3.8% of items in 2011, 1.9% in 2014 and none from 2016.
 
 **Drug groups.** Groups were defined at BNF presentation level:
 
@@ -107,8 +121,10 @@ Eye, ear, nose and skin preparations were excluded.
 **Apportionment to areas.** Each practice's annual prescribing was shared across local authority
 districts in proportion to where its registered patients lived, using NHS Digital counts of
 patients registered at each practice by LSOA:
-- April releases from 2014 to 2024 were used;
-- 2014 shares were applied to 2011–2013;
+- April releases from 2014 to 2024 were used, each practice-year taking that practice's nearest
+  release in time (so 2014 shares were applied to 2011–2013);
+- practices in no release (closed before April 2014) were assigned to the district of their
+  postcode;
 - LSOAs were mapped to April 2023 districts.
 
 Assigning each practice to the district containing its postcode was a sensitivity analysis. In
@@ -121,8 +137,8 @@ Assigning each practice to the district containing its postcode was a sensitivit
 **Source and period.** NHS Secondary Care Medicines Data (SCMD; NHSBSA), which gives trust × month ×
 product quantities. We used January 2019 to December 2024.
 
-**Classification.** Products were grouped by mechanism, with patient-year equivalents calculated
-from WHO defined daily doses (DDD), or documented maintenance doses where WHO gives none. The groups
+**Classification.** Products were grouped by mechanism, with quantities converted to DDD-years using
+WHO defined daily doses (DDD), or documented maintenance doses where WHO gives none. The groups
 were:
 
 - TNF inhibitors;
@@ -131,12 +147,15 @@ were:
 - rituximab;
 - calcineurin and mTOR inhibitors;
 - antiproliferatives;
-- systemic glucocorticoids, measured in prednisolone-equivalent mg and excluding intra-articular,
-  depot and topical forms.
+- systemic glucocorticoids (prednisolone and methylprednisolone), measured in prednisolone-equivalent
+  mg and excluding intra-articular, depot and topical forms. Dexamethasone and hydrocortisone, used
+  mainly in oncology, as antiemetics, for COVID-19 [RECOVERY 2021] and as replacement therapy, were
+  reported separately as a descriptive group.
 
 **Controls.**
-- **Positive control:** active-TB treatment, defined as pyrazinamide- or ethambutol-containing
-  products, including the fixed-dose combinations Rifater and Voractiv.
+- **Positive control:** active-TB treatment, measured as pyrazinamide defined daily doses (1.5 g)
+  from all pyrazinamide-containing products, including the fixed-dose combinations Rifater and
+  Voractiv, so that a day of intensive-phase treatment counts once whatever the formulation.
 - **Reported separately:** rifamycin and isoniazid products, which are also used for latent TB and,
   in the case of rifampicin, other infections.
 - **Negative-control exposures:** IL-17, IL-12/23 and α4β7 inhibitors and anakinra (low TB risk),
@@ -157,9 +176,15 @@ sensitivity analysis.
 - international in-migration per 1,000 (ONS components of population change);
 - diagnosed HIV prevalence;
 - QOF diabetes prevalence;
-- the latent TB infection (LTBI) testing and treatment programme for new migrants, as an active-area
-  indicator mapped from CCGs to local authorities (active in 83 LTLAs);
-- people receiving asylum support per 1,000 (Home Office; from 2014).
+- the latent TB infection (LTBI) testing and treatment programme for new migrants, introduced from
+  2015/16 through primary care in high-incidence areas for recent entrants aged 16–35 from
+  high-incidence countries [Loutet 2018; Berrocal-Almanza 2022]. We used an indicator of programme
+  activity, mapped from CCGs to local authorities (active in 83 LTLAs). Area-level reporting ended
+  in 2019/20, so the indicator was carried forward unchanged and disruption in 2020 was not
+  modelled. Because the programme targets young recent entrants, an all-age area indicator is a
+  weak control for it;
+- people receiving asylum support per 1,000 (Home Office; available from 2014, so used for outcome
+  years from 2015).
 
 **Cross-sectional analyses:**
 - Census 2021 percentage born outside the UK.
@@ -167,7 +192,7 @@ sensitivity analysis.
 ### Statistical analysis
 
 **Panel analyses.**
-- **Model:** Poisson pseudo-maximum-likelihood regression of annual notifications, with area and
+- **Model:** Poisson pseudo-maximum-likelihood regression [Santos Silva 2006] of annual notifications, with area and
   year fixed effects, a log population offset and SEs clustered by area.
 - **Primary exposure:** log prescribing rate in year *t*−1. Drug-associated TB typically presents
   within months of exposure [Keane 2001], and same-year prescribing is affected by prescribing for
@@ -176,10 +201,14 @@ sensitivity analysis.
 - **Covariates:** the time-varying set above. Diabetes prevalence was not adjusted for in the
   metformin and insulin models.
 - **Effect measure:** incidence rate ratio (IRR) per 10% within-area increase in prescribing, with
-  Benjamini–Hochberg false discovery rate (FDR) correction across candidate drug groups. Controls
-  were excluded from the FDR correction.
-- **Falsification:** prescribing in year *t*−1 and year *t*+1 estimated jointly on a common sample;
-  a true effect should load on *t*−1 only.
+  Benjamini–Hochberg false discovery rate (FDR) correction across the 13 non-control drug groups in
+  the primary model, including the descriptive groups (oral hydrocortisone, oral dexamethasone, all
+  antibacterials, vitamin D). Levothyroxine and antituberculosis drugs were excluded.
+- **Falsification:** prescribing in years *t*−1 and *t*+1 estimated jointly on a common sample,
+  and again with year *t* added, with a Wald test of the difference between the *t*−1 and *t*+1
+  coefficients. A true effect should load on *t*−1. Prescribing in adjacent years is highly
+  correlated within areas, so the two estimates are strongly negatively correlated and opposite
+  signs can arise by chance; we treat these tests as weak diagnostics.
 - **Sensitivity analyses:**
   - no covariates;
   - a distributed lag (*t*, *t*−1, *t*−2);
@@ -196,6 +225,14 @@ sensitivity analysis.
   - UTLA geography.
 - **Spatial dependence:** Moran's I of year-specific Pearson residuals (5-nearest-neighbour weights,
   999 permutations).
+- **Missing data:** complete-case analysis. Area-years with missing covariates, or with zero
+  exposure (log undefined), were excluded model by model; the numbers excluded are recorded in the
+  result files.
+- **Bounds:** for each estimate, the largest population attributable fraction compatible with the
+  upper 90% confidence limit and, for drugs expected to protect, the largest prevented fraction
+  compatible with the lower limit, both under the model used for expected effects. As a
+  sensitivity analysis, the upper limit was divided by the negative control's estimate from the
+  same model, as if its bias applied equally to every drug.
 
 **Hospital analyses.** The same model was fitted for 2019–2024, with exposure in:
 - the same year (for the positive control, where treatment follows diagnosis);
@@ -213,8 +250,14 @@ was used as an attenuation factor.
 - **Model:** Poisson regression with region and year fixed effects, exposure lagged or led 1–3
   years, adjusted for in-migration and age structure.
 - **Inference:** with only nine clusters, cluster-robust *t*(8) intervals and randomisation
-  p-values, permuting whole regional exposure histories across regions (499 permutations).
-- **Falsification:** lag 2 and lead 2 estimated jointly.
+  p-values. The randomisation test compared the cluster-robust *t* statistic with 499 permutations
+  of whole regional exposure histories across regions; it is valid under exchangeability of those
+  histories, and p = (1 + count)/(1 + 499).
+- **Falsification:** lag 2 and lead 2 estimated jointly, with London excluded as a sensitivity
+  analysis for UK-born notifications.
+- **Long differences:** across UTLAs with at least 10 notifications in each period, change in log
+  prescribing (2014–16 to 2019–21) against change in log notification rate (2014–16 to 2022–24),
+  weighted by notifications and adjusted for change in in-migration.
 
 **Cross-sectional analyses.** Negative binomial regression of TB notifications on standardised log
 prescribing rates for the same period, adjusted for percentage born outside the UK, age structure,
@@ -227,13 +270,17 @@ in-migration, HIV and diabetes prevalence.
 relative risk (odds ratios where only these were available). The calculation assumes that:
 
 1. prevalence of use scales with the prescribing measure;
-2. baseline risk is homogeneous;
-3. timing is aligned.
+2. extra prescribing reaches new users rather than lengthening existing courses;
+3. baseline risk is homogeneous;
+4. timing is aligned.
 
-All three favour detection. Alternative expected effects came from three sources:
+Assumptions 3 and 4 favour detection. The direction of any bias from assumptions 1 and 2 is
+unknown: prednisolone-equivalent mg per item fell over time, so prescribing volume and the number
+of people treated need not move together. Alternative expected effects came from three sources:
 
-- recorded drug-associated notifications;
-- stratification by age and place of birth;
+- recorded drug-associated notifications, converted to attributable fractions (exposed share ×
+  (RR − 1)/RR), assuming complete recording or 50% recording;
+- stratification by age (the same age-specific prevalence of use for UK-born and non-UK-born people);
 - SCMD-derived prevalence of hospital drug use, including screening-attenuated relative risks for
   TNF inhibitors and attenuation by the positive-control elasticity.
 
@@ -245,6 +292,7 @@ All three favour detection. Alternative expected effects came from three sources
 *Power simulation.* A permutation-based simulation kept the real TB counts, so real overdispersion,
 serial correlation and trends were preserved. Whole exposure trajectories were permuted across
 areas, and known effects were injected by adding cases. This gave 500 null and 300 effect replicates
-per scenario, including scenarios where the effect acts through same-year exposure.
+per scenario, including scenarios where the effect acts through same-year exposure. We also report
+analytic power for each scenario at the real-data standard error.
 
 Analyses used Python 3.14 (pandas 3.0, statsmodels).

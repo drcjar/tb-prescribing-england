@@ -2,8 +2,8 @@
 
 We thank the three reviewers for detailed, constructive reports. All three recommended major
 revision. Every point was considered, and most requests were implemented with new data and
-re-analysis. Numbers marked [R] were updated after the full re-analysis and are reported in the
-revised manuscript.
+re-analysis. All numbers below are taken from the final re-analysis and match the revised
+manuscript.
 
 **Main changes**
 

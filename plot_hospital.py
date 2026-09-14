@@ -1,5 +1,5 @@
-"""Hospital medicines positive-control figure: active-TB treatment (pyrazinamide/ethambutol-containing
-products, patient-year equivalents per 1,000 residents, SCMD apportioned by trust catchment) vs TB
+"""Hospital medicines positive-control figure: active-TB treatment (pyrazinamide DDD-years, including
+fixed-dose combinations, per 1,000 residents; SCMD apportioned by trust catchment) vs TB
 notification rate, 2019-2024, by UTLA:
   left  - between areas (period means, log scales);
   right - within areas (log values after removing area and year means).
@@ -62,7 +62,7 @@ def main():
     log_ticks(axes[0], "x", period.drug, (0.005, 0.01, 0.02, 0.05, 0.1, 0.2, 0.5))
     log_ticks(axes[0], "y", period.tb_rate, (1, 2, 5, 10, 20, 50))
     axes[0].minorticks_off()
-    axes[0].set_xlabel("Active-TB treatment, patient-years per 1,000 residents", color=SECONDARY)
+    axes[0].set_xlabel("Active-TB treatment, pyrazinamide DDD-years per 1,000 residents", color=SECONDARY)
     axes[0].set_ylabel("TB notifications per 100,000 per year", color=SECONDARY)
     axes[0].set_title(f"Between areas, 2019–24 (Spearman ρ = {rho:.2f})", loc="left", color=INK, fontsize=11)
 
@@ -72,7 +72,7 @@ def main():
     axes[1].set_xlabel("Log drug use, area and year means removed", color=SECONDARY)
     axes[1].set_ylabel("Log TB rate, area and year means removed", color=SECONDARY)
     axes[1].set_title(f"Within areas over time (r = {within_r:.2f})", loc="left", color=INK, fontsize=11)
-    fig.suptitle("Positive control: hospital active-TB treatment (pyrazinamide/ethambutol) and TB notifications, "
+    fig.suptitle("Positive control: hospital active-TB treatment (pyrazinamide DDD) and TB notifications, "
                  f"{period.shape[0]} upper-tier authorities", x=0.02, ha="left", fontsize=11.5, color=INK)
     fig.tight_layout(rect=(0, 0, 1, 0.94))
     fig.savefig(OUT / "hospital_positive_control.png", dpi=200, facecolor=SURFACE)

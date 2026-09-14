@@ -13,7 +13,6 @@ Analyses:
 3. UTLA long differences, 2014-16 -> 2019-21 (prescribing) and 2014-16 -> 2022-24 (TB).
 """
 import json
-from itertools import permutations
 from pathlib import Path
 
 import matplotlib
@@ -26,7 +25,7 @@ import statsmodels.formula.api as smf
 from scipy.stats import pearsonr, spearmanr
 from scipy.stats import t as student_t
 
-from build_panel import PRACTICE_FILES, gp_practice_codes
+from build_panel import PRACTICE_FILES, gp_practice_masks
 from plot_results import GRID, INK, MUTED, SECONDARY, SURFACE
 
 ROOT = Path(__file__).resolve().parent
@@ -40,11 +39,11 @@ K = np.log(1.1)
 
 
 def national_monthly():
-    gp = gp_practice_codes()
     frames = []
     for f in sorted(PRACTICE_FILES.glob("epd_practice_*.csv")):
         d = pd.read_csv(f, usecols=["YEAR_MONTH", "PRACTICE_CODE"] + MONTHLY_COLS, dtype={"PRACTICE_CODE": str})
-        frames.append(d[d.PRACTICE_CODE.isin(gp)].groupby("YEAR_MONTH")[MONTHLY_COLS].sum())
+        _, gp = gp_practice_masks(d.PRACTICE_CODE)
+        frames.append(d[gp].groupby("YEAR_MONTH")[MONTHLY_COLS].sum())
     m = pd.concat(frames)
     m.index = pd.to_datetime(m.index.astype(str), format="%Y%m")
     return m[m.index.year >= 2011]
@@ -142,18 +141,20 @@ def _fit(df, terms, adjusted):
 
 
 def randomisation_p(df, exposure_cols, term, adjusted, n_perm=999, seed=1):
-    """Permute whole regional exposure histories across regions (9! possible) and refit."""
-    observed = _fit(df, exposure_cols, adjusted).params[term]
+    """Permute whole regional exposure histories across regions (9! possible) and refit. The statistic is
+    the cluster-robust t statistic, which is less size-distorted than the raw coefficient when exposure
+    variability differs between regions. Valid for the sharp null under exchangeability of regional
+    exposure histories; p = (1 + count) / (1 + draws)."""
+    observed = _fit(df, exposure_cols, adjusted).tvalues[term]
     regions = sorted(df.region.unique())
     rng = np.random.default_rng(seed)
-    all_perms = list(permutations(regions))
-    draws = rng.choice(len(all_perms), size=min(n_perm, len(all_perms)), replace=False)
+    # draw random permutations directly: materialising all 9! orderings on every call wastes memory
     stats = []
-    for i in draws:
-        mapping = dict(zip(regions, all_perms[i]))
+    for _ in range(n_perm):
+        mapping = dict(zip(regions, rng.permutation(regions)))
         donor = df.set_index(["region", "year"])[exposure_cols]
         permuted = donor.reindex(list(zip(df.region.map(mapping), df.year))).to_numpy()
-        stats.append(_fit(df.assign(**dict(zip(exposure_cols, permuted.T))), exposure_cols, adjusted).params[term])
+        stats.append(_fit(df.assign(**dict(zip(exposure_cols, permuted.T))), exposure_cols, adjusted).tvalues[term])
     stats = np.array(stats)
     return (1 + (np.abs(stats) >= abs(observed)).sum()) / (len(stats) + 1)
 
@@ -182,21 +183,25 @@ def regional_panel(reg, outcome, outcome_label, exposure="rate_oral_glucocortico
     return pd.DataFrame(rows)
 
 
-def regional_lag_lead(reg, outcome, outcome_label, exposure="rate_oral_glucocorticoids", lag=2, n_perm=499):
-    """Lag and lead in one model on a common sample: a true effect should load on the lag only."""
+def regional_lag_lead(reg, outcome, outcome_label, exposure="rate_oral_glucocorticoids", lag=2, n_perm=499,
+                      exclude_regions=()):
+    """Lag and lead in one model on a common sample: a true effect should load on the lag only.
+    exclude_regions: leave-region-out check (e.g. London, with the steepest regional trends)."""
     lagged = reg[["region", "year", exposure]].assign(year=lambda f: f.year + lag).rename(columns={exposure: "x_lag"})
     lead = reg[["region", "year", exposure]].assign(year=lambda f: f.year - lag).rename(columns={exposure: "x_lead"})
     cov = reg[["region", "year", "intl_in_per_1000", "pct_age_65plus", "pct_age_15_44"]]
     df = outcome.merge(lagged, on=["region", "year"]).merge(lead, on=["region", "year"]).merge(cov, on=["region", "year"])
-    df = df.dropna().reset_index(drop=True)
+    df = df[~df.region.isin(exclude_regions)].dropna().reset_index(drop=True)
     df["log_lag"], df["log_lead"] = np.log(df.x_lag), np.log(df.x_lead)
     m = _fit(df, ["log_lag", "log_lead"], True)
     diff = m.params.log_lag - m.params.log_lead
     cov_m = m.cov_params()
     se_diff = np.sqrt(cov_m.loc["log_lag", "log_lag"] + cov_m.loc["log_lead", "log_lead"] - 2 * cov_m.loc["log_lag", "log_lead"])
-    return dict(outcome=outcome_label, exposure=exposure, lag=lag, n_obs=len(df), years=f"{df.year.min()}-{df.year.max()}",
+    return dict(outcome=outcome_label, exposure=exposure, lag=lag, excluded_regions="none", n_obs=len(df),
+                years=f"{df.year.min()}-{df.year.max()}",
                 irr_lag_10pct=np.exp(m.params.log_lag * K), irr_lead_10pct=np.exp(m.params.log_lead * K),
-                ratio_lag_to_lead=np.exp(diff * K), p_difference_t8=2 * student_t.sf(abs(diff / se_diff), df=8),
+                ratio_lag_to_lead=np.exp(diff * K),
+                p_difference_t8=2 * student_t.sf(abs(diff / se_diff), df=df.region.nunique() - 1),
                 p_randomisation_lag=randomisation_p(df, ["log_lag", "log_lead"], "log_lag", True, n_perm))
 
 

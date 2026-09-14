@@ -5,27 +5,32 @@ signal below the figures implied by relative risk × prevalence.
 
 **Screening before treatment.**
 - Since the BTS recommendations of 2005, people starting anti-TNF therapy have been assessed and
-  treated for latent infection [BTS 2005]. NICE recommends testing immunocompromised adults [NG33].
+  treated for latent infection [BTS 2005]; NICE guidance on TB also covers testing for latent
+  infection in people who are or will be immunosuppressed [NG33].
 - Screening is also standard before JAK inhibitors and other biologics.
-- In the Spanish BIOBADASER registry, TB rates on TNF antagonists fell by 78% after screening
-  recommendations were introduced [Carmona 2005]. Risk was about seven times higher when the
-  recommendations were not followed [Gómez-Reino 2007].
+- In the Spanish BIOBADASER registry, before screening recommendations, TB rates in people with
+  rheumatoid arthritis treated with TNF antagonists were 6.2 times those in untreated people with
+  rheumatoid arthritis. After the recommendations, rates in treated people fell by 83% to about the
+  untreated rate [Carmona 2005]. Risk was about seven times higher when the recommendations were
+  not followed [Gómez-Reino 2007].
 - Most growth in biologic use during 2019–2024 therefore occurred under screening, probably in
   lower-risk populations. The relative risk relevant to a marginal increase in use is well below
   historical estimates.
-- Oral glucocorticoids rarely trigger screening, so residual drug-associated TB is more plausible
-  for them than for biologics.
+- Screening is less consistently done before oral glucocorticoids, so residual drug-associated TB
+  is more plausible for them than for biologics.
 
 **Surveillance counts.**
 - UKHSA recorded immunosuppression due to steroids in 30 and due to biological therapy in 54 of the
   5,490 people notified with TB in 2024 [UKHSA 2025].
-- Even allowing for incomplete recording, a 10% change in use would then shift national
-  notifications by about 0.05–0.1%. That is well below every minimum detectable effect in this
-  study.
+- Converted to attributable fractions, a 10% change in use would shift national notifications by
+  about 0.04–0.09% for steroids and 0.08–0.16% for biological therapy, allowing for up to half of
+  cases going unrecorded. That is well below every minimum detectable effect in this study. The
+  counts are for a single year, and "biological therapy" includes non-TNF biologics.
 
-**Where use is concentrated.** Use is concentrated in older UK-born people, whose baseline TB risk
-is about one-twentieth that of people born abroad. Stratifying by age and place of birth lowers the
-expected effect of oral glucocorticoids from 0.34% to 0.29% per 10% increase.
+**Where use is concentrated.** Use is concentrated in older people, whereas most notifications are
+in younger adults born abroad. Allowing for age alone lowers the expected effect of oral
+glucocorticoids from 0.34% to 0.29% per 10% increase; allowing for the concentration of use in
+UK-born people, whose baseline risk is much lower, would lower it further.
 
 ### Protopathic bias and timing
 
@@ -43,18 +48,22 @@ expected effect of oral glucocorticoids from 0.34% to 0.29% per 10% increase.
 **What it shows.**
 - Hospital active-TB treatment tracked notifications between areas and, weakly, within areas.
 - Within areas, prescribing in the previous year and in the following year was not associated with
-  notifications, as expected.
+  notifications. A following-year association was possible, because treatment continues into the
+  next year, but was not seen.
 
 **What it does not show.**
-- The within-area elasticity was about 0.4, not 1. Even a drug used almost exclusively for the
-  outcome is recovered with roughly 60% attenuation. The likely causes are:
-  - catchment apportionment error;
-  - regional referral of complex TB;
-  - the timing of supply;
-  - dilution by other uses.
+- The within-area elasticity was 0.36–0.40, not 1, with wide confidence intervals (about
+  0.1–0.65). The likely causes are:
+  - catchment apportionment error and regional referral of complex TB;
+  - timing: treatment of people notified late in a year continues into the next;
+  - variation in drug volume per person treated (extended regimens, ethambutol stopped once
+    sensitivities are known, drug-resistant regimens, weight-based dosing).
+- Rifamycin/isoniazid products, which also cover latent TB and other infections, had the same
+  elasticity, so the attenuation is dominated by apportionment rather than drug specificity.
 - It does not show that a medicine affecting a small fraction of the population can be detected.
-  Any such effect would be attenuated similarly, widening the gap between expected and detectable
-  effects.
+  Other drugs have their own error sources (homecare delivery of biologics, specialist centres,
+  biosimilar switching), and the positive control was same-year while candidate drugs were
+  analysed with previous-year exposure. The attenuated ratios in Table S3 are therefore illustrative.
 - A positive control in primary care prescribing is not possible: TB treatment is not delivered
   there, and primary care antituberculosis prescribing did not track notifications.
 
@@ -124,6 +133,7 @@ expected effect of oral glucocorticoids from 0.34% to 0.29% per 10% increase.
 - E-values.
 
 **Feasibility**
-- Baseline TB incidence in older UK-born adults is about 2–5 per 100,000 person-years. Tens of
+- The TB notification rate in UK-born people was 2.1 per 100,000 in 2024, all ages [UKHSA 2025,
+  Supplementary Table 12]; rates in older UK-born adults are of a similar order. Tens of
   thousands of long-term initiators followed for several years would yield only tens of TB events,
   so the individual-level study is itself constrained by sample size.

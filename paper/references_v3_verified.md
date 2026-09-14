@@ -1,4 +1,4 @@
-## References (draft 3, verified 14 September 2026; ordered alphabetically, to be renumbered on assembly)
+## References
 
 Each journal entry was checked against PubMed metadata (via DOI→PMID conversion or citation lookup) and Crossref DOI metadata. Each DOI below resolves to the stated article. The grey literature was checked on GOV.UK, in the report PDF, or through search results where a site blocks automated access. Corrections relative to references_v3.md are listed at the end.
 
@@ -12,9 +12,8 @@ Each journal entry was checked against PubMed metadata (via DOI→PMID conversio
 - Castellana G, Castellana M, Castellana C, et al. Inhaled corticosteroids and risk of tuberculosis in patients with obstructive lung diseases: a systematic review and meta-analysis of non-randomized studies. *Int J Chron Obstruct Pulmon Dis* 2019;14:2219–27. doi:10.2147/COPD.S209273. PMID 31576118
 - Chen YG, et al. Target trial emulation of DPP-4 inhibitors in patients with T2DM for pulmonary tuberculosis: a nationwide observational data. *BMC Med* 2025;23:587. doi:10.1186/s12916-025-04423-1. PMID 41137015
 - Davidson JA, Thomas HL, Maguire H, et al. Understanding tuberculosis transmission in the United Kingdom: findings from 6 years of mycobacterial interspersed repetitive unit-variable number tandem repeats strain typing, 2010–2015. *Am J Epidemiol* 2018;187(10):2233–42. doi:10.1093/aje/kwy119. PMID 29878041
-- Dixon WG, Hyrich KL, Watson KD, et al. Drug-specific risk of tuberculosis in patients with rheumatoid arthritis treated with anti-TNF therapy: results from the British Society for Rheumatology Biologics Register (BSRBR). *Ann Rheum Dis* 2010;69(3):522–8. doi:10.1136/ard.2009.118935. PMID 19854715
 - Fardet L, Petersen I, Nazareth I. Prevalence of long-term oral glucocorticoid prescriptions in the UK over the past 20 years. *Rheumatology (Oxford)* 2011;50(11):1982–90. doi:10.1093/rheumatology/ker017. PMID 21393338
-- Gómez-Reino JJ, Carmona L, Angel Descalzo M, et al. [PubMed lists a fourth, collective author whose name was not returned; probably the BIOBADASER group, unconfirmed] Risk of tuberculosis in patients treated with tumor necrosis factor antagonists due to incomplete prevention of reactivation of latent infection. *Arthritis Rheum* 2007;57(5):756–61. doi:10.1002/art.22768. PMID 17530674
+- Gómez-Reino JJ, Carmona L, Angel Descalzo M, et al. Risk of tuberculosis in patients treated with tumor necrosis factor antagonists due to incomplete prevention of reactivation of latent infection. *Arthritis Rheum* 2007;57(5):756–61. doi:10.1002/art.22768. PMID 17530674
 - Greenland S, Morgenstern H. Ecological bias, confounding, and effect modification. *Int J Epidemiol* 1989;18(1):269–74. doi:10.1093/ije/18.1.269. PMID 2656561
 - Gunasekara FI, Richardson K, Carter K, Blakely T. Fixed effects analysis of repeated measures data. *Int J Epidemiol* 2014;43(1):264–9. doi:10.1093/ije/dyt221. PMID 24366487
 - Hermans S, Boulle A, Caldwell J, et al. Temporal trends in TB notification rates during ART scale-up in Cape Town: an ecological analysis. *J Int AIDS Soc* 2015;18(1):20240. doi:10.7448/IAS.18.1.20240. PMID 26411694
@@ -28,7 +27,6 @@ Each journal entry was checked against PubMed metadata (via DOI→PMID conversio
 - Morgenstern H. Ecologic studies in epidemiology: concepts, principles, and methods. *Annu Rev Public Health* 1995;16:61–81. doi:10.1146/annurev.pu.16.050195.000425. PMID 7639884
 - Morrison H, et al. Impact of COVID-19 on NHS tuberculosis services: results of a UK-wide survey. *J Infect* 2023;87(1):59–61. doi:10.1016/j.jinf.2023.04.004. PMID 37044162
 - National Institute for Health and Care Excellence. Tuberculosis. NICE guideline [NG33]. London: NICE; published 13 January 2016, last updated 16 February 2024. https://www.nice.org.uk/guidance/ng33 [dates confirmed from search results only; nice.org.uk returned HTTP 403 to automated access. The wording of the LTBI testing recommendation still needs checking by hand against the current text.]
-- Nguipdop-Djomo P, Rodrigues LC, Abubakar I, Mangtani P. Small-area level socio-economic deprivation and tuberculosis rates in England: an ecological analysis of tuberculosis notifications between 2008 and 2012. *PLoS One* 2020;15(10):e0240879. doi:10.1371/journal.pone.0240879. PMID 33075092
 - OpenPrescribing.net, Bennett Institute for Applied Data Science, University of Oxford. Frequently asked questions. 2026. https://openprescribing.net/faq/ [accessed date to be added; the FAQ asks academic users to cite "OpenPrescribing.net, Bennett Institute for Applied Data Science, University of Oxford, 2026", confirmed via search results because a direct fetch failed]
 - Pealing L, Wing K, Mathur R, et al. Risk of tuberculosis in patients with diabetes: population based cohort study using the UK Clinical Practice Research Datalink. *BMC Med* 2015;13:135. doi:10.1186/s12916-015-0381-9. PMID 26048371
 - Prasad V, Jena AB. Prespecified falsification end points: can they validate true observational associations? *JAMA* 2013;309(3):241–2. doi:10.1001/jama.2012.96867. PMID 23321761
@@ -45,19 +43,3 @@ Each journal entry was checked against PubMed metadata (via DOI→PMID conversio
 - van Staa TP, Leufkens HG, Abenhaim L, et al. Use of oral corticosteroids in the United Kingdom. *QJM* 2000;93(2):105–11. doi:10.1093/qjmed/93.2.105. PMID 10700481
 - Venkatesan S, et al. Correcting for the inflated adult population denominator in an English nationwide health care cohort: database analysis study. *JMIR Public Health Surveill* 2025;11:e64788. doi:10.2196/64788. PMID 41144579
 - Zhang M, He JQ. Impacts of metformin on tuberculosis incidence and clinical outcomes in patients with diabetes: a systematic review and meta-analysis. *Eur J Clin Pharmacol* 2020;76(2):149–59. doi:10.1007/s00228-019-02786-y. PMID 31786617
-
-### Corrections made relative to references_v3.md
-- Thomas HL 2018: the title was wrong. The actual title is "Reduction in tuberculosis incidence in the UK from 2011 to 2015: a population-based study". Volume and pages (73:769–75) were correct.
-- Költringer 2023: the placeholder title was replaced, and the article number is 337, not 311.
-- Castellana 2019: the full title ends "...meta-analysis of non-randomized studies".
-- Song 2019: the title was wrong. The actual title is "The association between proton pump inhibitor use and the risk of tuberculosis: a case-control study".
-- Hudson 2025: there are only two authors (Hudson SM, Hudson C), so "et al." was removed. The print issue is 2026;33(1):1–8, epub 2025.
-- Placeholder titles were replaced for Chen (BMC Med 2025;23:587), Hermans, Richards (Sci Rep 2025;15:18089), Sheppard (Stat Med 1996;15:1849–58, authors Sheppard, Prentice, Rossing) and Venkatesan (2025;11:e64788).
-- Tuberculosis in England 2021 report: it was published by the UK Health Security Agency, not Public Health England. The document and its suggested citation both name UKHSA, and UKHSA replaced PHE on 1 October 2021, before the report was added on 28 October 2021.
-- Added the Santos Silva DOI, all PMIDs and issue numbers, and the NICE NG33 publication and update dates.
-
-### Could not be fully verified
-- NICE NG33: nice.org.uk blocks automated access (HTTP 403). The 16 February 2024 last-updated date comes from search results only, and the LTBI recommendation wording must be checked by hand.
-- The OpenPrescribing FAQ page could not be fetched directly. Its content was confirmed through search results only.
-- UKHSA 2025 report: which supplementary tables are numbered 5, 12 and 22, and the "TB regional reports 2024" supplementary data, were not individually checked.
-- The full author lists of the "et al." entries (Chen, Költringer, Morrison, Richards, Venkatesan) were not expanded. The PubMed records list 9, 5, 10, 5 and 14 authors respectively.

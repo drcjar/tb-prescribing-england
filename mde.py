@@ -10,7 +10,8 @@ prescribing rate, a 10% increase in prescribing gives
     IRR_expected = (1 + 1.1 p (RR - 1)) / (1 + p (RR - 1)).
 This assumes no confounding or ecological bias, so it is the most favourable case for detection.
 
-Inputs: outputs/panel/panel_results.csv and paper/mde_inputs.csv (drug, rr, prevalence, sources).
+Inputs: outputs/panel_annual_<level>[_residence]/panel_results.csv and paper/mde_inputs.csv (drug, rr,
+prevalence, sources).
 """
 from pathlib import Path
 
@@ -57,13 +58,19 @@ OCS_PREVALENCE_BY_AGE = {"0 to 14": 0.001, "15 to 44": 0.004, "45 to 64": 0.010,
 
 def benchmarks(rr=4.9):
     """Expected change in TB notifications for a 10% increase in use under two alternatives to the
-    homogeneous calculation: (1) recorded drug-associated cases as the attributable share; (2)
-    stratum-specific prevalence of use and baseline counts by age and place of birth."""
+    homogeneous calculation: (1) recorded drug-associated cases, converted to an attributable share;
+    (2) age-specific prevalence of use applied to 2024 notifications by age (the same prevalence is
+    used for UK-born and non-UK-born people, so only the age distribution of cases matters)."""
     rows = []
     for drug in ("steroids", "biological_therapy"):
-        share = RECORDED_2024[drug] / RECORDED_2024["total"]
-        rows.append(dict(method=f"recorded cases ({drug}), UKHSA 2024", attributable_share_pct=100 * share,
-                         expected_pct_change_10pct=100 * (expected_irr_from_share(share) - 1)))
+        exposed_share = RECORDED_2024[drug] / RECORDED_2024["total"]
+        # not every case in an exposed person is attributable: attributable share = exposed share x (RR-1)/RR.
+        # The upper bound assumes only half of drug-associated immunosuppression is recorded.
+        for completeness in (1.0, 0.5):
+            share = exposed_share / completeness * (rr - 1) / rr
+            rows.append(dict(method=f"recorded cases ({drug}), UKHSA 2024, {completeness:.0%} recorded, RR {rr}",
+                             attributable_share_pct=100 * share,
+                             expected_pct_change_10pct=100 * (expected_irr_from_share(share) - 1)))
     age = pd.read_csv(ROOT / "data" / "processed" / "region_tb_birthplace_age_annual.csv")
     age = age[(age.year == 2024) & age.birthplace.isin(["UK born", "Non-UK born"])]
     cases = age.groupby(["birthplace", "age_group"]).tb_count.sum().reset_index()
@@ -74,7 +81,7 @@ def benchmarks(rr=4.9):
     q = cases.prevalence * (rr - 1)
     paf = (cases.tb_count * q / (1 + q)).sum() / cases.tb_count.sum()
     irr = (cases.tb_count * expected_irr(rr, cases.prevalence)).sum() / cases.tb_count.sum()
-    rows.append(dict(method=f"stratified by age and birthplace (oral corticosteroids, RR {rr})",
+    rows.append(dict(method=f"age-stratified (oral corticosteroids, RR {rr})",
                      attributable_share_pct=100 * paf, expected_pct_change_10pct=100 * (irr - 1)))
     homogeneous_q = 0.009 * (rr - 1)
     rows.append(dict(method=f"homogeneous (oral corticosteroids, RR {rr}, prevalence 0.9%)",

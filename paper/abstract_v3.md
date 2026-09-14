@@ -17,16 +17,16 @@
   - A permutation-based power simulation on the real notification counts.
 
 **Results.**
-- **Linkage.** Hospital active-TB treatment tracked TB notifications between areas (Spearman ρ = 0.79) and within areas in the same year (incidence rate ratio [IRR] 1.035, 95% CI 1.013–1.058, per 10% increase). The within-area elasticity was only 0.36–0.40, indicating substantial attenuation even for a disease-specific drug.
-- **Primary care.** No drug group was associated with notifications in the following year. For systemic oral glucocorticoids the IRR was 0.982 (0.941–1.025) per 10% within-area increase.
-- **Hospital medicines.** TNF inhibitors (0.989, 0.972–1.006), JAK inhibitors and systemic glucocorticoids were also null.
-- **Falsification and negative control.** Several falsification tests failed, and the negative-control exposure showed inverse estimates similar in size to candidate drugs. This indicates residual confounding by area-specific trends.
+- **Linkage.** Hospital active-TB treatment tracked TB notifications between areas (Spearman ρ = 0.81) and within areas in the same year (incidence rate ratio [IRR] 1.035, 95% CI 1.009–1.061, per 10% increase). The within-area elasticity was only 0.36–0.40, indicating substantial attenuation even for a disease-specific drug.
+- **Primary care.** No drug group was associated with notifications in the following year. For systemic oral glucocorticoids the IRR was 0.969 (0.929–1.012) per 10% within-area increase.
+- **Hospital medicines.** TNF inhibitors (0.989, 0.972–1.007), JAK inhibitors and other immunosuppressants were null. Hospital systemic glucocorticoids had a small nominal association (1.024, 1.001–1.046) that was not robust to clustering by trust or to excluding COVID-19 years.
+- **Falsification and negative control.** The negative-control exposure showed inverse estimates similar in size to metformin, and following-year prescribing was inversely associated with notifications for several groups. With collinear adjacent-year exposures these tests are weak, but the pattern is compatible with residual confounding by area-specific trends.
 - **Power.**
-  - For oral glucocorticoids, the MDE (6.3% per 10% increase) was about 18 times the effect expected from published relative risks (0.34%), and about 110 times that implied by UKHSA-recorded steroid-associated TB (0.055%).
-  - In simulations on the real counts, the published effect was detected in {{sim_power_rr49_ltla}} of replicates, no better than the {{sim_null_rejection_ltla}} false-positive rate with no effect.
-- **UK-born TB.** A regional association between prednisolone dose and UK-born TB was implausibly large and was accompanied by failed negative-control and falsification tests.
+  - For oral glucocorticoids, the MDE (6.3% per 10% increase) was about 18 times the effect expected from published relative risks (0.34%), and about 70–140 times that implied by UKHSA-recorded steroid-associated TB (0.04–0.09%).
+  - In simulations on the real counts, the null hypothesis was rejected for the published effect in {{sim_power_rr49_ltla}} of replicates, no more often than with no effect ({{sim_null_rejection_ltla}}); simulated power exceeded analytic power at the real standard error.
+- **UK-born TB.** A regional association between prednisolone dose and UK-born TB was implausibly large, not significant by randomisation inference, dependent on London, and accompanied by failed negative-control and falsification tests.
 
 **Conclusions.**
-- Open English prescribing and TB notification data can be linked, but only with heavy attenuation, and ecological analyses of them cannot detect plausible population-level effects of medicines on TB.
-- Apparent associations reflect confounding by migration, age and area trends.
+- Hospital medicines data could be linked to TB notifications only with heavy attenuation, and no working positive control was available for primary care. Ecological analyses of these data cannot detect plausible population-level effects of medicines on TB.
+- Apparent associations are compatible with residual confounding, chance or measurement error, not with drug effects of plausible size.
 - Causal questions require individual-level linked data analysed with target trial emulation. Surveillance of drug-associated TB is better served by more complete recording of immunosuppression in national TB surveillance.

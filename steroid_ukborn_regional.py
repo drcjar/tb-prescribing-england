@@ -87,12 +87,16 @@ def main():
                 "lead (falsification)": {"lags": (-1, -2, -3)}}
 
     results, joint = [], []
+    london = region_codes()[norm("London")]
     for label, outcome in outcomes.items():
         print(f"{label}: {int(outcome[outcome.year.between(2014, 2024)].Count.sum())} notifications 2014-2024", flush=True)
         for exposure in EXPOSURES:
             for analysis, kwargs in analyses.items():
                 results.append(regional_panel(reg, outcome, label, exposure, **kwargs).assign(analysis=analysis))
             joint.append(regional_lag_lead(reg, outcome, label, exposure, lag=2))
+            if label == "TB, UK born":
+                joint.append(regional_lag_lead(reg, outcome, label, exposure, lag=2, exclude_regions=(london,))
+                             | {"excluded_regions": "London"})
     res = pd.concat(results)
     res.to_csv(OUT / "ocs_tb_by_birthplace_regional.csv", index=False)
     pd.DataFrame(joint).to_csv(OUT / "ocs_tb_by_birthplace_lag_lead.csv", index=False)

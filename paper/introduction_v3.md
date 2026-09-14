@@ -3,21 +3,21 @@
 Tuberculosis (TB) remains a public health problem in England.
 
 **Recent trends.**
-- **Decline:** notifications fell by almost half between 2011 and 2018. The fall was largely
-  explained by fewer recent migrants from high-incidence countries and by pre-entry screening,
-  extended in 2012 to long-term visa applicants from high-incidence countries [Thomas 2018;
-  Aldridge 2016].
+- **Decline:** notifications fell by 44% between 2011 and 2018 (8,282 to 4,609). For 2011–2015,
+  most of the fall reflected declining TB rates in almost all populations, with smaller
+  contributions from fewer recent non-EU migrants and from pre-entry screening of long-stay visa
+  applicants from high-incidence countries [Thomas 2018; Aldridge 2016].
 - **2020:** notifications dropped to 4,125 during the COVID-19 pandemic, a fall thought to reflect
   service disruption rather than less disease [UKHSA 2021; Morrison 2023].
 - **2021–2024 rise:** notifications then increased, reaching 5,490 in 2024 (9.4 per 100,000).
-  - 81.5% were in people born outside the UK.
+  - 81.9% were in people born outside the UK [UKHSA 2025, Supplementary Table 12].
   - 41% of those were notified within five years of arrival.
   - The rise has been attributed mainly to migration from higher-incidence countries [UKHSA 2025].
 - **2025:** national data show 5,424 notifications, with 2024 revised to 5,487 [UKHSA 2026].
 
-**TB in UK-born people.** UK-born notifications fell by 43% between 2014 and 2022, then rose
-[UKHSA 2025]. UK-born TB is heterogeneous: it includes reactivation in older adults, transmission
-linked to social risk factors, and disease in UK-born children of migrant families [Davidson 2018].
+**TB in UK-born people.** UK-born notifications fell by 48% between 2014 and 2022 (1,756 to 916),
+then rose to 995 in 2024, still 43% below 2014 [UKHSA 2025]. UK-born TB is heterogeneous: it
+includes reactivation in older adults and transmission linked to social risk factors [Davidson 2018].
 
 **Medicines that change TB risk.** Host factors also modify TB risk, and several are shaped by
 commonly prescribed medicines.
