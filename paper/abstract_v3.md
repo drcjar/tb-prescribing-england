@@ -18,9 +18,9 @@
 
 **Results.**
 - **Linkage.** Hospital active-TB treatment tracked TB notifications between areas (Spearman ρ = 0.81) and within areas in the same year (incidence rate ratio [IRR] 1.035, 95% CI 1.009–1.061, per 10% increase). The within-area elasticity was only 0.36–0.40, indicating substantial attenuation even for a disease-specific drug.
-- **Primary care.** No drug group was associated with notifications in the following year. For systemic oral glucocorticoids the IRR was 0.969 (0.929–1.012) per 10% within-area increase.
-- **Hospital medicines.** TNF inhibitors (0.989, 0.972–1.007), JAK inhibitors and other immunosuppressants were null. Hospital systemic glucocorticoids had a small nominal association (1.024, 1.001–1.046) that was not robust to clustering by trust or to excluding COVID-19 years.
-- **Falsification and negative control.** The negative-control exposure showed inverse estimates similar in size to metformin, and following-year prescribing was inversely associated with notifications for several groups. With collinear adjacent-year exposures these tests are weak, but the pattern is compatible with residual confounding by area-specific trends.
+- **Primary care.** No drug group was associated with notifications in the following year after correction for multiple testing. For systemic oral glucocorticoids the IRR was 0.969 (0.929–1.012) per 10% within-area increase.
+- **Hospital medicines.** TNF inhibitors (0.989, 0.972–1.007), JAK inhibitors and other immunosuppressants were null. Hospital systemic glucocorticoids had a small nominal association (1.024, 1.001–1.046) that was not robust to clustering by trust and was absent for oral forms alone.
+- **Falsification and negative control.** The negative-control exposure showed inverse estimates similar in size to metformin, and following-year prescribing was inversely associated with notifications for several groups, including when same-year prescribing was added. The pattern is compatible with residual confounding by area-specific trends.
 - **Power.**
   - For oral glucocorticoids, the MDE (6.3% per 10% increase) was about 18 times the effect expected from published relative risks (0.34%), and about 70–140 times that implied by UKHSA-recorded steroid-associated TB (0.04–0.09%).
   - In simulations on the real counts, the null hypothesis was rejected for the published effect in {{sim_power_rr49_ltla}} of replicates, no more often than with no effect ({{sim_null_rejection_ltla}}); simulated power exceeded analytic power at the real standard error.

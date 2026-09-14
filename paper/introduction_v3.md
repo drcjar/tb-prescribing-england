@@ -7,11 +7,11 @@ Tuberculosis (TB) remains a public health problem in England.
   most of the fall reflected declining TB rates in almost all populations, with smaller
   contributions from fewer recent non-EU migrants and from pre-entry screening of long-stay visa
   applicants from high-incidence countries [Thomas 2018; Aldridge 2016].
-- **2020:** notifications dropped to 4,125 during the COVID-19 pandemic, a fall thought to reflect
+- **2020:** notifications dropped to 4,123 during the COVID-19 pandemic, a fall thought to reflect
   service disruption rather than less disease [UKHSA 2021; Morrison 2023].
 - **2021–2024 rise:** notifications then increased, reaching 5,490 in 2024 (9.4 per 100,000).
   - 81.9% were in people born outside the UK [UKHSA 2025, Supplementary Table 12].
-  - 41% of those were notified within five years of arrival.
+  - 41% of those were notified within five years of arrival [UKHSA 2025].
   - The rise has been attributed mainly to migration from higher-incidence countries [UKHSA 2025].
 - **2025:** national data show 5,424 notifications, with 2024 revised to 5,487 [UKHSA 2026].
 

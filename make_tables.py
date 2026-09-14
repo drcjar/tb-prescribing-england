@@ -10,6 +10,7 @@ from pathlib import Path
 import numpy as np
 import pandas as pd
 from scipy.stats import norm
+from scipy.stats import t as student_t
 
 from drug_groups import DRUG_GROUPS
 from plot_panel import LABELS
@@ -29,6 +30,7 @@ HOSPITAL_LABELS = {
     "transplant_cni_mtor": "Calcineurin/mTOR inhibitors",
     "antiproliferative": "Antiproliferatives",
     "systemic_glucocorticoid": "Systemic glucocorticoids without dexamethasone/hydrocortisone (prednisolone-equivalent mg)",
+    "systemic_glucocorticoid_oral": "Systemic glucocorticoids, oral forms only (sensitivity)",
     "glucocorticoid_dexamethasone_hydrocortisone": "Dexamethasone and hydrocortisone (descriptive)",
     "low_tb_risk_biologic": "Low-TB-risk biologics (negative control)",
     "negative_control_levetiracetam": "Levetiracetam (negative control)",
@@ -88,8 +90,8 @@ def table_primary_care():
            "p, t−1 vs t+1", "Largest compatible PAF / prevented fraction (PAF after negative-control shift)"],
           rows, "Poisson PML with area and year fixed effects, adjusted for age structure, international in-migration, "
                 "HIV and diabetes prevalence (diabetes not adjusted for metformin and insulins); SEs clustered by area. "
-                "Joint model: prescribing in t−1 and t+1 in one model on a common sample; because the two are highly "
-                "correlated within areas, their estimates are negatively correlated and opposite signs can arise by chance. "
+                "Joint model: prescribing in t−1 and t+1 in one model on a common sample; their estimates can be negatively "
+                "correlated (Table S2b gives the correlation and the model with year t added). "
                 "PAF, largest population attributable fraction compatible with the upper 90% confidence limit; prevented "
                 "fraction, the same from the lower 90% limit; in brackets, the PAF after dividing the upper limit by the "
                 "negative control (levothyroxine) estimate, as if its bias applied to every drug.")
@@ -283,7 +285,7 @@ def table_power():
                "Analytic power at real-data SE", "Median estimated IRR per 10%", "Median replicate SE", "Null empirical SD",
                "Real-data SE"], rows,
               "Within the simulation, replicate SEs matched the spread of null estimates, so the test was approximately "
-              "calibrated (slightly anti-conservative). Real-data SEs were larger than in the simulation because permuting "
+              "calibrated (slightly anti-conservative). Real-data SEs were larger than in the simulation, probably because permuting "
               "exposure trajectories across areas breaks their alignment with each area's own notification trends; simulated "
               "power is therefore optimistic. Analytic power uses the median simulated estimate as the effect and the "
               "real-data SE.")
@@ -295,11 +297,16 @@ def table_regional():
         return
     r = pd.read_csv(path)
     r = r[r.model == "FE + migration + age"]
+    # MDE from the t(8) interval: SE of log IRR per 10%, times the t(8) quantiles for 5% two-sided alpha and 80% power
+    se = (np.log(r.ci_high) - np.log(r.ci_low)) / (2 * student_t.ppf(0.975, 8))
+    r = r.assign(mde_pct_10pct=100 * (np.exp((student_t.ppf(0.975, 8) + student_t.ppf(0.80, 8)) * se) - 1))
+    r.to_csv(OUT_DIR / "steroids" / "regional_mde.csv", index=False)
     rows = [[x.outcome, x.exposure.replace("rate_", ""), x.analysis, x.lag_years,
-             f"{x.irr_per_10pct:.2f} ({x.ci_low:.2f}–{x.ci_high:.2f})", f"{x.p_cluster_t8:.3f}", f"{x.p_randomisation:.3f}"]
+             f"{x.irr_per_10pct:.2f} ({x.ci_low:.2f}–{x.ci_high:.2f})", f"{x.p_cluster_t8:.3f}", f"{x.p_randomisation:.3f}",
+             f"{x.mde_pct_10pct:.0f}%"]
             for x in r.itertuples()]
     write("tableS5_regional", "Table S5. Regional models (9 regions): TB notifications by place of birth and age vs primary care prescribing",
-          ["Outcome", "Exposure", "Analysis", "Lag (years; negative = lead)", "IRR per 10% (t(8) 95% CI)", "p (cluster t8)", "p (randomisation)"], rows,
+          ["Outcome", "Exposure", "Analysis", "Lag (years; negative = lead)", "IRR per 10% (t(8) 95% CI)", "p (cluster t8)", "p (randomisation)", "MDE per 10%"], rows,
           "Randomisation p-values compare the cluster-robust t statistic with 499 permutations of whole regional exposure histories "
           "across regions, valid under exchangeability of those histories; p = (1 + count)/(1 + 499), so the minimum is 0.002.")
     jl = OUT_DIR / "steroids" / "ocs_tb_by_birthplace_lag_lead.csv"

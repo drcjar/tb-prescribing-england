@@ -240,29 +240,29 @@ active-TB treatment tracked TB notifications between areas (Spearman ρ =
 1.035, 95% CI 1.009–1.061, per 10% increase). The within-area elasticity
 was only 0.36–0.40, indicating substantial attenuation even for a
 disease-specific drug. - <strong>Primary care.</strong> No drug group
-was associated with notifications in the following year. For systemic
-oral glucocorticoids the IRR was 0.969 (0.929–1.012) per 10% within-area
-increase. - <strong>Hospital medicines.</strong> TNF inhibitors (0.989,
-0.972–1.007), JAK inhibitors and other immunosuppressants were null.
-Hospital systemic glucocorticoids had a small nominal association
-(1.024, 1.001–1.046) that was not robust to clustering by trust or to
-excluding COVID-19 years. - <strong>Falsification and negative
-control.</strong> The negative-control exposure showed inverse estimates
-similar in size to metformin, and following-year prescribing was
-inversely associated with notifications for several groups. With
-collinear adjacent-year exposures these tests are weak, but the pattern
-is compatible with residual confounding by area-specific trends. -
-<strong>Power.</strong> - For oral glucocorticoids, the MDE (6.3% per
-10% increase) was about 18 times the effect expected from published
-relative risks (0.34%), and about 70–140 times that implied by
-UKHSA-recorded steroid-associated TB (0.04–0.09%). - In simulations on
-the real counts, the null hypothesis was rejected for the published
-effect in 8.3% of replicates, no more often than with no effect (7.8%);
-simulated power exceeded analytic power at the real standard error. -
-<strong>UK-born TB.</strong> A regional association between prednisolone
-dose and UK-born TB was implausibly large, not significant by
-randomisation inference, dependent on London, and accompanied by failed
-negative-control and falsification tests.</p>
+was associated with notifications in the following year after correction
+for multiple testing. For systemic oral glucocorticoids the IRR was
+0.969 (0.929–1.012) per 10% within-area increase. - <strong>Hospital
+medicines.</strong> TNF inhibitors (0.989, 0.972–1.007), JAK inhibitors
+and other immunosuppressants were null. Hospital systemic
+glucocorticoids had a small nominal association (1.024, 1.001–1.046)
+that was not robust to clustering by trust and was absent for oral forms
+alone. - <strong>Falsification and negative control.</strong> The
+negative-control exposure showed inverse estimates similar in size to
+metformin, and following-year prescribing was inversely associated with
+notifications for several groups, including when same-year prescribing
+was added. The pattern is compatible with residual confounding by
+area-specific trends. - <strong>Power.</strong> - For oral
+glucocorticoids, the MDE (6.3% per 10% increase) was about 18 times the
+effect expected from published relative risks (0.34%), and about 70–140
+times that implied by UKHSA-recorded steroid-associated TB (0.04–0.09%).
+- In simulations on the real counts, the null hypothesis was rejected
+for the published effect in 8.3% of replicates, no more often than with
+no effect (7.8%); simulated power exceeded analytic power at the real
+standard error. - <strong>UK-born TB.</strong> A regional association
+between prednisolone dose and UK-born TB was implausibly large, not
+significant by randomisation inference, dependent on London, and
+accompanied by failed negative-control and falsification tests.</p>
 <p><strong>Conclusions.</strong> - Hospital medicines data could be
 linked to TB notifications only with heavy attenuation, and no working
 positive control was available for primary care. Ecological analyses of
@@ -283,16 +283,16 @@ notifications fell by 44% between 2011 and 2018 (8,282 to 4,609). For
 populations, with smaller contributions from fewer recent non-EU
 migrants and from pre-entry screening of long-stay visa applicants from
 high-incidence countries [Thomas 2018; Aldridge 2016]. -
-<strong>2020:</strong> notifications dropped to 4,125 during the
+<strong>2020:</strong> notifications dropped to 4,123 during the
 COVID-19 pandemic, a fall thought to reflect service disruption rather
 than less disease [UKHSA 2021; Morrison 2023]. - <strong>2021–2024
 rise:</strong> notifications then increased, reaching 5,490 in 2024 (9.4
 per 100,000). - 81.9% were in people born outside the UK [UKHSA 2025,
 Supplementary Table 12]. - 41% of those were notified within five years
-of arrival. - The rise has been attributed mainly to migration from
-higher-incidence countries [UKHSA 2025]. - <strong>2025:</strong>
-national data show 5,424 notifications, with 2024 revised to 5,487
-[UKHSA 2026].</p>
+of arrival [UKHSA 2025]. - The rise has been attributed mainly to
+migration from higher-incidence countries [UKHSA 2025]. -
+<strong>2025:</strong> national data show 5,424 notifications, with 2024
+revised to 5,487 [UKHSA 2026].</p>
 <p><strong>TB in UK-born people.</strong> UK-born notifications fell by
 48% between 2014 and 2022 (1,756 to 916), then rose to 995 in 2024,
 still 43% below 2014 [UKHSA 2025]. UK-born TB is heterogeneous: it
@@ -401,7 +401,7 @@ randomisation inference on the <em>t</em> statistic.</li>
 </ul></li>
 </ol>
 <p>All analyses after the first pass are exploratory. Estimates from the
-original panel design are given in Table S8.</p>
+original panel design are given in the supplement.</p>
 </section>
 <section id="assumed-causal-structure" class="level3">
 <h3>Assumed causal structure</h3>
@@ -478,7 +478,7 @@ closed before 2017) that have the standard GP practice code format (a
 letter and five digits; this format matches 94% of RO76 codes and few
 codes in other settings). Without this addition, prescribing by
 practices that later closed would have been dropped unevenly over time:
-3.8% of items in 2011, 1.9% in 2014 and none from 2016.</p>
+3.4% of items in 2011, 1.7% in 2014 and none from 2016.</p>
 <p><strong>Drug groups.</strong> Groups were defined at BNF presentation
 level:</p>
 <div class="table-wrap"><table>
@@ -544,9 +544,10 @@ to 2024 were used, each practice-year taking that practice’s nearest
 release in time (so 2014 shares were applied to 2011–2013); - practices
 in no release (closed before April 2014) were assigned to the district
 of their postcode; - LSOAs were mapped to April 2023 districts.</p>
-<p>Assigning each practice to the district containing its postcode was a
-sensitivity analysis. In 2024, 7.3% of registered patients lived outside
-the district of their practice.</p>
+<p>Assigning each practice to the district containing its postcode (ONS
+Postcode Directory, August 2025) was a sensitivity analysis. In 2024,
+7.3% of registered patients lived outside the district of their
+practice.</p>
 <p><strong>Denominators.</strong> ONS mid-year resident population
 estimates.</p>
 </section>
@@ -570,9 +571,10 @@ separately);</li>
 <li>systemic glucocorticoids (prednisolone and methylprednisolone),
 measured in prednisolone-equivalent mg and excluding intra-articular,
 depot and topical forms. Dexamethasone and hydrocortisone, used mainly
-in oncology, as antiemetics, for COVID-19 [RECOVERY 2021] and as
-replacement therapy, were reported separately as a descriptive
-group.</li>
+in oncology, as antiemetics, for COVID-19 [RECOVERY 2021] and for acute
+illness, were reported separately as a descriptive group. A sensitivity
+analysis restricted the candidate exposure to oral forms, excluding
+intravenous methylprednisolone pulses.</li>
 </ul>
 <p><strong>Controls.</strong> - <strong>Positive control:</strong>
 active-TB treatment, measured as pyrazinamide defined daily doses (1.5
@@ -613,6 +615,12 @@ born outside the UK.</p>
 </section>
 <section id="statistical-analysis" class="level3">
 <h3>Statistical analysis</h3>
+<p>Supplementary tables report the primary care sensitivity analyses
+(Table S1), distributed-lag and joint lag models (Tables S2 and S2b),
+hospital expected effects and sensitivity analyses (Tables S3 and S3b),
+the power simulation (Table S4), regional models (Tables S5 and S6),
+hospital data coverage (Table S7), the original panel design (Table S8)
+and drug group definitions (Table S9).</p>
 <p><strong>Panel analyses.</strong> - <strong>Model:</strong> Poisson
 pseudo-maximum-likelihood regression [Santos Silva 2006] of annual
 notifications, with area and year fixed effects, a log population offset
@@ -633,31 +641,32 @@ Levothyroxine and antituberculosis drugs were excluded. -
 <em>t</em>+1 estimated jointly on a common sample, and again with year
 <em>t</em> added, with a Wald test of the difference between the
 <em>t</em>−1 and <em>t</em>+1 coefficients. A true effect should load on
-<em>t</em>−1. Prescribing in adjacent years is highly correlated within
-areas, so the two estimates are strongly negatively correlated and
-opposite signs can arise by chance; we treat these tests as weak
-diagnostics. - <strong>Sensitivity analyses:</strong> - no covariates; -
-a distributed lag (<em>t</em>, <em>t</em>−1, <em>t</em>−2); - the
-original three-year window (<em>t</em>−3 to <em>t</em>−1); -
-area-specific linear trends; - log population as a covariate instead of
-an offset (shared-denominator bias); - adjustment for the LTBI
-programme; - adjustment for asylum support; - excluding outcome years
-2020–21 and exposure years 2020–21; - outcome years 2018–2024 only
-(NTBS-era data); - outcome years 2015–2024 only, so that all exposure
-comes from the EPD (splice sensitivity); - ADQ instead of items, for
-groups where the EPD populates ADQ; - practice-postcode apportionment; -
-UTLA geography. - <strong>Spatial dependence:</strong> Moran’s I of
-year-specific Pearson residuals (5-nearest-neighbour weights, 999
-permutations). - <strong>Missing data:</strong> complete-case analysis.
-Area-years with missing covariates, or with zero exposure (log
-undefined), were excluded model by model; the numbers excluded are
-recorded in the result files. - <strong>Bounds:</strong> for each
-estimate, the largest population attributable fraction compatible with
-the upper 90% confidence limit and, for drugs expected to protect, the
-largest prevented fraction compatible with the lower limit, both under
-the model used for expected effects. As a sensitivity analysis, the
-upper limit was divided by the negative control’s estimate from the same
-model, as if its bias applied equally to every drug.</p>
+<em>t</em>−1. Because prescribing in adjacent years is correlated within
+areas, the two-year model can produce opposite signs through
+collinearity; the model with year <em>t</em> added and the correlation
+of the estimates are reported to check this. - <strong>Sensitivity
+analyses:</strong> - no covariates; - a distributed lag (<em>t</em>,
+<em>t</em>−1, <em>t</em>−2); - the original three-year window
+(<em>t</em>−3 to <em>t</em>−1); - area-specific linear trends; - log
+population as a covariate instead of an offset (shared-denominator
+bias); - adjustment for the LTBI programme; - adjustment for asylum
+support; - excluding outcome years 2020–21 and exposure years 2020–21; -
+outcome years 2018–2024 only (NTBS-era data); - outcome years 2015–2024
+only, so that all exposure comes from the EPD (splice sensitivity); -
+ADQ instead of items, for groups where the EPD populates ADQ; -
+practice-postcode apportionment; - UTLA geography. - <strong>Spatial
+dependence:</strong> Moran’s I of year-specific Pearson residuals
+(5-nearest-neighbour weights, 999 permutations). - <strong>Missing
+data:</strong> complete-case analysis. Area-years with missing
+covariates, or with zero exposure (log undefined), were excluded model
+by model; the numbers excluded are recorded in the result files. -
+<strong>Bounds:</strong> for each estimate, the largest population
+attributable fraction compatible with the upper 90% confidence limit and
+the largest prevented fraction compatible with the lower limit (relevant
+for drugs expected to protect), both under the model used for expected
+effects. As a sensitivity analysis, the upper limit was divided by the
+negative control’s estimate from the same model, as if its bias applied
+equally to every drug.</p>
 <p><strong>Hospital analyses.</strong> The same model was fitted for
 2019–2024, with exposure in: - the same year (for the positive control,
 where treatment follows diagnosis); - the previous year (for candidate
@@ -819,8 +828,8 @@ plausible effect on TB.</li>
 </ul>
 <figure>
 <img src="figures/panel_forest_ltla_residence.png"
-alt="Figure 4. Primary care prescribing and TB notifications, lower-tier authorities, prescribing apportioned by patient residence. Blue: prescribing in the previous year (primary). Orange: prescribing in the following year, estimated jointly (falsification)." />
-<figcaption aria-hidden="true"><strong>Figure 4.</strong> Primary care
+alt="Figure 3. Primary care prescribing and TB notifications, lower-tier authorities, prescribing apportioned by patient residence. Blue: prescribing in the previous year (primary). Orange: prescribing in the following year, estimated jointly (falsification)." />
+<figcaption aria-hidden="true"><strong>Figure 3.</strong> Primary care
 prescribing and TB notifications, lower-tier authorities, prescribing
 apportioned by patient residence. Blue: prescribing in the previous year
 (primary). Orange: prescribing in the following year, estimated jointly
@@ -1050,21 +1059,28 @@ prescribing was inversely associated with notifications for some groups:
 (0.840–0.921); difference p &lt; 0.001 - insulins: t−1 1.028
 (0.974–1.085), t+1 0.921 (0.866–0.980); difference p = 0.04 - systemic
 oral glucocorticoids: t−1 0.990 (0.941–1.041), t+1 0.952 (0.912–0.994);
-difference p = 0.33. - Within areas, prescribing in nearby years is
-highly correlated, so in the two-year model the t−1 and t+1 estimates
-were negatively correlated (−0.16 to −0.83 across groups) and opposite
-signs can arise by chance. - With same-year prescribing added,
-previous-year terms were null for every group. Same-year terms were
-positive for several groups (for example proton pump inhibitors 1.128,
-1.035–1.229), the direction expected from prescribing for undiagnosed
-TB, and following-year terms remained inverse. - Area-specific linear
-trends gave inhaled corticosteroids 1.033 (0.981–1.087). -
-<strong>Multiplicity.</strong> Of all 277 estimates in the lower-tier
-residence models, 30 were nominally significant, more than the 5%
-expected by chance. They were concentrated in the negative control
-(levothyroxine, 6, all inverse), metformin (5, inverse) and inhaled
-corticosteroids (8, mostly inverse or following-year terms), a pattern
-that points to shared trends rather than drug effects.</p>
+difference p = 0.33. - In the two-year model, the correlation between
+the t−1 and t+1 estimates ranged from −0.83 to +0.08 across groups (oral
+glucocorticoids −0.38, inhaled corticosteroids −0.46), so some opposite
+signs could reflect collinearity. - With same-year prescribing added,
+the t−1 and t+1 estimates were almost uncorrelated (−0.23 to +0.17),
+previous-year terms were null for every group, and following-year terms
+remained inverse (for example oral glucocorticoids 0.943, 0.898–0.990;
+inhaled corticosteroids 0.861, 0.809–0.917). Collinearity therefore does
+not explain the inverse following-year associations, which are more
+consistent with shared trends in prescribing and notifications. -
+Same-year terms were positive in this model but not in the
+distributed-lag model (Table S2), so we do not interpret their sign. -
+Area-specific linear trends gave inhaled corticosteroids 1.033
+(0.981–1.087). - <strong>Multiplicity.</strong> Of all 277 estimates in
+the lower-tier residence models, 30 were nominally significant. The
+estimates are overlapping specifications of the same data, and in
+simulations with no effect the test rejected in 7.8% of replicates, so
+this count cannot be compared with a nominal 5%. The nominal results
+were concentrated in the negative control (levothyroxine, 6, all
+inverse), metformin (5, inverse) and inhaled corticosteroids (8, mostly
+inverse or following-year terms), a pattern compatible with shared
+trends rather than drug effects.</p>
 <p><strong>Spatial dependence</strong> - Raw TB notification rates were
 strongly spatially clustered in every year (Moran’s I 0.25–0.39
 lower-tier; 0.40–0.49 upper-tier). - Residual dependence after the
@@ -1083,13 +1099,13 @@ notifications</h3>
 <p><strong>National trends, 2011–2024</strong> (standard GP practices) -
 Systemic oral glucocorticoid items rose from 119 to 132 per 1,000
 residents in 2011–2016, then fell to 111 in 2024. Most of the fall came
-in 2020–21 (Figure 3). - Prednisolone-equivalent mg per item fell from
+in 2020–21 (Figure 4). - Prednisolone-equivalent mg per item fell from
 225 to 192, so courses became smaller. - Oral hydrocortisone items,
 mainly replacement therapy, rose from 5.5 to 9.1 per 1,000.</p>
 <figure>
 <img src="figures/ocs_national_trends.png"
-alt="Figure 3. Oral glucocorticoid prescribing in English primary care, 2011–2024: systemic oral glucocorticoid items, oral hydrocortisone items and prednisolone-equivalent mg per resident." />
-<figcaption aria-hidden="true"><strong>Figure 3.</strong> Oral
+alt="Figure 4. Oral glucocorticoid prescribing in English primary care, 2011–2024: systemic oral glucocorticoid items, oral hydrocortisone items and prednisolone-equivalent mg per resident." />
+<figcaption aria-hidden="true"><strong>Figure 4.</strong> Oral
 glucocorticoid prescribing in English primary care, 2011–2024: systemic
 oral glucocorticoid items, oral hydrocortisone items and
 prednisolone-equivalent mg per resident.</figcaption>
@@ -1119,13 +1135,13 @@ DDD, upper-tier authorities) - Between areas: tracked notifications
 areas, same year: 1.035 (1.009–1.061) per 10% increase. - Previous year:
 1.001 (0.993–1.010). Following year, estimated jointly: 0.997
 (0.986–1.007). - The within-area elasticity was 0.36 (95% CI 0.10–0.62;
-lower-tier 0.40, 0.14–0.66). It reflects apportionment error, timing
-(treatment of people notified late in a year continues into the next)
-and variation in drug volume per person treated, not linkage error
-alone. - Rifamycin/isoniazid products, which also cover latent TB and
-other infections, had the same elasticity (0.37, 0.22–0.51). The more
-specific measure gained nothing, so the attenuation is dominated by
-apportionment rather than drug specificity.</p>
+lower-tier 0.40, 0.14–0.66). It reflects apportionment error and
+variation in drug volume per person treated, not linkage error alone;
+the null following-year estimate suggests that treatment spanning
+calendar years contributes little. - Rifamycin/isoniazid products, which
+also cover latent TB and other infections, had a similar elasticity
+(0.37, 0.22–0.51). The more specific measure did not reduce attenuation,
+suggesting that drug specificity is not its main source.</p>
 <figure>
 <img src="figures/hospital_positive_control.png"
 alt="Figure 5. Positive control: hospital active-TB treatment (pyrazinamide DDD-years per 1,000 residents, including fixed-dose combinations) and TB notifications between areas (left) and within areas over time (right)." />
@@ -1197,8 +1213,12 @@ IRR per 10% increase; Table 3 and Table S3b)</p>
 with notifications in the following year at upper-tier level. The
 association:
 <ul>
-<li>was not robust to clustering by principal trust (1.024, 0.999–1.049)
-or to excluding outcome years 2020–21 (1.018, 0.969–1.069);</li>
+<li>was not robust to clustering by principal trust (1.024,
+0.999–1.049), and was similar but imprecise when outcome years 2020–21
+were excluded (1.018, 0.969–1.069);</li>
+<li>was not seen for oral forms alone (1.011, 0.991–1.032; lower-tier
+1.015, 0.994–1.036), so it depended on intravenous methylprednisolone
+pulses, a marker of acute severe disease;</li>
 <li>would imply, under the model used for expected effects, that
 hospital glucocorticoids account for about a quarter of all
 notifications (an IRR of 1.024 per 10% corresponds to an attributable
@@ -1208,6 +1228,10 @@ chance or confounding by hospital activity, not a drug effect.</li>
 </ul></li>
 <li>The negative controls were null: low-TB-risk biologics 1.002
 (0.986–1.018); levetiracetam 1.014 (0.986–1.042).</li>
+<li>Across all 260 within-area hospital estimates at both levels, 22
+were nominally significant: 12 for the two TB treatment groups (the
+expected same-year association), 7 for JAK inhibitors (inverse) and 3
+for systemic glucocorticoids.</li>
 <li>Clustering by principal trust or using elective catchments barely
 changed the other estimates (Table S3b).</li>
 <li>JAK inhibitors showed small inverse estimates (same year 0.993,
@@ -1337,6 +1361,17 @@ dexamethasone/hydrocortisone (prednisolone-equivalent mg)</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">UTLA</td>
+<td style="text-align: right;">Systemic glucocorticoids, oral forms only
+(sensitivity)</td>
+<td style="text-align: right;">0.971 (0.930–1.012)</td>
+<td style="text-align: right;">0.997 (0.979–1.016)</td>
+<td style="text-align: right;">-0.03</td>
+<td style="text-align: right;">1.011 (0.991–1.032)</td>
+<td style="text-align: right;">1.011 (0.990–1.033)</td>
+<td style="text-align: right;">0.983 (0.944–1.023)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">UTLA</td>
 <td style="text-align: right;">Dexamethasone and hydrocortisone
 (descriptive)</td>
 <td style="text-align: right;">0.934 (0.893–0.976)</td>
@@ -1346,7 +1381,7 @@ dexamethasone/hydrocortisone (prednisolone-equivalent mg)</td>
 <td style="text-align: right;">1.008 (0.979–1.037)</td>
 <td style="text-align: right;">0.994 (0.943–1.047)</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td style="text-align: left;">UTLA</td>
 <td style="text-align: right;">Low-TB-risk biologics (negative
 control)</td>
@@ -1357,7 +1392,7 @@ control)</td>
 <td style="text-align: right;">1.002 (0.983–1.021)</td>
 <td style="text-align: right;">1.010 (0.982–1.040)</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td style="text-align: left;">UTLA</td>
 <td style="text-align: right;">Levetiracetam (negative control)</td>
 <td style="text-align: right;">1.017 (0.970–1.066)</td>
@@ -1367,7 +1402,7 @@ control)</td>
 <td style="text-align: right;">1.014 (0.986–1.042)</td>
 <td style="text-align: right;">0.987 (0.948–1.028)</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td style="text-align: left;">LTLA</td>
 <td style="text-align: right;">Active-TB treatment (pyrazinamide DDD,
 including fixed-dose combinations; positive control)</td>
@@ -1378,7 +1413,7 @@ including fixed-dose combinations; positive control)</td>
 <td style="text-align: right;">1.000 (0.992–1.008)</td>
 <td style="text-align: right;">0.995 (0.985–1.005)</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td style="text-align: left;">LTLA</td>
 <td style="text-align: right;">Rifamycin/isoniazid (active and latent
 TB, other infections)</td>
@@ -1389,7 +1424,7 @@ TB, other infections)</td>
 <td style="text-align: right;">1.004 (0.992–1.016)</td>
 <td style="text-align: right;">1.018 (0.997–1.040)</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td style="text-align: left;">LTLA</td>
 <td style="text-align: right;">TNF inhibitors</td>
 <td style="text-align: right;">0.968 (0.927–1.012)</td>
@@ -1399,7 +1434,7 @@ TB, other infections)</td>
 <td style="text-align: right;">0.992 (0.976–1.008)</td>
 <td style="text-align: right;">0.975 (0.946–1.006)</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td style="text-align: left;">LTLA</td>
 <td style="text-align: right;">IL-6 inhibitors and abatacept</td>
 <td style="text-align: right;">0.944 (0.906–0.984)</td>
@@ -1409,7 +1444,7 @@ TB, other infections)</td>
 <td style="text-align: right;">1.001 (0.993–1.010)</td>
 <td style="text-align: right;">0.997 (0.981–1.013)</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td style="text-align: left;">LTLA</td>
 <td style="text-align: right;">JAK inhibitors (rheumatology)</td>
 <td style="text-align: right;">0.948 (0.905–0.992)</td>
@@ -1419,7 +1454,7 @@ TB, other infections)</td>
 <td style="text-align: right;">0.995 (0.988–1.003)</td>
 <td style="text-align: right;">0.998 (0.984–1.012)</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td style="text-align: left;">LTLA</td>
 <td style="text-align: right;">Rituximab</td>
 <td style="text-align: right;">0.974 (0.929–1.021)</td>
@@ -1429,7 +1464,7 @@ TB, other infections)</td>
 <td style="text-align: right;">1.001 (0.988–1.014)</td>
 <td style="text-align: right;">1.005 (0.988–1.023)</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td style="text-align: left;">LTLA</td>
 <td style="text-align: right;">Calcineurin/mTOR inhibitors</td>
 <td style="text-align: right;">1.002 (0.959–1.046)</td>
@@ -1439,7 +1474,7 @@ TB, other infections)</td>
 <td style="text-align: right;">1.008 (0.998–1.019)</td>
 <td style="text-align: right;">0.983 (0.961–1.005)</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td style="text-align: left;">LTLA</td>
 <td style="text-align: right;">Antiproliferatives</td>
 <td style="text-align: right;">0.983 (0.936–1.031)</td>
@@ -1449,7 +1484,7 @@ TB, other infections)</td>
 <td style="text-align: right;">0.997 (0.980–1.015)</td>
 <td style="text-align: right;">0.993 (0.974–1.012)</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td style="text-align: left;">LTLA</td>
 <td style="text-align: right;">Systemic glucocorticoids without
 dexamethasone/hydrocortisone (prednisolone-equivalent mg)</td>
@@ -1459,6 +1494,17 @@ dexamethasone/hydrocortisone (prednisolone-equivalent mg)</td>
 <td style="text-align: right;">1.021 (1.000–1.043)</td>
 <td style="text-align: right;">1.021 (0.999–1.044)</td>
 <td style="text-align: right;">0.986 (0.952–1.020)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">LTLA</td>
+<td style="text-align: right;">Systemic glucocorticoids, oral forms only
+(sensitivity)</td>
+<td style="text-align: right;">0.974 (0.943–1.006)</td>
+<td style="text-align: right;">1.001 (0.982–1.019)</td>
+<td style="text-align: right;">0.01</td>
+<td style="text-align: right;">1.015 (0.994–1.036)</td>
+<td style="text-align: right;">1.015 (0.994–1.037)</td>
+<td style="text-align: right;">0.976 (0.939–1.014)</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">LTLA</td>
@@ -1531,7 +1577,8 @@ upper-tier level). - An RR of 1.5 with screening, which probably
 overstates post-screening risk, implies 0.017% (MDE 154 times larger). -
 Dividing by the positive-control elasticity widens these gaps to 72 and
 426 times (Table S3). - Across hospital scenarios, MDEs exceeded
-expected effects by 26 to 520 times before attenuation. - UKHSA-recorded
+expected effects by 26 to 520 times at upper-tier level before
+attenuation (23 to 522 times at lower-tier level). - UKHSA-recorded
 biological-therapy notifications imply 0.08–0.16%.</p>
 <p><strong>Simulation</strong> (permutation-based, real notification
 counts; Table S4) - <strong>Calibration.</strong> With no effect, the
@@ -1540,13 +1587,13 @@ upper-tier), against a nominal 5%. Within the simulation, replicate SEs
 (median 0.0161) were close to the spread of null estimates (0.0166), so
 the clustered test was mildly anti-conservative, not conservative. -
 <strong>Real-data precision.</strong> The real-data SE (0.0218) was
-larger than in the simulation, because permuting exposure trajectories
-across areas breaks their alignment with each area’s own notification
-trends. Simulated power is therefore optimistic, so we also give
-analytic power at the real-data SE. - <strong>Published glucocorticoid
-effect (RR 4.9).</strong> Rejection 8.3% (upper-tier 8.0%), no more
-often than with no effect; power in the correct direction 6.0%, against
-3.8% with no effect. - <strong>Larger individual relative
+larger than in the simulation, probably because permuting exposure
+trajectories across areas breaks their alignment with each area’s own
+notification trends. Simulated power is therefore optimistic, so we also
+give analytic power at the real-data SE. - <strong>Published
+glucocorticoid effect (RR 4.9).</strong> Rejection 8.3% (upper-tier
+8.0%), no more often than with no effect; power in the correct direction
+6.0%, against 3.8% with no effect. - <strong>Larger individual relative
 risks.</strong> Rejection 17.7% for RR 25 and 71.0% for RR 100 (analytic
 power at the real SE for RR 100: 52.1%). - <strong>Direct population
 effects.</strong> Rejection 21.7%, 83.0% and 100.0% for IRR 1.02, 1.05
@@ -1700,13 +1747,13 @@ corticosteroids, RR 4.9, prevalence 0.9%): 0.339%.</p>
 class="level3">
 <h3>Regional analyses by place of birth and age</h3>
 <p><strong>Precision</strong> - Regional models were very imprecise.
-MDEs for glucocorticoid prescribing were 45–82% per 10% increase for
-UK-born notifications and 46–99% for UK-born notifications at age ≥65. -
-Under the model used for expected effects, a 10% increase in use can
-raise notifications by at most 10%. The expected effect for UK-born
-people aged ≥65 (prevalence of use 2.5%, RR 4.9) is 0.9%. - Any
-nominally significant regional estimate must therefore reflect chance or
-bias.</p>
+MDEs for glucocorticoid prescribing, calculated from the <em>t</em>(8)
+intervals, were 46–98% per 10% increase for UK-born notifications and
+54–119% for UK-born notifications at age ≥65 (Table S5). - Under the
+model used for expected effects, a 10% increase in use can raise
+notifications by at most 10%. The expected effect for UK-born people
+aged ≥65 (prevalence of use 2.5%, RR 4.9) is 0.9%. - Any nominally
+significant regional estimate must therefore reflect chance or bias.</p>
 <p><strong>Non-UK-born notifications</strong> - Oral glucocorticoid
 prescribing in earlier years was not associated with notifications (lag
 1–3: 0.95–1.03). - The falsification test failed: prescribing three
@@ -1751,22 +1798,22 @@ geographic scales. The linkage worked only partly.</p>
 <li><strong>The positive control.</strong> Hospital active-TB treatment
 tracked notifications between areas and, weakly, within areas. Its
 elasticity of 0.36–0.40, with wide confidence intervals, reflects
-apportionment error, timing and variation in drug volume per person
+apportionment error and variation in drug volume per person
 treated.</li>
 <li><strong>Candidate drugs.</strong> No medicine plausibly affecting TB
 risk was robustly associated with subsequent notifications. This held
 for systemic oral glucocorticoids, inhaled corticosteroids, DMARDs,
 transplant immunosuppressants, TNF, IL-6 and JAK inhibitors, and
 rituximab. Hospital systemic glucocorticoids had a small nominal
-association that was not robust and implied an implausibly large
-attributable fraction.</li>
+association that was not robust, was absent for oral forms, and implied
+an implausibly large attributable fraction.</li>
 <li><strong>Signs of confounding.</strong>
 <ul>
 <li>The negative-control exposure showed inverse estimates of similar
 size to some candidate drugs.</li>
 <li>Following-year prescribing was inversely associated with
-notifications for several groups, although adjacent-year exposures are
-highly collinear.</li>
+notifications for several groups, and collinearity between adjacent
+years did not explain this.</li>
 <li>The regional association with UK-born TB was implausibly large, not
 significant by randomisation inference, and dependent on London.</li>
 </ul>
@@ -1778,8 +1825,8 @@ both showed that plausible effects are undetectable: the designs could
 detect only effects roughly 10 to several hundred times larger than
 those implied by published relative risks or by UKHSA records of
 drug-associated TB. Simulated power exceeded analytic power at the real
-standard error, because permuted exposures lost their alignment with
-local notification trends.</li>
+standard error, probably because permuted exposures lost their alignment
+with local notification trends.</li>
 </ul>
 </section>
 <section id="why-population-effects-of-these-medicines-are-undetectable"
@@ -1803,13 +1850,20 @@ or 0.09% if only half of drug-associated immunosuppression is
 recorded.</li>
 </ul></li>
 <li><strong>Biologics.</strong> Latent TB screening before anti-TNF
-therapy has been standard in the UK since 2005 [BTS 2005] and reduced TB
-rates in treated patients by about 78% in registry data [Carmona 2005];
-risk was about seven times higher when the recommendations were not
-followed [Gómez-Reino 2007]. Growth in biologic use during 2019–2024
-therefore took place under screening, so the relative risk relevant to a
-marginal increase in use is small. Screening is less consistently done
-before oral glucocorticoids.</li>
+therapy has been standard in the UK since 2005 [BTS 2005], and NICE
+guidance covers testing people who are or will be immunosuppressed
+[NG33]. In a Spanish registry, TB rates in people with rheumatoid
+arthritis treated with TNF antagonists were 6.2 times those in untreated
+people before screening recommendations, and fell by 83% to about the
+untreated rate afterwards [Carmona 2005]; risk was about seven times
+higher when the recommendations were not followed [Gómez-Reino 2007].
+Growth in biologic use during 2019–2024 therefore took place under
+screening, so the relative risk relevant to a marginal increase in use
+is small. Screening is less consistently done before oral
+glucocorticoids. UKHSA recorded biological-therapy immunosuppression, a
+category that includes non-TNF biologics, in 54 notifications in 2024;
+converted to an attributable fraction, that implies 0.08–0.16% per 10%
+increase in use.</li>
 </ul>
 <p><strong>The data carry little information.</strong> - <strong>Little
 within-area variation.</strong> Within-area variation in prescribing was
@@ -1822,9 +1876,13 @@ cannot be increased. - <strong>Linkage attenuation.</strong> For
 hospital medicines, the positive control shows that apportionment would
 shrink any true effect further. No working positive control was
 available for primary care, so the validity of that linkage is untested.
-- <strong>Simulation.</strong> Simulations on the real notification
-counts rejected the null for the published glucocorticoid effect no more
-often than when there was no effect.</p>
+Other hospital drugs have their own sources of error (homecare delivery
+of biologics, specialist centres, biosimilar switching), and the
+positive control was analysed in the same year while candidate drugs
+were analysed in the previous year, so the attenuated ratios are
+illustrative. - <strong>Simulation.</strong> Simulations on the real
+notification counts rejected the null for the published glucocorticoid
+effect no more often than when there was no effect.</p>
 </section>
 <section id="confounding-falsification-and-negative-controls"
 class="level3">
@@ -1836,12 +1894,11 @@ visible: - <strong>Negative control.</strong> Levothyroxine, which has
 no plausible effect on TB, showed inverse estimates (0.96) similar to
 metformin. - <strong>Lag and lead patterns.</strong> Following-year
 prescribing was inversely associated with notifications for inhaled
-corticosteroids and insulins, and in models with previous, same and
-following years, same-year terms were positive for several groups.
-Adjacent-year exposures are highly collinear, so their estimates are
-strongly negatively correlated and these seesaw patterns are weak
-evidence on their own. - <strong>Likely cause.</strong> Both patterns
-are compatible with prescribing and notifications sharing area-specific
+corticosteroids, insulins and oral glucocorticoids. These associations
+persisted when same-year prescribing was added and the lag and lead
+estimates were almost uncorrelated, so they are not an artefact of
+collinearity. - <strong>Likely cause.</strong> Both patterns are
+compatible with prescribing and notifications sharing area-specific
 trends, for example migration-driven changes in the age and origin of
 the population (with accompanying changes in practice registration and
 in vitamin D prescribing in South Asian-born communities), changes in
@@ -1858,17 +1915,17 @@ notifications are in younger people born abroad.</p>
 <p><strong>The UK-born association.</strong> Regionally, prednisolone
 dose in an earlier year was imprecisely associated with UK-born TB
 (joint lag estimate 1.45 per 10% increase). We do not interpret this as
-a drug effect: - The regional MDEs (about 50% per 10%) are far above the
-10% maximum possible under the model used for expected effects, so any
-significant regional estimate must reflect chance or bias. - It was not
-significant by randomisation inference (p = 0.23), and it largely
-disappeared when London was excluded (1.12). - The same nine-region
-design produced failed falsification tests for non-UK-born TB and a
-failed negative control (levothyroxine) for older UK-born people. -
-UK-born TB fell by 48% between 2014 and 2022 [UKHSA 2025], while oral
-glucocorticoid dosing also declined. Any two declining regional series
-will tend to correlate, so coincident trends are the most plausible
-explanation.</p>
+a drug effect: - The regional MDEs (roughly 50–120% per 10%) are far
+above the 10% maximum possible under the model used for expected
+effects, so any significant regional estimate must reflect chance or
+bias. - It was not significant by randomisation inference (p = 0.23),
+and it largely disappeared when London was excluded (1.12). - The same
+nine-region design produced failed falsification tests for non-UK-born
+TB and a failed negative control (levothyroxine) for older UK-born
+people. - UK-born TB fell by 48% between 2014 and 2022 [UKHSA 2025],
+while oral glucocorticoid dosing also declined. Any two declining
+regional series will tend to correlate, so coincident trends are the
+most plausible explanation.</p>
 <p><strong>Protopathic bias.</strong> Glucocorticoids and antibacterials
 prescribed for undiagnosed TB, and glucocorticoids used in treating TB
 meningitis and pericarditis [Thwaites 2004], create reverse associations
@@ -1900,8 +1957,8 @@ shares applied to 2011–2013. - <strong>Pre-2014 data.</strong> The
 2011–2013 series come from a different release, and overlap-period
 concordance could not be assessed. National year-on-year changes were
 continuous across the 2013/2014 splice for most groups, but not for oral
-glucocorticoids (+3.3% at the splice against +0.6% and +1.0% either
-side) or all antibacterials (−0.1% against −4.5% and −5.6%). Restricting
+glucocorticoids (+2.8% at the splice against +0.1% in each adjacent
+year) or all antibacterials (−0.6% against −5.0% and −6.4%). Restricting
 to EPD-era exposure did not change the conclusions (Table S1). -
 <strong>Hospital catchments.</strong> Hospital quantities were
 apportioned using admission-based catchments, which may misallocate
@@ -1915,17 +1972,18 @@ severity patterned by deprivation and ethnicity, so dexamethasone and
 hydrocortisone were separated from the candidate glucocorticoid
 exposure. - <strong>Hospital prescriptions dispensed in the
 community.</strong> Prescriptions written in hospitals and dispensed by
-community pharmacies (FP10(HP)) are attributed to hospital prescribers,
-not GP practices, and are not in SCMD. Some TB treatment and specialist
-medicines reach patients this way, so neither data source captures them.
-- <strong>Drug group definitions.</strong> Conventional DMARDs exclude
-hydroxychloroquine and sulfasalazine, which carry little TB risk.
-Mercaptopurine includes leukaemia maintenance therapy, and the primary
-care “transplant immunosuppressant” group includes shared-care use of
-mycophenolate and ciclosporin for autoimmune disease. Dexamethasone,
-despite its high potency, contributed only 5.6–6.7% of
-prednisolone-equivalent mg in primary care (2015, 2019 and 2024
-samples), so it does not drive the dose measure.</p>
+community pharmacies (FP10(HP)) are recorded in the English Prescribing
+Dataset under hospital prescribers, so our restriction to GP practices
+excluded them, and they are not in SCMD. Some TB treatment and
+specialist medicines reach patients this way, so they are missing from
+both exposures as analysed. - <strong>Drug group definitions.</strong>
+Conventional DMARDs exclude hydroxychloroquine and sulfasalazine, which
+carry little TB risk. Mercaptopurine includes leukaemia maintenance
+therapy, and the primary care “transplant immunosuppressant” group
+includes shared-care use of mycophenolate and ciclosporin for autoimmune
+disease. Dexamethasone, despite its high potency, contributed only
+5.6–6.7% of prednisolone-equivalent mg in primary care (2015, 2019 and
+2024 samples), so it does not drive the dose measure.</p>
 <p><strong>Limitations: outcome and confounder data.</strong> -
 <strong>Notifications, not incidence.</strong> The outcome is notified
 TB, subject to diagnostic delay, residence assignment, the 2021
@@ -1935,16 +1993,18 @@ UK-born population denominators by age are not published regionally. The
 model for UK-born notifications at age ≥65 therefore uses all residents
 aged ≥65 as the denominator, which can create spurious trends as the
 older non-UK-born population grows. - <strong>Screening of
-migrants.</strong> Pre-entry screening of long-stay visa applicants from
-high-incidence countries (UK-wide from 2012) and the LTBI programme for
-new migrants reduce notifications among recent entrants in the areas
-where they settle. Neither is fully captured by our covariates. -
-<strong>Outcome definitions.</strong> We did not analyse
-culture-confirmed pulmonary TB or drug-resistant TB, which were not
-available by local authority and year in the published tables we used. -
-<strong>Unmeasured confounders.</strong> - Social risk factors and
-diagnostic intensity. - The area-level share of recent arrivals. -
-Latent TB programme activity after 2019/20.</p>
+migrants.</strong> Pre-entry screening of long-stay visa applicants
+(piloted in selected high-incidence countries from 2005 and extended to
+all high-incidence countries in 2012–2014) and the LTBI programme for
+new migrants, whose testing coverage was incomplete [Berrocal-Almanza
+2022], both target recent entrants in the areas where they settle.
+Neither is fully captured by our covariates. - <strong>Outcome
+definitions.</strong> We did not analyse culture-confirmed pulmonary TB
+or drug-resistant TB, which were not available by local authority and
+year in the published tables we used. - <strong>Unmeasured
+confounders.</strong> - Social risk factors and diagnostic intensity. -
+The area-level share of recent arrivals. - Latent TB programme activity
+after 2019/20.</p>
 <p><strong>Limitations: design and analysis.</strong> -
 <strong>Pre-specification.</strong> Many analyses were added after
 initial null results and are exploratory. - <strong>Expected-effect
@@ -2045,10 +2105,9 @@ Negative-control exposure (levothyroxine initiation) and
 negative-control outcome. - E-values.</p>
 <p><strong>Feasibility</strong> - The TB notification rate in UK-born
 people was 2.1 per 100,000 in 2024, all ages [UKHSA 2025, Supplementary
-Table 12]; rates in older UK-born adults are of a similar order. Tens of
-thousands of long-term initiators followed for several years would yield
-only tens of TB events, so the individual-level study is itself
-constrained by sample size.</p>
+Table 12]. Tens of thousands of long-term initiators followed for
+several years would yield only tens of TB events, so the
+individual-level study is itself constrained by sample size.</p>
 </section>
 </section>
 <section id="data-and-code-availability" class="level2">
@@ -2060,12 +2119,13 @@ reports and Fingertips; OHID acute trust catchment populations;
 ONS/Nomis; Home Office asylum statistics; NHS England ODS; MHCLG English
 Indices of Deprivation). Code, processed datasets and outputs:
 https://github.com/drcjar/tb-prescribing-england. Data were obtained in
-September 2026: the EPD and SCMD through the NHSBSA API (SCMD months use
-final data where available, otherwise provisional), and the NHS England
-ODS epraccur file, practice registration releases (April 2014–2024),
-OHID acute trust catchments (2024 catchment year), and the UKHSA TB in
-England 2025 and regional 2024 supplementary tables as published at that
-time. These portals revise data between releases.</p>
+September 2026: the EPD and SCMD through the NHSBSA API (all SCMD months
+analysed were final data, three of them from an earlier, since-retired
+release), and the NHS England ODS epraccur file, practice registration
+releases (April 2014–2024), OHID acute trust catchments (2024 catchment
+year), and the UKHSA TB in England 2025 and regional 2024 supplementary
+tables as published at that time. These portals revise data between
+releases.</p>
 </section>
 <section id="references" class="level2">
 <h2>References</h2>
@@ -2181,10 +2241,7 @@ automated access. The wording of the LTBI testing recommendation still
 needs checking by hand against the current text.]</li>
 <li>OpenPrescribing.net, Bennett Institute for Applied Data Science,
 University of Oxford. Frequently asked questions. 2026.
-https://openprescribing.net/faq/ [accessed date to be added; the FAQ
-asks academic users to cite “OpenPrescribing.net, Bennett Institute for
-Applied Data Science, University of Oxford, 2026”, confirmed via search
-results because a direct fetch failed]</li>
+https://openprescribing.net/faq/ Accessed 14 September 2026.</li>
 <li>Pealing L, Wing K, Mathur R, et al. Risk of tuberculosis in patients
 with diabetes: population based cohort study using the UK Clinical
 Practice Research Datalink. <em>BMC Med</em> 2015;13:135.
@@ -3059,15 +3116,16 @@ therefore optimistic. Analytic power uses the median simulated estimate
 as the effect and the real-data SE.</p>
 <p><strong>Table S5. Regional models (9 regions): TB notifications by
 place of birth and age vs primary care prescribing</strong></p>
-<div class="table-wrap"><table style="width:100%;">
+<div class="table-wrap"><table>
 <colgroup>
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
+<col style="width: 12%" />
+<col style="width: 12%" />
+<col style="width: 12%" />
+<col style="width: 12%" />
+<col style="width: 12%" />
+<col style="width: 12%" />
+<col style="width: 12%" />
+<col style="width: 12%" />
 </colgroup>
 <thead>
 <tr class="header">
@@ -3078,6 +3136,7 @@ place of birth and age vs primary care prescribing</strong></p>
 <th style="text-align: right;">IRR per 10% (t(8) 95% CI)</th>
 <th style="text-align: right;">p (cluster t8)</th>
 <th style="text-align: right;">p (randomisation)</th>
+<th style="text-align: right;">MDE per 10%</th>
 </tr>
 </thead>
 <tbody>
@@ -3089,6 +3148,7 @@ place of birth and age vs primary care prescribing</strong></p>
 <td style="text-align: right;">1.19 (0.87–1.62)</td>
 <td style="text-align: right;">0.233</td>
 <td style="text-align: right;">0.254</td>
+<td style="text-align: right;">53%</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">TB, UK born</td>
@@ -3098,6 +3158,7 @@ place of birth and age vs primary care prescribing</strong></p>
 <td style="text-align: right;">1.20 (0.80–1.80)</td>
 <td style="text-align: right;">0.323</td>
 <td style="text-align: right;">0.386</td>
+<td style="text-align: right;">75%</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">TB, UK born</td>
@@ -3107,6 +3168,7 @@ place of birth and age vs primary care prescribing</strong></p>
 <td style="text-align: right;">1.10 (0.67–1.79)</td>
 <td style="text-align: right;">0.678</td>
 <td style="text-align: right;">0.714</td>
+<td style="text-align: right;">98%</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">TB, UK born</td>
@@ -3116,6 +3178,7 @@ place of birth and age vs primary care prescribing</strong></p>
 <td style="text-align: right;">1.19 (0.87–1.63)</td>
 <td style="text-align: right;">0.244</td>
 <td style="text-align: right;">0.280</td>
+<td style="text-align: right;">55%</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">TB, UK born</td>
@@ -3125,6 +3188,7 @@ place of birth and age vs primary care prescribing</strong></p>
 <td style="text-align: right;">1.20 (0.80–1.80)</td>
 <td style="text-align: right;">0.323</td>
 <td style="text-align: right;">0.372</td>
+<td style="text-align: right;">75%</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">TB, UK born</td>
@@ -3134,6 +3198,7 @@ place of birth and age vs primary care prescribing</strong></p>
 <td style="text-align: right;">1.09 (0.67–1.78)</td>
 <td style="text-align: right;">0.686</td>
 <td style="text-align: right;">0.714</td>
+<td style="text-align: right;">97%</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">TB, UK born</td>
@@ -3143,6 +3208,7 @@ place of birth and age vs primary care prescribing</strong></p>
 <td style="text-align: right;">1.20 (0.78–1.84)</td>
 <td style="text-align: right;">0.356</td>
 <td style="text-align: right;">0.374</td>
+<td style="text-align: right;">81%</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">TB, UK born</td>
@@ -3152,6 +3218,7 @@ place of birth and age vs primary care prescribing</strong></p>
 <td style="text-align: right;">1.09 (0.67–1.78)</td>
 <td style="text-align: right;">0.695</td>
 <td style="text-align: right;">0.686</td>
+<td style="text-align: right;">97%</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">TB, UK born</td>
@@ -3161,6 +3228,7 @@ place of birth and age vs primary care prescribing</strong></p>
 <td style="text-align: right;">1.09 (0.83–1.44)</td>
 <td style="text-align: right;">0.484</td>
 <td style="text-align: right;">0.536</td>
+<td style="text-align: right;">47%</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">TB, UK born</td>
@@ -3170,6 +3238,7 @@ place of birth and age vs primary care prescribing</strong></p>
 <td style="text-align: right;">1.25 (0.95–1.65)</td>
 <td style="text-align: right;">0.097</td>
 <td style="text-align: right;">0.122</td>
+<td style="text-align: right;">46%</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">TB, UK born</td>
@@ -3179,6 +3248,7 @@ place of birth and age vs primary care prescribing</strong></p>
 <td style="text-align: right;">1.33 (0.96–1.84)</td>
 <td style="text-align: right;">0.077</td>
 <td style="text-align: right;">0.162</td>
+<td style="text-align: right;">57%</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">TB, UK born</td>
@@ -3188,6 +3258,7 @@ place of birth and age vs primary care prescribing</strong></p>
 <td style="text-align: right;">1.33 (0.94–1.89)</td>
 <td style="text-align: right;">0.098</td>
 <td style="text-align: right;">0.238</td>
+<td style="text-align: right;">63%</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">TB, UK born</td>
@@ -3197,6 +3268,7 @@ place of birth and age vs primary care prescribing</strong></p>
 <td style="text-align: right;">1.27 (0.94–1.72)</td>
 <td style="text-align: right;">0.105</td>
 <td style="text-align: right;">0.114</td>
+<td style="text-align: right;">52%</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">TB, UK born</td>
@@ -3206,6 +3278,7 @@ place of birth and age vs primary care prescribing</strong></p>
 <td style="text-align: right;">1.32 (0.97–1.80)</td>
 <td style="text-align: right;">0.072</td>
 <td style="text-align: right;">0.140</td>
+<td style="text-align: right;">53%</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">TB, UK born</td>
@@ -3215,6 +3288,7 @@ place of birth and age vs primary care prescribing</strong></p>
 <td style="text-align: right;">1.30 (0.91–1.85)</td>
 <td style="text-align: right;">0.134</td>
 <td style="text-align: right;">0.286</td>
+<td style="text-align: right;">64%</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">TB, UK born</td>
@@ -3224,6 +3298,7 @@ place of birth and age vs primary care prescribing</strong></p>
 <td style="text-align: right;">1.17 (0.85–1.60)</td>
 <td style="text-align: right;">0.292</td>
 <td style="text-align: right;">0.274</td>
+<td style="text-align: right;">55%</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">TB, UK born</td>
@@ -3233,6 +3308,7 @@ place of birth and age vs primary care prescribing</strong></p>
 <td style="text-align: right;">0.91 (0.70–1.19)</td>
 <td style="text-align: right;">0.446</td>
 <td style="text-align: right;">0.436</td>
+<td style="text-align: right;">44%</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">TB, UK born</td>
@@ -3242,6 +3318,7 @@ place of birth and age vs primary care prescribing</strong></p>
 <td style="text-align: right;">0.92 (0.82–1.03)</td>
 <td style="text-align: right;">0.120</td>
 <td style="text-align: right;">0.084</td>
+<td style="text-align: right;">17%</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">TB, UK born</td>
@@ -3251,6 +3328,7 @@ place of birth and age vs primary care prescribing</strong></p>
 <td style="text-align: right;">0.96 (0.85–1.08)</td>
 <td style="text-align: right;">0.407</td>
 <td style="text-align: right;">0.518</td>
+<td style="text-align: right;">18%</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">TB, UK born</td>
@@ -3260,6 +3338,7 @@ place of birth and age vs primary care prescribing</strong></p>
 <td style="text-align: right;">0.91 (0.80–1.03)</td>
 <td style="text-align: right;">0.127</td>
 <td style="text-align: right;">0.246</td>
+<td style="text-align: right;">19%</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">TB, UK born</td>
@@ -3269,6 +3348,7 @@ place of birth and age vs primary care prescribing</strong></p>
 <td style="text-align: right;">0.90 (0.77–1.04)</td>
 <td style="text-align: right;">0.139</td>
 <td style="text-align: right;">0.258</td>
+<td style="text-align: right;">23%</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">TB, UK born</td>
@@ -3278,6 +3358,7 @@ place of birth and age vs primary care prescribing</strong></p>
 <td style="text-align: right;">0.95 (0.84–1.08)</td>
 <td style="text-align: right;">0.366</td>
 <td style="text-align: right;">0.478</td>
+<td style="text-align: right;">19%</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">TB, UK born</td>
@@ -3287,6 +3368,7 @@ place of birth and age vs primary care prescribing</strong></p>
 <td style="text-align: right;">0.91 (0.80–1.04)</td>
 <td style="text-align: right;">0.152</td>
 <td style="text-align: right;">0.288</td>
+<td style="text-align: right;">21%</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">TB, UK born</td>
@@ -3296,6 +3378,7 @@ place of birth and age vs primary care prescribing</strong></p>
 <td style="text-align: right;">0.90 (0.76–1.05)</td>
 <td style="text-align: right;">0.154</td>
 <td style="text-align: right;">0.282</td>
+<td style="text-align: right;">25%</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">TB, UK born</td>
@@ -3305,6 +3388,7 @@ place of birth and age vs primary care prescribing</strong></p>
 <td style="text-align: right;">0.93 (0.81–1.07)</td>
 <td style="text-align: right;">0.293</td>
 <td style="text-align: right;">0.428</td>
+<td style="text-align: right;">22%</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">TB, UK born</td>
@@ -3314,6 +3398,7 @@ place of birth and age vs primary care prescribing</strong></p>
 <td style="text-align: right;">0.97 (0.82–1.14)</td>
 <td style="text-align: right;">0.636</td>
 <td style="text-align: right;">0.710</td>
+<td style="text-align: right;">26%</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">TB, UK born</td>
@@ -3323,6 +3408,7 @@ place of birth and age vs primary care prescribing</strong></p>
 <td style="text-align: right;">0.96 (0.80–1.15)</td>
 <td style="text-align: right;">0.624</td>
 <td style="text-align: right;">0.720</td>
+<td style="text-align: right;">28%</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">TB, Non-UK born</td>
@@ -3332,6 +3418,7 @@ place of birth and age vs primary care prescribing</strong></p>
 <td style="text-align: right;">0.95 (0.72–1.25)</td>
 <td style="text-align: right;">0.678</td>
 <td style="text-align: right;">0.716</td>
+<td style="text-align: right;">47%</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">TB, Non-UK born</td>
@@ -3341,6 +3428,7 @@ place of birth and age vs primary care prescribing</strong></p>
 <td style="text-align: right;">1.00 (0.81–1.23)</td>
 <td style="text-align: right;">0.982</td>
 <td style="text-align: right;">0.974</td>
+<td style="text-align: right;">33%</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">TB, Non-UK born</td>
@@ -3350,6 +3438,7 @@ place of birth and age vs primary care prescribing</strong></p>
 <td style="text-align: right;">1.03 (0.83–1.28)</td>
 <td style="text-align: right;">0.725</td>
 <td style="text-align: right;">0.766</td>
+<td style="text-align: right;">35%</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">TB, Non-UK born</td>
@@ -3359,6 +3448,7 @@ place of birth and age vs primary care prescribing</strong></p>
 <td style="text-align: right;">0.98 (0.72–1.32)</td>
 <td style="text-align: right;">0.853</td>
 <td style="text-align: right;">0.874</td>
+<td style="text-align: right;">51%</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">TB, Non-UK born</td>
@@ -3368,6 +3458,7 @@ place of birth and age vs primary care prescribing</strong></p>
 <td style="text-align: right;">1.03 (0.84–1.26)</td>
 <td style="text-align: right;">0.785</td>
 <td style="text-align: right;">0.812</td>
+<td style="text-align: right;">33%</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">TB, Non-UK born</td>
@@ -3377,6 +3468,7 @@ place of birth and age vs primary care prescribing</strong></p>
 <td style="text-align: right;">1.06 (0.86–1.32)</td>
 <td style="text-align: right;">0.523</td>
 <td style="text-align: right;">0.600</td>
+<td style="text-align: right;">34%</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">TB, Non-UK born</td>
@@ -3386,6 +3478,7 @@ place of birth and age vs primary care prescribing</strong></p>
 <td style="text-align: right;">1.13 (0.88–1.44)</td>
 <td style="text-align: right;">0.306</td>
 <td style="text-align: right;">0.358</td>
+<td style="text-align: right;">41%</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">TB, Non-UK born</td>
@@ -3395,6 +3488,7 @@ place of birth and age vs primary care prescribing</strong></p>
 <td style="text-align: right;">1.33 (1.00–1.76)</td>
 <td style="text-align: right;">0.049</td>
 <td style="text-align: right;">0.070</td>
+<td style="text-align: right;">48%</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">TB, Non-UK born</td>
@@ -3404,6 +3498,7 @@ place of birth and age vs primary care prescribing</strong></p>
 <td style="text-align: right;">1.49 (1.17–1.89)</td>
 <td style="text-align: right;">0.005</td>
 <td style="text-align: right;">0.012</td>
+<td style="text-align: right;">39%</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">TB, Non-UK born</td>
@@ -3413,6 +3508,7 @@ place of birth and age vs primary care prescribing</strong></p>
 <td style="text-align: right;">0.99 (0.77–1.26)</td>
 <td style="text-align: right;">0.906</td>
 <td style="text-align: right;">0.934</td>
+<td style="text-align: right;">41%</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">TB, Non-UK born</td>
@@ -3422,6 +3518,7 @@ place of birth and age vs primary care prescribing</strong></p>
 <td style="text-align: right;">1.08 (0.91–1.27)</td>
 <td style="text-align: right;">0.343</td>
 <td style="text-align: right;">0.544</td>
+<td style="text-align: right;">26%</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">TB, Non-UK born</td>
@@ -3431,6 +3528,7 @@ place of birth and age vs primary care prescribing</strong></p>
 <td style="text-align: right;">1.11 (0.94–1.30)</td>
 <td style="text-align: right;">0.179</td>
 <td style="text-align: right;">0.384</td>
+<td style="text-align: right;">25%</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">TB, Non-UK born</td>
@@ -3440,6 +3538,7 @@ place of birth and age vs primary care prescribing</strong></p>
 <td style="text-align: right;">1.02 (0.78–1.33)</td>
 <td style="text-align: right;">0.884</td>
 <td style="text-align: right;">0.918</td>
+<td style="text-align: right;">45%</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">TB, Non-UK born</td>
@@ -3449,6 +3548,7 @@ place of birth and age vs primary care prescribing</strong></p>
 <td style="text-align: right;">1.07 (0.92–1.26)</td>
 <td style="text-align: right;">0.327</td>
 <td style="text-align: right;">0.542</td>
+<td style="text-align: right;">25%</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">TB, Non-UK born</td>
@@ -3458,6 +3558,7 @@ place of birth and age vs primary care prescribing</strong></p>
 <td style="text-align: right;">1.13 (0.94–1.35)</td>
 <td style="text-align: right;">0.158</td>
 <td style="text-align: right;">0.378</td>
+<td style="text-align: right;">28%</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">TB, Non-UK born</td>
@@ -3467,6 +3568,7 @@ place of birth and age vs primary care prescribing</strong></p>
 <td style="text-align: right;">1.15 (0.91–1.46)</td>
 <td style="text-align: right;">0.208</td>
 <td style="text-align: right;">0.332</td>
+<td style="text-align: right;">39%</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">TB, Non-UK born</td>
@@ -3476,6 +3578,7 @@ place of birth and age vs primary care prescribing</strong></p>
 <td style="text-align: right;">1.31 (0.94–1.83)</td>
 <td style="text-align: right;">0.101</td>
 <td style="text-align: right;">0.168</td>
+<td style="text-align: right;">59%</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">TB, Non-UK born</td>
@@ -3485,6 +3588,7 @@ place of birth and age vs primary care prescribing</strong></p>
 <td style="text-align: right;">1.29 (1.03–1.60)</td>
 <td style="text-align: right;">0.030</td>
 <td style="text-align: right;">0.040</td>
+<td style="text-align: right;">36%</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">TB, Non-UK born</td>
@@ -3494,6 +3598,7 @@ place of birth and age vs primary care prescribing</strong></p>
 <td style="text-align: right;">1.02 (0.90–1.16)</td>
 <td style="text-align: right;">0.695</td>
 <td style="text-align: right;">0.778</td>
+<td style="text-align: right;">19%</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">TB, Non-UK born</td>
@@ -3503,6 +3608,7 @@ place of birth and age vs primary care prescribing</strong></p>
 <td style="text-align: right;">1.02 (0.88–1.17)</td>
 <td style="text-align: right;">0.767</td>
 <td style="text-align: right;">0.854</td>
+<td style="text-align: right;">22%</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">TB, Non-UK born</td>
@@ -3512,6 +3618,7 @@ place of birth and age vs primary care prescribing</strong></p>
 <td style="text-align: right;">1.01 (0.88–1.17)</td>
 <td style="text-align: right;">0.835</td>
 <td style="text-align: right;">0.866</td>
+<td style="text-align: right;">22%</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">TB, Non-UK born</td>
@@ -3521,6 +3628,7 @@ place of birth and age vs primary care prescribing</strong></p>
 <td style="text-align: right;">1.02 (0.90–1.16)</td>
 <td style="text-align: right;">0.682</td>
 <td style="text-align: right;">0.798</td>
+<td style="text-align: right;">19%</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">TB, Non-UK born</td>
@@ -3530,6 +3638,7 @@ place of birth and age vs primary care prescribing</strong></p>
 <td style="text-align: right;">1.02 (0.88–1.17)</td>
 <td style="text-align: right;">0.771</td>
 <td style="text-align: right;">0.844</td>
+<td style="text-align: right;">22%</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">TB, Non-UK born</td>
@@ -3539,6 +3648,7 @@ place of birth and age vs primary care prescribing</strong></p>
 <td style="text-align: right;">1.01 (0.88–1.17)</td>
 <td style="text-align: right;">0.835</td>
 <td style="text-align: right;">0.860</td>
+<td style="text-align: right;">22%</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">TB, Non-UK born</td>
@@ -3548,6 +3658,7 @@ place of birth and age vs primary care prescribing</strong></p>
 <td style="text-align: right;">1.00 (0.86–1.15)</td>
 <td style="text-align: right;">0.947</td>
 <td style="text-align: right;">0.964</td>
+<td style="text-align: right;">23%</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">TB, Non-UK born</td>
@@ -3557,6 +3668,7 @@ place of birth and age vs primary care prescribing</strong></p>
 <td style="text-align: right;">1.01 (0.88–1.16)</td>
 <td style="text-align: right;">0.839</td>
 <td style="text-align: right;">0.878</td>
+<td style="text-align: right;">21%</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">TB, Non-UK born</td>
@@ -3566,6 +3678,7 @@ place of birth and age vs primary care prescribing</strong></p>
 <td style="text-align: right;">1.10 (0.91–1.31)</td>
 <td style="text-align: right;">0.279</td>
 <td style="text-align: right;">0.476</td>
+<td style="text-align: right;">28%</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">TB, UK born aged 65+</td>
@@ -3575,6 +3688,7 @@ place of birth and age vs primary care prescribing</strong></p>
 <td style="text-align: right;">1.05 (0.75–1.46)</td>
 <td style="text-align: right;">0.750</td>
 <td style="text-align: right;">0.790</td>
+<td style="text-align: right;">58%</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">TB, UK born aged 65+</td>
@@ -3584,6 +3698,7 @@ place of birth and age vs primary care prescribing</strong></p>
 <td style="text-align: right;">1.06 (0.75–1.50)</td>
 <td style="text-align: right;">0.714</td>
 <td style="text-align: right;">0.712</td>
+<td style="text-align: right;">62%</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">TB, UK born aged 65+</td>
@@ -3593,6 +3708,7 @@ place of birth and age vs primary care prescribing</strong></p>
 <td style="text-align: right;">0.85 (0.48–1.51)</td>
 <td style="text-align: right;">0.539</td>
 <td style="text-align: right;">0.578</td>
+<td style="text-align: right;">119%</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">TB, UK born aged 65+</td>
@@ -3602,6 +3718,7 @@ place of birth and age vs primary care prescribing</strong></p>
 <td style="text-align: right;">1.09 (0.80–1.49)</td>
 <td style="text-align: right;">0.524</td>
 <td style="text-align: right;">0.592</td>
+<td style="text-align: right;">53%</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">TB, UK born aged 65+</td>
@@ -3611,6 +3728,7 @@ place of birth and age vs primary care prescribing</strong></p>
 <td style="text-align: right;">1.10 (0.79–1.53)</td>
 <td style="text-align: right;">0.512</td>
 <td style="text-align: right;">0.472</td>
+<td style="text-align: right;">58%</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">TB, UK born aged 65+</td>
@@ -3620,6 +3738,7 @@ place of birth and age vs primary care prescribing</strong></p>
 <td style="text-align: right;">0.88 (0.53–1.45)</td>
 <td style="text-align: right;">0.572</td>
 <td style="text-align: right;">0.572</td>
+<td style="text-align: right;">100%</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">TB, UK born aged 65+</td>
@@ -3629,6 +3748,7 @@ place of birth and age vs primary care prescribing</strong></p>
 <td style="text-align: right;">1.27 (0.88–1.85)</td>
 <td style="text-align: right;">0.173</td>
 <td style="text-align: right;">0.198</td>
+<td style="text-align: right;">68%</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">TB, UK born aged 65+</td>
@@ -3638,6 +3758,7 @@ place of birth and age vs primary care prescribing</strong></p>
 <td style="text-align: right;">1.68 (1.04–2.70)</td>
 <td style="text-align: right;">0.036</td>
 <td style="text-align: right;">0.044</td>
+<td style="text-align: right;">93%</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">TB, UK born aged 65+</td>
@@ -3647,6 +3768,7 @@ place of birth and age vs primary care prescribing</strong></p>
 <td style="text-align: right;">1.53 (0.93–2.54)</td>
 <td style="text-align: right;">0.086</td>
 <td style="text-align: right;">0.108</td>
+<td style="text-align: right;">101%</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">TB, UK born aged 65+</td>
@@ -3656,6 +3778,7 @@ place of birth and age vs primary care prescribing</strong></p>
 <td style="text-align: right;">1.06 (0.76–1.48)</td>
 <td style="text-align: right;">0.679</td>
 <td style="text-align: right;">0.712</td>
+<td style="text-align: right;">59%</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">TB, UK born aged 65+</td>
@@ -3665,6 +3788,7 @@ place of birth and age vs primary care prescribing</strong></p>
 <td style="text-align: right;">1.13 (0.83–1.54)</td>
 <td style="text-align: right;">0.388</td>
 <td style="text-align: right;">0.478</td>
+<td style="text-align: right;">54%</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">TB, UK born aged 65+</td>
@@ -3674,6 +3798,7 @@ place of birth and age vs primary care prescribing</strong></p>
 <td style="text-align: right;">0.94 (0.56–1.58)</td>
 <td style="text-align: right;">0.803</td>
 <td style="text-align: right;">0.844</td>
+<td style="text-align: right;">105%</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">TB, UK born aged 65+</td>
@@ -3683,6 +3808,7 @@ place of birth and age vs primary care prescribing</strong></p>
 <td style="text-align: right;">1.12 (0.77–1.61)</td>
 <td style="text-align: right;">0.513</td>
 <td style="text-align: right;">0.566</td>
+<td style="text-align: right;">67%</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">TB, UK born aged 65+</td>
@@ -3692,6 +3818,7 @@ place of birth and age vs primary care prescribing</strong></p>
 <td style="text-align: right;">1.12 (0.80–1.56)</td>
 <td style="text-align: right;">0.452</td>
 <td style="text-align: right;">0.490</td>
+<td style="text-align: right;">59%</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">TB, UK born aged 65+</td>
@@ -3701,6 +3828,7 @@ place of birth and age vs primary care prescribing</strong></p>
 <td style="text-align: right;">0.88 (0.49–1.60)</td>
 <td style="text-align: right;">0.640</td>
 <td style="text-align: right;">0.618</td>
+<td style="text-align: right;">127%</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">TB, UK born aged 65+</td>
@@ -3710,6 +3838,7 @@ place of birth and age vs primary care prescribing</strong></p>
 <td style="text-align: right;">1.28 (0.89–1.85)</td>
 <td style="text-align: right;">0.151</td>
 <td style="text-align: right;">0.204</td>
+<td style="text-align: right;">65%</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">TB, UK born aged 65+</td>
@@ -3719,6 +3848,7 @@ place of birth and age vs primary care prescribing</strong></p>
 <td style="text-align: right;">1.58 (0.92–2.73)</td>
 <td style="text-align: right;">0.089</td>
 <td style="text-align: right;">0.086</td>
+<td style="text-align: right;">113%</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">TB, UK born aged 65+</td>
@@ -3728,6 +3858,7 @@ place of birth and age vs primary care prescribing</strong></p>
 <td style="text-align: right;">1.30 (0.78–2.19)</td>
 <td style="text-align: right;">0.271</td>
 <td style="text-align: right;">0.320</td>
+<td style="text-align: right;">105%</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">TB, UK born aged 65+</td>
@@ -3737,6 +3868,7 @@ place of birth and age vs primary care prescribing</strong></p>
 <td style="text-align: right;">1.23 (1.00–1.51)</td>
 <td style="text-align: right;">0.051</td>
 <td style="text-align: right;">0.074</td>
+<td style="text-align: right;">33%</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">TB, UK born aged 65+</td>
@@ -3746,6 +3878,7 @@ place of birth and age vs primary care prescribing</strong></p>
 <td style="text-align: right;">1.19 (0.95–1.48)</td>
 <td style="text-align: right;">0.111</td>
 <td style="text-align: right;">0.168</td>
+<td style="text-align: right;">36%</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">TB, UK born aged 65+</td>
@@ -3755,6 +3888,7 @@ place of birth and age vs primary care prescribing</strong></p>
 <td style="text-align: right;">1.06 (0.89–1.27)</td>
 <td style="text-align: right;">0.463</td>
 <td style="text-align: right;">0.534</td>
+<td style="text-align: right;">28%</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">TB, UK born aged 65+</td>
@@ -3764,6 +3898,7 @@ place of birth and age vs primary care prescribing</strong></p>
 <td style="text-align: right;">1.22 (0.99–1.50)</td>
 <td style="text-align: right;">0.055</td>
 <td style="text-align: right;">0.068</td>
+<td style="text-align: right;">33%</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">TB, UK born aged 65+</td>
@@ -3773,6 +3908,7 @@ place of birth and age vs primary care prescribing</strong></p>
 <td style="text-align: right;">1.20 (0.96–1.50)</td>
 <td style="text-align: right;">0.098</td>
 <td style="text-align: right;">0.152</td>
+<td style="text-align: right;">36%</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">TB, UK born aged 65+</td>
@@ -3782,6 +3918,7 @@ place of birth and age vs primary care prescribing</strong></p>
 <td style="text-align: right;">1.09 (0.91–1.30)</td>
 <td style="text-align: right;">0.304</td>
 <td style="text-align: right;">0.406</td>
+<td style="text-align: right;">28%</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">TB, UK born aged 65+</td>
@@ -3791,6 +3928,7 @@ place of birth and age vs primary care prescribing</strong></p>
 <td style="text-align: right;">1.38 (1.05–1.80)</td>
 <td style="text-align: right;">0.025</td>
 <td style="text-align: right;">0.038</td>
+<td style="text-align: right;">45%</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">TB, UK born aged 65+</td>
@@ -3800,6 +3938,7 @@ place of birth and age vs primary care prescribing</strong></p>
 <td style="text-align: right;">1.20 (0.85–1.71)</td>
 <td style="text-align: right;">0.262</td>
 <td style="text-align: right;">0.382</td>
+<td style="text-align: right;">63%</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">TB, UK born aged 65+</td>
@@ -3809,6 +3948,7 @@ place of birth and age vs primary care prescribing</strong></p>
 <td style="text-align: right;">1.29 (0.85–1.97)</td>
 <td style="text-align: right;">0.195</td>
 <td style="text-align: right;">0.308</td>
+<td style="text-align: right;">79%</td>
 </tr>
 </tbody>
 </table></div>
@@ -4450,6 +4590,54 @@ dexamethasone/hydrocortisone (prednisolone-equivalent mg)</td>
 <td style="text-align: right;">0.6%</td>
 </tr>
 <tr class="odd">
+<td style="text-align: left;">Systemic glucocorticoids, oral forms only
+(sensitivity)</td>
+<td style="text-align: right;">2019</td>
+<td style="text-align: right;">89.6%</td>
+<td style="text-align: right;">9.6%</td>
+<td style="text-align: right;">0.8%</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Systemic glucocorticoids, oral forms only
+(sensitivity)</td>
+<td style="text-align: right;">2020</td>
+<td style="text-align: right;">93.9%</td>
+<td style="text-align: right;">5.2%</td>
+<td style="text-align: right;">0.9%</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Systemic glucocorticoids, oral forms only
+(sensitivity)</td>
+<td style="text-align: right;">2021</td>
+<td style="text-align: right;">97.0%</td>
+<td style="text-align: right;">2.3%</td>
+<td style="text-align: right;">0.7%</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Systemic glucocorticoids, oral forms only
+(sensitivity)</td>
+<td style="text-align: right;">2022</td>
+<td style="text-align: right;">98.2%</td>
+<td style="text-align: right;">1.1%</td>
+<td style="text-align: right;">0.7%</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Systemic glucocorticoids, oral forms only
+(sensitivity)</td>
+<td style="text-align: right;">2023</td>
+<td style="text-align: right;">98.5%</td>
+<td style="text-align: right;">0.8%</td>
+<td style="text-align: right;">0.7%</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Systemic glucocorticoids, oral forms only
+(sensitivity)</td>
+<td style="text-align: right;">2024</td>
+<td style="text-align: right;">98.8%</td>
+<td style="text-align: right;">0.5%</td>
+<td style="text-align: right;">0.7%</td>
+</tr>
+<tr class="odd">
 <td style="text-align: left;">TNF inhibitors</td>
 <td style="text-align: right;">2019</td>
 <td style="text-align: right;">91.2%</td>
@@ -4802,6 +4990,17 @@ dexamethasone/hydrocortisone (prednisolone-equivalent mg)</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">UTLA</td>
+<td style="text-align: right;">Systemic glucocorticoids, oral forms only
+(sensitivity)</td>
+<td style="text-align: right;">1.011 (0.991–1.032)</td>
+<td style="text-align: right;">1.014 (0.965–1.065)</td>
+<td style="text-align: right;">1.013 (0.992–1.034)</td>
+<td style="text-align: right;">0.997 (0.979–1.016)</td>
+<td style="text-align: right;">0.997 (0.979–1.016)</td>
+<td style="text-align: right;">0.999 (0.980–1.018)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">UTLA</td>
 <td style="text-align: right;">Dexamethasone and hydrocortisone
 (descriptive)</td>
 <td style="text-align: right;">1.008 (0.980–1.036)</td>
@@ -4811,7 +5010,7 @@ dexamethasone/hydrocortisone (prednisolone-equivalent mg)</td>
 <td style="text-align: right;">1.005 (0.975–1.036)</td>
 <td style="text-align: right;">1.008 (0.979–1.038)</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td style="text-align: left;">UTLA</td>
 <td style="text-align: right;">Low-TB-risk biologics (negative
 control)</td>
@@ -4822,7 +5021,7 @@ control)</td>
 <td style="text-align: right;">1.004 (0.990–1.019)</td>
 <td style="text-align: right;">1.004 (0.989–1.019)</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td style="text-align: left;">UTLA</td>
 <td style="text-align: right;">Levetiracetam (negative control)</td>
 <td style="text-align: right;">1.014 (0.986–1.042)</td>
@@ -4832,7 +5031,7 @@ control)</td>
 <td style="text-align: right;">0.998 (0.974–1.022)</td>
 <td style="text-align: right;">0.999 (0.976–1.022)</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td style="text-align: left;">LTLA</td>
 <td style="text-align: right;">Active-TB treatment (pyrazinamide DDD,
 including fixed-dose combinations; positive control)</td>
@@ -4843,7 +5042,7 @@ including fixed-dose combinations; positive control)</td>
 <td style="text-align: right;">1.039 (1.012–1.066)</td>
 <td style="text-align: right;">1.039 (1.013–1.066)</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td style="text-align: left;">LTLA</td>
 <td style="text-align: right;">Rifamycin/isoniazid (active and latent
 TB, other infections)</td>
@@ -4854,7 +5053,7 @@ TB, other infections)</td>
 <td style="text-align: right;">1.038 (1.023–1.054)</td>
 <td style="text-align: right;">1.039 (1.026–1.052)</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td style="text-align: left;">LTLA</td>
 <td style="text-align: right;">TNF inhibitors</td>
 <td style="text-align: right;">0.992 (0.976–1.008)</td>
@@ -4864,7 +5063,7 @@ TB, other infections)</td>
 <td style="text-align: right;">0.994 (0.979–1.009)</td>
 <td style="text-align: right;">0.995 (0.979–1.011)</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td style="text-align: left;">LTLA</td>
 <td style="text-align: right;">IL-6 inhibitors and abatacept</td>
 <td style="text-align: right;">1.001 (0.993–1.010)</td>
@@ -4874,7 +5073,7 @@ TB, other infections)</td>
 <td style="text-align: right;">1.001 (0.991–1.011)</td>
 <td style="text-align: right;">1.001 (0.991–1.011)</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td style="text-align: left;">LTLA</td>
 <td style="text-align: right;">JAK inhibitors (rheumatology)</td>
 <td style="text-align: right;">0.995 (0.989–1.002)</td>
@@ -4884,7 +5083,7 @@ TB, other infections)</td>
 <td style="text-align: right;">0.994 (0.988–1.000)</td>
 <td style="text-align: right;">0.994 (0.989–1.000)</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td style="text-align: left;">LTLA</td>
 <td style="text-align: right;">Rituximab</td>
 <td style="text-align: right;">1.001 (0.986–1.016)</td>
@@ -4894,7 +5093,7 @@ TB, other infections)</td>
 <td style="text-align: right;">0.990 (0.977–1.003)</td>
 <td style="text-align: right;">0.991 (0.977–1.005)</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td style="text-align: left;">LTLA</td>
 <td style="text-align: right;">Calcineurin/mTOR inhibitors</td>
 <td style="text-align: right;">1.008 (0.997–1.020)</td>
@@ -4904,7 +5103,7 @@ TB, other infections)</td>
 <td style="text-align: right;">0.994 (0.985–1.003)</td>
 <td style="text-align: right;">0.994 (0.985–1.003)</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td style="text-align: left;">LTLA</td>
 <td style="text-align: right;">Antiproliferatives</td>
 <td style="text-align: right;">0.997 (0.982–1.013)</td>
@@ -4914,7 +5113,7 @@ TB, other infections)</td>
 <td style="text-align: right;">0.997 (0.986–1.009)</td>
 <td style="text-align: right;">0.998 (0.983–1.013)</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td style="text-align: left;">LTLA</td>
 <td style="text-align: right;">Systemic glucocorticoids without
 dexamethasone/hydrocortisone (prednisolone-equivalent mg)</td>
@@ -4924,6 +5123,17 @@ dexamethasone/hydrocortisone (prednisolone-equivalent mg)</td>
 <td style="text-align: right;">1.008 (0.990–1.026)</td>
 <td style="text-align: right;">1.008 (0.988–1.027)</td>
 <td style="text-align: right;">1.009 (0.991–1.028)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">LTLA</td>
+<td style="text-align: right;">Systemic glucocorticoids, oral forms only
+(sensitivity)</td>
+<td style="text-align: right;">1.015 (0.994–1.036)</td>
+<td style="text-align: right;">1.023 (0.975–1.073)</td>
+<td style="text-align: right;">1.017 (0.996–1.038)</td>
+<td style="text-align: right;">1.001 (0.982–1.019)</td>
+<td style="text-align: right;">1.001 (0.981–1.020)</td>
+<td style="text-align: right;">1.002 (0.983–1.021)</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">LTLA</td>

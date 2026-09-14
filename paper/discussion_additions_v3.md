@@ -134,6 +134,6 @@ UK-born people, whose baseline risk is much lower, would lower it further.
 
 **Feasibility**
 - The TB notification rate in UK-born people was 2.1 per 100,000 in 2024, all ages [UKHSA 2025,
-  Supplementary Table 12]; rates in older UK-born adults are of a similar order. Tens of
+  Supplementary Table 12]. Tens of
   thousands of long-term initiators followed for several years would yield only tens of TB events,
   so the individual-level study is itself constrained by sample size.

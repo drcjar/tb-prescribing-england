@@ -40,7 +40,7 @@ available at https://github.com/drcjar/tb-prescribing-england.
      following years, and randomisation inference on the *t* statistic.
 
 All analyses after the first pass are exploratory. Estimates from the original panel design are
-given in Table S8.
+given in the supplement.
 
 ### Assumed causal structure
 
@@ -96,7 +96,7 @@ prescribing setting RO76, plus practice codes absent from the current ODS file (
 practices closed before 2017) that have the standard GP practice code format (a letter and five
 digits; this format matches 94% of RO76 codes and few codes in other settings). Without this
 addition, prescribing by practices that later closed would have been dropped unevenly over time:
-3.8% of items in 2011, 1.9% in 2014 and none from 2016.
+3.4% of items in 2011, 1.7% in 2014 and none from 2016.
 
 **Drug groups.** Groups were defined at BNF presentation level:
 
@@ -127,7 +127,8 @@ patients registered at each practice by LSOA:
   postcode;
 - LSOAs were mapped to April 2023 districts.
 
-Assigning each practice to the district containing its postcode was a sensitivity analysis. In
+Assigning each practice to the district containing its postcode (ONS Postcode Directory, August
+2025) was a sensitivity analysis. In
 2024, 7.3% of registered patients lived outside the district of their practice.
 
 **Denominators.** ONS mid-year resident population estimates.
@@ -149,8 +150,9 @@ were:
 - antiproliferatives;
 - systemic glucocorticoids (prednisolone and methylprednisolone), measured in prednisolone-equivalent
   mg and excluding intra-articular, depot and topical forms. Dexamethasone and hydrocortisone, used
-  mainly in oncology, as antiemetics, for COVID-19 [RECOVERY 2021] and as replacement therapy, were
-  reported separately as a descriptive group.
+  mainly in oncology, as antiemetics, for COVID-19 [RECOVERY 2021] and for acute illness, were
+  reported separately as a descriptive group. A sensitivity analysis restricted the candidate
+  exposure to oral forms, excluding intravenous methylprednisolone pulses.
 
 **Controls.**
 - **Positive control:** active-TB treatment, measured as pyrazinamide defined daily doses (1.5 g)
@@ -191,6 +193,11 @@ sensitivity analysis.
 
 ### Statistical analysis
 
+Supplementary tables report the primary care sensitivity analyses (Table S1), distributed-lag and
+joint lag models (Tables S2 and S2b), hospital expected effects and sensitivity analyses (Tables S3
+and S3b), the power simulation (Table S4), regional models (Tables S5 and S6), hospital data
+coverage (Table S7), the original panel design (Table S8) and drug group definitions (Table S9).
+
 **Panel analyses.**
 - **Model:** Poisson pseudo-maximum-likelihood regression [Santos Silva 2006] of annual notifications, with area and
   year fixed effects, a log population offset and SEs clustered by area.
@@ -206,9 +213,9 @@ sensitivity analysis.
   antibacterials, vitamin D). Levothyroxine and antituberculosis drugs were excluded.
 - **Falsification:** prescribing in years *t*−1 and *t*+1 estimated jointly on a common sample,
   and again with year *t* added, with a Wald test of the difference between the *t*−1 and *t*+1
-  coefficients. A true effect should load on *t*−1. Prescribing in adjacent years is highly
-  correlated within areas, so the two estimates are strongly negatively correlated and opposite
-  signs can arise by chance; we treat these tests as weak diagnostics.
+  coefficients. A true effect should load on *t*−1. Because prescribing in adjacent years is
+  correlated within areas, the two-year model can produce opposite signs through collinearity; the
+  model with year *t* added and the correlation of the estimates are reported to check this.
 - **Sensitivity analyses:**
   - no covariates;
   - a distributed lag (*t*, *t*−1, *t*−2);
@@ -229,8 +236,8 @@ sensitivity analysis.
   exposure (log undefined), were excluded model by model; the numbers excluded are recorded in the
   result files.
 - **Bounds:** for each estimate, the largest population attributable fraction compatible with the
-  upper 90% confidence limit and, for drugs expected to protect, the largest prevented fraction
-  compatible with the lower limit, both under the model used for expected effects. As a
+  upper 90% confidence limit and the largest prevented fraction compatible with the lower limit
+  (relevant for drugs expected to protect), both under the model used for expected effects. As a
   sensitivity analysis, the upper limit was divided by the negative control's estimate from the
   same model, as if its bias applied equally to every drug.
 

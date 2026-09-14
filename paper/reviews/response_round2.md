@@ -7,8 +7,8 @@ match the revised manuscript (draft 4). Where we did not do what was asked, we s
 ## Main changes
 
 1. **GP practice restriction corrected** (R3 N1). We confirmed the error: the current ODS file
-   omits practices closed before 2017, so their prescribing was dropped (3.8% of items in 2011,
-   1.9% in 2014, none from 2016). Practices absent from the file with the standard GP code format
+   omits practices closed before 2017, so their prescribing was dropped (3.4% of items in 2011,
+   1.7% in 2014, none from 2016). Practices absent from the file with the standard GP code format
    are now included (the format matches 94% of RO76 codes and few codes in other settings). The
    GP share of items is now flat at 98.7–98.9% in every year from 2010 (previously rising from
    95.5% to 98.8%). Each practice-year now uses that practice's nearest registration release, and
@@ -18,8 +18,8 @@ match the revised manuscript (draft 4). Where we did not do what was asked, we s
    either side), so it is not this artefact; restricting to EPD-era exposure gave 0.979
    (0.939–1.021).
 2. **Simulation interpretation corrected** (R1 N1). We confirmed that replicate SEs matched the
-   null SD (LTLA 0.0154 vs 0.0158; UTLA 0.0163 vs 0.0166), so the test was calibrated, not
-   conservative. "Conservative" and "agreed" were removed. Analytic power at the real-data SE is
+   null SD (LTLA 0.0161 vs 0.0166; UTLA 0.0167 vs 0.0171 in the rerun), so the test was
+   approximately calibrated (mildly anti-conservative), not conservative. "Conservative" and "agreed" were removed. Analytic power at the real-data SE is
    now reported beside simulated power (Table S4, Results, Abstract). On the mechanism, permuted
    exposures retained 93% of the real exposure's residual variance after fixed effects and
    covariates, so lower exposure variance does not explain the gap. The likelier explanation is
@@ -34,17 +34,17 @@ match the revised manuscript (draft 4). Where we did not do what was asked, we s
    (Table S2b), with a Wald test of t−1 against t+1 and the correlation of the two estimates at
    both levels. Table 1 now shows the joint t−1 and t+1 estimates and the difference p. With
    year t added, previous-year terms were null for every group, same-year terms were positive for
-   several groups and following-year terms stayed inverse. Correlations between the lag and lead
-   estimates ranged from −0.16 to −0.83. The text now treats these tests as weak diagnostics.
+   several groups and following-year terms stayed inverse. In the two-year model the lag and lead
+   estimates were correlated from −0.83 to +0.08; with year t added, from −0.23 to +0.17. The
+   inverse following-year terms persisted in that model, so they are not a collinearity artefact.
 4. **Framing** (R1 N3; R2 N3). "One to two orders of magnitude" is replaced by the reported
    ranges (10 to several hundred times). "Reflect confounding" is replaced by "compatible with
    residual confounding, chance or measurement error, not with drug effects of plausible size".
    Heavy attenuation is now stated for hospital medicines only, and the Methods chronology states
    that the pre-specified primary care positive control failed.
 5. **Hospital medicines** (R3 N2, N3, N6; R2 M6, N2, N3).
-   - Duplicate (code, unit) rows are removed before merging, with an assertion. Besides tacrolimus
-     granules, this affected positive-control products (pyrazinamide 500 mg and ethambutol 100 mg
-     and 400 mg tablets, Rifater).
+   - Duplicate (code, unit) rows are removed before merging, with an assertion. Only the tacrolimus
+     granule rows were duplicated.
    - The positive control is now pyrazinamide DDD from all pyrazinamide-containing products,
      including fixed-dose combinations.
    - Systemic glucocorticoids are now prednisolone-equivalent mg without dexamethasone and
@@ -61,13 +61,14 @@ match the revised manuscript (draft 4). Where we did not do what was asked, we s
      (0.10–0.62). Candidate drugs were null except hospital systemic glucocorticoids, 1.024
      (1.001–1.046) at upper-tier level. That estimate was not robust to trust clustering
      (0.999–1.049) or to excluding outcome years 2020–21 (1.018, 0.969–1.069), and would imply an
-     attributable fraction of 24%; we report it as chance or bias. Hospital MDEs were 1.0–2.9% per
+     attributable fraction of 24%. Oral forms alone gave 1.011 (0.991–1.032), so the association
+     depended on intravenous methylprednisolone pulses. We report it as chance or bias. Hospital MDEs were 1.0–2.9% per
      10%, 26–520 times the illustrative expected effects before attenuation.
 6. **Regional analyses** (R1 N4; R2 minor 3). The randomisation test now uses the cluster-robust t
    statistic, with permutations drawn directly. Exchangeability and p = (1 + count)/(1 + 499) are
    stated. A leave-London-out joint model is reported for UK-born notifications. Regional MDEs
-   are compared with the expected effect in UK-born people aged ≥65. Regional MDEs were 45–99% per
-   10% for glucocorticoid exposures, against an expected 0.9%. With the studentised test, the
+   are compared with the expected effect in UK-born people aged ≥65. Regional MDEs, from the t(8) intervals, were 46–119%
+   per 10% for glucocorticoid exposures, against an expected 0.9%. With the studentised test, the
    UK-born joint lag estimate for prednisolone mg (1.45) had randomisation p = 0.23 (previously
    0.04), and excluding London gave 1.12 (p = 0.73). All 4 of the 81 adjusted regional estimates
    with randomisation p ≤ 0.05 were lead terms.
@@ -77,8 +78,8 @@ match the revised manuscript (draft 4). Where we did not do what was asked, we s
    minimum detectable PAF (63%). The text explains the difference between the two.
 8. **Text matching the outputs** (R1 N6; R2 M1; R3 minor 15). Counts of estimates and nominal
    hits, areas and area-years are now generated from result files. The original design is
-   tabulated (Table S8). Lower-tier models: {{n_sig_ltla}} of {{n_est_ltla}} estimates nominally
-   significant, concentrated in the negative control, metformin and inhaled corticosteroids.
+   tabulated (Table S8). Lower-tier models: 30 of 277 estimates nominally significant, concentrated in
+   the negative control, metformin and inhaled corticosteroids.
 9. **Promised items now in the manuscript** (R2 N4; R3 N4).
    - FP10(HP) limitation.
    - RECOVERY cited for hospital dexamethasone.
@@ -135,7 +136,8 @@ match the revised manuscript (draft 4). Where we did not do what was asked, we s
 - **Minor 4.** Missing-data handling added; the asylum model years corrected.
 - **Minor 5.** RECOVERY cited.
 - **Minor 6.** Definitions and classification added (Table S9 and file).
-- **Minor 7.** Figure and table order: [pending check at assembly].
+- **Minor 7.** Figures are renumbered in order of first citation, and supplementary tables are
+  first cited in numerical order in the Methods.
 - **Minor 8.** FDR family stated.
 - **Minor 9.** Count conventions: Fingertips national series used.
 - **Minor 10.** Hospital lead comment added to the Table 3 legend.

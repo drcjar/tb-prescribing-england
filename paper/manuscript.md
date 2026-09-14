@@ -28,9 +28,9 @@ thesis: "A disease-specific positive control shows hospital medicines data link 
 
 **Results.**
 - **Linkage.** Hospital active-TB treatment tracked TB notifications between areas (Spearman ρ = 0.81) and within areas in the same year (incidence rate ratio [IRR] 1.035, 95% CI 1.009–1.061, per 10% increase). The within-area elasticity was only 0.36–0.40, indicating substantial attenuation even for a disease-specific drug.
-- **Primary care.** No drug group was associated with notifications in the following year. For systemic oral glucocorticoids the IRR was 0.969 (0.929–1.012) per 10% within-area increase.
-- **Hospital medicines.** TNF inhibitors (0.989, 0.972–1.007), JAK inhibitors and other immunosuppressants were null. Hospital systemic glucocorticoids had a small nominal association (1.024, 1.001–1.046) that was not robust to clustering by trust or to excluding COVID-19 years.
-- **Falsification and negative control.** The negative-control exposure showed inverse estimates similar in size to metformin, and following-year prescribing was inversely associated with notifications for several groups. With collinear adjacent-year exposures these tests are weak, but the pattern is compatible with residual confounding by area-specific trends.
+- **Primary care.** No drug group was associated with notifications in the following year after correction for multiple testing. For systemic oral glucocorticoids the IRR was 0.969 (0.929–1.012) per 10% within-area increase.
+- **Hospital medicines.** TNF inhibitors (0.989, 0.972–1.007), JAK inhibitors and other immunosuppressants were null. Hospital systemic glucocorticoids had a small nominal association (1.024, 1.001–1.046) that was not robust to clustering by trust and was absent for oral forms alone.
+- **Falsification and negative control.** The negative-control exposure showed inverse estimates similar in size to metformin, and following-year prescribing was inversely associated with notifications for several groups, including when same-year prescribing was added. The pattern is compatible with residual confounding by area-specific trends.
 - **Power.**
   - For oral glucocorticoids, the MDE (6.3% per 10% increase) was about 18 times the effect expected from published relative risks (0.34%), and about 70–140 times that implied by UKHSA-recorded steroid-associated TB (0.04–0.09%).
   - In simulations on the real counts, the null hypothesis was rejected for the published effect in 8.3% of replicates, no more often than with no effect (7.8%); simulated power exceeded analytic power at the real standard error.
@@ -51,11 +51,11 @@ Tuberculosis (TB) remains a public health problem in England.
   most of the fall reflected declining TB rates in almost all populations, with smaller
   contributions from fewer recent non-EU migrants and from pre-entry screening of long-stay visa
   applicants from high-incidence countries [Thomas 2018; Aldridge 2016].
-- **2020:** notifications dropped to 4,125 during the COVID-19 pandemic, a fall thought to reflect
+- **2020:** notifications dropped to 4,123 during the COVID-19 pandemic, a fall thought to reflect
   service disruption rather than less disease [UKHSA 2021; Morrison 2023].
 - **2021–2024 rise:** notifications then increased, reaching 5,490 in 2024 (9.4 per 100,000).
   - 81.9% were in people born outside the UK [UKHSA 2025, Supplementary Table 12].
-  - 41% of those were notified within five years of arrival.
+  - 41% of those were notified within five years of arrival [UKHSA 2025].
   - The rise has been attributed mainly to migration from higher-incidence countries [UKHSA 2025].
 - **2025:** national data show 5,424 notifications, with 2024 revised to 5,487 [UKHSA 2026].
 
@@ -152,7 +152,7 @@ available at https://github.com/drcjar/tb-prescribing-england.
      following years, and randomisation inference on the *t* statistic.
 
 All analyses after the first pass are exploratory. Estimates from the original panel design are
-given in Table S8.
+given in the supplement.
 
 ### Assumed causal structure
 
@@ -208,7 +208,7 @@ prescribing setting RO76, plus practice codes absent from the current ODS file (
 practices closed before 2017) that have the standard GP practice code format (a letter and five
 digits; this format matches 94% of RO76 codes and few codes in other settings). Without this
 addition, prescribing by practices that later closed would have been dropped unevenly over time:
-3.8% of items in 2011, 1.9% in 2014 and none from 2016.
+3.4% of items in 2011, 1.7% in 2014 and none from 2016.
 
 **Drug groups.** Groups were defined at BNF presentation level:
 
@@ -239,7 +239,8 @@ patients registered at each practice by LSOA:
   postcode;
 - LSOAs were mapped to April 2023 districts.
 
-Assigning each practice to the district containing its postcode was a sensitivity analysis. In
+Assigning each practice to the district containing its postcode (ONS Postcode Directory, August
+2025) was a sensitivity analysis. In
 2024, 7.3% of registered patients lived outside the district of their practice.
 
 **Denominators.** ONS mid-year resident population estimates.
@@ -261,8 +262,9 @@ were:
 - antiproliferatives;
 - systemic glucocorticoids (prednisolone and methylprednisolone), measured in prednisolone-equivalent
   mg and excluding intra-articular, depot and topical forms. Dexamethasone and hydrocortisone, used
-  mainly in oncology, as antiemetics, for COVID-19 [RECOVERY 2021] and as replacement therapy, were
-  reported separately as a descriptive group.
+  mainly in oncology, as antiemetics, for COVID-19 [RECOVERY 2021] and for acute illness, were
+  reported separately as a descriptive group. A sensitivity analysis restricted the candidate
+  exposure to oral forms, excluding intravenous methylprednisolone pulses.
 
 **Controls.**
 - **Positive control:** active-TB treatment, measured as pyrazinamide defined daily doses (1.5 g)
@@ -303,6 +305,11 @@ sensitivity analysis.
 
 ### Statistical analysis
 
+Supplementary tables report the primary care sensitivity analyses (Table S1), distributed-lag and
+joint lag models (Tables S2 and S2b), hospital expected effects and sensitivity analyses (Tables S3
+and S3b), the power simulation (Table S4), regional models (Tables S5 and S6), hospital data
+coverage (Table S7), the original panel design (Table S8) and drug group definitions (Table S9).
+
 **Panel analyses.**
 - **Model:** Poisson pseudo-maximum-likelihood regression [Santos Silva 2006] of annual notifications, with area and
   year fixed effects, a log population offset and SEs clustered by area.
@@ -318,9 +325,9 @@ sensitivity analysis.
   antibacterials, vitamin D). Levothyroxine and antituberculosis drugs were excluded.
 - **Falsification:** prescribing in years *t*−1 and *t*+1 estimated jointly on a common sample,
   and again with year *t* added, with a Wald test of the difference between the *t*−1 and *t*+1
-  coefficients. A true effect should load on *t*−1. Prescribing in adjacent years is highly
-  correlated within areas, so the two estimates are strongly negatively correlated and opposite
-  signs can arise by chance; we treat these tests as weak diagnostics.
+  coefficients. A true effect should load on *t*−1. Because prescribing in adjacent years is
+  correlated within areas, the two-year model can produce opposite signs through collinearity; the
+  model with year *t* added and the correlation of the estimates are reported to check this.
 - **Sensitivity analyses:**
   - no covariates;
   - a distributed lag (*t*, *t*−1, *t*−2);
@@ -341,8 +348,8 @@ sensitivity analysis.
   exposure (log undefined), were excluded model by model; the numbers excluded are recorded in the
   result files.
 - **Bounds:** for each estimate, the largest population attributable fraction compatible with the
-  upper 90% confidence limit and, for drugs expected to protect, the largest prevented fraction
-  compatible with the lower limit, both under the model used for expected effects. As a
+  upper 90% confidence limit and the largest prevented fraction compatible with the lower limit
+  (relevant for drugs expected to protect), both under the model used for expected effects. As a
   sensitivity analysis, the upper limit was divided by the negative control's estimate from the
   same model, as if its bias applied equally to every drug.
 
@@ -447,7 +454,7 @@ Other groups (same scale, 95% CI):
 
 - Metformin (nominal p = 0.04) was inversely associated to the same extent as the negative control, levothyroxine (p = 0.01), which has no plausible effect on TB.
 
-![**Figure 4.** Primary care prescribing and TB notifications, lower-tier authorities, prescribing apportioned by patient residence. Blue: prescribing in the previous year (primary). Orange: prescribing in the following year, estimated jointly (falsification).](figures/panel_forest_ltla_residence.png)
+![**Figure 3.** Primary care prescribing and TB notifications, lower-tier authorities, prescribing apportioned by patient residence. Blue: prescribing in the previous year (primary). Orange: prescribing in the following year, estimated jointly (falsification).](figures/panel_forest_ltla_residence.png)
 
 **Table 1. Primary care prescribing and TB notifications: incidence rate ratio per 10% within-area increase (95% CI)**
 
@@ -494,10 +501,11 @@ Poisson PML with area and year fixed effects, adjusted for age structure, intern
   - inhaled corticosteroids: t−1 1.058 (0.995–1.126), t+1 0.879 (0.840–0.921); difference p < 0.001
   - insulins: t−1 1.028 (0.974–1.085), t+1 0.921 (0.866–0.980); difference p = 0.04
   - systemic oral glucocorticoids: t−1 0.990 (0.941–1.041), t+1 0.952 (0.912–0.994); difference p = 0.33.
-- Within areas, prescribing in nearby years is highly correlated, so in the two-year model the t−1 and t+1 estimates were negatively correlated (−0.16 to −0.83 across groups) and opposite signs can arise by chance.
-- With same-year prescribing added, previous-year terms were null for every group. Same-year terms were positive for several groups (for example proton pump inhibitors 1.128, 1.035–1.229), the direction expected from prescribing for undiagnosed TB, and following-year terms remained inverse.
+- In the two-year model, the correlation between the t−1 and t+1 estimates ranged from −0.83 to +0.08 across groups (oral glucocorticoids −0.38, inhaled corticosteroids −0.46), so some opposite signs could reflect collinearity.
+- With same-year prescribing added, the t−1 and t+1 estimates were almost uncorrelated (−0.23 to +0.17), previous-year terms were null for every group, and following-year terms remained inverse (for example oral glucocorticoids 0.943, 0.898–0.990; inhaled corticosteroids 0.861, 0.809–0.917). Collinearity therefore does not explain the inverse following-year associations, which are more consistent with shared trends in prescribing and notifications.
+- Same-year terms were positive in this model but not in the distributed-lag model (Table S2), so we do not interpret their sign.
 - Area-specific linear trends gave inhaled corticosteroids 1.033 (0.981–1.087).
-- **Multiplicity.** Of all 277 estimates in the lower-tier residence models, 30 were nominally significant, more than the 5% expected by chance. They were concentrated in the negative control (levothyroxine, 6, all inverse), metformin (5, inverse) and inhaled corticosteroids (8, mostly inverse or following-year terms), a pattern that points to shared trends rather than drug effects.
+- **Multiplicity.** Of all 277 estimates in the lower-tier residence models, 30 were nominally significant. The estimates are overlapping specifications of the same data, and in simulations with no effect the test rejected in 7.8% of replicates, so this count cannot be compared with a nominal 5%. The nominal results were concentrated in the negative control (levothyroxine, 6, all inverse), metformin (5, inverse) and inhaled corticosteroids (8, mostly inverse or following-year terms), a pattern compatible with shared trends rather than drug effects.
 
 **Spatial dependence**
 - Raw TB notification rates were strongly spatially clustered in every year (Moran's I 0.25–0.39 lower-tier; 0.40–0.49 upper-tier).
@@ -509,11 +517,11 @@ Poisson PML with area and year fixed effects, adjusted for age structure, intern
 ### Oral glucocorticoid prescribing trends and changes in TB notifications
 
 **National trends, 2011–2024** (standard GP practices)
-- Systemic oral glucocorticoid items rose from 119 to 132 per 1,000 residents in 2011–2016, then fell to 111 in 2024. Most of the fall came in 2020–21 (Figure 3).
+- Systemic oral glucocorticoid items rose from 119 to 132 per 1,000 residents in 2011–2016, then fell to 111 in 2024. Most of the fall came in 2020–21 (Figure 4).
 - Prednisolone-equivalent mg per item fell from 225 to 192, so courses became smaller.
 - Oral hydrocortisone items, mainly replacement therapy, rose from 5.5 to 9.1 per 1,000.
 
-![**Figure 3.** Oral glucocorticoid prescribing in English primary care, 2011–2024: systemic oral glucocorticoid items, oral hydrocortisone items and prednisolone-equivalent mg per resident.](figures/ocs_national_trends.png)
+![**Figure 4.** Oral glucocorticoid prescribing in English primary care, 2011–2024: systemic oral glucocorticoid items, oral hydrocortisone items and prednisolone-equivalent mg per resident.](figures/ocs_national_trends.png)
 
 **Correlation with national TB trends**
 - National notification rates and prescribing were not correlated in levels (14 years; r = 0.33, p = 0.25).
@@ -535,8 +543,8 @@ Poisson PML with area and year fixed effects, adjusted for age structure, intern
 - Between areas: tracked notifications (Spearman ρ = 0.81; adjusted IRR per SD 1.23, 1.10–1.36).
 - Within areas, same year: 1.035 (1.009–1.061) per 10% increase.
 - Previous year: 1.001 (0.993–1.010). Following year, estimated jointly: 0.997 (0.986–1.007).
-- The within-area elasticity was 0.36 (95% CI 0.10–0.62; lower-tier 0.40, 0.14–0.66). It reflects apportionment error, timing (treatment of people notified late in a year continues into the next) and variation in drug volume per person treated, not linkage error alone.
-- Rifamycin/isoniazid products, which also cover latent TB and other infections, had the same elasticity (0.37, 0.22–0.51). The more specific measure gained nothing, so the attenuation is dominated by apportionment rather than drug specificity.
+- The within-area elasticity was 0.36 (95% CI 0.10–0.62; lower-tier 0.40, 0.14–0.66). It reflects apportionment error and variation in drug volume per person treated, not linkage error alone; the null following-year estimate suggests that treatment spanning calendar years contributes little.
+- Rifamycin/isoniazid products, which also cover latent TB and other infections, had a similar elasticity (0.37, 0.22–0.51). The more specific measure did not reduce attenuation, suggesting that drug specificity is not its main source.
 
 ![**Figure 5.** Positive control: hospital active-TB treatment (pyrazinamide DDD-years per 1,000 residents, including fixed-dose combinations) and TB notifications between areas (left) and within areas over time (right).](figures/hospital_positive_control.png)
 
@@ -554,10 +562,12 @@ Poisson PML with area and year fixed effects, adjusted for age structure, intern
 | Dexamethasone and hydrocortisone (descriptive) | 1.008 (0.980–1.036) | 1.010 (0.984–1.036) |
 
 - **Systemic glucocorticoids** were nominally associated with notifications in the following year at upper-tier level. The association:
-  - was not robust to clustering by principal trust (1.024, 0.999–1.049) or to excluding outcome years 2020–21 (1.018, 0.969–1.069);
+  - was not robust to clustering by principal trust (1.024, 0.999–1.049), and was similar but imprecise when outcome years 2020–21 were excluded (1.018, 0.969–1.069);
+  - was not seen for oral forms alone (1.011, 0.991–1.032; lower-tier 1.015, 0.994–1.036), so it depended on intravenous methylprednisolone pulses, a marker of acute severe disease;
   - would imply, under the model used for expected effects, that hospital glucocorticoids account for about a quarter of all notifications (an IRR of 1.024 per 10% corresponds to an attributable fraction of 24%), whereas steroid-associated immunosuppression was recorded for 0.5% of notifications [UKHSA 2025].
   We interpret it as chance or confounding by hospital activity, not a drug effect.
 - The negative controls were null: low-TB-risk biologics 1.002 (0.986–1.018); levetiracetam 1.014 (0.986–1.042).
+- Across all 260 within-area hospital estimates at both levels, 22 were nominally significant: 12 for the two TB treatment groups (the expected same-year association), 7 for JAK inhibitors (inverse) and 3 for systemic glucocorticoids.
 - Clustering by principal trust or using elective catchments barely changed the other estimates (Table S3b).
 - JAK inhibitors showed small inverse estimates (same year 0.993, 0.987–0.999; previous year excluding outcome years 2020–21 0.978, 0.961–0.996), consistent with trends in uptake rather than protection.
 
@@ -574,6 +584,7 @@ Poisson PML with area and year fixed effects, adjusted for age structure, intern
 | UTLA | Calcineurin/mTOR inhibitors | 1.049 (0.995–1.106) | 0.994 (0.985–1.004) | -0.06 | 1.008 (0.996–1.020) | 1.008 (0.996–1.020) | 0.985 (0.966–1.005) |
 | UTLA | Antiproliferatives | 1.025 (0.970–1.082) | 0.993 (0.978–1.008) | -0.08 | 0.996 (0.978–1.014) | 0.996 (0.979–1.013) | 0.993 (0.974–1.012) |
 | UTLA | Systemic glucocorticoids without dexamethasone/hydrocortisone (prednisolone-equivalent mg) | 0.970 (0.929–1.012) | 1.009 (0.986–1.032) | 0.09 | 1.024 (1.001–1.046) | 1.024 (0.999–1.049) | 0.991 (0.953–1.030) |
+| UTLA | Systemic glucocorticoids, oral forms only (sensitivity) | 0.971 (0.930–1.012) | 0.997 (0.979–1.016) | -0.03 | 1.011 (0.991–1.032) | 1.011 (0.990–1.033) | 0.983 (0.944–1.023) |
 | UTLA | Dexamethasone and hydrocortisone (descriptive) | 0.934 (0.893–0.976) | 1.005 (0.977–1.034) | 0.05 | 1.008 (0.980–1.036) | 1.008 (0.979–1.037) | 0.994 (0.943–1.047) |
 | UTLA | Low-TB-risk biologics (negative control) | 1.014 (0.961–1.070) | 1.004 (0.990–1.019) | 0.05 | 1.002 (0.986–1.018) | 1.002 (0.983–1.021) | 1.010 (0.982–1.040) |
 | UTLA | Levetiracetam (negative control) | 1.017 (0.970–1.066) | 0.998 (0.975–1.021) | -0.03 | 1.014 (0.986–1.042) | 1.014 (0.986–1.042) | 0.987 (0.948–1.028) |
@@ -586,6 +597,7 @@ Poisson PML with area and year fixed effects, adjusted for age structure, intern
 | LTLA | Calcineurin/mTOR inhibitors | 1.002 (0.959–1.046) | 0.994 (0.985–1.003) | -0.07 | 1.008 (0.997–1.020) | 1.008 (0.998–1.019) | 0.983 (0.961–1.005) |
 | LTLA | Antiproliferatives | 0.983 (0.936–1.031) | 0.997 (0.983–1.012) | -0.03 | 0.997 (0.982–1.013) | 0.997 (0.980–1.015) | 0.993 (0.974–1.012) |
 | LTLA | Systemic glucocorticoids without dexamethasone/hydrocortisone (prednisolone-equivalent mg) | 0.976 (0.945–1.008) | 1.008 (0.990–1.026) | 0.08 | 1.021 (1.000–1.043) | 1.021 (0.999–1.044) | 0.986 (0.952–1.020) |
+| LTLA | Systemic glucocorticoids, oral forms only (sensitivity) | 0.974 (0.943–1.006) | 1.001 (0.982–1.019) | 0.01 | 1.015 (0.994–1.036) | 1.015 (0.994–1.037) | 0.976 (0.939–1.014) |
 | LTLA | Dexamethasone and hydrocortisone (descriptive) | 0.978 (0.938–1.019) | 1.008 (0.980–1.037) | 0.08 | 1.010 (0.984–1.036) | 1.010 (0.982–1.037) | 0.989 (0.940–1.041) |
 | LTLA | Low-TB-risk biologics (negative control) | 0.991 (0.948–1.036) | 1.005 (0.991–1.019) | 0.05 | 1.003 (0.988–1.019) | 1.003 (0.988–1.019) | 1.012 (0.985–1.040) |
 | LTLA | Levetiracetam (negative control) | 1.016 (0.979–1.054) | 1.003 (0.981–1.025) | 0.03 | 1.013 (0.988–1.039) | 1.013 (0.989–1.037) | 0.992 (0.955–1.031) |
@@ -610,12 +622,12 @@ Exposure: DDD-years per 1,000 residents (positive control: pyrazinamide DDD incl
   - An illustrative RR of 4 before latent TB screening implies an expected change of 0.10% (MDE 26 times larger at upper-tier level).
   - An RR of 1.5 with screening, which probably overstates post-screening risk, implies 0.017% (MDE 154 times larger).
   - Dividing by the positive-control elasticity widens these gaps to 72 and 426 times (Table S3).
-- Across hospital scenarios, MDEs exceeded expected effects by 26 to 520 times before attenuation.
+- Across hospital scenarios, MDEs exceeded expected effects by 26 to 520 times at upper-tier level before attenuation (23 to 522 times at lower-tier level).
 - UKHSA-recorded biological-therapy notifications imply 0.08–0.16%.
 
 **Simulation** (permutation-based, real notification counts; Table S4)
 - **Calibration.** With no effect, the two-sided test rejected in 7.8% of replicates at lower-tier level (7.6% upper-tier), against a nominal 5%. Within the simulation, replicate SEs (median 0.0161) were close to the spread of null estimates (0.0166), so the clustered test was mildly anti-conservative, not conservative.
-- **Real-data precision.** The real-data SE (0.0218) was larger than in the simulation, because permuting exposure trajectories across areas breaks their alignment with each area's own notification trends. Simulated power is therefore optimistic, so we also give analytic power at the real-data SE.
+- **Real-data precision.** The real-data SE (0.0218) was larger than in the simulation, probably because permuting exposure trajectories across areas breaks their alignment with each area's own notification trends. Simulated power is therefore optimistic, so we also give analytic power at the real-data SE.
 - **Published glucocorticoid effect (RR 4.9).** Rejection 8.3% (upper-tier 8.0%), no more often than with no effect; power in the correct direction 6.0%, against 3.8% with no effect.
 - **Larger individual relative risks.** Rejection 17.7% for RR 25 and 71.0% for RR 100 (analytic power at the real SE for RR 100: 52.1%).
 - **Direct population effects.** Rejection 21.7%, 83.0% and 100.0% for IRR 1.02, 1.05 and 1.10 per 10%; analytic power at the real SE 14.3%, 64.6% and 99.4% (upper-tier, IRR 1.05: 51.0%).
@@ -639,7 +651,7 @@ Expected changes use published individual-level relative risks (ORs for oral glu
 ### Regional analyses by place of birth and age
 
 **Precision**
-- Regional models were very imprecise. MDEs for glucocorticoid prescribing were 45–82% per 10% increase for UK-born notifications and 46–99% for UK-born notifications at age ≥65.
+- Regional models were very imprecise. MDEs for glucocorticoid prescribing, calculated from the *t*(8) intervals, were 46–98% per 10% increase for UK-born notifications and 54–119% for UK-born notifications at age ≥65 (Table S5).
 - Under the model used for expected effects, a 10% increase in use can raise notifications by at most 10%. The expected effect for UK-born people aged ≥65 (prevalence of use 2.5%, RR 4.9) is 0.9%.
 - Any nominally significant regional estimate must therefore reflect chance or bias.
 
@@ -670,15 +682,15 @@ Expected changes use published individual-level relative risks (ORs for oral glu
 
 We linked open English data on primary care and hospital prescribing with TB notifications, using several ecological designs at two geographic scales. The linkage worked only partly.
 
-- **The positive control.** Hospital active-TB treatment tracked notifications between areas and, weakly, within areas. Its elasticity of 0.36–0.40, with wide confidence intervals, reflects apportionment error, timing and variation in drug volume per person treated.
-- **Candidate drugs.** No medicine plausibly affecting TB risk was robustly associated with subsequent notifications. This held for systemic oral glucocorticoids, inhaled corticosteroids, DMARDs, transplant immunosuppressants, TNF, IL-6 and JAK inhibitors, and rituximab. Hospital systemic glucocorticoids had a small nominal association that was not robust and implied an implausibly large attributable fraction.
+- **The positive control.** Hospital active-TB treatment tracked notifications between areas and, weakly, within areas. Its elasticity of 0.36–0.40, with wide confidence intervals, reflects apportionment error and variation in drug volume per person treated.
+- **Candidate drugs.** No medicine plausibly affecting TB risk was robustly associated with subsequent notifications. This held for systemic oral glucocorticoids, inhaled corticosteroids, DMARDs, transplant immunosuppressants, TNF, IL-6 and JAK inhibitors, and rituximab. Hospital systemic glucocorticoids had a small nominal association that was not robust, was absent for oral forms, and implied an implausibly large attributable fraction.
 - **Signs of confounding.**
   - The negative-control exposure showed inverse estimates of similar size to some candidate drugs.
-  - Following-year prescribing was inversely associated with notifications for several groups, although adjacent-year exposures are highly collinear.
+  - Following-year prescribing was inversely associated with notifications for several groups, and collinearity between adjacent years did not explain this.
   - The regional association with UK-born TB was implausibly large, not significant by randomisation inference, and dependent on London.
 
   These patterns are compatible with residual confounding by area-specific trends, chance or measurement error, and not with drug effects of plausible size.
-- **Power.** The analytic calculations and the simulation both showed that plausible effects are undetectable: the designs could detect only effects roughly 10 to several hundred times larger than those implied by published relative risks or by UKHSA records of drug-associated TB. Simulated power exceeded analytic power at the real standard error, because permuted exposures lost their alignment with local notification trends.
+- **Power.** The analytic calculations and the simulation both showed that plausible effects are undetectable: the designs could detect only effects roughly 10 to several hundred times larger than those implied by published relative risks or by UKHSA records of drug-associated TB. Simulated power exceeded analytic power at the real standard error, probably because permuted exposures lost their alignment with local notification trends.
 
 ### Why population effects of these medicines are undetectable
 
@@ -687,19 +699,19 @@ We linked open English data on primary care and hospital prescribing with TB not
 - **Oral glucocorticoids.** Current use carries an odds ratio of about 5 [Jick 2006], but only about 1% of people use them at any time [van Staa 2000; Fardet 2011]. A 10% change in use should therefore change TB notifications by about 0.3%.
   - Stratifying by age lowers this to 0.29%, because use is concentrated in older people while most notifications are in younger adults.
   - UKHSA recorded steroid-associated immunosuppression in 30 of 5,490 people notified in 2024 [UKHSA 2025]. Converted to an attributable fraction, that implies 0.04% per 10% increase with complete recording, or 0.09% if only half of drug-associated immunosuppression is recorded.
-- **Biologics.** Latent TB screening before anti-TNF therapy has been standard in the UK since 2005 [BTS 2005] and reduced TB rates in treated patients by about 78% in registry data [Carmona 2005]; risk was about seven times higher when the recommendations were not followed [Gómez-Reino 2007]. Growth in biologic use during 2019–2024 therefore took place under screening, so the relative risk relevant to a marginal increase in use is small. Screening is less consistently done before oral glucocorticoids.
+- **Biologics.** Latent TB screening before anti-TNF therapy has been standard in the UK since 2005 [BTS 2005], and NICE guidance covers testing people who are or will be immunosuppressed [NG33]. In a Spanish registry, TB rates in people with rheumatoid arthritis treated with TNF antagonists were 6.2 times those in untreated people before screening recommendations, and fell by 83% to about the untreated rate afterwards [Carmona 2005]; risk was about seven times higher when the recommendations were not followed [Gómez-Reino 2007]. Growth in biologic use during 2019–2024 therefore took place under screening, so the relative risk relevant to a marginal increase in use is small. Screening is less consistently done before oral glucocorticoids. UKHSA recorded biological-therapy immunosuppression, a category that includes non-TNF biologics, in 54 notifications in 2024; converted to an attributable fraction, that implies 0.08–0.16% per 10% increase in use.
 
 **The data carry little information.**
 - **Little within-area variation.** Within-area variation in prescribing was very small (SD of log rate 0.04 for glucocorticoids, against 0.29 between areas), so a 10% change sits at the edge of the observed data. Fixed effects remove the between-area variation where most information lies [Gunasekara 2014].
 - **Few areas.** Power in aggregate studies depends mainly on the number of areas [Sheppard 1996], which cannot be increased.
-- **Linkage attenuation.** For hospital medicines, the positive control shows that apportionment would shrink any true effect further. No working positive control was available for primary care, so the validity of that linkage is untested.
+- **Linkage attenuation.** For hospital medicines, the positive control shows that apportionment would shrink any true effect further. No working positive control was available for primary care, so the validity of that linkage is untested. Other hospital drugs have their own sources of error (homecare delivery of biologics, specialist centres, biosimilar switching), and the positive control was analysed in the same year while candidate drugs were analysed in the previous year, so the attenuated ratios are illustrative.
 - **Simulation.** Simulations on the real notification counts rejected the null for the published glucocorticoid effect no more often than when there was no effect.
 
 ### Confounding, falsification and negative controls
 
 **Crude versus within-area associations.** Crude cross-sectional associations were strongly inverse and were explained by country of birth and age. Within areas, residual confounding remained visible:
 - **Negative control.** Levothyroxine, which has no plausible effect on TB, showed inverse estimates (0.96) similar to metformin.
-- **Lag and lead patterns.** Following-year prescribing was inversely associated with notifications for inhaled corticosteroids and insulins, and in models with previous, same and following years, same-year terms were positive for several groups. Adjacent-year exposures are highly collinear, so their estimates are strongly negatively correlated and these seesaw patterns are weak evidence on their own.
+- **Lag and lead patterns.** Following-year prescribing was inversely associated with notifications for inhaled corticosteroids, insulins and oral glucocorticoids. These associations persisted when same-year prescribing was added and the lag and lead estimates were almost uncorrelated, so they are not an artefact of collinearity.
 - **Likely cause.** Both patterns are compatible with prescribing and notifications sharing area-specific trends, for example migration-driven changes in the age and origin of the population (with accompanying changes in practice registration and in vitamin D prescribing in South Asian-born communities), changes in diagnostic activity, and prescribing policy. Year fixed effects cannot remove these trends.
 
 **Metformin.** Its estimates should be read against the high prevalence of both diabetes and latent TB infection among South Asian-born people; diabetes itself increases TB risk [Pealing 2015].
@@ -707,7 +719,7 @@ We linked open English data on primary care and hospital prescribing with TB not
 **Ecological bias.** Area-level adjustment cannot remove bias arising from effect modification or from differences in baseline risk between people within areas [Greenland 1989; Morgenstern 1995]. For example, steroid users are mostly older and UK-born, whereas most notifications are in younger people born abroad.
 
 **The UK-born association.** Regionally, prednisolone dose in an earlier year was imprecisely associated with UK-born TB (joint lag estimate 1.45 per 10% increase). We do not interpret this as a drug effect:
-- The regional MDEs (about 50% per 10%) are far above the 10% maximum possible under the model used for expected effects, so any significant regional estimate must reflect chance or bias.
+- The regional MDEs (roughly 50–120% per 10%) are far above the 10% maximum possible under the model used for expected effects, so any significant regional estimate must reflect chance or bias.
 - It was not significant by randomisation inference (p = 0.23), and it largely disappeared when London was excluded (1.12).
 - The same nine-region design produced failed falsification tests for non-UK-born TB and a failed negative control (levothyroxine) for older UK-born people.
 - UK-born TB fell by 48% between 2014 and 2022 [UKHSA 2025], while oral glucocorticoid dosing also declined. Any two declining regional series will tend to correlate, so coincident trends are the most plausible explanation.
@@ -731,17 +743,17 @@ We linked open English data on primary care and hospital prescribing with TB not
 **Limitations: exposure data.**
 - **Prescribing measures.** Exposure was measured as prescribing volume per resident, not as people treated.
 - **Apportionment.** Apportioning by patient residence used annual April snapshots, with 2014 shares applied to 2011–2013.
-- **Pre-2014 data.** The 2011–2013 series come from a different release, and overlap-period concordance could not be assessed. National year-on-year changes were continuous across the 2013/2014 splice for most groups, but not for oral glucocorticoids (+3.3% at the splice against +0.6% and +1.0% either side) or all antibacterials (−0.1% against −4.5% and −5.6%). Restricting to EPD-era exposure did not change the conclusions (Table S1).
+- **Pre-2014 data.** The 2011–2013 series come from a different release, and overlap-period concordance could not be assessed. National year-on-year changes were continuous across the 2013/2014 splice for most groups, but not for oral glucocorticoids (+2.8% at the splice against +0.1% in each adjacent year) or all antibacterials (−0.6% against −5.0% and −6.4%). Restricting to EPD-era exposure did not change the conclusions (Table S1).
 - **Hospital catchments.** Hospital quantities were apportioned using admission-based catchments, which may misallocate specialist services, and the 2024 catchments were applied to every year from 2019.
 - **Hospital data capture.** Capture of homecare-delivered biologics in SCMD could not be verified.
 - **Hospital data period.** The hospital series spans only 2019–2024, including the pandemic. Hospital dexamethasone use rose with its adoption for severe COVID-19 [RECOVERY 2021], a marker of COVID-19 severity patterned by deprivation and ethnicity, so dexamethasone and hydrocortisone were separated from the candidate glucocorticoid exposure.
-- **Hospital prescriptions dispensed in the community.** Prescriptions written in hospitals and dispensed by community pharmacies (FP10(HP)) are attributed to hospital prescribers, not GP practices, and are not in SCMD. Some TB treatment and specialist medicines reach patients this way, so neither data source captures them.
+- **Hospital prescriptions dispensed in the community.** Prescriptions written in hospitals and dispensed by community pharmacies (FP10(HP)) are recorded in the English Prescribing Dataset under hospital prescribers, so our restriction to GP practices excluded them, and they are not in SCMD. Some TB treatment and specialist medicines reach patients this way, so they are missing from both exposures as analysed.
 - **Drug group definitions.** Conventional DMARDs exclude hydroxychloroquine and sulfasalazine, which carry little TB risk. Mercaptopurine includes leukaemia maintenance therapy, and the primary care "transplant immunosuppressant" group includes shared-care use of mycophenolate and ciclosporin for autoimmune disease. Dexamethasone, despite its high potency, contributed only 5.6–6.7% of prednisolone-equivalent mg in primary care (2015, 2019 and 2024 samples), so it does not drive the dose measure.
 
 **Limitations: outcome and confounder data.**
 - **Notifications, not incidence.** The outcome is notified TB, subject to diagnostic delay, residence assignment, the 2021 transition from ETS to NTBS, and 2020 disruption.
 - **Birthplace data.** TB by place of birth is published only by region, and UK-born population denominators by age are not published regionally. The model for UK-born notifications at age ≥65 therefore uses all residents aged ≥65 as the denominator, which can create spurious trends as the older non-UK-born population grows.
-- **Screening of migrants.** Pre-entry screening of long-stay visa applicants from high-incidence countries (UK-wide from 2012) and the LTBI programme for new migrants reduce notifications among recent entrants in the areas where they settle. Neither is fully captured by our covariates.
+- **Screening of migrants.** Pre-entry screening of long-stay visa applicants (piloted in selected high-incidence countries from 2005 and extended to all high-incidence countries in 2012–2014) and the LTBI programme for new migrants, whose testing coverage was incomplete [Berrocal-Almanza 2022], both target recent entrants in the areas where they settle. Neither is fully captured by our covariates.
 - **Outcome definitions.** We did not analyse culture-confirmed pulmonary TB or drug-resistant TB, which were not available by local authority and year in the published tables we used.
 - **Unmeasured confounders.**
   - Social risk factors and diagnostic intensity.
@@ -829,7 +841,7 @@ Open English prescribing and TB notification data can be linked, although hospit
 
 **Feasibility**
 - The TB notification rate in UK-born people was 2.1 per 100,000 in 2024, all ages [UKHSA 2025,
-  Supplementary Table 12]; rates in older UK-born adults are of a similar order. Tens of
+  Supplementary Table 12]. Tens of
   thousands of long-term initiators followed for several years would yield only tens of TB events,
   so the individual-level study is itself constrained by sample size.
 
@@ -837,7 +849,7 @@ Open English prescribing and TB notification data can be linked, although hospit
 
 ## Data and code availability
 
-All inputs are publicly available (NHSBSA Open Data Portal: English Prescribing Dataset and Secondary Care Medicines Data; NHS Digital practice-level prescribing and registered patients by LSOA; UKHSA TB reports and Fingertips; OHID acute trust catchment populations; ONS/Nomis; Home Office asylum statistics; NHS England ODS; MHCLG English Indices of Deprivation). Code, processed datasets and outputs: https://github.com/drcjar/tb-prescribing-england. Data were obtained in September 2026: the EPD and SCMD through the NHSBSA API (SCMD months use final data where available, otherwise provisional), and the NHS England ODS epraccur file, practice registration releases (April 2014–2024), OHID acute trust catchments (2024 catchment year), and the UKHSA TB in England 2025 and regional 2024 supplementary tables as published at that time. These portals revise data between releases.
+All inputs are publicly available (NHSBSA Open Data Portal: English Prescribing Dataset and Secondary Care Medicines Data; NHS Digital practice-level prescribing and registered patients by LSOA; UKHSA TB reports and Fingertips; OHID acute trust catchment populations; ONS/Nomis; Home Office asylum statistics; NHS England ODS; MHCLG English Indices of Deprivation). Code, processed datasets and outputs: https://github.com/drcjar/tb-prescribing-england. Data were obtained in September 2026: the EPD and SCMD through the NHSBSA API (all SCMD months analysed were final data, three of them from an earlier, since-retired release), and the NHS England ODS epraccur file, practice registration releases (April 2014–2024), OHID acute trust catchments (2024 catchment year), and the UKHSA TB in England 2025 and regional 2024 supplementary tables as published at that time. These portals revise data between releases.
 
 
 ## References
@@ -869,7 +881,7 @@ Each journal entry was checked against PubMed metadata (via DOI→PMID conversio
 - Morgenstern H. Ecologic studies in epidemiology: concepts, principles, and methods. *Annu Rev Public Health* 1995;16:61–81. doi:10.1146/annurev.pu.16.050195.000425. PMID 7639884
 - Morrison H, et al. Impact of COVID-19 on NHS tuberculosis services: results of a UK-wide survey. *J Infect* 2023;87(1):59–61. doi:10.1016/j.jinf.2023.04.004. PMID 37044162
 - National Institute for Health and Care Excellence. Tuberculosis. NICE guideline [NG33]. London: NICE; published 13 January 2016, last updated 16 February 2024. https://www.nice.org.uk/guidance/ng33 [dates confirmed from search results only; nice.org.uk returned HTTP 403 to automated access. The wording of the LTBI testing recommendation still needs checking by hand against the current text.]
-- OpenPrescribing.net, Bennett Institute for Applied Data Science, University of Oxford. Frequently asked questions. 2026. https://openprescribing.net/faq/ [accessed date to be added; the FAQ asks academic users to cite "OpenPrescribing.net, Bennett Institute for Applied Data Science, University of Oxford, 2026", confirmed via search results because a direct fetch failed]
+- OpenPrescribing.net, Bennett Institute for Applied Data Science, University of Oxford. Frequently asked questions. 2026. https://openprescribing.net/faq/ Accessed 14 September 2026.
 - Pealing L, Wing K, Mathur R, et al. Risk of tuberculosis in patients with diabetes: population based cohort study using the UK Clinical Practice Research Datalink. *BMC Med* 2015;13:135. doi:10.1186/s12916-015-0381-9. PMID 26048371
 - Prasad V, Jena AB. Prespecified falsification end points: can they validate true observational associations? *JAMA* 2013;309(3):241–2. doi:10.1001/jama.2012.96867. PMID 23321761
 - RECOVERY Collaborative Group; Horby P, Lim WS, Emberson JR, et al. Dexamethasone in hospitalized patients with Covid-19. *N Engl J Med* 2021;384(8):693–704. doi:10.1056/NEJMoa2021436. PMID 32678530
@@ -981,89 +993,89 @@ Within the simulation, replicate SEs matched the spread of null estimates, so th
 
 **Table S5. Regional models (9 regions): TB notifications by place of birth and age vs primary care prescribing**
 
-| Outcome | Exposure | Analysis | Lag (years; negative = lead) | IRR per 10% (t(8) 95% CI) | p (cluster t8) | p (randomisation) |
-|:---|---:|---:|---:|---:|---:|---:|
-| TB, UK born | oral_glucocorticoids | lagged exposure | 1 | 1.19 (0.87–1.62) | 0.233 | 0.254 |
-| TB, UK born | oral_glucocorticoids | lagged exposure | 2 | 1.20 (0.80–1.80) | 0.323 | 0.386 |
-| TB, UK born | oral_glucocorticoids | lagged exposure | 3 | 1.10 (0.67–1.79) | 0.678 | 0.714 |
-| TB, UK born | oral_glucocorticoids | lagged, excluding 2020-21 | 1 | 1.19 (0.87–1.63) | 0.244 | 0.280 |
-| TB, UK born | oral_glucocorticoids | lagged, excluding 2020-21 | 2 | 1.20 (0.80–1.80) | 0.323 | 0.372 |
-| TB, UK born | oral_glucocorticoids | lagged, excluding 2020-21 | 3 | 1.09 (0.67–1.78) | 0.686 | 0.714 |
-| TB, UK born | oral_glucocorticoids | lead (falsification) | -1 | 1.20 (0.78–1.84) | 0.356 | 0.374 |
-| TB, UK born | oral_glucocorticoids | lead (falsification) | -2 | 1.09 (0.67–1.78) | 0.695 | 0.686 |
-| TB, UK born | oral_glucocorticoids | lead (falsification) | -3 | 1.09 (0.83–1.44) | 0.484 | 0.536 |
-| TB, UK born | mg_pred_equivalent | lagged exposure | 1 | 1.25 (0.95–1.65) | 0.097 | 0.122 |
-| TB, UK born | mg_pred_equivalent | lagged exposure | 2 | 1.33 (0.96–1.84) | 0.077 | 0.162 |
-| TB, UK born | mg_pred_equivalent | lagged exposure | 3 | 1.33 (0.94–1.89) | 0.098 | 0.238 |
-| TB, UK born | mg_pred_equivalent | lagged, excluding 2020-21 | 1 | 1.27 (0.94–1.72) | 0.105 | 0.114 |
-| TB, UK born | mg_pred_equivalent | lagged, excluding 2020-21 | 2 | 1.32 (0.97–1.80) | 0.072 | 0.140 |
-| TB, UK born | mg_pred_equivalent | lagged, excluding 2020-21 | 3 | 1.30 (0.91–1.85) | 0.134 | 0.286 |
-| TB, UK born | mg_pred_equivalent | lead (falsification) | -1 | 1.17 (0.85–1.60) | 0.292 | 0.274 |
-| TB, UK born | mg_pred_equivalent | lead (falsification) | -2 | 0.91 (0.70–1.19) | 0.446 | 0.436 |
-| TB, UK born | mg_pred_equivalent | lead (falsification) | -3 | 0.92 (0.82–1.03) | 0.120 | 0.084 |
-| TB, UK born | levothyroxine | lagged exposure | 1 | 0.96 (0.85–1.08) | 0.407 | 0.518 |
-| TB, UK born | levothyroxine | lagged exposure | 2 | 0.91 (0.80–1.03) | 0.127 | 0.246 |
-| TB, UK born | levothyroxine | lagged exposure | 3 | 0.90 (0.77–1.04) | 0.139 | 0.258 |
-| TB, UK born | levothyroxine | lagged, excluding 2020-21 | 1 | 0.95 (0.84–1.08) | 0.366 | 0.478 |
-| TB, UK born | levothyroxine | lagged, excluding 2020-21 | 2 | 0.91 (0.80–1.04) | 0.152 | 0.288 |
-| TB, UK born | levothyroxine | lagged, excluding 2020-21 | 3 | 0.90 (0.76–1.05) | 0.154 | 0.282 |
-| TB, UK born | levothyroxine | lead (falsification) | -1 | 0.93 (0.81–1.07) | 0.293 | 0.428 |
-| TB, UK born | levothyroxine | lead (falsification) | -2 | 0.97 (0.82–1.14) | 0.636 | 0.710 |
-| TB, UK born | levothyroxine | lead (falsification) | -3 | 0.96 (0.80–1.15) | 0.624 | 0.720 |
-| TB, Non-UK born | oral_glucocorticoids | lagged exposure | 1 | 0.95 (0.72–1.25) | 0.678 | 0.716 |
-| TB, Non-UK born | oral_glucocorticoids | lagged exposure | 2 | 1.00 (0.81–1.23) | 0.982 | 0.974 |
-| TB, Non-UK born | oral_glucocorticoids | lagged exposure | 3 | 1.03 (0.83–1.28) | 0.725 | 0.766 |
-| TB, Non-UK born | oral_glucocorticoids | lagged, excluding 2020-21 | 1 | 0.98 (0.72–1.32) | 0.853 | 0.874 |
-| TB, Non-UK born | oral_glucocorticoids | lagged, excluding 2020-21 | 2 | 1.03 (0.84–1.26) | 0.785 | 0.812 |
-| TB, Non-UK born | oral_glucocorticoids | lagged, excluding 2020-21 | 3 | 1.06 (0.86–1.32) | 0.523 | 0.600 |
-| TB, Non-UK born | oral_glucocorticoids | lead (falsification) | -1 | 1.13 (0.88–1.44) | 0.306 | 0.358 |
-| TB, Non-UK born | oral_glucocorticoids | lead (falsification) | -2 | 1.33 (1.00–1.76) | 0.049 | 0.070 |
-| TB, Non-UK born | oral_glucocorticoids | lead (falsification) | -3 | 1.49 (1.17–1.89) | 0.005 | 0.012 |
-| TB, Non-UK born | mg_pred_equivalent | lagged exposure | 1 | 0.99 (0.77–1.26) | 0.906 | 0.934 |
-| TB, Non-UK born | mg_pred_equivalent | lagged exposure | 2 | 1.08 (0.91–1.27) | 0.343 | 0.544 |
-| TB, Non-UK born | mg_pred_equivalent | lagged exposure | 3 | 1.11 (0.94–1.30) | 0.179 | 0.384 |
-| TB, Non-UK born | mg_pred_equivalent | lagged, excluding 2020-21 | 1 | 1.02 (0.78–1.33) | 0.884 | 0.918 |
-| TB, Non-UK born | mg_pred_equivalent | lagged, excluding 2020-21 | 2 | 1.07 (0.92–1.26) | 0.327 | 0.542 |
-| TB, Non-UK born | mg_pred_equivalent | lagged, excluding 2020-21 | 3 | 1.13 (0.94–1.35) | 0.158 | 0.378 |
-| TB, Non-UK born | mg_pred_equivalent | lead (falsification) | -1 | 1.15 (0.91–1.46) | 0.208 | 0.332 |
-| TB, Non-UK born | mg_pred_equivalent | lead (falsification) | -2 | 1.31 (0.94–1.83) | 0.101 | 0.168 |
-| TB, Non-UK born | mg_pred_equivalent | lead (falsification) | -3 | 1.29 (1.03–1.60) | 0.030 | 0.040 |
-| TB, Non-UK born | levothyroxine | lagged exposure | 1 | 1.02 (0.90–1.16) | 0.695 | 0.778 |
-| TB, Non-UK born | levothyroxine | lagged exposure | 2 | 1.02 (0.88–1.17) | 0.767 | 0.854 |
-| TB, Non-UK born | levothyroxine | lagged exposure | 3 | 1.01 (0.88–1.17) | 0.835 | 0.866 |
-| TB, Non-UK born | levothyroxine | lagged, excluding 2020-21 | 1 | 1.02 (0.90–1.16) | 0.682 | 0.798 |
-| TB, Non-UK born | levothyroxine | lagged, excluding 2020-21 | 2 | 1.02 (0.88–1.17) | 0.771 | 0.844 |
-| TB, Non-UK born | levothyroxine | lagged, excluding 2020-21 | 3 | 1.01 (0.88–1.17) | 0.835 | 0.860 |
-| TB, Non-UK born | levothyroxine | lead (falsification) | -1 | 1.00 (0.86–1.15) | 0.947 | 0.964 |
-| TB, Non-UK born | levothyroxine | lead (falsification) | -2 | 1.01 (0.88–1.16) | 0.839 | 0.878 |
-| TB, Non-UK born | levothyroxine | lead (falsification) | -3 | 1.10 (0.91–1.31) | 0.279 | 0.476 |
-| TB, UK born aged 65+ | oral_glucocorticoids | lagged exposure | 1 | 1.05 (0.75–1.46) | 0.750 | 0.790 |
-| TB, UK born aged 65+ | oral_glucocorticoids | lagged exposure | 2 | 1.06 (0.75–1.50) | 0.714 | 0.712 |
-| TB, UK born aged 65+ | oral_glucocorticoids | lagged exposure | 3 | 0.85 (0.48–1.51) | 0.539 | 0.578 |
-| TB, UK born aged 65+ | oral_glucocorticoids | lagged, excluding 2020-21 | 1 | 1.09 (0.80–1.49) | 0.524 | 0.592 |
-| TB, UK born aged 65+ | oral_glucocorticoids | lagged, excluding 2020-21 | 2 | 1.10 (0.79–1.53) | 0.512 | 0.472 |
-| TB, UK born aged 65+ | oral_glucocorticoids | lagged, excluding 2020-21 | 3 | 0.88 (0.53–1.45) | 0.572 | 0.572 |
-| TB, UK born aged 65+ | oral_glucocorticoids | lead (falsification) | -1 | 1.27 (0.88–1.85) | 0.173 | 0.198 |
-| TB, UK born aged 65+ | oral_glucocorticoids | lead (falsification) | -2 | 1.68 (1.04–2.70) | 0.036 | 0.044 |
-| TB, UK born aged 65+ | oral_glucocorticoids | lead (falsification) | -3 | 1.53 (0.93–2.54) | 0.086 | 0.108 |
-| TB, UK born aged 65+ | mg_pred_equivalent | lagged exposure | 1 | 1.06 (0.76–1.48) | 0.679 | 0.712 |
-| TB, UK born aged 65+ | mg_pred_equivalent | lagged exposure | 2 | 1.13 (0.83–1.54) | 0.388 | 0.478 |
-| TB, UK born aged 65+ | mg_pred_equivalent | lagged exposure | 3 | 0.94 (0.56–1.58) | 0.803 | 0.844 |
-| TB, UK born aged 65+ | mg_pred_equivalent | lagged, excluding 2020-21 | 1 | 1.12 (0.77–1.61) | 0.513 | 0.566 |
-| TB, UK born aged 65+ | mg_pred_equivalent | lagged, excluding 2020-21 | 2 | 1.12 (0.80–1.56) | 0.452 | 0.490 |
-| TB, UK born aged 65+ | mg_pred_equivalent | lagged, excluding 2020-21 | 3 | 0.88 (0.49–1.60) | 0.640 | 0.618 |
-| TB, UK born aged 65+ | mg_pred_equivalent | lead (falsification) | -1 | 1.28 (0.89–1.85) | 0.151 | 0.204 |
-| TB, UK born aged 65+ | mg_pred_equivalent | lead (falsification) | -2 | 1.58 (0.92–2.73) | 0.089 | 0.086 |
-| TB, UK born aged 65+ | mg_pred_equivalent | lead (falsification) | -3 | 1.30 (0.78–2.19) | 0.271 | 0.320 |
-| TB, UK born aged 65+ | levothyroxine | lagged exposure | 1 | 1.23 (1.00–1.51) | 0.051 | 0.074 |
-| TB, UK born aged 65+ | levothyroxine | lagged exposure | 2 | 1.19 (0.95–1.48) | 0.111 | 0.168 |
-| TB, UK born aged 65+ | levothyroxine | lagged exposure | 3 | 1.06 (0.89–1.27) | 0.463 | 0.534 |
-| TB, UK born aged 65+ | levothyroxine | lagged, excluding 2020-21 | 1 | 1.22 (0.99–1.50) | 0.055 | 0.068 |
-| TB, UK born aged 65+ | levothyroxine | lagged, excluding 2020-21 | 2 | 1.20 (0.96–1.50) | 0.098 | 0.152 |
-| TB, UK born aged 65+ | levothyroxine | lagged, excluding 2020-21 | 3 | 1.09 (0.91–1.30) | 0.304 | 0.406 |
-| TB, UK born aged 65+ | levothyroxine | lead (falsification) | -1 | 1.38 (1.05–1.80) | 0.025 | 0.038 |
-| TB, UK born aged 65+ | levothyroxine | lead (falsification) | -2 | 1.20 (0.85–1.71) | 0.262 | 0.382 |
-| TB, UK born aged 65+ | levothyroxine | lead (falsification) | -3 | 1.29 (0.85–1.97) | 0.195 | 0.308 |
+| Outcome | Exposure | Analysis | Lag (years; negative = lead) | IRR per 10% (t(8) 95% CI) | p (cluster t8) | p (randomisation) | MDE per 10% |
+|:---|---:|---:|---:|---:|---:|---:|---:|
+| TB, UK born | oral_glucocorticoids | lagged exposure | 1 | 1.19 (0.87–1.62) | 0.233 | 0.254 | 53% |
+| TB, UK born | oral_glucocorticoids | lagged exposure | 2 | 1.20 (0.80–1.80) | 0.323 | 0.386 | 75% |
+| TB, UK born | oral_glucocorticoids | lagged exposure | 3 | 1.10 (0.67–1.79) | 0.678 | 0.714 | 98% |
+| TB, UK born | oral_glucocorticoids | lagged, excluding 2020-21 | 1 | 1.19 (0.87–1.63) | 0.244 | 0.280 | 55% |
+| TB, UK born | oral_glucocorticoids | lagged, excluding 2020-21 | 2 | 1.20 (0.80–1.80) | 0.323 | 0.372 | 75% |
+| TB, UK born | oral_glucocorticoids | lagged, excluding 2020-21 | 3 | 1.09 (0.67–1.78) | 0.686 | 0.714 | 97% |
+| TB, UK born | oral_glucocorticoids | lead (falsification) | -1 | 1.20 (0.78–1.84) | 0.356 | 0.374 | 81% |
+| TB, UK born | oral_glucocorticoids | lead (falsification) | -2 | 1.09 (0.67–1.78) | 0.695 | 0.686 | 97% |
+| TB, UK born | oral_glucocorticoids | lead (falsification) | -3 | 1.09 (0.83–1.44) | 0.484 | 0.536 | 47% |
+| TB, UK born | mg_pred_equivalent | lagged exposure | 1 | 1.25 (0.95–1.65) | 0.097 | 0.122 | 46% |
+| TB, UK born | mg_pred_equivalent | lagged exposure | 2 | 1.33 (0.96–1.84) | 0.077 | 0.162 | 57% |
+| TB, UK born | mg_pred_equivalent | lagged exposure | 3 | 1.33 (0.94–1.89) | 0.098 | 0.238 | 63% |
+| TB, UK born | mg_pred_equivalent | lagged, excluding 2020-21 | 1 | 1.27 (0.94–1.72) | 0.105 | 0.114 | 52% |
+| TB, UK born | mg_pred_equivalent | lagged, excluding 2020-21 | 2 | 1.32 (0.97–1.80) | 0.072 | 0.140 | 53% |
+| TB, UK born | mg_pred_equivalent | lagged, excluding 2020-21 | 3 | 1.30 (0.91–1.85) | 0.134 | 0.286 | 64% |
+| TB, UK born | mg_pred_equivalent | lead (falsification) | -1 | 1.17 (0.85–1.60) | 0.292 | 0.274 | 55% |
+| TB, UK born | mg_pred_equivalent | lead (falsification) | -2 | 0.91 (0.70–1.19) | 0.446 | 0.436 | 44% |
+| TB, UK born | mg_pred_equivalent | lead (falsification) | -3 | 0.92 (0.82–1.03) | 0.120 | 0.084 | 17% |
+| TB, UK born | levothyroxine | lagged exposure | 1 | 0.96 (0.85–1.08) | 0.407 | 0.518 | 18% |
+| TB, UK born | levothyroxine | lagged exposure | 2 | 0.91 (0.80–1.03) | 0.127 | 0.246 | 19% |
+| TB, UK born | levothyroxine | lagged exposure | 3 | 0.90 (0.77–1.04) | 0.139 | 0.258 | 23% |
+| TB, UK born | levothyroxine | lagged, excluding 2020-21 | 1 | 0.95 (0.84–1.08) | 0.366 | 0.478 | 19% |
+| TB, UK born | levothyroxine | lagged, excluding 2020-21 | 2 | 0.91 (0.80–1.04) | 0.152 | 0.288 | 21% |
+| TB, UK born | levothyroxine | lagged, excluding 2020-21 | 3 | 0.90 (0.76–1.05) | 0.154 | 0.282 | 25% |
+| TB, UK born | levothyroxine | lead (falsification) | -1 | 0.93 (0.81–1.07) | 0.293 | 0.428 | 22% |
+| TB, UK born | levothyroxine | lead (falsification) | -2 | 0.97 (0.82–1.14) | 0.636 | 0.710 | 26% |
+| TB, UK born | levothyroxine | lead (falsification) | -3 | 0.96 (0.80–1.15) | 0.624 | 0.720 | 28% |
+| TB, Non-UK born | oral_glucocorticoids | lagged exposure | 1 | 0.95 (0.72–1.25) | 0.678 | 0.716 | 47% |
+| TB, Non-UK born | oral_glucocorticoids | lagged exposure | 2 | 1.00 (0.81–1.23) | 0.982 | 0.974 | 33% |
+| TB, Non-UK born | oral_glucocorticoids | lagged exposure | 3 | 1.03 (0.83–1.28) | 0.725 | 0.766 | 35% |
+| TB, Non-UK born | oral_glucocorticoids | lagged, excluding 2020-21 | 1 | 0.98 (0.72–1.32) | 0.853 | 0.874 | 51% |
+| TB, Non-UK born | oral_glucocorticoids | lagged, excluding 2020-21 | 2 | 1.03 (0.84–1.26) | 0.785 | 0.812 | 33% |
+| TB, Non-UK born | oral_glucocorticoids | lagged, excluding 2020-21 | 3 | 1.06 (0.86–1.32) | 0.523 | 0.600 | 34% |
+| TB, Non-UK born | oral_glucocorticoids | lead (falsification) | -1 | 1.13 (0.88–1.44) | 0.306 | 0.358 | 41% |
+| TB, Non-UK born | oral_glucocorticoids | lead (falsification) | -2 | 1.33 (1.00–1.76) | 0.049 | 0.070 | 48% |
+| TB, Non-UK born | oral_glucocorticoids | lead (falsification) | -3 | 1.49 (1.17–1.89) | 0.005 | 0.012 | 39% |
+| TB, Non-UK born | mg_pred_equivalent | lagged exposure | 1 | 0.99 (0.77–1.26) | 0.906 | 0.934 | 41% |
+| TB, Non-UK born | mg_pred_equivalent | lagged exposure | 2 | 1.08 (0.91–1.27) | 0.343 | 0.544 | 26% |
+| TB, Non-UK born | mg_pred_equivalent | lagged exposure | 3 | 1.11 (0.94–1.30) | 0.179 | 0.384 | 25% |
+| TB, Non-UK born | mg_pred_equivalent | lagged, excluding 2020-21 | 1 | 1.02 (0.78–1.33) | 0.884 | 0.918 | 45% |
+| TB, Non-UK born | mg_pred_equivalent | lagged, excluding 2020-21 | 2 | 1.07 (0.92–1.26) | 0.327 | 0.542 | 25% |
+| TB, Non-UK born | mg_pred_equivalent | lagged, excluding 2020-21 | 3 | 1.13 (0.94–1.35) | 0.158 | 0.378 | 28% |
+| TB, Non-UK born | mg_pred_equivalent | lead (falsification) | -1 | 1.15 (0.91–1.46) | 0.208 | 0.332 | 39% |
+| TB, Non-UK born | mg_pred_equivalent | lead (falsification) | -2 | 1.31 (0.94–1.83) | 0.101 | 0.168 | 59% |
+| TB, Non-UK born | mg_pred_equivalent | lead (falsification) | -3 | 1.29 (1.03–1.60) | 0.030 | 0.040 | 36% |
+| TB, Non-UK born | levothyroxine | lagged exposure | 1 | 1.02 (0.90–1.16) | 0.695 | 0.778 | 19% |
+| TB, Non-UK born | levothyroxine | lagged exposure | 2 | 1.02 (0.88–1.17) | 0.767 | 0.854 | 22% |
+| TB, Non-UK born | levothyroxine | lagged exposure | 3 | 1.01 (0.88–1.17) | 0.835 | 0.866 | 22% |
+| TB, Non-UK born | levothyroxine | lagged, excluding 2020-21 | 1 | 1.02 (0.90–1.16) | 0.682 | 0.798 | 19% |
+| TB, Non-UK born | levothyroxine | lagged, excluding 2020-21 | 2 | 1.02 (0.88–1.17) | 0.771 | 0.844 | 22% |
+| TB, Non-UK born | levothyroxine | lagged, excluding 2020-21 | 3 | 1.01 (0.88–1.17) | 0.835 | 0.860 | 22% |
+| TB, Non-UK born | levothyroxine | lead (falsification) | -1 | 1.00 (0.86–1.15) | 0.947 | 0.964 | 23% |
+| TB, Non-UK born | levothyroxine | lead (falsification) | -2 | 1.01 (0.88–1.16) | 0.839 | 0.878 | 21% |
+| TB, Non-UK born | levothyroxine | lead (falsification) | -3 | 1.10 (0.91–1.31) | 0.279 | 0.476 | 28% |
+| TB, UK born aged 65+ | oral_glucocorticoids | lagged exposure | 1 | 1.05 (0.75–1.46) | 0.750 | 0.790 | 58% |
+| TB, UK born aged 65+ | oral_glucocorticoids | lagged exposure | 2 | 1.06 (0.75–1.50) | 0.714 | 0.712 | 62% |
+| TB, UK born aged 65+ | oral_glucocorticoids | lagged exposure | 3 | 0.85 (0.48–1.51) | 0.539 | 0.578 | 119% |
+| TB, UK born aged 65+ | oral_glucocorticoids | lagged, excluding 2020-21 | 1 | 1.09 (0.80–1.49) | 0.524 | 0.592 | 53% |
+| TB, UK born aged 65+ | oral_glucocorticoids | lagged, excluding 2020-21 | 2 | 1.10 (0.79–1.53) | 0.512 | 0.472 | 58% |
+| TB, UK born aged 65+ | oral_glucocorticoids | lagged, excluding 2020-21 | 3 | 0.88 (0.53–1.45) | 0.572 | 0.572 | 100% |
+| TB, UK born aged 65+ | oral_glucocorticoids | lead (falsification) | -1 | 1.27 (0.88–1.85) | 0.173 | 0.198 | 68% |
+| TB, UK born aged 65+ | oral_glucocorticoids | lead (falsification) | -2 | 1.68 (1.04–2.70) | 0.036 | 0.044 | 93% |
+| TB, UK born aged 65+ | oral_glucocorticoids | lead (falsification) | -3 | 1.53 (0.93–2.54) | 0.086 | 0.108 | 101% |
+| TB, UK born aged 65+ | mg_pred_equivalent | lagged exposure | 1 | 1.06 (0.76–1.48) | 0.679 | 0.712 | 59% |
+| TB, UK born aged 65+ | mg_pred_equivalent | lagged exposure | 2 | 1.13 (0.83–1.54) | 0.388 | 0.478 | 54% |
+| TB, UK born aged 65+ | mg_pred_equivalent | lagged exposure | 3 | 0.94 (0.56–1.58) | 0.803 | 0.844 | 105% |
+| TB, UK born aged 65+ | mg_pred_equivalent | lagged, excluding 2020-21 | 1 | 1.12 (0.77–1.61) | 0.513 | 0.566 | 67% |
+| TB, UK born aged 65+ | mg_pred_equivalent | lagged, excluding 2020-21 | 2 | 1.12 (0.80–1.56) | 0.452 | 0.490 | 59% |
+| TB, UK born aged 65+ | mg_pred_equivalent | lagged, excluding 2020-21 | 3 | 0.88 (0.49–1.60) | 0.640 | 0.618 | 127% |
+| TB, UK born aged 65+ | mg_pred_equivalent | lead (falsification) | -1 | 1.28 (0.89–1.85) | 0.151 | 0.204 | 65% |
+| TB, UK born aged 65+ | mg_pred_equivalent | lead (falsification) | -2 | 1.58 (0.92–2.73) | 0.089 | 0.086 | 113% |
+| TB, UK born aged 65+ | mg_pred_equivalent | lead (falsification) | -3 | 1.30 (0.78–2.19) | 0.271 | 0.320 | 105% |
+| TB, UK born aged 65+ | levothyroxine | lagged exposure | 1 | 1.23 (1.00–1.51) | 0.051 | 0.074 | 33% |
+| TB, UK born aged 65+ | levothyroxine | lagged exposure | 2 | 1.19 (0.95–1.48) | 0.111 | 0.168 | 36% |
+| TB, UK born aged 65+ | levothyroxine | lagged exposure | 3 | 1.06 (0.89–1.27) | 0.463 | 0.534 | 28% |
+| TB, UK born aged 65+ | levothyroxine | lagged, excluding 2020-21 | 1 | 1.22 (0.99–1.50) | 0.055 | 0.068 | 33% |
+| TB, UK born aged 65+ | levothyroxine | lagged, excluding 2020-21 | 2 | 1.20 (0.96–1.50) | 0.098 | 0.152 | 36% |
+| TB, UK born aged 65+ | levothyroxine | lagged, excluding 2020-21 | 3 | 1.09 (0.91–1.30) | 0.304 | 0.406 | 28% |
+| TB, UK born aged 65+ | levothyroxine | lead (falsification) | -1 | 1.38 (1.05–1.80) | 0.025 | 0.038 | 45% |
+| TB, UK born aged 65+ | levothyroxine | lead (falsification) | -2 | 1.20 (0.85–1.71) | 0.262 | 0.382 | 63% |
+| TB, UK born aged 65+ | levothyroxine | lead (falsification) | -3 | 1.29 (0.85–1.97) | 0.195 | 0.308 | 79% |
 
 Randomisation p-values compare the cluster-robust t statistic with 499 permutations of whole regional exposure histories across regions, valid under exchangeability of those histories; p = (1 + count)/(1 + 499), so the minimum is 0.002.
 
@@ -1150,6 +1162,12 @@ Randomisation p-values compare the cluster-robust t statistic with 499 permutati
 | Systemic glucocorticoids without dexamethasone/hydrocortisone (prednisolone-equivalent mg) | 2022 | 98.2% | 1.1% | 0.6% |
 | Systemic glucocorticoids without dexamethasone/hydrocortisone (prednisolone-equivalent mg) | 2023 | 98.6% | 0.8% | 0.6% |
 | Systemic glucocorticoids without dexamethasone/hydrocortisone (prednisolone-equivalent mg) | 2024 | 98.8% | 0.5% | 0.6% |
+| Systemic glucocorticoids, oral forms only (sensitivity) | 2019 | 89.6% | 9.6% | 0.8% |
+| Systemic glucocorticoids, oral forms only (sensitivity) | 2020 | 93.9% | 5.2% | 0.9% |
+| Systemic glucocorticoids, oral forms only (sensitivity) | 2021 | 97.0% | 2.3% | 0.7% |
+| Systemic glucocorticoids, oral forms only (sensitivity) | 2022 | 98.2% | 1.1% | 0.7% |
+| Systemic glucocorticoids, oral forms only (sensitivity) | 2023 | 98.5% | 0.8% | 0.7% |
+| Systemic glucocorticoids, oral forms only (sensitivity) | 2024 | 98.8% | 0.5% | 0.7% |
 | TNF inhibitors | 2019 | 91.2% | 8.2% | 0.6% |
 | TNF inhibitors | 2020 | 95.3% | 4.1% | 0.6% |
 | TNF inhibitors | 2021 | 97.6% | 2.0% | 0.4% |
@@ -1198,6 +1216,7 @@ Randomisation p-values compare the cluster-robust t statistic with 499 permutati
 | UTLA | Calcineurin/mTOR inhibitors | 1.008 (0.996–1.020) | 1.012 (0.989–1.035) | 1.008 (0.996–1.020) | 0.994 (0.985–1.004) | 0.994 (0.985–1.004) | 0.994 (0.985–1.004) |
 | UTLA | Antiproliferatives | 0.996 (0.978–1.014) | 1.004 (0.973–1.036) | 0.996 (0.978–1.015) | 0.993 (0.978–1.008) | 0.993 (0.978–1.008) | 0.993 (0.978–1.009) |
 | UTLA | Systemic glucocorticoids without dexamethasone/hydrocortisone (prednisolone-equivalent mg) | 1.024 (1.001–1.046) | 1.018 (0.969–1.069) | 1.025 (1.003–1.048) | 1.009 (0.986–1.032) | 1.009 (0.985–1.033) | 1.010 (0.987–1.034) |
+| UTLA | Systemic glucocorticoids, oral forms only (sensitivity) | 1.011 (0.991–1.032) | 1.014 (0.965–1.065) | 1.013 (0.992–1.034) | 0.997 (0.979–1.016) | 0.997 (0.979–1.016) | 0.999 (0.980–1.018) |
 | UTLA | Dexamethasone and hydrocortisone (descriptive) | 1.008 (0.980–1.036) | 1.021 (0.963–1.082) | 1.009 (0.981–1.039) | 1.005 (0.977–1.034) | 1.005 (0.975–1.036) | 1.008 (0.979–1.038) |
 | UTLA | Low-TB-risk biologics (negative control) | 1.002 (0.986–1.018) | 0.999 (0.958–1.042) | 1.002 (0.985–1.018) | 1.004 (0.990–1.019) | 1.004 (0.990–1.019) | 1.004 (0.989–1.019) |
 | UTLA | Levetiracetam (negative control) | 1.014 (0.986–1.042) | 1.035 (0.978–1.096) | 1.014 (0.986–1.044) | 0.998 (0.975–1.021) | 0.998 (0.974–1.022) | 0.999 (0.976–1.022) |
@@ -1210,6 +1229,7 @@ Randomisation p-values compare the cluster-robust t statistic with 499 permutati
 | LTLA | Calcineurin/mTOR inhibitors | 1.008 (0.997–1.020) | 1.015 (0.994–1.036) | 1.008 (0.997–1.020) | 0.994 (0.985–1.003) | 0.994 (0.985–1.003) | 0.994 (0.985–1.003) |
 | LTLA | Antiproliferatives | 0.997 (0.982–1.013) | 1.008 (0.982–1.035) | 0.997 (0.981–1.013) | 0.997 (0.983–1.012) | 0.997 (0.986–1.009) | 0.998 (0.983–1.013) |
 | LTLA | Systemic glucocorticoids without dexamethasone/hydrocortisone (prednisolone-equivalent mg) | 1.021 (1.000–1.043) | 1.022 (0.979–1.068) | 1.022 (1.001–1.044) | 1.008 (0.990–1.026) | 1.008 (0.988–1.027) | 1.009 (0.991–1.028) |
+| LTLA | Systemic glucocorticoids, oral forms only (sensitivity) | 1.015 (0.994–1.036) | 1.023 (0.975–1.073) | 1.017 (0.996–1.038) | 1.001 (0.982–1.019) | 1.001 (0.981–1.020) | 1.002 (0.983–1.021) |
 | LTLA | Dexamethasone and hydrocortisone (descriptive) | 1.010 (0.984–1.036) | 1.019 (0.970–1.070) | 1.011 (0.984–1.039) | 1.008 (0.980–1.037) | 1.008 (0.979–1.038) | 1.011 (0.982–1.040) |
 | LTLA | Low-TB-risk biologics (negative control) | 1.003 (0.988–1.019) | 0.996 (0.959–1.036) | 1.003 (0.988–1.019) | 1.005 (0.991–1.019) | 1.005 (0.989–1.020) | 1.004 (0.991–1.018) |
 | LTLA | Levetiracetam (negative control) | 1.013 (0.988–1.039) | 1.021 (0.970–1.074) | 1.013 (0.988–1.040) | 1.003 (0.981–1.025) | 1.003 (0.980–1.027) | 1.004 (0.982–1.027) |

@@ -62,6 +62,12 @@
 | Systemic glucocorticoids without dexamethasone/hydrocortisone (prednisolone-equivalent mg) | 2022 | 98.2% | 1.1% | 0.6% |
 | Systemic glucocorticoids without dexamethasone/hydrocortisone (prednisolone-equivalent mg) | 2023 | 98.6% | 0.8% | 0.6% |
 | Systemic glucocorticoids without dexamethasone/hydrocortisone (prednisolone-equivalent mg) | 2024 | 98.8% | 0.5% | 0.6% |
+| Systemic glucocorticoids, oral forms only (sensitivity) | 2019 | 89.6% | 9.6% | 0.8% |
+| Systemic glucocorticoids, oral forms only (sensitivity) | 2020 | 93.9% | 5.2% | 0.9% |
+| Systemic glucocorticoids, oral forms only (sensitivity) | 2021 | 97.0% | 2.3% | 0.7% |
+| Systemic glucocorticoids, oral forms only (sensitivity) | 2022 | 98.2% | 1.1% | 0.7% |
+| Systemic glucocorticoids, oral forms only (sensitivity) | 2023 | 98.5% | 0.8% | 0.7% |
+| Systemic glucocorticoids, oral forms only (sensitivity) | 2024 | 98.8% | 0.5% | 0.7% |
 | TNF inhibitors | 2019 | 91.2% | 8.2% | 0.6% |
 | TNF inhibitors | 2020 | 95.3% | 4.1% | 0.6% |
 | TNF inhibitors | 2021 | 97.6% | 2.0% | 0.4% |

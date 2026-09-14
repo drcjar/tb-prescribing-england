@@ -61,10 +61,11 @@ Other groups (same scale, 95% CI):
   - inhaled corticosteroids: t−1 1.058 (0.995–1.126), t+1 0.879 (0.840–0.921); difference p < 0.001
   - insulins: t−1 1.028 (0.974–1.085), t+1 0.921 (0.866–0.980); difference p = 0.04
   - systemic oral glucocorticoids: t−1 0.990 (0.941–1.041), t+1 0.952 (0.912–0.994); difference p = 0.33.
-- Within areas, prescribing in nearby years is highly correlated, so in the two-year model the t−1 and t+1 estimates were negatively correlated (−0.16 to −0.83 across groups) and opposite signs can arise by chance.
-- With same-year prescribing added, previous-year terms were null for every group. Same-year terms were positive for several groups (for example proton pump inhibitors 1.128, 1.035–1.229), the direction expected from prescribing for undiagnosed TB, and following-year terms remained inverse.
+- In the two-year model, the correlation between the t−1 and t+1 estimates ranged from −0.83 to +0.08 across groups (oral glucocorticoids −0.38, inhaled corticosteroids −0.46), so some opposite signs could reflect collinearity.
+- With same-year prescribing added, the t−1 and t+1 estimates were almost uncorrelated (−0.23 to +0.17), previous-year terms were null for every group, and following-year terms remained inverse (for example oral glucocorticoids 0.943, 0.898–0.990; inhaled corticosteroids 0.861, 0.809–0.917). Collinearity therefore does not explain the inverse following-year associations, which are more consistent with shared trends in prescribing and notifications.
+- Same-year terms were positive in this model but not in the distributed-lag model (Table S2), so we do not interpret their sign.
 - Area-specific linear trends gave inhaled corticosteroids 1.033 (0.981–1.087).
-- **Multiplicity.** Of all {{n_est_ltla}} estimates in the lower-tier residence models, {{n_sig_ltla}} were nominally significant, more than the 5% expected by chance. They were concentrated in the negative control (levothyroxine, 6, all inverse), metformin (5, inverse) and inhaled corticosteroids (8, mostly inverse or following-year terms), a pattern that points to shared trends rather than drug effects.
+- **Multiplicity.** Of all {{n_est_ltla}} estimates in the lower-tier residence models, {{n_sig_ltla}} were nominally significant. The estimates are overlapping specifications of the same data, and in simulations with no effect the test rejected in {{sim_null_rejection_ltla}} of replicates, so this count cannot be compared with a nominal 5%. The nominal results were concentrated in the negative control (levothyroxine, 6, all inverse), metformin (5, inverse) and inhaled corticosteroids (8, mostly inverse or following-year terms), a pattern compatible with shared trends rather than drug effects.
 
 **Spatial dependence**
 - Raw TB notification rates were strongly spatially clustered in every year (Moran's I 0.25–0.39 lower-tier; 0.40–0.49 upper-tier).
@@ -76,7 +77,7 @@ Other groups (same scale, 95% CI):
 ### Oral glucocorticoid prescribing trends and changes in TB notifications
 
 **National trends, 2011–2024** (standard GP practices)
-- Systemic oral glucocorticoid items rose from 119 to 132 per 1,000 residents in 2011–2016, then fell to 111 in 2024. Most of the fall came in 2020–21 (Figure 3).
+- Systemic oral glucocorticoid items rose from 119 to 132 per 1,000 residents in 2011–2016, then fell to 111 in 2024. Most of the fall came in 2020–21 (Figure 4).
 - Prednisolone-equivalent mg per item fell from 225 to 192, so courses became smaller.
 - Oral hydrocortisone items, mainly replacement therapy, rose from 5.5 to 9.1 per 1,000.
 
@@ -102,8 +103,8 @@ Other groups (same scale, 95% CI):
 - Between areas: tracked notifications (Spearman ρ = 0.81; adjusted IRR per SD 1.23, 1.10–1.36).
 - Within areas, same year: 1.035 (1.009–1.061) per 10% increase.
 - Previous year: 1.001 (0.993–1.010). Following year, estimated jointly: 0.997 (0.986–1.007).
-- The within-area elasticity was 0.36 (95% CI 0.10–0.62; lower-tier 0.40, 0.14–0.66). It reflects apportionment error, timing (treatment of people notified late in a year continues into the next) and variation in drug volume per person treated, not linkage error alone.
-- Rifamycin/isoniazid products, which also cover latent TB and other infections, had the same elasticity (0.37, 0.22–0.51). The more specific measure gained nothing, so the attenuation is dominated by apportionment rather than drug specificity.
+- The within-area elasticity was 0.36 (95% CI 0.10–0.62; lower-tier 0.40, 0.14–0.66). It reflects apportionment error and variation in drug volume per person treated, not linkage error alone; the null following-year estimate suggests that treatment spanning calendar years contributes little.
+- Rifamycin/isoniazid products, which also cover latent TB and other infections, had a similar elasticity (0.37, 0.22–0.51). The more specific measure did not reduce attenuation, suggesting that drug specificity is not its main source.
 
 {{figure:hospital}}
 
@@ -121,10 +122,12 @@ Other groups (same scale, 95% CI):
 | Dexamethasone and hydrocortisone (descriptive) | 1.008 (0.980–1.036) | 1.010 (0.984–1.036) |
 
 - **Systemic glucocorticoids** were nominally associated with notifications in the following year at upper-tier level. The association:
-  - was not robust to clustering by principal trust (1.024, 0.999–1.049) or to excluding outcome years 2020–21 (1.018, 0.969–1.069);
+  - was not robust to clustering by principal trust (1.024, 0.999–1.049), and was similar but imprecise when outcome years 2020–21 were excluded (1.018, 0.969–1.069);
+  - was not seen for oral forms alone (1.011, 0.991–1.032; lower-tier 1.015, 0.994–1.036), so it depended on intravenous methylprednisolone pulses, a marker of acute severe disease;
   - would imply, under the model used for expected effects, that hospital glucocorticoids account for about a quarter of all notifications (an IRR of 1.024 per 10% corresponds to an attributable fraction of 24%), whereas steroid-associated immunosuppression was recorded for 0.5% of notifications [UKHSA 2025].
   We interpret it as chance or confounding by hospital activity, not a drug effect.
 - The negative controls were null: low-TB-risk biologics 1.002 (0.986–1.018); levetiracetam 1.014 (0.986–1.042).
+- Across all {{n_hosp_est}} within-area hospital estimates at both levels, {{n_hosp_sig}} were nominally significant: 12 for the two TB treatment groups (the expected same-year association), 7 for JAK inhibitors (inverse) and 3 for systemic glucocorticoids.
 - Clustering by principal trust or using elective catchments barely changed the other estimates (Table S3b).
 - JAK inhibitors showed small inverse estimates (same year 0.993, 0.987–0.999; previous year excluding outcome years 2020–21 0.978, 0.961–0.996), consistent with trends in uptake rather than protection.
 
@@ -147,12 +150,12 @@ Other groups (same scale, 95% CI):
   - An illustrative RR of 4 before latent TB screening implies an expected change of 0.10% (MDE 26 times larger at upper-tier level).
   - An RR of 1.5 with screening, which probably overstates post-screening risk, implies 0.017% (MDE 154 times larger).
   - Dividing by the positive-control elasticity widens these gaps to 72 and 426 times (Table S3).
-- Across hospital scenarios, MDEs exceeded expected effects by 26 to 520 times before attenuation.
+- Across hospital scenarios, MDEs exceeded expected effects by 26 to 520 times at upper-tier level before attenuation (23 to 522 times at lower-tier level).
 - UKHSA-recorded biological-therapy notifications imply 0.08–0.16%.
 
 **Simulation** (permutation-based, real notification counts; Table S4)
 - **Calibration.** With no effect, the two-sided test rejected in {{sim_null_rejection_ltla}} of replicates at lower-tier level ({{sim_null_rejection_utla}} upper-tier), against a nominal 5%. Within the simulation, replicate SEs (median {{sim_replicate_se_ltla}}) were close to the spread of null estimates ({{sim_null_sd_ltla}}), so the clustered test was mildly anti-conservative, not conservative.
-- **Real-data precision.** The real-data SE ({{sim_real_se_ltla}}) was larger than in the simulation, because permuting exposure trajectories across areas breaks their alignment with each area's own notification trends. Simulated power is therefore optimistic, so we also give analytic power at the real-data SE.
+- **Real-data precision.** The real-data SE ({{sim_real_se_ltla}}) was larger than in the simulation, probably because permuting exposure trajectories across areas breaks their alignment with each area's own notification trends. Simulated power is therefore optimistic, so we also give analytic power at the real-data SE.
 - **Published glucocorticoid effect (RR 4.9).** Rejection {{sim_power_rr49_ltla}} (upper-tier {{sim_power_rr49_utla}}), no more often than with no effect; power in the correct direction {{sim_direction_rr49_ltla}}, against {{sim_null_direction_ltla}} with no effect.
 - **Larger individual relative risks.** Rejection {{sim_power_rr25_ltla}} for RR 25 and {{sim_power_rr100_ltla}} for RR 100 (analytic power at the real SE for RR 100: {{sim_analytic_rr100_ltla}}).
 - **Direct population effects.** Rejection {{sim_power_irr102_ltla}}, {{sim_power_irr105_ltla}} and {{sim_power_irr110_ltla}} for IRR 1.02, 1.05 and 1.10 per 10%; analytic power at the real SE {{sim_analytic_irr102_ltla}}, {{sim_analytic_irr105_ltla}} and {{sim_analytic_irr110_ltla}} (upper-tier, IRR 1.05: {{sim_analytic_irr105_utla}}).
@@ -163,7 +166,7 @@ Other groups (same scale, 95% CI):
 ### Regional analyses by place of birth and age
 
 **Precision**
-- Regional models were very imprecise. MDEs for glucocorticoid prescribing were 45–82% per 10% increase for UK-born notifications and 46–99% for UK-born notifications at age ≥65.
+- Regional models were very imprecise. MDEs for glucocorticoid prescribing, calculated from the *t*(8) intervals, were 46–98% per 10% increase for UK-born notifications and 54–119% for UK-born notifications at age ≥65 (Table S5).
 - Under the model used for expected effects, a 10% increase in use can raise notifications by at most 10%. The expected effect for UK-born people aged ≥65 (prevalence of use 2.5%, RR 4.9) is 0.9%.
 - Any nominally significant regional estimate must therefore reflect chance or bias.
 

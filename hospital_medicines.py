@@ -38,7 +38,8 @@ OUT.mkdir(parents=True, exist_ok=True)
 
 GROUPS = ["antituberculosis_active", "antituberculosis_rifamycin_isoniazid", "tnf_inhibitor", "il6_abatacept",
           "jak_inhibitor_rheum", "rituximab", "transplant_cni_mtor", "antiproliferative", "systemic_glucocorticoid",
-          "glucocorticoid_dexamethasone_hydrocortisone", "low_tb_risk_biologic", "negative_control_levetiracetam"]
+          "systemic_glucocorticoid_oral", "glucocorticoid_dexamethasone_hydrocortisone", "low_tb_risk_biologic",
+          "negative_control_levetiracetam"]
 SOURCE_PRIORITY = {"final": 0, "provisional": 1, "retired": 2}
 YEARS = range(2019, 2025)
 K = np.log(1.1)
@@ -89,7 +90,11 @@ def trust_year_quantities():
     dex_hc = (m.new_group == "systemic_glucocorticoid") & m.substances.astype(str).str.contains(
         "dexamethasone|hydrocortisone", case=False)
     m.loc[dex_hc, "new_group"] = "glucocorticoid_dexamethasone_hydrocortisone"
-    m["pred_mg"] = np.where(m.new_group == "systemic_glucocorticoid", m.QTY * m.mg_per_unit * m.pred_equiv_factor, 0.0)
+    # sensitivity: oral forms only, since IV methylprednisolone pulses mark acute severe disease
+    oral = m[(m.new_group == "systemic_glucocorticoid") & (m.route_class == "oral")]
+    m = pd.concat([m, oral.assign(new_group="systemic_glucocorticoid_oral")], ignore_index=True)
+    m["pred_mg"] = np.where(m.new_group.isin(["systemic_glucocorticoid", "systemic_glucocorticoid_oral"]),
+                            m.QTY * m.mg_per_unit * m.pred_equiv_factor, 0.0)
     m["year"] = m.YEAR_MONTH // 100
     monthly = m.groupby(["ODS_CODE", "new_group", "YEAR_MONTH", "year"])[["ddd", "pred_mg"]].sum().clip(lower=0)
 
@@ -165,6 +170,7 @@ def build(level, admission_type="All"):
         df[f"rate_{g}"] = df.get(f"ddd_{g}", np.nan) / 365 / df.population * 1000
     # the candidate glucocorticoid exposure is prednisolone-equivalent mg per 1,000 residents per year
     df["rate_systemic_glucocorticoid"] = df["pred_mg_systemic_glucocorticoid"] / df.population * 1000
+    df["rate_systemic_glucocorticoid_oral"] = df["pred_mg_systemic_glucocorticoid_oral"] / df.population * 1000
     return df, coverage
 
 

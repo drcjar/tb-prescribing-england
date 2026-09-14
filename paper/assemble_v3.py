@@ -37,10 +37,10 @@ FIGURES = {
             "undiagnosed TB (protopathic bias) motivates the use of prescribing in the previous year."),
     "variation": ("figures/within_between_variation.png", "**Figure 2.** Within-area versus between-area variation in "
                   "log prescribing rates, 294 lower-tier authorities, 2014–2024. Orange line: a 10% increase."),
-    "ocs_trends": ("figures/ocs_national_trends.png", "**Figure 3.** Oral glucocorticoid prescribing in English primary "
+    "ocs_trends": ("figures/ocs_national_trends.png", "**Figure 4.** Oral glucocorticoid prescribing in English primary "
                    "care, 2011–2024: systemic oral glucocorticoid items, oral hydrocortisone items and "
                    "prednisolone-equivalent mg per resident."),
-    "forest": ("figures/panel_forest_ltla_residence.png", "**Figure 4.** Primary care prescribing and TB notifications, "
+    "forest": ("figures/panel_forest_ltla_residence.png", "**Figure 3.** Primary care prescribing and TB notifications, "
                "lower-tier authorities, prescribing apportioned by patient residence. Blue: prescribing in the previous "
                "year (primary). Orange: prescribing in the following year, estimated jointly (falsification)."),
     "hospital": ("figures/hospital_positive_control.png", "**Figure 5.** Positive control: hospital active-TB treatment "
@@ -93,6 +93,12 @@ def count_values():
             values[f"n_sig_{level}"] = str(int((r.p < 0.05).sum()))
             values[f"n_areas_{level}"] = str(int(primary.n_areas.max()))
             values[f"n_obs_{level}"] = f"{int(primary[primary.drug == 'oral_glucocorticoids'].n_obs.iloc[0]):,}"
+    hospital = [pd.read_csv(p) for p in sorted((ROOT / "outputs" / "hospital").glob("hospital_results_*.csv"))]
+    if hospital:
+        h = pd.concat(hospital)
+        h = h[h.design == "within-area FE"]
+        values["n_hosp_est"] = str(len(h))
+        values["n_hosp_sig"] = str(int((h.p < 0.05).sum()))
     path = ROOT / "outputs" / "steroids" / "ocs_tb_by_birthplace_regional.csv"
     if path.exists():
         r = pd.read_csv(path)
@@ -134,8 +140,8 @@ def main():
             "registered patients by LSOA; UKHSA TB reports and Fingertips; OHID acute trust catchment populations; "
             "ONS/Nomis; Home Office asylum statistics; NHS England ODS; MHCLG English Indices of Deprivation). Code, "
             "processed datasets and outputs: https://github.com/drcjar/tb-prescribing-england. Data were obtained in "
-            "September 2026: the EPD and SCMD through the NHSBSA API (SCMD months use final data where available, otherwise "
-            "provisional), and the NHS England ODS epraccur file, practice registration releases (April 2014–2024), OHID "
+            "September 2026: the EPD and SCMD through the NHSBSA API (all SCMD months analysed were final data, three of them "
+            "from an earlier, since-retired release), and the NHS England ODS epraccur file, practice registration releases (April 2014–2024), OHID "
             "acute trust catchments (2024 catchment year), and the UKHSA TB in England 2025 and regional 2024 supplementary "
             "tables as published at that time. These portals revise data between releases.\n")
     supplement = ["## Supplementary tables"] + [f"{{{{table:{n}}}}}" for n in
