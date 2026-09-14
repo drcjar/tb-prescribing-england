@@ -151,7 +151,7 @@ Other groups (same scale, 95% CI):
 - UKHSA-recorded biological-therapy notifications imply 0.08–0.16%.
 
 **Simulation** (permutation-based, real notification counts; Table S4)
-- **Calibration.** With no effect, the two-sided test rejected in {{sim_null_rejection_ltla}} of replicates at lower-tier level ({{sim_null_rejection_utla}} upper-tier), against a nominal 5%. Within the simulation, replicate SEs (median {{sim_replicate_se_ltla}}) matched the spread of null estimates ({{sim_null_sd_ltla}}), so the test was approximately calibrated, not conservative.
+- **Calibration.** With no effect, the two-sided test rejected in {{sim_null_rejection_ltla}} of replicates at lower-tier level ({{sim_null_rejection_utla}} upper-tier), against a nominal 5%. Within the simulation, replicate SEs (median {{sim_replicate_se_ltla}}) were close to the spread of null estimates ({{sim_null_sd_ltla}}), so the clustered test was mildly anti-conservative, not conservative.
 - **Real-data precision.** The real-data SE ({{sim_real_se_ltla}}) was larger than in the simulation, because permuting exposure trajectories across areas breaks their alignment with each area's own notification trends. Simulated power is therefore optimistic, so we also give analytic power at the real-data SE.
 - **Published glucocorticoid effect (RR 4.9).** Rejection {{sim_power_rr49_ltla}} (upper-tier {{sim_power_rr49_utla}}), no more often than with no effect; power in the correct direction {{sim_direction_rr49_ltla}}, against {{sim_null_direction_ltla}} with no effect.
 - **Larger individual relative risks.** Rejection {{sim_power_rr25_ltla}} for RR 25 and {{sim_power_rr100_ltla}} for RR 100 (analytic power at the real SE for RR 100: {{sim_analytic_rr100_ltla}}).

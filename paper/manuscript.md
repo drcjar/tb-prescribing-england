@@ -33,7 +33,7 @@ thesis: "A disease-specific positive control shows hospital medicines data link 
 - **Falsification and negative control.** The negative-control exposure showed inverse estimates similar in size to metformin, and following-year prescribing was inversely associated with notifications for several groups. With collinear adjacent-year exposures these tests are weak, but the pattern is compatible with residual confounding by area-specific trends.
 - **Power.**
   - For oral glucocorticoids, the MDE (6.3% per 10% increase) was about 18 times the effect expected from published relative risks (0.34%), and about 70–140 times that implied by UKHSA-recorded steroid-associated TB (0.04–0.09%).
-  - In simulations on the real counts, the null hypothesis was rejected for the published effect in 7.7% of replicates, no more often than with no effect (7.0%); simulated power exceeded analytic power at the real standard error.
+  - In simulations on the real counts, the null hypothesis was rejected for the published effect in 8.3% of replicates, no more often than with no effect (7.8%); simulated power exceeded analytic power at the real standard error.
 - **UK-born TB.** A regional association between prednisolone dose and UK-born TB was implausibly large, not significant by randomisation inference, dependent on London, and accompanied by failed negative-control and falsification tests.
 
 **Conclusions.**
@@ -146,7 +146,10 @@ available at https://github.com/drcjar/tb-prescribing-england.
    - exposure in year *t*−1 as primary;
    - lag and lead estimated jointly;
    - randomisation inference;
-   - additional covariates.
+   - additional covariates;
+   - after the second round: correction of the GP practice restriction, redefinition of the
+     hospital positive control and glucocorticoid exposure, joint models of previous, same and
+     following years, and randomisation inference on the *t* statistic.
 
 All analyses after the first pass are exploratory. Estimates from the original panel design are
 given in Table S8.
@@ -301,7 +304,7 @@ sensitivity analysis.
 ### Statistical analysis
 
 **Panel analyses.**
-- **Model:** Poisson pseudo-maximum-likelihood regression of annual notifications, with area and
+- **Model:** Poisson pseudo-maximum-likelihood regression [Santos Silva 2006] of annual notifications, with area and
   year fixed effects, a log population offset and SEs clustered by area.
 - **Primary exposure:** log prescribing rate in year *t*−1. Drug-associated TB typically presents
   within months of exposure [Keane 2001], and same-year prescribing is affected by prescribing for
@@ -611,12 +614,12 @@ Exposure: DDD-years per 1,000 residents (positive control: pyrazinamide DDD incl
 - UKHSA-recorded biological-therapy notifications imply 0.08–0.16%.
 
 **Simulation** (permutation-based, real notification counts; Table S4)
-- **Calibration.** With no effect, the two-sided test rejected in 7.0% of replicates at lower-tier level (6.8% upper-tier), against a nominal 5%. Within the simulation, replicate SEs (median 0.0154) matched the spread of null estimates (0.0158), so the test was approximately calibrated, not conservative.
+- **Calibration.** With no effect, the two-sided test rejected in 7.8% of replicates at lower-tier level (7.6% upper-tier), against a nominal 5%. Within the simulation, replicate SEs (median 0.0161) were close to the spread of null estimates (0.0166), so the clustered test was mildly anti-conservative, not conservative.
 - **Real-data precision.** The real-data SE (0.0218) was larger than in the simulation, because permuting exposure trajectories across areas breaks their alignment with each area's own notification trends. Simulated power is therefore optimistic, so we also give analytic power at the real-data SE.
-- **Published glucocorticoid effect (RR 4.9).** Rejection 7.7% (upper-tier 9.0%), no more often than with no effect; power in the correct direction 4.3%, against 3.2% with no effect.
-- **Larger individual relative risks.** Rejection 20.7% for RR 25 and 78.3% for RR 100 (analytic power at the real SE for RR 100: 54.1%).
-- **Direct population effects.** Rejection 21.0%, 85.0% and 100.0% for IRR 1.02, 1.05 and 1.10 per 10%; analytic power at the real SE 13.5%, 63.4% and 99.2% (upper-tier, IRR 1.05: 50.4%).
-- **Effect acting through same-year prescribing** (analysed with previous-year exposure). Rejection 60.7% for 1.05 and 99.7% for 1.10.
+- **Published glucocorticoid effect (RR 4.9).** Rejection 8.3% (upper-tier 8.0%), no more often than with no effect; power in the correct direction 6.0%, against 3.8% with no effect.
+- **Larger individual relative risks.** Rejection 17.7% for RR 25 and 71.0% for RR 100 (analytic power at the real SE for RR 100: 52.1%).
+- **Direct population effects.** Rejection 21.7%, 83.0% and 100.0% for IRR 1.02, 1.05 and 1.10 per 10%; analytic power at the real SE 14.3%, 64.6% and 99.4% (upper-tier, IRR 1.05: 51.0%).
+- **Effect acting through same-year prescribing** (analysed with previous-year exposure). Rejection 61.7% for 1.05 and 99.3% for 1.10.
 
 **Table 2. Minimum detectable effects (LTLA panel, residence apportionment, exposure t−1) versus expected population effects of a 10% increase in use**
 
@@ -851,7 +854,6 @@ Each journal entry was checked against PubMed metadata (via DOI→PMID conversio
 - Castellana G, Castellana M, Castellana C, et al. Inhaled corticosteroids and risk of tuberculosis in patients with obstructive lung diseases: a systematic review and meta-analysis of non-randomized studies. *Int J Chron Obstruct Pulmon Dis* 2019;14:2219–27. doi:10.2147/COPD.S209273. PMID 31576118
 - Chen YG, et al. Target trial emulation of DPP-4 inhibitors in patients with T2DM for pulmonary tuberculosis: a nationwide observational data. *BMC Med* 2025;23:587. doi:10.1186/s12916-025-04423-1. PMID 41137015
 - Davidson JA, Thomas HL, Maguire H, et al. Understanding tuberculosis transmission in the United Kingdom: findings from 6 years of mycobacterial interspersed repetitive unit-variable number tandem repeats strain typing, 2010–2015. *Am J Epidemiol* 2018;187(10):2233–42. doi:10.1093/aje/kwy119. PMID 29878041
-- Dixon WG, Hyrich KL, Watson KD, et al. Drug-specific risk of tuberculosis in patients with rheumatoid arthritis treated with anti-TNF therapy: results from the British Society for Rheumatology Biologics Register (BSRBR). *Ann Rheum Dis* 2010;69(3):522–8. doi:10.1136/ard.2009.118935. PMID 19854715
 - Fardet L, Petersen I, Nazareth I. Prevalence of long-term oral glucocorticoid prescriptions in the UK over the past 20 years. *Rheumatology (Oxford)* 2011;50(11):1982–90. doi:10.1093/rheumatology/ker017. PMID 21393338
 - Gómez-Reino JJ, Carmona L, Angel Descalzo M, et al. Risk of tuberculosis in patients treated with tumor necrosis factor antagonists due to incomplete prevention of reactivation of latent infection. *Arthritis Rheum* 2007;57(5):756–61. doi:10.1002/art.22768. PMID 17530674
 - Greenland S, Morgenstern H. Ecological bias, confounding, and effect modification. *Int J Epidemiol* 1989;18(1):269–74. doi:10.1093/ije/18.1.269. PMID 2656561
@@ -867,7 +869,6 @@ Each journal entry was checked against PubMed metadata (via DOI→PMID conversio
 - Morgenstern H. Ecologic studies in epidemiology: concepts, principles, and methods. *Annu Rev Public Health* 1995;16:61–81. doi:10.1146/annurev.pu.16.050195.000425. PMID 7639884
 - Morrison H, et al. Impact of COVID-19 on NHS tuberculosis services: results of a UK-wide survey. *J Infect* 2023;87(1):59–61. doi:10.1016/j.jinf.2023.04.004. PMID 37044162
 - National Institute for Health and Care Excellence. Tuberculosis. NICE guideline [NG33]. London: NICE; published 13 January 2016, last updated 16 February 2024. https://www.nice.org.uk/guidance/ng33 [dates confirmed from search results only; nice.org.uk returned HTTP 403 to automated access. The wording of the LTBI testing recommendation still needs checking by hand against the current text.]
-- Nguipdop-Djomo P, Rodrigues LC, Abubakar I, Mangtani P. Small-area level socio-economic deprivation and tuberculosis rates in England: an ecological analysis of tuberculosis notifications between 2008 and 2012. *PLoS One* 2020;15(10):e0240879. doi:10.1371/journal.pone.0240879. PMID 33075092
 - OpenPrescribing.net, Bennett Institute for Applied Data Science, University of Oxford. Frequently asked questions. 2026. https://openprescribing.net/faq/ [accessed date to be added; the FAQ asks academic users to cite "OpenPrescribing.net, Bennett Institute for Applied Data Science, University of Oxford, 2026", confirmed via search results because a direct fetch failed]
 - Pealing L, Wing K, Mathur R, et al. Risk of tuberculosis in patients with diabetes: population based cohort study using the UK Clinical Practice Research Datalink. *BMC Med* 2015;13:135. doi:10.1186/s12916-015-0381-9. PMID 26048371
 - Prasad V, Jena AB. Prespecified falsification end points: can they validate true observational associations? *JAMA* 2013;309(3):241–2. doi:10.1001/jama.2012.96867. PMID 23321761
@@ -956,24 +957,24 @@ Relative risks are illustrative values, not estimates. DDD-years per resident ap
 
 | Level | Scenario | Replicates | Two-sided rejection | Power, correct direction (95% MC interval) | Analytic power at real-data SE | Median estimated IRR per 10% | Median replicate SE | Null empirical SD | Real-data SE |
 |:---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| LTLA | No effect | 500 | 7.0% | 3.2% (±1.5) | 5.0% | 1.001 | 0.0154 | 0.0158 | 0.0218 |
-| LTLA | Published RR 4.9 | 300 | 7.7% | 4.3% (±2.3) | 5.5% | 1.005 | 0.0154 | 0.0158 | 0.0218 |
-| LTLA | RR 25 | 300 | 20.7% | 20.3% (±4.6) | 12.2% | 1.017 | 0.0154 | 0.0158 | 0.0218 |
-| LTLA | RR 100 | 300 | 78.3% | 78.3% (±4.7) | 54.1% | 1.046 | 0.0154 | 0.0158 | 0.0218 |
-| LTLA | IRR 1.02 per 10% | 300 | 21.0% | 21.0% (±4.6) | 13.5% | 1.019 | 0.0154 | 0.0158 | 0.0218 |
-| LTLA | IRR 1.05 per 10% | 300 | 85.0% | 85.0% (±4.0) | 63.4% | 1.052 | 0.0154 | 0.0158 | 0.0218 |
-| LTLA | IRR 1.10 per 10% | 300 | 100.0% | 100.0% (±0.0) | 99.2% | 1.101 | 0.0154 | 0.0158 | 0.0218 |
-| LTLA | IRR 1.05 per 10%, acting via concurrent year | 300 | 60.7% | 60.7% (±5.5) | 38.5% | 1.037 | 0.0154 | 0.0158 | 0.0218 |
-| LTLA | IRR 1.10 per 10%, acting via concurrent year | 300 | 99.7% | 99.7% (±0.7) | 94.1% | 1.080 | 0.0154 | 0.0158 | 0.0218 |
-| UTLA | No effect | 500 | 6.8% | 3.8% (±1.7) | 5.0% | 1.000 | 0.0163 | 0.0166 | 0.0250 |
-| UTLA | Published RR 4.9 | 300 | 9.0% | 8.0% (±3.1) | 5.2% | 1.003 | 0.0163 | 0.0166 | 0.0250 |
-| UTLA | RR 25 | 300 | 20.3% | 19.7% (±4.5) | 10.4% | 1.017 | 0.0163 | 0.0166 | 0.0250 |
-| UTLA | RR 100 | 300 | 71.7% | 71.7% (±5.1) | 43.7% | 1.046 | 0.0163 | 0.0166 | 0.0250 |
-| UTLA | IRR 1.02 per 10% | 300 | 24.7% | 24.7% (±4.9) | 14.6% | 1.023 | 0.0163 | 0.0166 | 0.0250 |
-| UTLA | IRR 1.05 per 10% | 300 | 81.3% | 81.3% (±4.4) | 50.4% | 1.050 | 0.0163 | 0.0166 | 0.0250 |
-| UTLA | IRR 1.10 per 10% | 300 | 100.0% | 100.0% (±0.0) | 96.9% | 1.100 | 0.0163 | 0.0166 | 0.0250 |
-| UTLA | IRR 1.05 per 10%, acting via concurrent year | 300 | 64.0% | 64.0% (±5.4) | 37.0% | 1.042 | 0.0163 | 0.0166 | 0.0250 |
-| UTLA | IRR 1.10 per 10%, acting via concurrent year | 300 | 99.3% | 99.3% (±0.9) | 90.4% | 1.085 | 0.0163 | 0.0166 | 0.0250 |
+| LTLA | No effect | 500 | 7.8% | 3.8% (±1.7) | 5.1% | 1.002 | 0.0161 | 0.0166 | 0.0218 |
+| LTLA | Published RR 4.9 | 300 | 8.3% | 6.0% (±2.7) | 5.2% | 1.003 | 0.0161 | 0.0166 | 0.0218 |
+| LTLA | RR 25 | 300 | 17.7% | 17.7% (±4.3) | 12.2% | 1.017 | 0.0161 | 0.0166 | 0.0218 |
+| LTLA | RR 100 | 300 | 71.0% | 71.0% (±5.1) | 52.1% | 1.045 | 0.0161 | 0.0166 | 0.0218 |
+| LTLA | IRR 1.02 per 10% | 300 | 21.7% | 21.7% (±4.7) | 14.3% | 1.019 | 0.0161 | 0.0166 | 0.0218 |
+| LTLA | IRR 1.05 per 10% | 300 | 83.0% | 83.0% (±4.3) | 64.6% | 1.052 | 0.0161 | 0.0166 | 0.0218 |
+| LTLA | IRR 1.10 per 10% | 300 | 100.0% | 100.0% (±0.0) | 99.4% | 1.102 | 0.0161 | 0.0166 | 0.0218 |
+| LTLA | IRR 1.05 per 10%, acting via concurrent year | 300 | 61.7% | 61.7% (±5.5) | 41.0% | 1.039 | 0.0161 | 0.0166 | 0.0218 |
+| LTLA | IRR 1.10 per 10%, acting via concurrent year | 300 | 99.3% | 99.3% (±0.9) | 94.2% | 1.080 | 0.0161 | 0.0166 | 0.0218 |
+| UTLA | No effect | 500 | 7.6% | 4.0% (±1.7) | 5.0% | 1.000 | 0.0167 | 0.0171 | 0.0249 |
+| UTLA | Published RR 4.9 | 300 | 8.0% | 6.7% (±2.8) | 5.1% | 1.003 | 0.0167 | 0.0171 | 0.0249 |
+| UTLA | RR 25 | 300 | 20.0% | 19.3% (±4.5) | 11.5% | 1.019 | 0.0167 | 0.0171 | 0.0249 |
+| UTLA | RR 100 | 300 | 66.7% | 66.7% (±5.3) | 46.2% | 1.047 | 0.0167 | 0.0171 | 0.0249 |
+| UTLA | IRR 1.02 per 10% | 300 | 24.7% | 24.7% (±4.9) | 13.8% | 1.022 | 0.0167 | 0.0171 | 0.0249 |
+| UTLA | IRR 1.05 per 10% | 300 | 78.0% | 78.0% (±4.7) | 51.0% | 1.051 | 0.0167 | 0.0171 | 0.0249 |
+| UTLA | IRR 1.10 per 10% | 300 | 100.0% | 100.0% (±0.0) | 96.9% | 1.100 | 0.0167 | 0.0171 | 0.0249 |
+| UTLA | IRR 1.05 per 10%, acting via concurrent year | 300 | 65.7% | 65.7% (±5.4) | 38.9% | 1.043 | 0.0167 | 0.0171 | 0.0249 |
+| UTLA | IRR 1.10 per 10%, acting via concurrent year | 300 | 99.3% | 99.3% (±0.9) | 90.7% | 1.085 | 0.0167 | 0.0171 | 0.0249 |
 
 Within the simulation, replicate SEs matched the spread of null estimates, so the test was approximately calibrated (slightly anti-conservative). Real-data SEs were larger than in the simulation because permuting exposure trajectories across areas breaks their alignment with each area's own notification trends; simulated power is therefore optimistic. Analytic power uses the median simulated estimate as the effect and the real-data SE.
 

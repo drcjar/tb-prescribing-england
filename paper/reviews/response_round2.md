@@ -25,8 +25,11 @@ match the revised manuscript (draft 4). Where we did not do what was asked, we s
    covariates, so lower exposure variance does not explain the gap. The likelier explanation is
    that permutation breaks the alignment between an area's exposure trajectory and its own
    notification trend, which the clustered SE picks up on real data. We did not implement a
-   calibrated (residualised) permutation. Simulations were rerun on the corrected panels:
-   [pending: simulation numbers].
+   calibrated (residualised) permutation. Simulations were rerun on the corrected panels. With no
+   effect, rejection was 7.8% (LTLA) and 7.6% (UTLA), so the clustered test is mildly
+   anti-conservative. For the published glucocorticoid effect, rejection was 8.3% and 8.0%. For IRR
+   1.05 per 10%, simulated rejection was 83% (LTLA) and 78% (UTLA), against analytic power at the
+   real SE of 65% and 51%.
 3. **Falsification models** (R1 N2). Previous, same and following years are now fitted jointly
    (Table S2b), with a Wald test of t−1 against t+1 and the correlation of the two estimates at
    both levels. Table 1 now shows the joint t−1 and t+1 estimates and the difference p. With
