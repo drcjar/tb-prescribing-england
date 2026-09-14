@@ -1,0 +1,76 @@
+drug,term,+ LTBI programme (t-1),+ area trends (t-1),+ asylum support (t-1),FE only (t-1),"distributed lag (t, t-1, t-2)",exclude COVID years (t-1),"lag and lead (t-1, t+1)",population covariate (t-1),primary (t-1),prior 3 years (t-3..t-1)
+all_antibacterials,exposure,,,,,0.993 (0.962-1.024),,,,,
+all_antibacterials,exposure_lag-1,,,,,,,0.974 (0.944-1.005),,,
+all_antibacterials,exposure_lag1,1.010 (0.967-1.054),1.003 (0.962-1.046),1.005 (0.965-1.047),1.015 (0.970-1.063),0.986 (0.940-1.034),1.029 (0.982-1.078),1.028 (0.984-1.074),1.016 (0.975-1.057),1.012 (0.970-1.055),
+all_antibacterials,exposure_lag2,,,,,1.037 (0.995-1.081),,,,,
+all_antibacterials,exposure_prior3,,,,,,,,,,1.027 (0.983-1.073)
+antituberculosis,exposure,,,,,1.000 (0.996-1.004),,,,,
+antituberculosis,exposure_lag-1,,,,,,,1.003 (0.999-1.006),,,
+antituberculosis,exposure_lag1,1.001 (0.998-1.005),0.999 (0.995-1.002),1.001 (0.997-1.004),1.002 (0.999-1.006),1.000 (0.997-1.004),1.001 (0.997-1.005),1.000 (0.996-1.004),1.001 (0.997-1.005),1.001 (0.997-1.004),
+antituberculosis,exposure_lag2,,,,,1.001 (0.998-1.005),,,,,
+antituberculosis,exposure_prior3,,,,,,,,,,1.003 (0.998-1.008)
+conventional_dmards,exposure,,,,,0.983 (0.947-1.019),,,,,
+conventional_dmards,exposure_lag-1,,,,,,,0.970 (0.938-1.003),,,
+conventional_dmards,exposure_lag1,1.007 (0.986-1.028),1.038 (1.003-1.075),1.005 (0.986-1.024),1.010 (0.987-1.033),1.026 (0.968-1.088),1.006 (0.984-1.027),1.033 (1.004-1.064),1.007 (0.986-1.028),1.007 (0.986-1.028),
+conventional_dmards,exposure_lag2,,,,,0.996 (0.954-1.040),,,,,
+conventional_dmards,exposure_prior3,,,,,,,,,,1.008 (0.986-1.030)
+fluoroquinolones,exposure,,,,,0.997 (0.979-1.015),,,,,
+fluoroquinolones,exposure_lag-1,,,,,,,0.989 (0.973-1.006),,,
+fluoroquinolones,exposure_lag1,1.005 (0.992-1.019),1.007 (0.993-1.022),1.003 (0.990-1.017),1.010 (0.995-1.025),1.001 (0.983-1.020),1.002 (0.987-1.016),1.011 (0.996-1.026),1.006 (0.993-1.020),1.005 (0.991-1.018),
+fluoroquinolones,exposure_lag2,,,,,1.007 (0.991-1.023),,,,,
+fluoroquinolones,exposure_prior3,,,,,,,,,,1.008 (0.994-1.022)
+inhaled_corticosteroids,exposure,,,,,0.887 (0.838-0.939),,,,,
+inhaled_corticosteroids,exposure_lag-1,,,,,,,0.884 (0.849-0.921),,,
+inhaled_corticosteroids,exposure_lag1,0.986 (0.941-1.034),1.065 (1.009-1.123),0.974 (0.931-1.020),0.965 (0.918-1.015),1.068 (0.980-1.165),0.979 (0.933-1.027),1.085 (1.025-1.148),0.989 (0.940-1.041),0.986 (0.941-1.034),
+inhaled_corticosteroids,exposure_lag2,,,,,1.024 (0.953-1.101),,,,,
+inhaled_corticosteroids,exposure_prior3,,,,,,,,,,1.003 (0.951-1.058)
+insulins,exposure,,,,,0.912 (0.849-0.979),,,,,
+insulins,exposure_lag-1,,,,,,,0.904 (0.855-0.956),,,
+insulins,exposure_lag1,0.994 (0.957-1.033),1.069 (1.001-1.140),0.995 (0.949-1.043),0.989 (0.949-1.031),1.091 (0.998-1.193),0.989 (0.948-1.032),1.078 (1.025-1.134),0.998 (0.955-1.044),0.994 (0.956-1.032),
+insulins,exposure_lag2,,,,,0.982 (0.925-1.042),,,,,
+insulins,exposure_prior3,,,,,,,,,,0.998 (0.957-1.040)
+levothyroxine,exposure,,,,,0.946 (0.882-1.015),,,,,
+levothyroxine,exposure_lag-1,,,,,,,0.949 (0.898-1.004),,,
+levothyroxine,exposure_lag1,0.968 (0.936-1.001),1.000 (0.949-1.054),0.972 (0.939-1.007),0.951 (0.923-0.980),1.065 (0.969-1.171),0.964 (0.929-1.000),1.009 (0.956-1.065),0.964 (0.933-0.996),0.965 (0.935-0.996),
+levothyroxine,exposure_lag2,,,,,0.951 (0.882-1.025),,,,,
+levothyroxine,exposure_prior3,,,,,,,,,,0.966 (0.933-0.999)
+metformin,exposure,,,,,0.976 (0.911-1.045),,,,,
+metformin,exposure_lag-1,,,,,,,0.982 (0.929-1.039),,,
+metformin,exposure_lag1,0.968 (0.934-1.004),0.967 (0.924-1.011),0.971 (0.934-1.010),0.948 (0.916-0.982),1.017 (0.929-1.113),0.964 (0.932-0.997),0.980 (0.925-1.038),0.966 (0.932-1.002),0.965 (0.932-1.000),
+metformin,exposure_lag2,,,,,0.967 (0.911-1.027),,,,,
+metformin,exposure_prior3,,,,,,,,,,0.967 (0.929-1.006)
+oral_dexamethasone,exposure,,,,,1.001 (0.991-1.011),,,,,
+oral_dexamethasone,exposure_lag-1,,,,,,,1.003 (0.992-1.013),,,
+oral_dexamethasone,exposure_lag1,1.005 (0.993-1.016),0.998 (0.987-1.009),1.004 (0.993-1.016),1.007 (0.994-1.020),1.003 (0.993-1.014),1.009 (0.997-1.021),1.003 (0.992-1.015),1.005 (0.993-1.016),1.004 (0.993-1.016),
+oral_dexamethasone,exposure_lag2,,,,,1.001 (0.991-1.011),,,,,
+oral_dexamethasone,exposure_prior3,,,,,,,,,,1.010 (0.993-1.026)
+oral_glucocorticoids,exposure,,,,,0.958 (0.920-0.998),,,,,
+oral_glucocorticoids,exposure_lag-1,,,,,,,0.959 (0.918-1.000),,,
+oral_glucocorticoids,exposure_lag1,0.992 (0.949-1.037),1.001 (0.944-1.061),0.997 (0.956-1.040),0.984 (0.936-1.034),1.014 (0.959-1.072),0.999 (0.955-1.046),1.015 (0.964-1.068),0.994 (0.951-1.038),0.991 (0.950-1.035),
+oral_glucocorticoids,exposure_lag2,,,,,1.013 (0.968-1.059),,,,,
+oral_glucocorticoids,exposure_prior3,,,,,,,,,,0.999 (0.951-1.049)
+oral_hydrocortisone,exposure,,,,,1.005 (0.987-1.023),,,,,
+oral_hydrocortisone,exposure_lag-1,,,,,,,0.999 (0.983-1.015),,,
+oral_hydrocortisone,exposure_lag1,1.000 (0.986-1.014),1.009 (0.991-1.027),0.994 (0.980-1.009),0.999 (0.983-1.015),0.998 (0.975-1.022),1.001 (0.985-1.017),1.002 (0.984-1.021),1.001 (0.987-1.017),1.000 (0.986-1.014),
+oral_hydrocortisone,exposure_lag2,,,,,0.997 (0.977-1.017),,,,,
+oral_hydrocortisone,exposure_prior3,,,,,,,,,,0.996 (0.979-1.013)
+proton_pump_inhibitors,exposure,,,,,0.940 (0.872-1.013),,,,,
+proton_pump_inhibitors,exposure_lag-1,,,,,,,0.946 (0.892-1.005),,,
+proton_pump_inhibitors,exposure_lag1,1.006 (0.964-1.050),1.005 (0.949-1.064),0.993 (0.952-1.036),0.978 (0.934-1.024),1.099 (1.002-1.205),0.999 (0.957-1.043),1.060 (1.009-1.115),1.005 (0.960-1.051),1.003 (0.962-1.045),
+proton_pump_inhibitors,exposure_lag2,,,,,0.963 (0.887-1.044),,,,,
+proton_pump_inhibitors,exposure_prior3,,,,,,,,,,1.003 (0.958-1.051)
+statins,exposure,,,,,0.972 (0.898-1.053),,,,,
+statins,exposure_lag-1,,,,,,,0.973 (0.913-1.036),,,
+statins,exposure_lag1,0.999 (0.959-1.041),1.003 (0.950-1.059),1.008 (0.966-1.052),0.976 (0.935-1.018),1.061 (0.960-1.174),0.989 (0.950-1.029),1.017 (0.963-1.074),0.997 (0.957-1.038),0.997 (0.958-1.038),
+statins,exposure_lag2,,,,,0.959 (0.888-1.037),,,,,
+statins,exposure_prior3,,,,,,,,,,0.995 (0.952-1.040)
+transplant_immunosuppressants,exposure,,,,,0.999 (0.989-1.010),,,,,
+transplant_immunosuppressants,exposure_lag-1,,,,,,,1.000 (0.992-1.007),,,
+transplant_immunosuppressants,exposure_lag1,1.000 (0.994-1.005),1.001 (0.994-1.008),1.001 (0.995-1.006),0.997 (0.991-1.004),0.999 (0.987-1.011),1.002 (0.995-1.008),1.001 (0.991-1.010),1.000 (0.994-1.006),1.000 (0.994-1.006),
+transplant_immunosuppressants,exposure_lag2,,,,,1.002 (0.993-1.011),,,,,
+transplant_immunosuppressants,exposure_prior3,,,,,,,,,,1.001 (0.994-1.008)
+vitamin_d,exposure,,,,,0.989 (0.952-1.027),,,,,
+vitamin_d,exposure_lag-1,,,,,,,0.991 (0.965-1.017),,,
+vitamin_d,exposure_lag1,1.009 (0.988-1.031),0.996 (0.970-1.022),1.010 (0.988-1.033),1.016 (0.992-1.039),1.019 (0.967-1.075),1.019 (0.997-1.042),1.014 (0.988-1.041),1.013 (0.992-1.033),1.011 (0.990-1.032),
+vitamin_d,exposure_lag2,,,,,1.001 (0.967-1.035),,,,,
+vitamin_d,exposure_prior3,,,,,,,,,,1.012 (0.991-1.034)

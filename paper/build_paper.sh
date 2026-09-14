@@ -4,14 +4,15 @@ set -euo pipefail
 cd "$(dirname "$0")"
 
 mkdir -p figures
-cp ../outputs/panel_annual/panel_annual_forest_plot.png \
-   ../outputs/panel_annual_ltla/panel_annual_ltla_forest_plot.png \
-   ../outputs/hospital/hospital_positive_control.png \
-   ../outputs/steroids/ocs_national_trends.png \
-   ../outputs/steroids/ocs_ukborn_tb_by_region.png \
-   ../outputs/panel/panel_forest_plot.png \
-   ../outputs/forest_plot.png \
-   ../outputs/steroids/ocs_tb_long_difference.png figures/
+dot -Tpng -Gdpi=200 dag.dot -o figures/dag.png
+# draft 3 figures (revised pipeline); each is copied under a stable name if present
+copy_fig() { if [ -f "$1" ]; then cp "$1" "figures/$2"; else echo "missing figure: $1" >&2; fi; }
+copy_fig ../outputs/panel_annual_ltla_residence/panel_forest_plot.png panel_forest_ltla_residence.png
+copy_fig ../outputs/panel_annual_utla_residence/panel_forest_plot.png panel_forest_utla_residence.png
+copy_fig ../outputs/descriptives/within_between_variation.png within_between_variation.png
+copy_fig ../outputs/hospital/hospital_positive_control.png hospital_positive_control.png
+copy_fig ../outputs/steroids/ocs_national_trends.png ocs_national_trends.png
+copy_fig ../outputs/steroids/ocs_ukborn_tb_by_region.png ocs_ukborn_tb_by_region.png
 
 pandoc manuscript.md -o manuscript.docx
 

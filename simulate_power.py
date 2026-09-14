@@ -19,8 +19,8 @@ Effect scenarios for systemic oral glucocorticoids:
 
 Usage: python simulate_power.py [utla|ltla] [n_null] [n_effect] [residence|postcode]
 """
+import multiprocessing as mp
 import sys
-from concurrent.futures import ProcessPoolExecutor
 from pathlib import Path
 
 import numpy as np
@@ -101,9 +101,15 @@ def main(level="ltla", n_null=500, n_effect=300, apportion="residence"):
 
     tasks = [(label, kind, value, source, 1000 * i + s) for i, (label, kind, value, source) in enumerate(SCENARIOS)
              for s in range(n_null if kind == "null" else n_effect)]
-    # memory grows over repeated GLM fits, so use two workers and recycle them often
-    with ProcessPoolExecutor(max_workers=2, initializer=_init, initargs=(df,), max_tasks_per_child=10) as pool:
-        results = pd.DataFrame(list(pool.map(one_sim, tasks, chunksize=2)))
+    # Memory grows over repeated GLM fits, so use two workers and replace them every 10 tasks.
+    # multiprocessing.Pool is used because ProcessPoolExecutor(max_tasks_per_child=...) deadlocked.
+    with mp.get_context("spawn").Pool(processes=2, initializer=_init, initargs=(df,), maxtasksperchild=10) as pool:
+        records = []
+        for i, record in enumerate(pool.imap_unordered(one_sim, tasks, chunksize=1), start=1):
+            records.append(record)
+            if i % 100 == 0:
+                print(f"  {i}/{len(tasks)} replicates done", flush=True)
+    results = pd.DataFrame(records)
     results.to_csv(OUT / f"simulations_{level}.csv", index=False)
 
     null_sd = results.loc[results.scenario == "No effect", "log_irr_10pct"].std()

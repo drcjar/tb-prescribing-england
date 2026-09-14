@@ -4,3 +4,5 @@ data/raw/
 PROGRESS.md
 *.log
 outputs_run.log
+outputs/logs/
+outputs/logs_*.txt

@@ -90,7 +90,8 @@ def table_sensitivity():
     if main is None:
         return
     models = ["primary (t-1)", "FE only (t-1)", "prior 3 years (t-3..t-1)", "+ area trends (t-1)",
-              "population covariate (t-1)", "+ LTBI programme (t-1)", "+ asylum support (t-1)", "exclude COVID years (t-1)"]
+              "population covariate (t-1)", "+ LTBI programme (t-1)", "+ asylum support (t-1)", "exclude COVID years (t-1)",
+              "outcome years 2018-2024 (t-1)", "EPD exposure only (t-1)", "ADQ measure (t-1)"]
     rows = []
     for d in DRUG_GROUPS:
         row = [LABELS[d]]
@@ -176,7 +177,11 @@ def table_power():
         path = OUT_DIR / "power_simulation" / f"power_summary_{level}.csv"
         if not path.exists():
             continue
-        for r in pd.read_csv(path).itertuples():
+        summary = pd.read_csv(path)
+        if "rejection_two_sided" not in summary.columns:  # output of the superseded simulation design
+            print(f"skip power table for {level}: old-format summary")
+            continue
+        for r in summary.itertuples():
             rows.append([level.upper(), r.scenario, r.n, f"{100 * r.rejection_two_sided:.1f}%",
                          f"{100 * r.power_correct_direction:.1f}% (±{196 * r.monte_carlo_se:.1f})", f"{r.median_irr_10pct:.3f}",
                          f"{r.null_empirical_sd:.4f}", f"{r.real_data_se:.4f}"])

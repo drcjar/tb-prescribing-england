@@ -62,7 +62,8 @@ def main(level="ltla", apportion="postcode"):
     ticks = [0.9, 0.95, 1.0, 1.05, 1.1]
     ax.set_xticks(ticks, [f"{t:g}" for t in ticks])
     ax.minorticks_off()
-    ax.set_xlim(0.87, 1.13)
+    shown = pd.concat([r for r, _, _ in series])
+    ax.set_xlim(min(0.87, shown.ci_low.min() * 0.99), max(1.13, shown.ci_high.max() * 1.01))
     ax.tick_params(axis="x", colors=MUTED)
     ax.tick_params(axis="y", length=0)
     ax.grid(axis="x", color=GRID, lw=0.8, zorder=0)
@@ -75,7 +76,7 @@ def main(level="ltla", apportion="postcode"):
     fig.suptitle(f"TB notifications and primary care prescribing: {LEVEL_NAMES[level]} local authorities, England",
                  x=0.02, ha="left", fontsize=12, color=INK)
     fig.text(0.02, 0.945, f"Annual notifications {primary.years.iloc[0]}, {primary.n_areas.max()} areas, "
-             f"{primary.n_obs.max()} area-years; prescribing apportioned by {apportion}.\n"
+             f"up to {primary.n_obs.max():,} area-years; prescribing apportioned by {apportion}.\n"
              "Poisson PML with area and year fixed effects; adjusted for age structure, international in-migration,\n"
              "HIV and diabetes prevalence (not diabetes for metformin and insulins); SEs clustered by area.",
              fontsize=9, color=SECONDARY, va="top")

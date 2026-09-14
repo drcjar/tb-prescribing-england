@@ -25,7 +25,10 @@ revised manuscript.
    - Prescribing now runs from 2011: HSCIC practice-level data for 2011–2013, NHSBSA EPD from 2014.
    - The same drug-group rules and the RO76 standard-GP-practice restriction are applied to both
      series.
-   - The level of agreement at the 2013/2014 splice is reported [R].
+   - Agreement at the 2013/2014 splice is reported: national year-on-year changes were continuous
+     for most groups, but oral glucocorticoids rose 3.3% at the splice (against 0.6% and 1.0% either
+     side) and all antibacterials were flat (against falls of 4.5% and 5.6%)
+     (`outputs/descriptives/splice_agreement_2013_2014.csv`).
 4. **Hospital medicines rebuilt** (R3 M2, M5, M10; R1 M4; R2 M2, M6).
    - Every product is classified by mechanism, with WHO defined daily doses (DDD) and patient-year
      equivalents. The groups are:
@@ -47,7 +50,7 @@ revised manuscript.
      products, including Rifater and Voractiv.
    - Rifamycin/isoniazid products, which include latent TB and non-TB use, are reported separately.
    - The within-area elasticity is reported and interpreted as an attenuation factor. It is carried
-     into the expected-effect calculations [R].
+     into the expected-effect calculations: 0.36 at UTLA and 0.40 at LTLA (Table S3).
    - The primary care antituberculosis group is now described as descriptive only, not a positive
      control.
 6. **Exposure timing** (R2 M3; R1 M1, M6).
@@ -64,7 +67,9 @@ revised manuscript.
    - Exposure trajectories are permuted across areas, and known effects are injected.
    - There are 500 null and 300 effect replicates per scenario, with Monte Carlo SEs.
    - A timing-misspecification scenario was added.
-   - The UTLA and LTLA simulations are now complete [R].
+   - The UTLA and LTLA simulations are complete (Table S4). The false-positive rate was 7.0% (LTLA) and
+     6.8% (UTLA). Rejection for the published glucocorticoid effect (RR 4.9) was 7.7% and 9.0%, no
+     different from the null. Rejection was 85% and 81% for a direct IRR of 1.05 per 10%.
 9. **Expected effects** (R1 M1; R2 M4, M7, M8; R3 M9).
    - The assumptions are stated explicitly.
    - The expected effect now also comes from three alternatives:
@@ -110,16 +115,19 @@ revised manuscript.
 **M2. Simulation noise.** Implemented.
 - Real counts are kept, and exposure trajectories are permuted across areas, so null replicates
   reproduce the real error structure.
-- The empirical null SD is compared with the real clustered SE [R].
-- Timing-misspecification scenarios are added.
+- The empirical null SD is compared with the real clustered SE: 0.016 vs 0.022 (LTLA) and 0.017 vs
+  0.025 (UTLA), so the SEs are conservative. The false-positive rate is nonetheless 7%.
+- Timing-misspecification scenarios are added. With a same-year effect of 1.05 per 10% analysed at
+  t−1, rejection is 61% (LTLA) against 85% when timing is correct.
 - There are 500 null replicates, with Monte Carlo SEs.
-- LTLA is complete.
+- LTLA and UTLA are complete.
 - The claim that the simulation "matched analytic" results was removed.
 
 **M3. Positive control too easy.** Implemented.
 - It is reframed as validating the placement of disease-specific drug volume.
-- The elasticity is reported: 0.20 for all anti-TB drug quantity and 0.41 for pyrazinamide regimens
-  before reclassification [R after reclassification].
+- The elasticity is reported. Before reclassification it was 0.20 for all anti-TB drug quantity and
+  0.41 for pyrazinamide regimens. After reclassification it is 0.36 (UTLA) and 0.40 (LTLA) for
+  active-TB treatment.
 - It is carried into the expected effects.
 - "Linked validly" is removed.
 - The failure of the primary care control is stated.
@@ -200,7 +208,9 @@ re-run.
   - the notification year
   - the discrepancy between LTLA sums and the national total (5,539 vs 5,490 in 2024)
   - local authority harmonisation
-- Sensitivity analysis restricted to outcome years 2018–2024 [R].
+- Sensitivity analysis restricted to outcome years 2018–2024: oral glucocorticoids 0.986 (0.944–1.030).
+  Inhaled corticosteroids were nominally inverse (0.948, 0.902–0.996), in the direction opposite to
+  any plausible effect (Table S1).
 
 **M2. Positive control specificity.** Implemented.
 - Pyrazinamide/ethambutol products form the positive control.
@@ -279,7 +289,9 @@ provided in the supplement.
 **M4. Items as exposure.** Implemented.
 - Prednisolone-equivalent mg and ADQ measures are added.
 - Within-area SD is reported for each measure.
-- Items versus ADQ is reported [R].
+- Items versus ADQ is reported (Table S1). ADQ-based estimates agreed with item-based estimates, for
+  example PPIs 1.000 (0.938–1.065) against 1.009, and levothyroxine 0.964 against 0.970. The EPD does
+  not populate ADQ for glucocorticoids, so prednisolone-equivalent mg is used instead.
 
 **M5. SCMD coverage.** Implemented.
 - The successor map is applied.
@@ -295,7 +307,10 @@ provided in the supplement.
 
 **M8. Splice.** Partly implemented.
 - The same rules and practice restriction are applied to both series.
-- A splice indicator is used as a sensitivity analysis [R].
+- Instead of a splice indicator, which year fixed effects would absorb, the splice sensitivity analysis
+  restricts to outcome years 2015–2024, so that all t−1 exposure comes from the EPD. Oral
+  glucocorticoids gave 0.991 (0.950–1.033) (Table S1). National changes across the splice are reported
+  (main change 3).
 - HSCIC practice-level files after 2013 were not located in the data.gov.uk inventory, so
   overlap-period concordance could not be assessed. This is stated.
 

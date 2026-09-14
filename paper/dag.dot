@@ -1,0 +1,39 @@
+// Assumed causal structure for area-level prescribing and TB notifications (manuscript draft 3).
+// Render: dot -Tpng -Gdpi=200 paper/dag.dot -o paper/figures/dag.png
+digraph DAG {
+    graph [rankdir=LR, bgcolor="#fcfcfb", fontname="Helvetica", fontsize=11, nodesep=0.25, ranksep=0.9, pad=0.3];
+    node  [shape=box, style="rounded,filled", fillcolor="#ffffff", color="#c3c2b7", fontname="Helvetica", fontsize=10, fontcolor="#0b0b0b"];
+    edge  [color="#898781", arrowsize=0.6];
+
+    subgraph cluster_fe {
+        label="Absorbed by area fixed effects"; fontcolor="#52514e"; color="#e1e0d9"; style="rounded,dashed";
+        cob  [label="Long-run country-of-birth\nand ethnicity mix"];
+        dep  [label="Deprivation"];
+        serv [label="Service configuration\n(TB services, prescribing culture)"];
+    }
+    subgraph cluster_year {
+        label="Absorbed by year fixed effects"; fontcolor="#52514e"; color="#e1e0d9"; style="rounded,dashed";
+        covid  [label="COVID-19 disruption"];
+        policy [label="National policy\n(pre-entry screening, guidance)"];
+    }
+    subgraph cluster_tv {
+        label="Measured, time-varying: adjusted"; fontcolor="#52514e"; color="#c3c2b7"; style=rounded;
+        age  [label="Age structure"];
+        mig  [label="International in-migration"];
+        hiv  [label="Diagnosed HIV prevalence"];
+        ltbi [label="LTBI programme\nfor new migrants"];
+    }
+    dm  [label="Diabetes prevalence\n(not adjusted for metformin/insulin)"];
+    srf [label="Social risk factors, diagnostic intensity,\nrecent-arrival share (unmeasured)", style="rounded,dashed", fillcolor="#fcfcfb"];
+    pro [label="Undiagnosed TB\n(protopathic prescribing)", style="rounded,dashed", fillcolor="#fcfcfb"];
+
+    rx [label="Prescribing in year t−1\n(exposure)", shape=ellipse, fillcolor="#e3efff", color="#2a78d6", penwidth=1.5];
+    tb [label="TB notifications in year t\n(outcome)", shape=ellipse, fillcolor="#fde8df", color="#eb6834", penwidth=1.5];
+
+    {cob dep serv covid age mig} -> rx;
+    {cob dep serv covid policy age mig hiv ltbi} -> tb;
+    dm -> rx; dm -> tb;
+    srf -> rx [style=dashed]; srf -> tb [style=dashed];
+    rx -> tb [color="#0b0b0b", penwidth=1.6, label="  hypothesised\n  effect", fontname="Helvetica", fontsize=9, fontcolor="#0b0b0b"];
+    tb -> pro [style=dashed]; pro -> rx [style=dashed, label=" same year", fontname="Helvetica", fontsize=9, fontcolor="#52514e"];
+}

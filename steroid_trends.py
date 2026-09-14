@@ -201,7 +201,8 @@ def regional_lag_lead(reg, outcome, outcome_label, exposure="rate_oral_glucocort
 
 
 def utla_long_difference(panel):
-    p = panel.set_index(["utla", "year"])
+    # annual UKHSA counts replace the Fingertips 3-year windows carried in the UTLA panel
+    p = panel.drop(columns=["tb_count", "tb_denominator"], errors="ignore").set_index(["utla", "year"])
     tb = pd.read_csv(PROCESSED / "utla_tb_annual.csv").set_index(["utla", "year"]).tb_count
     p = p.join(tb)
 

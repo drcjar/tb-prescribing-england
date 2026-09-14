@@ -49,6 +49,8 @@ def rate_name(group):
 def load(level, apportion="postcode"):
     suffix = "" if apportion == "postcode" else f"_{apportion}"
     panel = pd.read_csv(PROCESSED / f"{level}_panel_annual{suffix}.csv")
+    # the UTLA panel also carries Fingertips 3-year TB windows; annual counts come from the UKHSA tables
+    panel = panel.drop(columns=["tb_count", "tb_denominator", "area_name"], errors="ignore")
     tb = pd.read_csv(PROCESSED / f"{level}_tb_annual.csv")
     ltbi = pd.read_csv(PROCESSED / f"ltbi_programme_{level}.csv")
     return panel.merge(tb, on=["utla", "year"], how="left").merge(ltbi, on=["utla", "year"], how="left")
@@ -106,7 +108,13 @@ def main(level="utla", apportion="postcode"):
     out_dir.mkdir(parents=True, exist_ok=True)
     panel = load(level, apportion)
     rates = [rate_name(g) for g in DRUG_GROUPS]
+    adq_rates = []
+    for g in DRUG_GROUPS:
+        if f"adq_{g}" in panel:
+            panel[f"rate_adq_{g}"] = panel[f"adq_{g}"] / panel["population"] * 1000
+            adq_rates.append(f"rate_adq_{g}")
     df = with_lags(panel, rates, lags=[1, 2, -1])
+    df = with_lags(df, adq_rates, lags=[1])
     df = df.merge(prior_mean(panel, rates), on=["utla", "year"], how="left")
     covid_exposure = df.year.isin([2021, 2022])  # t-1 in 2020-21
     df = df[df.year.isin(OUTCOME_YEARS)]
@@ -128,6 +136,13 @@ def main(level="utla", apportion="postcode"):
         rows += estimate(df[df.year >= 2015], [lag1], covars + ["asylum_per_1000"], "+ asylum support (t-1)", drug)
         rows += estimate(df[~df.year.isin([2020, 2021]) & ~covid_exposure], [lag1], covars,
                          "exclude COVID years (t-1)", drug)
+        rows += estimate(df[df.year >= 2018], [lag1], covars, "outcome years 2018-2024 (t-1)", drug)
+        # outcome 2014 is the only year whose t-1 exposure comes from the pre-2014 HSCIC series
+        rows += estimate(df[df.year >= 2015], [lag1], covars, "EPD exposure only (t-1)", drug)
+        adq = f"rate_adq_{drug}"
+        if f"{adq}_lag1" in df and df[f"{adq}_lag1"].gt(0).sum() > 100:
+            rows += [dict(r, term="exposure_lag1") for r in
+                     estimate(df, [f"{adq}_lag1"], covars, "ADQ measure (t-1)", drug)]
         print(f"{level}/{apportion}: {drug} done", flush=True)
 
     out = pd.DataFrame(rows)
