@@ -28,6 +28,11 @@ CONFIGS = {
         out=ROOT / "outputs" / "panel_annual" / "panel_annual_forest_plot.png",
         primary="primary: t-3..t-1", primary_label="Prescribing in the 3 years before the TB year",
         outcome="Annual TB notifications (UKHSA regional reports)", unit="area-years"),
+    "annual_ltla": dict(
+        results=ROOT / "outputs" / "panel_annual_ltla" / "panel_annual_ltla_results.csv",
+        out=ROOT / "outputs" / "panel_annual_ltla" / "panel_annual_ltla_forest_plot.png",
+        primary="primary: t-3..t-1", primary_label="Prescribing in the 3 years before the TB year",
+        outcome="Annual TB notifications, lower-tier authorities", unit="area-years"),
 }
 
 

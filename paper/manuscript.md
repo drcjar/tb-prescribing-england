@@ -1,305 +1,347 @@
 ---
-title: "Can open prescribing data detect medicine effects on tuberculosis? An ecological study of primary care prescribing and TB incidence in England, 2014–2024"
+title: "Can open prescribing data detect medicine effects on tuberculosis? An ecological study of primary care and hospital prescribing and TB incidence in England"
 short_title: "Prescribing and TB in England"
 article_type: "Original research · Ecological study"
-date: "Draft, 14 September 2026"
+date: "Draft 2, 14 September 2026"
 authors: "[Authors to be confirmed]"
-thesis: "For oral corticosteroids, the smallest effect these data could detect (7.0% per 10% more prescribing) is about 20 times the effect expected from published relative risks (0.34%)."
+thesis: "Hospital TB-drug use tracks TB incidence, so the linkage works; yet for oral corticosteroids the smallest detectable effect (5.8% per 10% more prescribing) is 17 times the effect expected from published relative risks (0.34%)."
 ---
 
 ## Abstract
 
-**Background.** Several commonly prescribed medicines, notably corticosteroids and other immunosuppressants, modify individual risk of tuberculosis (TB). Openly published English prescribing and TB surveillance data could, in principle, be linked to study these relationships at population level. We assessed whether such ecological analyses can detect drug–TB associations.
+**Background.** Corticosteroids, biologics and other immunosuppressants increase individual risk of tuberculosis (TB). Openly published English prescribing and TB surveillance data could, in principle, be linked to study these relationships at population level. We assessed whether such ecological analyses can detect drug–TB associations, and why they may not.
 
-**Methods.** We linked practice-level NHSBSA English Prescribing Dataset records (2014–2024) for 12 pre-specified drug groups, including a positive and a negative control exposure, to UKHSA TB notifications. We used:
+**Methods.**
 
-- a cross-sectional analysis of 105 Sub-ICB locations;
-- panel analyses of upper-tier local authorities with annual and rolling three-year outcomes, using Poisson pseudo-maximum-likelihood with area and time fixed effects, lagged exposures and a lead-exposure falsification test;
-- analyses of change in oral corticosteroid prescribing against TB overall and in UK-born and non-UK-born people by region.
-
-We calculated minimum detectable effects (MDEs) and compared them with the population effects implied by published individual-level relative risks.
+- **Exposures.** Practice-level primary care prescribing (NHSBSA English Prescribing Dataset, 2014–2024) for 12 pre-specified drug groups, including a positive and a negative control exposure. Hospital medicines use (Secondary Care Medicines Data, 2019–2024), apportioned to local authorities with acute trust catchment populations.
+- **Outcomes.** Annual UKHSA TB notifications for 149 upper-tier and 292 lower-tier local authorities, and by region and place of birth.
+- **Designs.** Cross-sectional models, and Poisson fixed-effects panels with lagged exposures, lead-exposure falsification tests, spatial diagnostics, and analytic and simulation-based power.
 
 **Results.**
 
-- **Cross-sectional:** most drug groups were inversely associated with TB, but these associations disappeared after adjustment for country of birth and age structure.
-- **Annual panel** (1,191 area-years, 149 authorities): no drug group was associated with subsequent TB. For oral corticosteroids, the incidence rate ratio (IRR) per 10% within-area increase in prescribing was 0.985 (95% CI 0.940–1.033).
-- **Controls:** the positive control was not detected, and future vitamin D prescribing "predicted" past TB.
-- **Steroid trends:** oral corticosteroid items fell 9.7% and prednisolone milligrams per resident fell 21.2% between 2014 and 2024. These changes did not track changes in TB incidence.
-- **UK-born TB:** a regional association with prednisolone dose was implausibly large and did not survive correction for multiple testing.
-- **Power:** the MDE for oral corticosteroids was 7.0% per 10% increase in prescribing, about 20 times the expected effect (0.34%). Power to detect the expected effect was below 4% for every drug group.
+- **Positive control.** Hospital antituberculosis drug use tracked TB incidence both between areas (Spearman ρ = 0.74) and within areas over time (incidence rate ratio [IRR] 1.019, 95% CI 1.005–1.034, per 10% increase). The linkage can therefore detect a real signal.
+- **Cross-sectional analyses.** Inverse associations between primary care prescribing and TB disappeared after adjustment for country of birth and age.
+- **Within-area analyses.** No drug group was associated with subsequent TB incidence. Lower-tier oral corticosteroids gave an IRR of 0.982 (0.944–1.021) per 10% increase. Hospital anti-TNF biologics (0.993, 0.983–1.003), JAK inhibitors and systemic corticosteroids were also null.
+- **Power.** In simulations, power to detect the published oral corticosteroid effect (RR 4.9, prevalence 0.9%) was 3.0%, equal to the false-positive rate. An individual RR above 100 was needed for even 57% power.
+- **UK-born TB.** A regional association with prednisolone dose was implausibly large and did not survive multiple-testing correction. In people aged 65 and over, the design failed its falsification test.
 
-**Conclusions.** Routinely published prescribing and TB notification data cannot detect plausible population-level effects of primary care medicines on TB in England. Apparent associations mainly reflect confounding by migration, age and area-specific trends. Causal questions need individual-level linked data analysed with target trial emulation.
+**Conclusions.** Open prescribing and TB data can be linked validly, but they cannot detect plausible population-level effects of medicines on TB in England: expected effects are one to two orders of magnitude below what these designs can resolve. Causal questions need individual-level linked data.
 
 ## Introduction
 
-TB remains a public health problem in England. After falling from 2011 to a low of 4,125 notifications in 2020, TB notifications rose by 13% in 2024 to 5,480 [1]. Most cases occur in people born outside the UK, many through reactivation of infection acquired abroad [1,2]. Recent national trends have been driven largely by migration and screening policy [3,4].
+TB remains a public health problem in England. After falling to a low of 4,125 notifications in 2020, notifications rose by 13% in 2024 to 5,480 [1]. Most cases occur in people born outside the UK, many through reactivation of infection acquired abroad [1,2], and recent national trends have been driven largely by migration and screening policy [3,4].
 
-Host factors also modify TB risk, and several are shaped by commonly prescribed medicines. In individual-level studies:
+Host factors, several of them shaped by medicines, also modify TB risk:
 
-- current oral glucocorticoid use is associated with about a five-fold increase in TB risk, rising with dose [5];
-- inhaled corticosteroids and conventional disease-modifying antirheumatic drugs (DMARDs) are associated with smaller increases [6–8];
-- proton pump inhibitors (PPIs) are associated with increased risk [9];
-- statins and metformin are associated with lower risk [10,11].
+- Current oral glucocorticoid use is associated with a five-fold increase in risk, rising with dose [5].
+- Inhaled corticosteroids and conventional disease-modifying drugs carry smaller increases [6–8].
+- Anti-TNF biologics carry large increases [32].
+- Proton pump inhibitors are associated with increased risk, and statins and metformin with lower risk [9–11].
 
-Many of these estimates come from high-incidence settings and observational designs prone to confounding.
-
-England publishes monthly prescribing for every general practice, and UKHSA publishes TB notifications by area. Linking the two is an attractive, low-cost way to generate or test hypotheses about medicines and TB. Such ecological analyses face four problems:
+England publishes monthly prescribing for every general practice, hospital medicines use by trust, and TB notifications by local authority. Linking these is a low-cost way to generate or test hypotheses about medicines and TB. Such ecological analyses face four problems:
 
 - confounding by area characteristics;
-- cross-level bias, which adjustment cannot remove when effects differ between population groups [12,13];
-- power, which depends on the number of areas rather than the volume of data within them [14];
-- dataset-specific limitations: prescribing data exclude hospital medicines, practice list sizes are inflated in ways that track population mobility [15,16], and prescribing is patterned by deprivation and was disrupted by COVID-19 [17].
+- cross-level bias, which covariate adjustment cannot remove when effects differ between groups [12,13];
+- power that depends on the number of areas rather than data volume [14];
+- limitations of the datasets themselves, including inflated practice lists that track population mobility [15,16] and prescribing patterned by deprivation and disrupted by COVID-19 [17].
 
-We found no previous study linking area-level prescribing to TB. The closest analogues show two things: drugs with large individual-level effects can produce much weaker population signals, and cross-sectional and within-area associations can have opposite signs [18,19].
+We found no previous study linking area-level prescribing to TB. The closest analogues show that drugs with large individual effects can produce weak population signals, and that between- and within-area associations can have opposite signs [18,19].
 
-We asked whether published English prescribing data can detect drug–TB associations at population level. We combined cross-sectional and fixed-effects panel designs with positive and negative control exposures and a falsification test [20,21]. We also examined TB in UK-born people, which is less influenced by migration [22]. Finally, we calculated the minimum effects these designs could detect.
+We asked whether open English prescribing data can detect drug–TB associations at population level. We combined four elements:
+
+- cross-sectional and fixed-effects designs at two geographic scales;
+- primary care and hospital medicines, including a positive control that validates the linkage;
+- negative control exposures and falsification tests [20,21];
+- TB in UK-born and older people, which is less influenced by migration [22].
+
+We quantified the smallest effects these designs could detect, both analytically and by simulation.
 
 ## Methods
 
-### Design and data sources
+### Data sources
 
-All data were public, aggregate and anonymised; ethical approval was not required.
+All data were public, aggregate and anonymised; ethical approval was not required. Code and processed data are available at https://github.com/drcjar/tb-prescribing-england.
 
-**Prescribing.**
+**Primary care prescribing.**
 
-- **Source:** the NHS Business Services Authority English Prescribing Dataset (EPD) records items dispensed in the community from primary care prescriptions [30,40].
-- **Extraction:** we aggregated items by practice and month on the NHSBSA server, for January 2014–December 2024 (BNF-coded release) and June 2026 (SNOMED-coded release, cross-sectional analysis).
-- **Consistency:** national totals for June 2024 were identical in the two releases.
-- **Setting:** standard GP practices (ODS prescribing setting RO76) accounted for 98.6% of items.
-- **Dose:** the average daily quantity field is not populated for corticosteroids in the BNF-coded release. We therefore derived prednisolone dose as tablets dispensed × tablet strength.
+- **Source:** the NHS Business Services Authority English Prescribing Dataset (EPD) [30,40]. It records items dispensed in the community from primary care prescriptions.
+- **Extraction:** we aggregated items by practice and month on the NHSBSA server for January 2014–December 2024. The cross-sectional analysis used June 2026.
+- **Data checks:** the BNF- and SNOMED-coded releases gave identical national totals for June 2024. Standard GP practices (ODS prescribing setting RO76) accounted for 98.6% of items.
+- **Prednisolone dose:** because the average daily quantity field is not populated for corticosteroids, we derived dose as tablets dispensed multiplied by tablet strength.
 
-**TB outcomes.**
+**Hospital medicines.**
 
-- **Annual counts by upper-tier local authority (UTLA), 2001–2024:** UKHSA TB regional reports 2024 supplementary tables. Summed to three years, these matched the Fingertips three-year counts (149 UTLAs; r = 0.996; total ratio 1.008).
-- **Three-year counts:** Fingertips indicator 91361, for Sub-ICB locations and UTLAs.
-- **Annual counts by UKHSA region and place of birth, with Labour Force Survey denominators:** *TB in England 2025*, Supplementary Table 12 [1].
+- **Source:** NHS Secondary Care Medicines Data (SCMD), which reports monthly quantities of each product by NHS trust.
+- **Groups:** we aggregated products into six groups: antituberculosis drugs (positive control); anti-TNF biologics; other biologics with TB risk (e.g. tocilizumab, rituximab, abatacept); JAK inhibitors; systemic corticosteroids; and calcineurin inhibitors/antiproliferatives.
+- **Quantities:** rifampicin defined daily doses for antituberculosis drugs, and approximate milligrams for the other groups.
+- **Mapping to areas:** we apportioned trust quantities to local authorities using the share of each trust's catchment population living in each area (OHID acute trust catchment populations, 2024, all admissions). Trusts with catchment data accounted for 96–99% of quantity in every group.
+
+**TB notifications.**
+
+- **Annual counts by local authority, 2001–2024:** from the UKHSA TB regional reports 2024 supplementary tables, covering upper-tier (UTLA, n = 149 analysed) and lower-tier (LTLA, n = 292) authorities. Summed to three years, these matched Fingertips three-year counts (r = 0.996).
+- **Three-year counts:** Fingertips indicator 91361, for Sub-ICB locations (cross-sectional analysis).
+- **By region and place of birth, with Labour Force Survey denominators:** from *TB in England 2025*, Supplementary Table 12 [1], and by region, place of birth and age from the regional reports.
 
 **Covariates.**
 
-- Office for National Statistics (ONS) mid-year population estimates by age.
-- ONS international in-migration (components of change).
-- Census 2021 percentage born outside the UK and Index of Multiple Deprivation 2025 (cross-sectional analysis only).
-- Diagnosed HIV prevalence and Quality and Outcomes Framework (QOF) diabetes prevalence (Fingertips).
+- ONS mid-year population estimates by age.
+- ONS international in-migration.
+- Home Office asylum support by local authority (2014 onwards).
+- Census 2021 country of birth.
+- Index of Multiple Deprivation 2025.
+- Diagnosed HIV and QOF diabetes prevalence.
 
-**Geography.**
+**Geography.** Practices were assigned to local authorities by postcode (ONS Postcode Directory). Denominators were resident populations, which avoids list inflation.
 
-- Practices were assigned to local authorities by postcode (ONS Postcode Directory) and aggregated to April 2023 UTLAs.
-- Sub-ICB TB data were re-apportioned from 2024 to 2026 boundaries using LSOA population weights.
-- Denominators were resident populations, which avoids list inflation.
-
-**Exposures.** Twelve groups were specified before analysis:
+**Primary care exposure groups.** Twelve groups were specified before analysis:
 
 - **Positive control:** antituberculosis drugs.
-- **Candidate groups:** oral corticosteroids; inhaled corticosteroids; non-biologic immunosuppressants (methotrexate, leflunomide, azathioprine, mycophenolate, calcineurin and mTOR inhibitors, JAK inhibitors); PPIs; statins; metformin; insulins; fluoroquinolones; all antibacterials; vitamin D.
+- **Candidate drugs:** oral corticosteroids; inhaled corticosteroids; non-biologic immunosuppressants; proton pump inhibitors; statins; metformin; insulins; fluoroquinolones; all antibacterials; vitamin D.
 - **Negative control:** levothyroxine.
-
-Eye, ear, nose and skin preparations were excluded.
 
 ### Statistical analysis
 
-**Cross-sectional analysis.** Negative binomial regression of 2022–24 TB counts (population offset; robust SEs) on each standardised prescribing rate, unadjusted and adjusted for percentage non-UK-born, deprivation, age structure and diabetes prevalence.
+**Cross-sectional analysis.** Negative binomial regression of TB counts on each standardised prescribing rate, with a population offset and robust standard errors. Models were fitted unadjusted and adjusted for percentage non-UK-born, deprivation, age structure and diabetes prevalence. The primary care analysis used Sub-ICBs (2022–24); the hospital analysis used local authorities (2019–24).
 
 **Panel analyses.**
 
-- **Model:** Poisson pseudo-maximum-likelihood regression [23] of TB counts on the log mean prescribing rate, with UTLA and year fixed effects, a log population offset and SEs clustered by UTLA.
-- **Primary exposure window:** years *t*−3 to *t*−1 before the outcome year *t* (annual outcomes, 2017–2024).
-- **Time-varying covariates:** age structure, international in-migration (outcome and exposure windows), HIV prevalence and diabetes prevalence.
-- **Sensitivity analyses:** one-year and concurrent exposure; exclusion of 2020–21; rolling three-year outcomes with exposure *t*−5 to *t*−3.
-- **Falsification test:** prescribing in the three years *after* the outcome year.
+- **Model:** Poisson pseudo-maximum-likelihood regression [23] of annual TB counts, with area and year fixed effects, a log population offset and SEs clustered by area, fitted separately for UTLAs and LTLAs.
+- **Primary care exposure:** the log mean prescribing rate in years *t*−3 to *t*−1 before outcome year *t* (outcomes 2017–2024).
+- **Hospital exposures:** analysed in the concurrent year, at lag *t*−1 (the causally ordered exposure) and at lead *t*+1.
+- **Time-varying covariates:** age structure, international in-migration, HIV prevalence and diabetes prevalence.
+- **Sensitivity analyses:** one-year and concurrent windows; exclusion of 2020–21; additional adjustment for asylum support; rolling three-year outcomes.
+- **Falsification test:** exposure in the three years after the outcome year.
 - **Effect measure:** IRR per 10% within-area increase in prescribing, with Benjamini–Hochberg false discovery rate (FDR) correction across drug groups.
+- **Spatial diagnostics:** Moran's I of area-mean residuals, using 5-nearest-neighbour weights and 999 permutations.
 
 **Oral corticosteroid change analyses.**
 
-- **National:** correlations of annual levels and year-on-year changes (lags 0–3).
-- **Regional:** Poisson region and year fixed-effects models of annual TB (lags 1–3), adjusted for in-migration and age. With nine clusters, inference used cluster-robust SEs with *t*(8) critical values, and we report leave-one-region-out ranges.
-  - Outcomes: all TB, UK-born TB and non-UK-born TB.
-  - Exposures: oral corticosteroid items and prednisolone milligrams per resident.
-  - Checks: levothyroxine, PPIs and statins as comparison exposures; lead exposures; exclusion of 2020–21.
-- **Local authority long differences:** changes between 2014–16 and 2019–21 (prescribing) and between 2014–16 and 2022–24 (TB).
+- **National level:** annual correlations between prescribing and TB incidence.
+- **Regional level:** Poisson region and year fixed-effects models (9 regions; lags 1–3) for all TB, UK-born TB, non-UK-born TB and UK-born TB at age 65 and over. With 9 clusters, we used cluster-robust SEs with *t*(8) critical values and leave-one-region-out estimates. Checks included lead exposures, levothyroxine, PPIs and statins as comparison exposures, and exclusion of 2020–21.
+- **Local authority level:** long differences, comparing change in prescribing with change in TB incidence.
 
-**Minimum detectable effects.** From the primary panel model, the MDE for a 10% increase in prescribing, with 80% power and two-sided α = 0.05, is exp(2.80 × SE).
+**Minimum detectable effects and power.**
 
-We assumed incidence ∝ 1 + *p*(RR − 1), where *p* is the prevalence of use and RR the published individual-level relative risk (Table 2 sources [5,6,8,9,10,11,24–29]). Under that assumption, a 10% relative increase in use gives an expected population IRR of [1 + 1.1*p*(RR − 1)] / [1 + *p*(RR − 1)].
-
-This assumption ignores confounding and ecological bias, so it favours detection. We also report:
-
-- the population attributable fraction;
-- power to detect the expected effect;
-- the RR needed for 80% power.
+- **Analytic MDE:** the MDE for a 10% increase in prescribing (80% power, two-sided α = 0.05) is exp(2.80 × SE), taken from the primary models.
+- **Expected effect:** assuming incidence ∝ 1 + *p*(RR − 1), a 10% relative increase in use gives an expected population IRR of [1 + 1.1*p*(RR − 1)] / [1 + *p*(RR − 1)], where *p* is prevalence of use and RR the individual-level relative risk (sources [5,6,8,9,10,11,24–29]). This ignores confounding and ecological bias, so it favours detection.
+- **Simulation-based power:** we kept the real UTLA panel (areas, years, populations, covariates and oral corticosteroid prescribing) and replaced TB counts with counts drawn from the fitted null model, overdispersion matched to the data, and a known prescribing effect. We fitted the primary model to 200 simulated datasets per scenario.
 
 Analyses used Python 3.14 (pandas, statsmodels).
 
 ## Results
 
-### Prescribing and TB trends
+### Trends
 
-TB incidence in England fell from 11.9 per 100,000 in 2014 to 7.3 in 2020, then rose to 9.4 in 2024. Between 2014 and 2024, prescribing per 1,000 residents changed as follows:
+TB incidence in England fell from 11.9 per 100,000 in 2014 to 7.3 in 2020, then rose to 9.4 in 2024.
 
-- **Rose:** PPIs (+35%), statins (+31%), metformin (+30%) and vitamin D (+42%).
-- **Fell:** oral corticosteroids (−10%), immunosuppressants (−10%), fluoroquinolones (−51%) and antituberculosis drugs (−67%).
+**Primary care prescribing, per 1,000 residents, 2014–2024:**
 
-Within-area variation was small relative to between-area variation. For oral corticosteroids, the SD of the area-demeaned log rate was 0.07, against 0.31 between areas.
+- **Rose:** proton pump inhibitors (+35%), statins (+31%) and vitamin D (+42%).
+- **Fell:** oral corticosteroids (−10%) and fluoroquinolones (−51%).
 
-### Cross-sectional analysis
+Within-area variation was small relative to between-area variation: the SD of the area-demeaned log oral corticosteroid rate was 0.07, against 0.31 between areas.
 
-In 105 Sub-ICB locations, TB incidence was strongly associated with the percentage of residents born outside the UK (IRR per SD 1.40) and inversely with the percentage aged 65 and over (0.67).
+**Hospital use, 2019–2024:**
 
-- **Unadjusted:** almost every drug group was inversely associated with TB (Table 1), e.g. oral corticosteroids 0.59 (0.53–0.66) per SD.
-- **Adjusted:** all estimates moved close to the null, and none survived FDR correction (all *q* ≥ 0.20). The negative control levothyroxine (0.94, 0.88–1.00) was as "significant" as PPIs (0.89, 0.80–1.00).
+- **Rose:** anti-TNF biologics (+64%) and JAK inhibitors (about 13-fold).
+- **Stable:** systemic corticosteroids (+15%, with a 2020 dip).
+
+### Positive control: hospital antituberculosis drugs
+
+Hospital antituberculosis drug use tracked TB incidence (Figure 1).
+
+- **Between areas:** UTLA Spearman ρ = 0.74. The IRR per SD was 1.71 (1.44–2.02) unadjusted and 1.14 (1.04–1.25) adjusted.
+- **Within areas over time:**
+  - Same-year use: 1.019 (1.005–1.034) per 10% increase.
+  - Following-year use: 1.017 (1.003–1.032), consistent with treatment continuing into the next year.
+  - Previous-year use: 0.999 (0.989–1.009), not associated.
+- **Lower-tier areas:** results were similar (same-year 1.019, 1.005–1.033).
+
+In contrast, primary care antituberculosis prescribing, which is rare, did not track TB incidence.
+
+![**Figure 1.** Positive control. Hospital antituberculosis drug use (rifampicin defined daily doses per 1,000 residents, apportioned by trust catchment) and TB incidence across 149 upper-tier local authorities, 2019–2024. Left: between areas (period means). Right: within areas, after removing area and year means.](figures/hospital_positive_control.png)
+
+### Cross-sectional analyses
+
+- **Primary care prescribing:** in 105 Sub-ICB locations, TB incidence was associated with the percentage of residents born outside the UK (IRR per SD 1.40) and inversely with the percentage aged 65 and over (0.67). Almost every drug group was inversely associated with TB before adjustment (e.g. oral corticosteroids 0.59, 0.53–0.66 per SD). After adjustment, estimates were close to the null (Table 1).
+- **Hospital medicines:** across UTLAs, adjusted estimates were null for anti-TNF biologics (0.96, 0.91–1.02), other biologics, JAK inhibitors and systemic corticosteroids. Calcineurin inhibitors/antiproliferatives showed a positive association (1.06, 1.00–1.11), consistent with confounding by the catchments of transplant centres; the within-area estimate was null.
 
 ### Panel analyses
 
-**Primary model.** The annual panel included 1,191 area-years from 149 UTLAs. No drug group was associated with TB incidence (Table 1, Figure 1; all *q* ≥ 0.67). For example:
+**Primary care prescribing.** No drug group was associated with TB incidence at either geographic scale (Table 1, Figure 2; all *q* ≥ 0.65).
 
-- oral corticosteroids 0.985 (0.940–1.033);
-- immunosuppressants 1.010 (0.986–1.035);
-- inhaled corticosteroids 0.968 (0.910–1.030).
+- **Oral corticosteroids:** 0.982 (0.944–1.021) across 292 LTLAs (2,335 area-years) and 0.986 (0.940–1.034) across 149 UTLAs.
+- **Sensitivity analyses:** additional adjustment for asylum support, exclusion of 2020–21, alternative exposure windows and rolling three-year outcomes did not change the results.
+- **Falsification test:** future vitamin D prescribing was associated with past TB (UTLA 1.026, 1.001–1.052).
+- **Total prescribing volume:** adjusting for it produced spurious inverse associations, including for the negative control, so this adjustment was not used.
+- **Spatial diagnostics:** raw TB rates were strongly spatially autocorrelated (Moran's I 0.49 UTLA, 0.42 LTLA; *p* = 0.001), but model residuals were not (0.04, *p* = 0.38; −0.01, *p* = 0.70).
 
-The positive control was not detected: antituberculosis drugs gave 1.004 (0.999–1.010).
+**Hospital medicines.** Within-area estimates with exposure in the previous year were null and precise (Table 3):
 
-**Sensitivity analyses.** One-year and concurrent exposures, exclusion of 2020–21 and rolling three-year outcomes gave similar results; for example, rolling-window oral corticosteroids were 1.001 (0.951–1.055).
+- anti-TNF biologics 0.993 (0.983–1.003);
+- other biologics 0.994 (0.982–1.006);
+- JAK inhibitors 0.995 (0.989–1.001);
+- systemic corticosteroids 1.003 (0.989–1.018).
 
-**Falsification test.** Future vitamin D prescribing was associated with past TB (1.026, 1.001–1.052). Without covariates, future inhaled corticosteroid, insulin and levothyroxine prescribing were too. Adjusting for total prescribing volume produced a spurious inverse association for the negative control (0.940, 0.895–0.988), so this adjustment was not used.
+![**Figure 2.** Fixed-effects panel estimates for primary care prescribing and annual TB notifications in 292 lower-tier local authorities. Blue: prescribing in the three years before the outcome year (primary analysis). Orange: prescribing in the three years after (falsification test). IRR per 10% within-area increase; area and year fixed effects; adjusted for age structure, in-migration, HIV and diabetes prevalence.](figures/panel_annual_ltla_forest_plot.png)
 
-![**Figure 1.** Fixed-effects panel estimates for annual TB notifications by upper-tier local authority. Blue: prescribing in the three years before the outcome year (primary analysis). Orange: prescribing in the three years after (falsification test). IRR per 10% within-area increase in prescribing; area and year fixed effects; adjusted for age structure, in-migration, HIV and diabetes prevalence.](figures/panel_annual_forest_plot.png)
+**Table 1.** Associations between primary care prescribing and TB incidence. Cross-sectional: IRR per SD of prescribing rate (105 Sub-ICBs). Panels: IRR per 10% within-area increase, exposure in the three prior years (annual TB, 2017–2024).
 
-**Table 1.** Associations between prescribing and TB incidence across designs. Cross-sectional: IRR per SD of prescribing rate (105 Sub-ICBs, TB 2022–24, prescribing June 2026). Panel: IRR per 10% within-area increase (149 UTLAs, annual TB 2017–2024).
+| Drug group | Cross-sectional, crude | Cross-sectional, adjusted | UTLA panel (149) | LTLA panel (292) | UTLA falsification (next 3 years) |
+|:---|:---|:---|:---|:---|:---|
+| Antituberculosis (positive control) | 0.96 (0.60–1.51) | 0.89 (0.79–1.00) | 1.004 (0.999–1.009) | 1.002 (0.998–1.006) | 1.001 (0.996–1.007) |
+| Oral corticosteroids | 0.59 (0.53–0.66) | 0.97 (0.82–1.14) | 0.986 (0.940–1.034) | 0.982 (0.944–1.021) | 1.003 (0.955–1.054) |
+| Inhaled corticosteroids | 0.73 (0.64–0.83) | 1.02 (0.90–1.15) | 0.968 (0.909–1.030) | 0.975 (0.925–1.027) | 0.967 (0.914–1.023) |
+| Immunosuppressants | 0.68 (0.61–0.77) | 1.01 (0.93–1.09) | 1.010 (0.985–1.035) | 1.002 (0.982–1.022) | 1.006 (0.977–1.035) |
+| Proton pump inhibitors | 0.66 (0.59–0.75) | 0.89 (0.80–1.00) | 0.967 (0.914–1.023) | 0.969 (0.918–1.022) | 1.046 (0.993–1.102) |
+| Statins | 0.67 (0.60–0.75) | 0.93 (0.85–1.02) | 1.012 (0.951–1.076) | 1.001 (0.948–1.058) | 1.033 (0.983–1.086) |
+| Metformin | 1.24 (1.05–1.46) | 0.98 (0.89–1.08) | 0.979 (0.928–1.032) | 0.979 (0.934–1.026) | 1.015 (0.972–1.060) |
+| Insulins | 0.94 (0.75–1.18) | 0.97 (0.87–1.08) | 0.989 (0.924–1.058) | 0.979 (0.927–1.034) | 0.951 (0.901–1.005) |
+| Fluoroquinolones | 0.77 (0.66–0.89) | 0.97 (0.90–1.03) | 1.000 (0.979–1.021) | 0.999 (0.981–1.018) | 0.997 (0.977–1.017) |
+| All antibacterials | 0.65 (0.56–0.74) | 0.89 (0.78–1.01) | 0.995 (0.952–1.041) | 0.983 (0.947–1.021) | 1.010 (0.973–1.048) |
+| Vitamin D | 0.73 (0.65–0.83) | 0.95 (0.88–1.02) | 1.010 (0.982–1.039) | 1.003 (0.979–1.028) | 1.026 (1.001–1.052) |
+| Levothyroxine (negative control) | 0.64 (0.57–0.72) | 0.94 (0.88–1.00) | 0.967 (0.928–1.008) | 0.975 (0.937–1.013) | 0.973 (0.929–1.019) |
 
-| Drug group | Cross-sectional, crude | Cross-sectional, adjusted | Panel, prior 3 years | Panel, next 3 years (falsification) |
-|:---|:---|:---|:---|:---|
-| Antituberculosis (positive control) | 0.96 (0.60–1.51) | 0.89 (0.79–1.00) | 1.004 (0.999–1.010) | 1.001 (0.996–1.007) |
-| Oral corticosteroids | 0.59 (0.53–0.66) | 0.97 (0.82–1.14) | 0.985 (0.940–1.033) | 1.003 (0.955–1.054) |
-| Inhaled corticosteroids | 0.73 (0.64–0.83) | 1.02 (0.90–1.15) | 0.968 (0.910–1.030) | 0.967 (0.914–1.023) |
-| Immunosuppressants | 0.68 (0.61–0.77) | 1.01 (0.93–1.09) | 1.010 (0.986–1.035) | 1.006 (0.977–1.035) |
-| Proton pump inhibitors | 0.66 (0.59–0.75) | 0.89 (0.80–1.00) | 0.966 (0.913–1.022) | 1.046 (0.993–1.102) |
-| Statins | 0.67 (0.60–0.75) | 0.93 (0.85–1.02) | 1.009 (0.949–1.073) | 1.033 (0.983–1.086) |
-| Metformin | 1.24 (1.05–1.46) | 0.98 (0.89–1.08) | 0.977 (0.927–1.031) | 1.015 (0.972–1.060) |
-| Insulins | 0.94 (0.75–1.18) | 0.97 (0.87–1.08) | 0.992 (0.928–1.060) | 0.951 (0.901–1.005) |
-| Fluoroquinolones | 0.77 (0.66–0.89) | 0.97 (0.90–1.03) | 1.000 (0.979–1.021) | 0.997 (0.977–1.017) |
-| All antibacterials | 0.65 (0.56–0.74) | 0.89 (0.78–1.01) | 0.995 (0.952–1.040) | 1.010 (0.973–1.048) |
-| Vitamin D | 0.73 (0.65–0.83) | 0.95 (0.88–1.02) | 1.011 (0.983–1.040) | 1.026 (1.001–1.052) |
-| Levothyroxine (negative control) | 0.64 (0.57–0.72) | 0.94 (0.88–1.00) | 0.967 (0.928–1.008) | 0.973 (0.929–1.019) |
+### Minimum detectable effects and power
 
-### Minimum detectable effects
+**Analytic MDEs.** Designs could detect only effects far larger than those implied by published relative risks (Table 2).
 
-For oral corticosteroids, a 10% increase in use would be expected to raise TB incidence by 0.34%, while the primary panel could detect only a 7.0% change (Table 2). Power was 3.4%, and an individual RR of about 257 would have been needed for 80% power.
+- **Oral corticosteroids:** a 10% increase in use would be expected to raise TB incidence by 0.34%. The LTLA panel could detect only 5.8% (power 3.7%). An individual RR of about 153 would be needed for 80% power.
+- **Other primary care groups:** the MDE exceeded the expected effect 15- to 283-fold. For protective associations (statins, metformin), no individual effect could have produced a detectable change.
+- **Hospital medicines:** within-area models were more precise (MDE 0.9–2.1% per 10%). Expected effects were still 5–87 times smaller under illustrative assumptions; for example, anti-TNF biologics with RR 4–15 and prevalence 0.2% imply changes of 0.06–0.27%.
 
-For the other groups, the MDE exceeded the expected effect by 16-fold (statins) to 345-fold (immunosuppressants). For the protective associations (statins, metformin), no individual effect, even complete protection, could have produced a detectable change.
+**Simulation.** Results matched the analytic calculations.
 
-**Table 2.** Minimum detectable effects of the annual panel versus expected population effects. Percentages refer to the change in TB incidence for a 10% within-area increase in prescribing.
+- **Calibration:** with no true effect the false-positive rate was 4.5%, and estimates were unbiased.
+- **Published RR (4.9):** power was 3.0%.
+- **Larger individual effects:** RR 25 gave 11% power and RR 100 gave 57%.
+- **Direct population effects:** an IRR of 1.05 per 10% increase gave 75% power, and 1.10 gave 100%.
+
+**Table 2.** Minimum detectable effects (LTLA panel) versus expected population effects. Changes in TB incidence refer to a 10% within-area increase in prescribing.
 
 | Drug group | Individual RR | Prevalence of use | PAF | Expected change | MDE | MDE ÷ expected | Power | RR for 80% power |
 |:---|---:|---:|---:|---:|---:|---:|---:|---:|
-| Oral corticosteroids | 4.9 | 0.9% | 3.4% | 0.34% | 7.0% | 20 | 3.4% | 257 |
-| Inhaled corticosteroids | 1.27 | 5.2% | 1.4% | 0.14% | 9.2% | 64 | 2.8% | 236 |
-| Immunosuppressants | 1.2 | 0.5%^a^ | 0.1% | 0.01% | 3.5% | 345 | 2.5% | 109 |
-| Proton pump inhibitors | 1.28 | 14.2% | 3.8% | 0.38% | 8.4% | 21 | 3.4% | 38 |
-| Statins | 0.60 | 12.8% | −5.4% | −0.54% | 9.1% | 16 | 3.7% | not attainable^b^ |
-| Metformin | 0.51 | 4.4% | −2.2% | −0.22% | 7.9% | 34 | 3.0% | not attainable^b^ |
+| Oral corticosteroids | 4.9 | 0.9% | 3.4% | 0.34% | 5.8% | 17 | 3.7% | 153 |
+| Inhaled corticosteroids | 1.27 | 5.2% | 1.4% | 0.14% | 7.8% | 54 | 2.8% | 69 |
+| Immunosuppressants | 1.2 | 0.5%^a^ | 0.1% | 0.01% | 2.9% | 283 | 2.6% | 81 |
+| Proton pump inhibitors | 1.28 | 14.2% | 3.8% | 0.38% | 8.0% | 20 | 3.4% | 28 |
+| Statins | 0.60 | 12.8% | −5.4% | −0.54% | 8.2% | 15 | 3.9% | not attainable^b^ |
+| Metformin | 0.51 | 4.4% | −2.2% | −0.22% | 7.0% | 31 | 3.1% | not attainable^b^ |
 
-^a^ Assumed from EPD item volumes; no verified UK prevalence found. ^b^ Even RR = 0 changes incidence by less than the MDE. PAF, population attributable fraction; MDE, minimum detectable effect (80% power, α = 0.05).
+^a^ Assumed from EPD item volumes. ^b^ Even RR = 0 changes incidence by less than the MDE. PAF, population attributable fraction; MDE, minimum detectable effect (80% power, α = 0.05).
 
-### Oral corticosteroids and changes in TB incidence
+**Table 3.** Hospital medicines and TB incidence, UTLAs, 2019–2024. Within-area IRR per 10% increase; MDE per 10% increase with exposure in the previous year. Expected changes use illustrative assumptions of individual RR and prevalence.
 
-**Trends.** Oral corticosteroid items fell from 141.5 to 127.7 per 1,000 residents between 2014 and 2024 (Figure 2).
+| Drug group | Within-area, same year | Within-area, previous year | Within-area, next year | MDE | Expected change (assumption) |
+|:---|:---|:---|:---|---:|:---|
+| Antituberculosis (positive control) | 1.019 (1.005–1.034) | 0.999 (0.989–1.009) | 1.017 (1.003–1.032) | 1.5% | — |
+| Anti-TNF biologics | 0.993 (0.983–1.002) | 0.993 (0.983–1.003) | 1.006 (0.991–1.022) | 1.5% | 0.06–0.27% (RR 4–15, 0.2%) |
+| Other biologics | 0.992 (0.980–1.004) | 0.994 (0.982–1.006) | 1.007 (0.990–1.024) | 1.7% | 0.02% (RR 2, 0.2%) |
+| JAK inhibitors | 0.990 (0.984–0.996) | 0.995 (0.989–1.001) | 0.995 (0.988–1.002) | 0.9% | 0.02% (RR 4, 0.05%) |
+| Systemic corticosteroids | 0.993 (0.980–1.006) | 1.003 (0.989–1.018) | 1.005 (0.985–1.025) | 2.1% | 0.34% (RR 4.9, 0.9%) |
+| Calcineurin inhibitors/antiproliferatives | 0.995 (0.987–1.004) | 1.003 (0.993–1.012) | 0.997 (0.986–1.009) | 1.4% | 0.06% (RR 3, 0.3%) |
 
-- Prednisolone, 92% of items, fell 12.9%.
-- Prednisolone milligrams per resident fell 21.2%, because courses also became smaller: milligrams per item fell from 205 to 186.
-- Hydrocortisone, used mainly as replacement therapy, rose 41.9%.
-- Most of the decline occurred in 2020–21.
+### Oral corticosteroids and TB by place of birth and age
 
-**National level.** Annual oral corticosteroid prescribing and TB incidence were correlated in levels (r = 0.63), driven by the shared 2020 dip. Year-on-year changes were not correlated at any lag (all *p* ≥ 0.2).
+**Trends.** Oral corticosteroid items fell from 141.5 to 127.7 per 1,000 residents between 2014 and 2024. Prednisolone milligrams per resident fell 21.2%, because courses also became smaller (Figure 3). Changes in prescribing were not associated with changes in TB incidence in any of the following:
 
-**Regional level (all TB).** Adjusted estimates were null, e.g. lag 1: 0.997 (0.788–1.260) per 10%.
+- nationally (year-on-year changes, all *p* ≥ 0.2);
+- across regions (adjusted lag 1: 0.997, 0.788–1.260);
+- across 138 UTLAs (long differences 1.000, 0.934–1.072).
 
-**Local authority long differences.** Across 138 UTLAs, changes in prescribing were unrelated to changes in TB (Spearman ρ = −0.13; adjusted ratio 1.000, 0.934–1.072).
+![**Figure 3.** Oral corticosteroid prescribing in English primary care, 2014–2024: prednisolone items, other oral corticosteroid items, and prednisolone tablet milligrams per resident.](figures/ocs_national_trends.png)
 
-![**Figure 2.** Oral corticosteroid prescribing in English primary care, 2014–2024: items per 100,000 residents per month by substance (top) and prednisolone tablet milligrams dispensed per resident (bottom).](figures/ocs_national_trends.png)
+**Non-UK-born TB** (36,633 notifications, 2015–2024). Oral corticosteroid prescribing was not associated with TB. The falsification test failed: future prescribing was associated with past TB (lead 3: 1.36, 1.03–1.80).
 
-**Non-UK-born TB.** 36,633 notifications in 2015–2024. Oral corticosteroid prescribing was not associated with TB at any lag. The falsification test failed: future prescribing was associated with past TB (items, lead 3: 1.36, 1.03–1.80; PPIs 1.25, 1.02–1.53).
+**UK-born TB** (11,876 notifications).
 
-**UK-born TB.** 11,876 notifications in 2015–2024.
+- **Prednisolone milligrams per resident** were associated with TB at lags of 2 years (1.37, 1.08–1.73) and 3 years (1.38, 1.04–1.83). This association:
+  - passed the lead-exposure and comparison-exposure checks;
+  - did not survive correction for the six steroid tests (Holm *p* = 0.09 and 0.16).
+- **All adjusted regional models:** 7 of 90 were nominally significant, against 4.5 expected by chance.
 
-- **Prednisolone milligrams per resident** were associated with TB at lags of 2 years (1.37, 1.08–1.73) and 3 years (1.38, 1.04–1.83). These estimates:
-  - were unchanged after excluding 2020–21;
-  - were not reproduced with lead exposures (0.95–1.18) or with levothyroxine, PPIs or statins;
-  - did not survive correction for the six steroid tests (Holm-adjusted *p* = 0.09 and 0.16).
-- **Oral corticosteroid items** gave imprecise positive estimates (1.26–1.32, all *p* > 0.09).
-- **Across all 90 adjusted regional models,** 7 were nominally significant, against 4.5 expected by chance.
+**UK-born TB at age 65 and over** (2,401 notifications), the group with the highest steroid use and mostly reactivation disease.
 
-UK-born TB fell by roughly half in most regions over the decade (Figure 3).
+- **Lagged prescribing:** not associated with TB (lag 1: 1.34, 0.74–2.42).
+- **Falsification test:** failed. Future prescribing was associated with past TB (lead 2: 1.59, 1.04–2.43), and so was future levothyroxine prescribing (lead 1: 1.33, 1.05–1.69).
 
-![**Figure 3.** Oral corticosteroid items per 1,000 residents (blue) and UK-born TB notification rate (orange) by UKHSA region, indexed to 2014 = 100.](figures/ocs_ukborn_tb_by_region.png)
+![**Figure 4.** Oral corticosteroid items per 1,000 residents (blue) and UK-born TB notification rate (orange) by UKHSA region, indexed to 2014 = 100.](figures/ocs_ukborn_tb_by_region.png)
 
 ## Discussion
 
 ### Principal findings
 
-We used three ecological designs and more than a decade of practice-level prescribing, and found no credible association between primary care prescribing and TB incidence in England.
+Linking open English prescribing and TB data is feasible and valid. Hospital antituberculosis drug use tracked TB incidence between areas and within areas over time, as it should. Yet across primary care and hospital medicines, two geographic scales and several designs, we found no credible association between medicines that modify TB risk and TB incidence.
 
-- **Cross-sectional associations were confounded.** Crude inverse associations were explained by areas with young, migrant populations having both more TB and less chronic-disease prescribing.
-- **Within-area estimates were null** for every drug group.
-- **The design could not have detected plausible effects.** The positive control was not detected, falsification tests failed for several exposures, and expected population effects were 16 to 345 times smaller than the minimum detectable effects.
+The analytic and simulation analyses explain why. Expected population effects of these medicines are 5 to more than 100 times smaller than the smallest effects the designs can detect. Apparent associations arose, but each was explained by confounding or chance:
+
+- crude cross-sectional associations were explained by country of birth and age;
+- falsification tests failed for several exposures;
+- the one nominal signal, prednisolone dose and UK-born TB, was implausibly large and fragile.
 
 ### Interpretation
 
-The minimum detectable effect analysis explains why the design was uninformative.
+**Why the positive control succeeded and the other drugs did not.** Antituberculosis drugs are used almost exclusively by people with TB, so their volume scales almost one-to-one with incidence. By contrast, a medicine that increases risk affects incidence only through the small fraction of the population exposed.
 
-- **Expected effect.** Oral corticosteroids carry about a five-fold individual risk [5], but only about 1% of people use them at any time [24,25]. A 10% change in use should therefore move TB incidence by about 0.3%. This is consistent with the small attributable fractions reported for inhaled corticosteroids (0.5%) [7] and estimated here.
-- **Why more data would not help.** Power in aggregate studies depends on the number of areas [14], and prescribing varies little within areas over time. Fixed effects remove the between-area variation where most information lies [31].
+- **Oral corticosteroids:** the RR of about 5 [5] applies to roughly 1% of people [24,25], so a 10% change in use should move TB incidence by about 0.3%. This is consistent with the small population attributable fractions reported for inhaled corticosteroids (0.5%) [7].
+- **Anti-TNF biologics:** the individual RR is large [32], but prevalence is lower, so expected changes are even smaller.
 
-**Crude versus adjusted estimates.** The contrast mirrors the between- versus within-country sign reversal reported for diabetes and TB [19]. Adjustment cannot remove ecological bias from effect modification [12]. This is relevant because drug-associated TB risk may differ by ethnicity [32,33].
+**Why better data did not solve the problem.** Hospital data made exposure measurement more complete and more precise (MDE about 1.5% per 10%), and lower-tier geography narrowed confidence intervals by about 20%. Neither closed a gap of one to two orders of magnitude. Power in aggregate studies depends on the number of areas [14], and prescribing varies little within areas over time [31]. The simulations show that only direct population effects of about 5% per 10% change in prescribing, implying individual RRs above 100, would be reliably detectable.
 
-**The UK-born association** shows how apparent signals arise in these data. It passed a lead test and a negative-control comparison, but it is implausibly large. Under the model used for the MDE, a 10% increase in the prevalence of any exposure can raise incidence by at most 10%, and by less than 1% under published relative risks. An IRR of 1.37 per 10% therefore cannot reflect a causal effect of steroid prescribing.
+**Crude versus adjusted estimates.** The sign reversal between crude cross-sectional and adjusted or within-area estimates mirrors that reported for diabetes and TB between and within countries [19]. Ecological bias from effect modification cannot be removed by adjustment [12]. Drug-associated TB risk may differ by ethnicity [32,33].
 
-With only nine regions and multiple tests, the association more likely reflects region-specific declines in UK-born TB, which are shaped by social risk factors, transmission and demographic change [22,34].
+**UK-born TB and trend confounding.** The UK-born analyses illustrate how false signals arise. UK-born TB roughly halved in most regions over the decade, driven by social risk factors, transmission and demographic change [22,34]. With only nine regions, coincident trends in prescribing produce apparent associations. The failed falsification tests in non-UK-born TB and in older UK-born people show this directly.
 
 ### Strengths and limitations
 
-**Strengths.**
+**Strengths:**
 
-- All data are public, and the analysis is reproducible.
-- Exposures, controls and the falsification test were specified in advance.
-- Data consistency was checked:
-  - the two prescribing releases gave identical totals;
-  - annual TB counts matched the published three-year counts;
-  - 98% of prescribing items were linked to an area.
-- Power was quantified explicitly.
+- All data were public, and code and processed data are openly available.
+- The exposures, controls and falsification tests were specified in advance.
+- A positive control validated the linkage.
+- Internal consistency was checked:
+  - the prescribing releases gave identical totals;
+  - annual TB counts matched published three-year counts;
+  - 98% of items linked to an area.
+- Two geographic scales were used, together with spatial diagnostics.
+- Power was assessed both analytically and by simulation.
 
-**Limitations.**
+**Limitations:**
 
-- **Missing exposures.** The EPD excludes hospital-prescribed medicines, including biologics, most specialist immunosuppression and in-hospital dexamethasone during COVID-19 [35]. These are the highest-risk exposures.
-- **Exposure measurement.** Exposure was measured as items, or prednisolone milligrams, per resident, not as people treated.
-- **Geographic mapping.** Mapping practices to local authorities by postcode misattributes cross-boundary registrations.
-- **Outcome stratification.** TB by place of birth was available only by region.
-- **Unmeasured confounding.** Time-varying confounders were not measured: the latent TB screening programme for new migrants [36], social risk factors and diagnostic intensity [37].
-- **Area boundaries.** City of London and the Isles of Scilly are grouped differently in the TB and population sources.
+- **Exposure measurement:**
+  - Exposure was measured as dispensed quantities per resident, not people treated.
+  - Hospital quantities mix products with different dose conventions.
+  - Homecare-delivered biologics may be incompletely captured in SCMD; we could not verify this.
+- **Hospital catchments:** shares derived from admissions were applied to all years and all drug groups, and may misallocate specialist services such as transplant and rheumatology centres.
+- **Stratified outcomes:** TB by place of birth and age was available only by region.
+- **Unmeasured confounding:** the latent TB screening programme for new migrants (area-level data end in 2019/20 and are unmatched to local authority codes) [36], social risk factors and diagnostic intensity [37] could not be adjusted for.
+- **Individual relative risks:** those for proton pump inhibitors, statins and metformin come mainly from high-incidence settings, and prevalence assumptions for hospital drugs are illustrative. Neither would change the conclusion unless the true values were larger by an order of magnitude.
 
 ### Implications
 
-**Open prescribing data** remain valuable for describing prescribing [30,40], but they are not suited to estimating medicine effects on rare infectious outcomes such as TB.
+Open prescribing data remain valuable for describing prescribing [30,40], and our positive control shows they can be linked validly to surveillance data. They cannot, however, estimate medicine effects on a rare outcome such as TB.
 
-**Causal questions need individual-level linked data.** CPRD primary care records linked to Hospital Episode Statistics and UKHSA TB surveillance could support target trial emulations of corticosteroid or immunosuppressant initiation. Even national primary care cohorts produce wide confidence intervals for modest relative risks [39]. We found no target trial emulation of these drugs and TB; the only drug–TB emulation identified concerned DPP-4 inhibitors [38].
-
-**Better population data would help.** Annual local TB notifications stratified by place of birth and age, available through a UKHSA data request, would improve future population analyses.
-
-**Reporting.** Studies using open prescribing data for rare outcomes should report minimum detectable effects and falsification tests alongside associations.
+- **Causal questions:** these need individual-level linked data, for example CPRD primary care records linked to Hospital Episode Statistics and UKHSA TB surveillance, analysed with target trial emulation. Even national cohorts give wide intervals for modest RRs [39]. We found no target trial emulation of these drugs and TB; the only drug–TB emulation identified concerned DPP-4 inhibitors [38].
+- **Reporting:** ecological studies of rare outcomes should report minimum detectable effects, positive controls and falsification tests alongside associations.
 
 ### Conclusion
 
-Ecological analyses of English prescribing data do not, and on power grounds cannot, detect population-level effects of primary care medicines on TB.
+Open prescribing and TB notification data in England can be linked validly, but ecological analyses of them cannot detect the population-level effects of medicines on TB: plausible effects lie one to two orders of magnitude below what these designs can resolve.
 
 ## Data and code availability
 
-**Data.** All data are publicly available:
+All inputs are publicly available:
 
-- NHSBSA Open Data Portal (English Prescribing Dataset);
+- NHSBSA Open Data Portal: English Prescribing Dataset and Secondary Care Medicines Data;
+- NHS Digital practice-level prescribing;
 - UKHSA Fingertips and TB report supplementary tables;
+- OHID acute trust catchment populations;
 - ONS/Nomis population and migration estimates;
+- Home Office asylum support statistics;
 - NHS England Organisation Data Service;
 - MHCLG English Indices of Deprivation 2025.
 
-**Code.** Analysis code is available from the authors [repository to be added].
+Code, processed datasets and outputs are available at https://github.com/drcjar/tb-prescribing-england.
 
 ## References
 
@@ -344,4 +386,4 @@ Ecological analyses of English prescribing data do not, and on power grounds can
 39. Pealing L, et al. Risk of tuberculosis in patients with diabetes: population based cohort study using the UK Clinical Practice Research Datalink. *BMC Med* 2015. doi:10.1186/s12916-015-0381-9
 40. OpenPrescribing.net, Bennett Institute for Applied Data Science, University of Oxford. Frequently asked questions. 2026.
 
-*Reference titles for [2–4, 14–19, 22, 30, 33, 34, 37, 38] are abbreviated and must be checked against the source records before submission.*
+*Reference titles for [2–4, 14–19, 22, 30, 33, 34, 37, 38] are abbreviated and must be checked against source records before submission.*

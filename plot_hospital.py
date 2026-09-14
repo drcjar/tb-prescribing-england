@@ -69,6 +69,11 @@ def figure():
                     alpha=0.75, edgecolor=SURFACE, linewidth=0.8)
     axes[0].set_xscale("log")
     axes[0].set_yscale("log")
+    x_ticks = [t for t in (10, 20, 50, 100, 200) if period.drug.min() / 1.2 <= t <= period.drug.max() * 1.2]
+    y_ticks = [t for t in (1, 2, 5, 10, 20, 50) if period.tb_rate.min() / 1.2 <= t <= period.tb_rate.max() * 1.2]
+    axes[0].set_xticks(x_ticks, [f"{t:g}" for t in x_ticks])
+    axes[0].set_yticks(y_ticks, [f"{t:g}" for t in y_ticks])
+    axes[0].minorticks_off()
     axes[0].set_xlabel("Hospital rifampicin DDD per 1,000 residents per year", color=SECONDARY)
     axes[0].set_ylabel("TB notifications per 100,000 per year", color=SECONDARY)
     axes[0].set_title(f"Between areas, 2019–24 (Spearman ρ = {rho:.2f})", loc="left", color=INK, fontsize=11)

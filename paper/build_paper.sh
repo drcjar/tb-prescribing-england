@@ -5,6 +5,8 @@ cd "$(dirname "$0")"
 
 mkdir -p figures
 cp ../outputs/panel_annual/panel_annual_forest_plot.png \
+   ../outputs/panel_annual_ltla/panel_annual_ltla_forest_plot.png \
+   ../outputs/hospital/hospital_positive_control.png \
    ../outputs/steroids/ocs_national_trends.png \
    ../outputs/steroids/ocs_ukborn_tb_by_region.png \
    ../outputs/panel/panel_forest_plot.png \
