@@ -73,8 +73,9 @@ advised sensitivity analysis was added (oral-only hospital glucocorticoids).
    - Placeholders filled.
    - The duplicate-row statement corrected: only the tacrolimus granule rows were duplicated.
    - The figure-order item completed.
-4. **SCMD status.** All 72 analysed months are final data, three of them from an earlier,
-   since-retired release; now stated in Data availability.
+4. **SCMD status.** Months from April 2019 are final data. January–March 2019 exist only in an
+   earlier, since-retired release whose final status could not be confirmed. This is now stated
+   in Data availability.
 
 **Advisable.** Done. Restricting hospital glucocorticoids to oral forms gave 1.011 (0.991–1.032)
 at upper-tier and 1.015 (0.994–1.036) at lower-tier level. The nominal association therefore

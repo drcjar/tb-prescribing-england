@@ -127,7 +127,7 @@ Other groups (same scale, 95% CI):
   - would imply, under the model used for expected effects, that hospital glucocorticoids account for about a quarter of all notifications (an IRR of 1.024 per 10% corresponds to an attributable fraction of 24%), whereas steroid-associated immunosuppression was recorded for 0.5% of notifications [UKHSA 2025].
   We interpret it as chance or confounding by hospital activity, not a drug effect.
 - The negative controls were null: low-TB-risk biologics 1.002 (0.986–1.018); levetiracetam 1.014 (0.986–1.042).
-- Across all {{n_hosp_est}} within-area hospital estimates at both levels, {{n_hosp_sig}} were nominally significant: 12 for the two TB treatment groups (the expected same-year association), 7 for JAK inhibitors (inverse) and 3 for systemic glucocorticoids.
+- Across all {{n_hosp_est}} within-area hospital estimates at both levels, {{n_hosp_sig}} were nominally significant: {{n_hosp_sig_tb}} for the two TB treatment groups (the expected same-year association), {{n_hosp_sig_jak}} for JAK inhibitors (inverse), {{n_hosp_sig_gc}} for systemic glucocorticoids and {{n_hosp_sig_other}} for other groups.
 - Clustering by principal trust or using elective catchments barely changed the other estimates (Table S3b).
 - JAK inhibitors showed small inverse estimates (same year 0.993, 0.987–0.999; previous year excluding outcome years 2020–21 0.978, 0.961–0.996), consistent with trends in uptake rather than protection.
 

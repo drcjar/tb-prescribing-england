@@ -99,6 +99,11 @@ def count_values():
         h = h[h.design == "within-area FE"]
         values["n_hosp_est"] = str(len(h))
         values["n_hosp_sig"] = str(int((h.p < 0.05).sum()))
+        sig = h[h.p < 0.05].drug
+        values["n_hosp_sig_tb"] = str(int(sig.str.startswith("antituberculosis").sum()))
+        values["n_hosp_sig_jak"] = str(int((sig == "jak_inhibitor_rheum").sum()))
+        values["n_hosp_sig_gc"] = str(int(sig.str.startswith("systemic_glucocorticoid").sum()))
+        values["n_hosp_sig_other"] = str(int(len(sig)) - sum(int(values[k]) for k in ("n_hosp_sig_tb", "n_hosp_sig_jak", "n_hosp_sig_gc")))
     path = ROOT / "outputs" / "steroids" / "ocs_tb_by_birthplace_regional.csv"
     if path.exists():
         r = pd.read_csv(path)
@@ -140,8 +145,8 @@ def main():
             "registered patients by LSOA; UKHSA TB reports and Fingertips; OHID acute trust catchment populations; "
             "ONS/Nomis; Home Office asylum statistics; NHS England ODS; MHCLG English Indices of Deprivation). Code, "
             "processed datasets and outputs: https://github.com/drcjar/tb-prescribing-england. Data were obtained in "
-            "September 2026: the EPD and SCMD through the NHSBSA API (all SCMD months analysed were final data, three of them "
-            "from an earlier, since-retired release), and the NHS England ODS epraccur file, practice registration releases (April 2014–2024), OHID "
+            "September 2026: the EPD and SCMD through the NHSBSA API (SCMD months from April 2019 were final data; January–March "
+            "2019 came from an earlier, since-retired release whose status could not be confirmed), and the NHS England ODS epraccur file, practice registration releases (April 2014–2024), OHID "
             "acute trust catchments (2024 catchment year), and the UKHSA TB in England 2025 and regional 2024 supplementary "
             "tables as published at that time. These portals revise data between releases.\n")
     supplement = ["## Supplementary tables"] + [f"{{{{table:{n}}}}}" for n in

@@ -21,4 +21,4 @@
 | UTLA | IRR 1.05 per 10%, acting via concurrent year | 300 | 65.7% | 65.7% (±5.4) | 38.9% | 1.043 | 0.0167 | 0.0171 | 0.0249 |
 | UTLA | IRR 1.10 per 10%, acting via concurrent year | 300 | 99.3% | 99.3% (±0.9) | 90.7% | 1.085 | 0.0167 | 0.0171 | 0.0249 |
 
-Within the simulation, replicate SEs matched the spread of null estimates, so the test was approximately calibrated (slightly anti-conservative). Real-data SEs were larger than in the simulation because permuting exposure trajectories across areas breaks their alignment with each area's own notification trends; simulated power is therefore optimistic. Analytic power uses the median simulated estimate as the effect and the real-data SE.
+Within the simulation, replicate SEs matched the spread of null estimates, so the test was approximately calibrated (slightly anti-conservative). Real-data SEs were larger than in the simulation, probably because permuting exposure trajectories across areas breaks their alignment with each area's own notification trends; simulated power is therefore optimistic. Analytic power uses the median simulated estimate as the effect and the real-data SE.

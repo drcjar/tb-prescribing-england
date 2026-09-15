@@ -37,6 +37,10 @@ HOSPITAL_LABELS = {
 }
 
 
+# shown in the hospital sensitivity table (S3b) only, not in main Table 3
+HOSPITAL_SENSITIVITY_ONLY = {"systemic_glucocorticoid_oral"}
+
+
 def ci(r, digits=3, est="irr_10pct"):
     if r is None or pd.isna(r.get(est, np.nan)):
         return "—"
@@ -165,6 +169,8 @@ def table_hospital():
         r = pd.read_csv(path)
         w = r[r.design == "within-area FE"]
         for g, label in HOSPITAL_LABELS.items():
+            if g in HOSPITAL_SENSITIVITY_ONLY:
+                continue
             t = pick(w, drug=g, model="concurrent (t)")
             lag = pick(w, drug=g, model="lag (t-1)")
             trust = pick(w, drug=g, model="lag (t-1), clustered by principal trust")

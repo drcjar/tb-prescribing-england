@@ -476,7 +476,7 @@ Other groups (same scale, 95% CI):
 | Vitamin D | 1.007 (0.987–1.027) | 1.009 (0.987–1.031) | 1.007 (0.988–1.025) | 1.001 (0.975–1.028) | 1.007 (0.980–1.033) | 0.827 | 24% / 9% (64%) |
 | Levothyroxine (negative control) | 0.962 (0.933–0.992) | 0.956 (0.926–0.988) | 0.965 (0.939–0.993) | 0.983 (0.928–1.042) | 0.972 (0.908–1.040) | 0.846 | 0% / 38% (26%) |
 
-Poisson PML with area and year fixed effects, adjusted for age structure, international in-migration, HIV and diabetes prevalence (diabetes not adjusted for metformin and insulins); SEs clustered by area. Joint model: prescribing in t−1 and t+1 in one model on a common sample; because the two are highly correlated within areas, their estimates are negatively correlated and opposite signs can arise by chance. PAF, largest population attributable fraction compatible with the upper 90% confidence limit; prevented fraction, the same from the lower 90% limit; in brackets, the PAF after dividing the upper limit by the negative control (levothyroxine) estimate, as if its bias applied to every drug.
+Poisson PML with area and year fixed effects, adjusted for age structure, international in-migration, HIV and diabetes prevalence (diabetes not adjusted for metformin and insulins); SEs clustered by area. Joint model: prescribing in t−1 and t+1 in one model on a common sample; their estimates can be negatively correlated (Table S2b gives the correlation and the model with year t added). PAF, largest population attributable fraction compatible with the upper 90% confidence limit; prevented fraction, the same from the lower 90% limit; in brackets, the PAF after dividing the upper limit by the negative control (levothyroxine) estimate, as if its bias applied to every drug.
 
 
 **Largest attributable fraction compatible with the data** (upper 90% confidence limit)
@@ -567,7 +567,7 @@ Poisson PML with area and year fixed effects, adjusted for age structure, intern
   - would imply, under the model used for expected effects, that hospital glucocorticoids account for about a quarter of all notifications (an IRR of 1.024 per 10% corresponds to an attributable fraction of 24%), whereas steroid-associated immunosuppression was recorded for 0.5% of notifications [UKHSA 2025].
   We interpret it as chance or confounding by hospital activity, not a drug effect.
 - The negative controls were null: low-TB-risk biologics 1.002 (0.986–1.018); levetiracetam 1.014 (0.986–1.042).
-- Across all 260 within-area hospital estimates at both levels, 22 were nominally significant: 12 for the two TB treatment groups (the expected same-year association), 7 for JAK inhibitors (inverse) and 3 for systemic glucocorticoids.
+- Across all 260 within-area hospital estimates at both levels, 22 were nominally significant: 12 for the two TB treatment groups (the expected same-year association), 7 for JAK inhibitors (inverse), 3 for systemic glucocorticoids and 0 for other groups.
 - Clustering by principal trust or using elective catchments barely changed the other estimates (Table S3b).
 - JAK inhibitors showed small inverse estimates (same year 0.993, 0.987–0.999; previous year excluding outcome years 2020–21 0.978, 0.961–0.996), consistent with trends in uptake rather than protection.
 
@@ -584,7 +584,6 @@ Poisson PML with area and year fixed effects, adjusted for age structure, intern
 | UTLA | Calcineurin/mTOR inhibitors | 1.049 (0.995–1.106) | 0.994 (0.985–1.004) | -0.06 | 1.008 (0.996–1.020) | 1.008 (0.996–1.020) | 0.985 (0.966–1.005) |
 | UTLA | Antiproliferatives | 1.025 (0.970–1.082) | 0.993 (0.978–1.008) | -0.08 | 0.996 (0.978–1.014) | 0.996 (0.979–1.013) | 0.993 (0.974–1.012) |
 | UTLA | Systemic glucocorticoids without dexamethasone/hydrocortisone (prednisolone-equivalent mg) | 0.970 (0.929–1.012) | 1.009 (0.986–1.032) | 0.09 | 1.024 (1.001–1.046) | 1.024 (0.999–1.049) | 0.991 (0.953–1.030) |
-| UTLA | Systemic glucocorticoids, oral forms only (sensitivity) | 0.971 (0.930–1.012) | 0.997 (0.979–1.016) | -0.03 | 1.011 (0.991–1.032) | 1.011 (0.990–1.033) | 0.983 (0.944–1.023) |
 | UTLA | Dexamethasone and hydrocortisone (descriptive) | 0.934 (0.893–0.976) | 1.005 (0.977–1.034) | 0.05 | 1.008 (0.980–1.036) | 1.008 (0.979–1.037) | 0.994 (0.943–1.047) |
 | UTLA | Low-TB-risk biologics (negative control) | 1.014 (0.961–1.070) | 1.004 (0.990–1.019) | 0.05 | 1.002 (0.986–1.018) | 1.002 (0.983–1.021) | 1.010 (0.982–1.040) |
 | UTLA | Levetiracetam (negative control) | 1.017 (0.970–1.066) | 0.998 (0.975–1.021) | -0.03 | 1.014 (0.986–1.042) | 1.014 (0.986–1.042) | 0.987 (0.948–1.028) |
@@ -597,7 +596,6 @@ Poisson PML with area and year fixed effects, adjusted for age structure, intern
 | LTLA | Calcineurin/mTOR inhibitors | 1.002 (0.959–1.046) | 0.994 (0.985–1.003) | -0.07 | 1.008 (0.997–1.020) | 1.008 (0.998–1.019) | 0.983 (0.961–1.005) |
 | LTLA | Antiproliferatives | 0.983 (0.936–1.031) | 0.997 (0.983–1.012) | -0.03 | 0.997 (0.982–1.013) | 0.997 (0.980–1.015) | 0.993 (0.974–1.012) |
 | LTLA | Systemic glucocorticoids without dexamethasone/hydrocortisone (prednisolone-equivalent mg) | 0.976 (0.945–1.008) | 1.008 (0.990–1.026) | 0.08 | 1.021 (1.000–1.043) | 1.021 (0.999–1.044) | 0.986 (0.952–1.020) |
-| LTLA | Systemic glucocorticoids, oral forms only (sensitivity) | 0.974 (0.943–1.006) | 1.001 (0.982–1.019) | 0.01 | 1.015 (0.994–1.036) | 1.015 (0.994–1.037) | 0.976 (0.939–1.014) |
 | LTLA | Dexamethasone and hydrocortisone (descriptive) | 0.978 (0.938–1.019) | 1.008 (0.980–1.037) | 0.08 | 1.010 (0.984–1.036) | 1.010 (0.982–1.037) | 0.989 (0.940–1.041) |
 | LTLA | Low-TB-risk biologics (negative control) | 0.991 (0.948–1.036) | 1.005 (0.991–1.019) | 0.05 | 1.003 (0.988–1.019) | 1.003 (0.988–1.019) | 1.012 (0.985–1.040) |
 | LTLA | Levetiracetam (negative control) | 1.016 (0.979–1.054) | 1.003 (0.981–1.025) | 0.03 | 1.013 (0.988–1.039) | 1.013 (0.989–1.037) | 0.992 (0.955–1.031) |
@@ -849,7 +847,7 @@ Open English prescribing and TB notification data can be linked, although hospit
 
 ## Data and code availability
 
-All inputs are publicly available (NHSBSA Open Data Portal: English Prescribing Dataset and Secondary Care Medicines Data; NHS Digital practice-level prescribing and registered patients by LSOA; UKHSA TB reports and Fingertips; OHID acute trust catchment populations; ONS/Nomis; Home Office asylum statistics; NHS England ODS; MHCLG English Indices of Deprivation). Code, processed datasets and outputs: https://github.com/drcjar/tb-prescribing-england. Data were obtained in September 2026: the EPD and SCMD through the NHSBSA API (all SCMD months analysed were final data, three of them from an earlier, since-retired release), and the NHS England ODS epraccur file, practice registration releases (April 2014–2024), OHID acute trust catchments (2024 catchment year), and the UKHSA TB in England 2025 and regional 2024 supplementary tables as published at that time. These portals revise data between releases.
+All inputs are publicly available (NHSBSA Open Data Portal: English Prescribing Dataset and Secondary Care Medicines Data; NHS Digital practice-level prescribing and registered patients by LSOA; UKHSA TB reports and Fingertips; OHID acute trust catchment populations; ONS/Nomis; Home Office asylum statistics; NHS England ODS; MHCLG English Indices of Deprivation). Code, processed datasets and outputs: https://github.com/drcjar/tb-prescribing-england. Data were obtained in September 2026: the EPD and SCMD through the NHSBSA API (SCMD months from April 2019 were final data; January–March 2019 came from an earlier, since-retired release whose status could not be confirmed), and the NHS England ODS epraccur file, practice registration releases (April 2014–2024), OHID acute trust catchments (2024 catchment year), and the UKHSA TB in England 2025 and regional 2024 supplementary tables as published at that time. These portals revise data between releases.
 
 
 ## References
@@ -988,7 +986,7 @@ Relative risks are illustrative values, not estimates. DDD-years per resident ap
 | UTLA | IRR 1.05 per 10%, acting via concurrent year | 300 | 65.7% | 65.7% (±5.4) | 38.9% | 1.043 | 0.0167 | 0.0171 | 0.0249 |
 | UTLA | IRR 1.10 per 10%, acting via concurrent year | 300 | 99.3% | 99.3% (±0.9) | 90.7% | 1.085 | 0.0167 | 0.0171 | 0.0249 |
 
-Within the simulation, replicate SEs matched the spread of null estimates, so the test was approximately calibrated (slightly anti-conservative). Real-data SEs were larger than in the simulation because permuting exposure trajectories across areas breaks their alignment with each area's own notification trends; simulated power is therefore optimistic. Analytic power uses the median simulated estimate as the effect and the real-data SE.
+Within the simulation, replicate SEs matched the spread of null estimates, so the test was approximately calibrated (slightly anti-conservative). Real-data SEs were larger than in the simulation, probably because permuting exposure trajectories across areas breaks their alignment with each area's own notification trends; simulated power is therefore optimistic. Analytic power uses the median simulated estimate as the effect and the real-data SE.
 
 
 **Table S5. Regional models (9 regions): TB notifications by place of birth and age vs primary care prescribing**
