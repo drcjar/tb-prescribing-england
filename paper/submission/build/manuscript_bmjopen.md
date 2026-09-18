@@ -5,11 +5,16 @@ study of primary care and hospital prescribing and TB notifications in England, 
 
 **Short title.** Prescribing and tuberculosis notifications in England
 
-**Authors.** [To be confirmed]
+**Authors.** Jack Callum,^1^ Carl Reynolds^2^
 
-**Affiliations.** [To be confirmed]
+**Affiliations.**
+^1^ Homerton Healthcare NHS Foundation Trust, London, UK [department to be confirmed]
+^2^ [Affiliation to be confirmed]
 
-**Corresponding author.** [Name, address, email]
+**Corresponding author.** Carl Reynolds, [address], drcjar@gmail.com
+
+*Note for the authors: authorship and the contribution statement below are provisional pending
+confirmation from JC.*
 
 **Word counts.** Main text: 3456 words. Abstract: 300 words.
 
@@ -40,10 +45,11 @@ commercial or not-for-profit sectors.
 
 **Competing interests.** None declared.
 
-**Author contributions.** [To be confirmed.] Suggested wording: [X] conceived the study, obtained
-and processed the data, did the analysis and wrote the first draft. [Y] contributed to the design
-and interpretation and revised the manuscript. All authors approved the final version and accept
-accountability for the work.
+**Author contributions.** [To be confirmed.] Suggested wording: CR and JC conceived the study. CR
+obtained and processed the data and did the statistical analysis. JC and CR designed the control and
+falsification analyses and interpreted the results. JC drafted the manuscript, and CR revised it
+critically for important intellectual content. Both authors approved the final version and accept
+accountability for all aspects of the work.
 
 **Acknowledgements.** We thank the NHS Business Services Authority, NHS England, UKHSA, OHID and
 ONS for publishing the data used here.

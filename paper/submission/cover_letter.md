@@ -47,4 +47,4 @@ methods.
 
 Yours faithfully,
 
-[Corresponding author, on behalf of all authors]
+Carl Reynolds, on behalf of both authors (Jack Callum, Carl Reynolds)
