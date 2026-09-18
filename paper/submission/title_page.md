@@ -11,7 +11,7 @@ study of primary care and hospital prescribing and TB notifications in England, 
 ^1^ Homerton Healthcare NHS Foundation Trust, London, UK [department to be confirmed]
 ^2^ [Affiliation to be confirmed]
 
-**Corresponding author.** Carl Reynolds, [address], drcjar@gmail.com
+**Corresponding author.** Carl Reynolds, [address], academic@carlreynolds.net
 
 *Note for the authors: authorship and the contribution statement below are provisional pending
 confirmation from JC.*
