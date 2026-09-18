@@ -11,7 +11,7 @@ study of primary care and hospital prescribing and TB notifications in England, 
 
 **Corresponding author.** [Name, address, email]
 
-**Word counts.** Main text: 3453 words. Abstract: 300 words.
+**Word counts.** Main text: 3456 words. Abstract: 300 words.
 
 **Keywords.** tuberculosis; pharmacoepidemiology; ecological study; routinely collected health
 data; glucocorticoids; biological therapy
@@ -342,10 +342,10 @@ Across 260 within-area hospital estimates at both geographic levels, 22 were nom
 
 ### National trends, regional analyses and detectability
 
-Nationally, systemic oral glucocorticoid items rose from 119 to 132 per 1,000 residents between 2011
-and 2016 and fell to 111 by 2024, while prednisolone-equivalent milligrams per item fell from 225 to
-192. National notification rates and prescribing were not correlated in levels (r = 0.33), and
-year-on-year changes were not correlated at lags of 0 to 2 years.
+Nationally, systemic oral glucocorticoid items rose from 119 to 132 per 1,000 residents between
+2011 and 2016 and fell to 111 by 2024, while the prednisolone-equivalent dose per item fell from
+225 mg to 192 mg. National notification rates and prescribing were not correlated in levels
+(r = 0.33), and year-on-year changes were not correlated at lags of 0 to 2 years.
 
 Regional models, with nine regions, were very imprecise: minimum detectable effects for
 glucocorticoid exposures were 46% to 98% per 10% increase for UK-born notifications and 54% to 119%
@@ -496,7 +496,7 @@ Expected changes use published individual-level relative risks (ORs for oral glu
 
 ## References
 
-1. UK Health Security Agency. Tuberculosis in England: 2025 report (data up to end of 2024), chapter 1 and supplementary tables 5, 12 and 22; and TB regional reports 2024, supplementary data. London: UKHSA; first published 8 October 2025 (GOV.UK change history; the content API timestamp reads 9 October 2025 BST), last updated 15 July 2026. https://www.gov.uk/government/publications/tuberculosis-in-england-2025-report [the GOV.UK page title reads "Tuberculosis in England, 2025 report". The specific supplementary table numbers and the regional reports publication were not individually checked.]
+1. UK Health Security Agency. Tuberculosis in England: 2025 report (data up to end of 2024), chapter 1 and supplementary tables 5, 12 and 22; and TB regional reports 2024, supplementary data. London: UKHSA; first published 8 October 2025 (GOV.UK change history; the content API timestamp reads 9 October 2025 BST), last updated 15 July 2026. https://www.gov.uk/government/publications/tuberculosis-in-england-2025-report
 2. Thomas HL, Harris RJ, Muzyamba MC, et al. Reduction in tuberculosis incidence in the UK from 2011 to 2015: a population-based study. *Thorax* 2018;73(8):769–75. doi:10.1136/thoraxjnl-2017-211074. PMID 29674389
 3. Aldridge RW, Zenner D, White PJ, et al. Tuberculosis in migrants moving from high-incidence to low-incidence countries: a population-based cohort study of 519 955 migrants screened before entry to England, Wales, and Northern Ireland. *Lancet* 2016;388(10059):2510–8. doi:10.1016/S0140-6736(16)31008-X. PMID 27742165
 4. Jick SS, Lieberman ES, Rahman MU, Choi HK. Glucocorticoid use, other associated factors, and the risk of tuberculosis. *Arthritis Rheum* 2006;55(1):19–26. doi:10.1002/art.21705. PMID 16463407
@@ -520,7 +520,7 @@ Expected changes use published individual-level relative risks (ORs for oral glu
 22. Költringer FA, et al. The social determinants of national tuberculosis incidence rates in 116 countries: a longitudinal ecological study between 2005–2015. *BMC Public Health* 2023;23:337. doi:10.1186/s12889-023-15213-w. PMID 36793018
 23. Lipsitch M, Tchetgen Tchetgen E, Cohen T. Negative controls: a tool for detecting confounding and bias in observational studies. *Epidemiology* 2010;21(3):383–8. doi:10.1097/EDE.0b013e3181d61eeb. PMID 20335814
 24. Prasad V, Jena AB. Prespecified falsification end points: can they validate true observational associations? *JAMA* 2013;309(3):241–2. doi:10.1001/jama.2012.96867. PMID 23321761
-25. UK Health Security Agency. Tuberculosis in England: 2021 report (presenting data to end of 2020). London: UKHSA; 2021 (added to GOV.UK 28 October 2021; corrected PDF 30 March 2022). https://assets.publishing.service.gov.uk/media/62441310e90e075f124018e8/TB_annual-report-2021.pdf [The PDF reports "In 2020, 4,125 people were notified with TB in England, with a rate of 7.3 per 100,000 population". Its suggested citation is "UK Health Security Agency. (2021) Tuberculosis in England: 2020. UK Health Security Agency, London."]
+25. UK Health Security Agency. Tuberculosis in England: 2021 report (presenting data to end of 2020). London: UKHSA; 2021 (added to GOV.UK 28 October 2021; corrected PDF 30 March 2022). https://assets.publishing.service.gov.uk/media/62441310e90e075f124018e8/TB_annual-report-2021.pdf
 26. Morrison H, et al. Impact of COVID-19 on NHS tuberculosis services: results of a UK-wide survey. *J Infect* 2023;87(1):59–61. doi:10.1016/j.jinf.2023.04.004. PMID 37044162
 27. Santos Silva JMC, Tenreyro S. The log of gravity. *Rev Econ Stat* 2006;88(4):641–58. doi:10.1162/rest.88.4.641 (not indexed in PubMed)
 28. van Staa TP, Leufkens HG, Abenhaim L, et al. Use of oral corticosteroids in the United Kingdom. *QJM* 2000;93(2):105–11. doi:10.1093/qjmed/93.2.105. PMID 10700481

@@ -127,9 +127,9 @@ patients registered at each practice by LSOA:
   postcode;
 - LSOAs were mapped to April 2023 districts.
 
-Assigning each practice to the district containing its postcode (ONS Postcode Directory, August
-2025) was a sensitivity analysis. In
-2024, 7.3% of registered patients lived outside the district of their practice.
+Assigning each practice to the district containing its postcode was a sensitivity analysis (ONS
+Postcode Directory, August 2025). In 2024, 7.3% of registered patients lived outside the district
+of their practice.
 
 **Denominators.** ONS mid-year resident population estimates.
 

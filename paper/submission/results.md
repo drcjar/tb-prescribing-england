@@ -74,10 +74,10 @@ Across 260 within-area hospital estimates at both geographic levels, 22 were nom
 
 ### National trends, regional analyses and detectability
 
-Nationally, systemic oral glucocorticoid items rose from 119 to 132 per 1,000 residents between 2011
-and 2016 and fell to 111 by 2024, while prednisolone-equivalent milligrams per item fell from 225 to
-192. National notification rates and prescribing were not correlated in levels (r = 0.33), and
-year-on-year changes were not correlated at lags of 0 to 2 years.
+Nationally, systemic oral glucocorticoid items rose from 119 to 132 per 1,000 residents between
+2011 and 2016 and fell to 111 by 2024, while the prednisolone-equivalent dose per item fell from
+225 mg to 192 mg. National notification rates and prescribing were not correlated in levels
+(r = 0.33), and year-on-year changes were not correlated at lags of 0 to 2 years.
 
 Regional models, with nine regions, were very imprecise: minimum detectable effects for
 glucocorticoid exposures were 46% to 98% per 10% increase for UK-born notifications and 54% to 119%
