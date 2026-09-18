@@ -79,3 +79,20 @@ Prescribing–TB associations were null within areas over time. The designs are 
 order of magnitude or more for effects implied by published individual-level relative risks. The
 paper therefore argues that causal questions about medicines and TB need individual-level linked
 data.
+
+## Journal submission package (BMJ Open)
+
+`paper/submission/` holds a version targeted at BMJ Open, condensed from the full manuscript:
+
+| File | Contents |
+|---|---|
+| `title_page.md` | Title, authors, word counts, and the required statements (ethics, PPI, data availability, funding, competing interests, contributions) |
+| `abstract.md` | Structured abstract (<= 300 words) and the "Strengths and limitations of this study" box |
+| `introduction.md`, `methods.md`, `results.md`, `discussion.md` | Main text as prose, about 3,450 words |
+| `cover_letter.md` | Draft cover letter |
+| `record_checklist.md` | RECORD checklist with pointers to where each item is addressed |
+| `assemble_submission.py` | Builds `build/manuscript_bmjopen.docx` and `build/supplementary_bmjopen.docx`, renumbering `[Author Year]` citations into Vancouver style |
+
+Main paper: figures 1-4 and tables 1-2. Everything else (hospital results, sensitivity analyses,
+power simulation, regional models, coverage, original design, drug definitions) is supplementary.
+The full-length manuscript remains at `paper/manuscript.md`.
