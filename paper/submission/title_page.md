@@ -8,7 +8,8 @@ study of primary care and hospital prescribing and TB notifications in England, 
 **Authors.** Jack Callum,^1^ Carl Reynolds^2^
 
 **Affiliations.**
-^1^ Homerton Healthcare NHS Foundation Trust, London, UK [department to be confirmed]
+^1^ Respiratory and Sleep Medicine, Homerton University Hospital NHS Foundation Trust, London, UK
+[taken from JC's email signature; to be confirmed, including the current legal name of the trust]
 ^2^ [Affiliation to be confirmed]
 
 **Corresponding author.** Carl Reynolds, [address], academic@carlreynolds.net
