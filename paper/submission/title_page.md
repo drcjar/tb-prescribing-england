@@ -27,11 +27,21 @@ health data. The completed checklist is in the supplementary file.
 
 ## Statements
 
-**Ethics approval.** Not required. All data are aggregate, openly published and anonymous, and no
+**Funding.** This research received no specific grant from any funding agency in the public,
+commercial or not-for-profit sectors.
+
+**Competing interests.** None declared.
+
+**Provenance and peer review.** Not commissioned; externally peer reviewed.
+
+**Patient consent for publication.** Not applicable.
+
+**Ethics approval.** Not applicable. All data are aggregate, openly published and anonymous, and no
 individual-level records were used.
 
 **Patient and public involvement.** Patients and the public were not involved in the design,
-conduct, reporting or dissemination of this research, which used aggregate published statistics.
+conduct, reporting or dissemination plans of this research, which used aggregate published
+statistics.
 
 **Data availability.** All data are publicly available: NHSBSA Open Data Portal (English
 Prescribing Dataset; Secondary Care Medicines Data), NHS Digital practice-level prescribing and
@@ -40,11 +50,6 @@ OHID Fingertips, OHID acute trust catchment populations, ONS/Nomis population an
 estimates, Home Office asylum support statistics, NHS England Organisation Data Service, and MHCLG
 English Indices of Deprivation. Analysis code, processed datasets, result files and the figures in
 this paper are at https://github.com/drcjar/tb-prescribing-england.
-
-**Funding.** This research received no specific grant from any funding agency in the public,
-commercial or not-for-profit sectors.
-
-**Competing interests.** None declared.
 
 **Author contributions.** [To be confirmed.] Suggested wording: CR and JC conceived the study. CR
 obtained and processed the data and did the statistical analysis. JC and CR designed the control and

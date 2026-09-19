@@ -17,7 +17,7 @@ study of primary care and hospital prescribing and TB notifications in England, 
 *Note for the authors: authorship and the contribution statement below are provisional pending
 confirmation from JC.*
 
-**Word counts.** Main text: 3456 words. Abstract: 300 words.
+**Word counts.** Main text: 3513 words. Abstract: 302 words.
 
 **Keywords.** tuberculosis; pharmacoepidemiology; ecological study; routinely collected health
 data; glucocorticoids; biological therapy
@@ -27,11 +27,21 @@ health data. The completed checklist is in the supplementary file.
 
 ## Statements
 
-**Ethics approval.** Not required. All data are aggregate, openly published and anonymous, and no
+**Funding.** This research received no specific grant from any funding agency in the public,
+commercial or not-for-profit sectors.
+
+**Competing interests.** None declared.
+
+**Provenance and peer review.** Not commissioned; externally peer reviewed.
+
+**Patient consent for publication.** Not applicable.
+
+**Ethics approval.** Not applicable. All data are aggregate, openly published and anonymous, and no
 individual-level records were used.
 
 **Patient and public involvement.** Patients and the public were not involved in the design,
-conduct, reporting or dissemination of this research, which used aggregate published statistics.
+conduct, reporting or dissemination plans of this research, which used aggregate published
+statistics.
 
 **Data availability.** All data are publicly available: NHSBSA Open Data Portal (English
 Prescribing Dataset; Secondary Care Medicines Data), NHS Digital practice-level prescribing and
@@ -40,11 +50,6 @@ OHID Fingertips, OHID acute trust catchment populations, ONS/Nomis population an
 estimates, Home Office asylum support statistics, NHS England Organisation Data Service, and MHCLG
 English Indices of Deprivation. Analysis code, processed datasets, result files and the figures in
 this paper are at https://github.com/drcjar/tb-prescribing-england.
-
-**Funding.** This research received no specific grant from any funding agency in the public,
-commercial or not-for-profit sectors.
-
-**Competing interests.** None declared.
 
 **Author contributions.** [To be confirmed.] Suggested wording: CR and JC conceived the study. CR
 obtained and processed the data and did the statistical analysis. JC and CR designed the control and
@@ -79,7 +84,7 @@ notifications 2014–2024.
 hospital medicines in defined daily doses apportioned by trust catchment; UK Health Security Agency
 TB notifications for 294 lower-tier and 151 upper-tier authorities.
 
-**Main outcome measures.** Annual TB notifications, as incidence rate ratios (IRR) per 10%
+**Primary and secondary outcome measures.** Annual TB notifications, as incidence rate ratios (IRR) per 10%
 within-area increase in prescribing, and the minimum detectable effect versus effects expected from
 published relative risks and recorded drug-associated TB.
 
@@ -180,6 +185,11 @@ exploratory. Supplementary tables report the original design and all sensitivity
 
 Figure 1 shows the assumed causal structure: what area and year fixed effects absorb, what is
 measured and adjusted for, and what remains unmeasured.
+
+### Patient and public involvement
+
+Patients and the public were not involved in the design, conduct, reporting or dissemination plans
+of this research, which used only aggregate published statistics.
 
 ### TB notifications
 
@@ -380,11 +390,15 @@ the same effect was 65%.
 
 ## Discussion
 
+### Principal findings
+
 We linked openly published English prescribing and TB surveillance data in several ecological
 designs at two geographic scales. The linkage worked only partly, and no medicine plausibly
 affecting TB risk was robustly associated with subsequent notifications. The designs could detect
 only effects roughly 10 to several hundred times larger than those implied by published relative
 risks or by national records of drug-associated TB.
+
+### Why plausible effects are undetectable
 
 Three features explain this. First, expected population effects are small: oral glucocorticoids
 carry an odds ratio of about 5 [4] but are used by about 1% of people at any time
@@ -400,6 +414,8 @@ control, a drug used almost exclusively for the outcome, was recovered with an e
 0.36 to 0.40, and a similar elasticity for less specific TB drugs suggests apportionment rather than
 drug specificity as the main cause. No equivalent positive control exists for primary care
 prescribing, so the validity of that linkage remains untested.
+
+### Residual confounding and the nominal associations
 
 Two patterns indicate residual confounding rather than drug effects. The negative-control exposure,
 which has no plausible effect on TB, was inversely associated with notifications to the same degree
@@ -421,6 +437,8 @@ intravenous methylprednisolone pulses were excluded, and would imply an attribut
 between prednisolone dose and UK-born TB: it exceeded the maximum attainable under any relative
 risk, was not significant by randomisation inference, and depended on one region.
 
+### Strengths and limitations
+
 This study has limitations beyond those in the summary box. Exposure was prescribing volume per
 resident, not people treated, and additional volume may lengthen existing courses rather than reach
 new users. Apportionment used annual registration snapshots, and hospital quantities were
@@ -428,6 +446,8 @@ apportioned with 2024 catchments applied to earlier years. Prescriptions written
 dispensed in the community were excluded by the restriction to general practices. The outcome is
 notified TB, subject to diagnostic delay and to the 2021 change of surveillance system. Social risk
 factors and the area-level share of recent arrivals were not available as consistent annual series.
+
+### Implications for research and for TB programmes
 
 Open prescribing data are valuable for describing prescribing and its variation [20,32], but they cannot estimate the effects of medicines on a rare outcome such as
 TB. Ecological studies of rare outcomes should report the minimum detectable effect, a positive
@@ -444,7 +464,9 @@ in the National TB Surveillance System, including drug class, time since startin
 infection screening was done, than by ecological analysis of prescribing. The practical lever is
 auditing screening before biologics, JAK inhibitors and prolonged high-dose glucocorticoids.
 
-In conclusion, open English prescribing and TB notification data can be linked, but hospital
+## Conclusions
+
+Open English prescribing and TB notification data can be linked, but hospital
 medicines only with heavy attenuation and primary care prescribing without any means of validation.
 Ecological analyses of these data cannot detect the population-level effects of medicines on TB:
 plausible effects lie one to several hundred times below what the designs can resolve, and the

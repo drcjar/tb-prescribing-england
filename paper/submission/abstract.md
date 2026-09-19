@@ -15,7 +15,7 @@ notifications 2014–2024.
 hospital medicines in defined daily doses apportioned by trust catchment; UK Health Security Agency
 TB notifications for 294 lower-tier and 151 upper-tier authorities.
 
-**Main outcome measures.** Annual TB notifications, as incidence rate ratios (IRR) per 10%
+**Primary and secondary outcome measures.** Annual TB notifications, as incidence rate ratios (IRR) per 10%
 within-area increase in prescribing, and the minimum detectable effect versus effects expected from
 published relative risks and recorded drug-associated TB.
 

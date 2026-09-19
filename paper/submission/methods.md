@@ -20,6 +20,11 @@ exploratory. Supplementary tables report the original design and all sensitivity
 Figure 1 shows the assumed causal structure: what area and year fixed effects absorb, what is
 measured and adjusted for, and what remains unmeasured.
 
+### Patient and public involvement
+
+Patients and the public were not involved in the design, conduct, reporting or dissemination plans
+of this research, which used only aggregate published statistics.
+
 ### TB notifications
 
 TB notifications are cases reported to UK Health Security Agency surveillance (the Enhanced TB
