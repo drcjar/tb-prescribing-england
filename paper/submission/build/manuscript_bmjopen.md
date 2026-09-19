@@ -10,9 +10,9 @@ study of primary care and hospital prescribing and TB notifications in England, 
 **Affiliations.**
 ^1^ Respiratory and Sleep Medicine, Homerton University Hospital NHS Foundation Trust, London, UK
 [taken from JC's email signature; to be confirmed, including the current legal name of the trust]
-^2^ [Affiliation to be confirmed]
+^2^ Queen Mary University of London, London, UK
 
-**Corresponding author.** Carl Reynolds, [address], academic@carlreynolds.net
+**Corresponding author.** Carl Reynolds, academic@carlreynolds.net
 
 *Note for the authors: authorship and the contribution statement below are provisional pending
 confirmation from JC.*
