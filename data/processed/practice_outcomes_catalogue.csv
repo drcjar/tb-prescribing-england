@@ -1,0 +1,175 @@
+indicator_id,indicator,n_rows,n_years,n_practices,first_year,last_year,count_complete,denom_complete,pooled,value_type
+114,QOF Total List Size,96817,16,6168,2009,2024,1.0,0.0,False,Count
+200,Learning disability: QOF prevalence,67510,11,6168,2014,2024,1.0,1.0,False,Proportion
+212,Stroke: QOF prevalence,97987,16,6168,2009,2024,1.0,1.0,False,Proportion
+219,Hypertension: QOF prevalence,98015,16,6168,2009,2024,1.0,1.0,False,Proportion
+224,Epilepsy: QOF prevalence,98013,16,6168,2009,2024,1.0,1.0,False,Proportion
+241,Diabetes: QOF prevalence,98011,16,6168,2009,2024,1.0,1.0,False,Proportion
+247,Dementia: QOF prevalence,98015,16,6168,2009,2024,1.0,1.0,False,Proportion
+253,COPD: QOF prevalence,98015,16,6168,2009,2024,1.0,1.0,False,Proportion
+258,CKD: QOF prevalence,91905,15,6168,2009,2024,1.0,1.0,False,Proportion
+262,Heart Failure: QOF prevalence,98015,16,6168,2009,2024,1.0,1.0,False,Proportion
+273,CHD: QOF prevalence,98015,16,6168,2009,2024,1.0,1.0,False,Proportion
+276,Cancer: QOF prevalence,98015,16,6168,2009,2024,1.0,1.0,False,Proportion
+280,Atrial fibrillation: QOF prevalence,98015,16,6168,2009,2024,1.0,1.0,False,Proportion
+294,Palliative/supportive care: QOF prevalence,98015,16,6168,2009,2024,1.0,1.0,False,Proportion
+352,% with caring responsibility,79827,13,6167,2012,2024,1.0,1.0,False,Proportion
+354,% reporting to be unemployed,79836,13,6167,2012,2024,0.993,0.993,False,Proportion
+355,% reporting blindness or partial sight,79830,13,6167,2012,2024,0.979,0.979,False,Proportion
+356,% reporting deafness or hearing loss,79832,13,6167,2012,2024,0.998,0.998,False,Proportion
+359,% reporting cancer in the last 5 years,79830,13,6167,2012,2024,0.998,0.998,False,Proportion
+383,% reporting Alzheimer's disease or dementia,76543,13,6167,2012,2024,1.0,1.0,False,Proportion
+848,Depression: QOF prevalence,73560,12,6168,2012,2024,1.0,1.0,False,Proportion
+849,Heart failure with LVSD: QOF prevalence,98015,16,6168,2009,2024,1.0,1.0,False,Proportion
+1942,% satisfied with phone access,79832,13,6167,2012,2024,1.0,1.0,False,Proportion
+90443,Osteoporosis: QOF prevalence,79727,13,6168,2012,2024,1.0,1.0,False,Crude rate
+90452,% active smokers (GPPS),73733,12,6167,2013,2024,1.0,1.0,False,Proportion
+90453,% former smokers (GPPS),73733,12,6167,2013,2024,1.0,1.0,False,Proportion
+90581,Mental Health: QOF prevalence,79727,13,6168,2012,2024,1.0,1.0,False,Proportion
+90600,Patients with severe mental health issues having a comprehensive care plan (denominator incl. PCAs),79715,13,6168,2012,2024,1.0,1.0,False,Proportion
+90603,Record of a BP check in the last 12 months for patients on the MH register (denominator incl. PCAs),79715,13,6168,2012,2024,1.0,1.0,False,Proportion
+90616,Smoking status of patients with certain conditions recorded in the last 12 months (denominator incl. PCAs),79727,13,6168,2012,2024,1.0,1.0,False,Proportion
+90617,Smoking cessation support and treatment offered to patients with certain conditions (denominator incl. PCAs),79727,13,6168,2012,2024,1.0,1.0,False,Proportion
+90619,Record of offer of support and treatment in the last 24 months for smokers aged 15+ yrs (denominator incl. PCAs),79727,13,6168,2012,2024,1.0,1.0,False,Proportion
+90646,Depression: QOF incidence - new diagnosis,73610,12,6168,2013,2024,1.0,1.0,False,Crude rate
+90694,Patients with diabetes who had a foot examination and risk classification (denominator incl. PCAs),79726,13,6168,2012,2024,1.0,1.0,False,Proportion
+90700,Patients with diabetes and proteinuria/micro-albuminuria treated with ACE inhibitors (denominator incl. PCAs),79727,13,6168,2012,2024,1.0,0.999,False,Proportion
+90933,Asthma: QOF prevalence,30818,5,6168,2020,2024,1.0,1.0,False,Proportion
+90999,"For patients with CHD, a record that aspirin, APT or ACT is taken exists (denominator incl. PCAs)",73618,12,6168,2013,2024,1.0,1.0,False,Proportion
+91005,Heart failure w LVSD: treated with ACE-I or ARB (denominator incl. PCAs),72417,12,6168,2013,2024,0.987,0.986,False,Proportion
+91013,For patients with stroke a record exists that an anti-platelet agent or an anti-coagulant is taken (denominator incl. PCAs),73618,12,6168,2013,2024,0.999,0.999,False,Proportion
+91215,Dementia care plan has been reviewed in the last 12 months (denominator incl. PCAs),73497,12,6168,2013,2024,1.0,1.0,False,Proportion
+91238,Newly diagnosed patients with diabetes referred for an education programme within 9 months (denominator incl. PCAs),73617,12,6168,2013,2024,1.0,1.0,False,Proportion
+91243,Newly diagnosed patients with depression who had a review 10-56 days after diagnosis (denominator incl. PCAs),73543,12,6168,2013,2024,1.0,1.0,False,Proportion
+91262,"Patients (aged 45+ yrs), who have a record of blood pressure in the last 5 yrs (denominator incl. PCAs)",67510,11,6168,2014,2024,1.0,1.0,False,Proportion
+91269,Rheumatoid Arthritis: QOF prevalence,73618,12,6168,2013,2024,1.0,1.0,False,Crude rate
+91280,Smoking: QOF prevalence,73612,12,6168,2013,2024,1.0,1.0,False,Proportion
+91337,New cancer cases (Crude incidence rate),91814,15,6167,2009,2023,1.0,1.0,False,Crude rate
+91344,Urgent suspected cancer referrals (Indirectly age-gender standardised referral ratio),98001,16,6168,2009,2024,1.0,1.0,False,Indirectly standardised ratio
+91347,New cancer cases treated resulting from an urgent suspected cancer referral (Detection rate: % of all new cancer cases treated),98001,16,6168,2009,2024,1.0,0.999,False,Proportion
+91348,Urgent suspected cancer referrals for suspected breast cancer,98001,16,6168,2009,2024,1.0,1.0,False,Crude rate
+91349,Urgent suspected cancer referrals for suspected lower GI cancer,98001,16,6168,2009,2024,1.0,1.0,False,Crude rate
+91350,Urgent suspected cancer referrals for suspected lung cancer,98001,16,6168,2009,2024,1.0,1.0,False,Crude rate
+91351,Urgent suspected cancer referrals for suspected skin cancer,98001,16,6168,2009,2024,1.0,1.0,False,Crude rate
+91355,Number of emergency admissions with cancer,98001,16,6168,2009,2024,1.0,1.0,False,Crude rate
+91356,Number of emergency presentations,98002,16,6168,2009,2024,1.0,1.0,False,Crude rate
+91357,Number of other (non-emergency) presentations,98002,16,6168,2009,2024,1.0,1.0,False,Crude rate
+91845,Urgent suspected cancer referrals resulting in a diagnosis of cancer (Conversion rate: as % of all USC referrals),98001,16,6168,2009,2024,1.0,1.0,False,Proportion
+91882,Urgent suspected cancer referrals,98001,16,6168,2009,2024,1.0,1.0,False,Crude rate
+92587,Stroke risk of patients with AF assessed with CHA2DS2-VASc (denominator incl. PCAs),61391,10,6168,2015,2024,1.0,1.0,False,Proportion
+92590,PAD: QOF prevalence,61391,10,6168,2015,2024,1.0,1.0,False,Proportion
+92594,Patients with AF who are treated w anti-coag. therapy (CHADS2DS2-VASc >=2) (denominator incl. PCAs),61391,10,6168,2015,2024,0.999,0.999,False,Proportion
+92600,Bowel cancer screening coverage: aged 60 to 74 years old,73768,12,6168,2013,2024,1.0,1.0,False,Proportion
+92601,Bowel cancer screening uptake: aged 60 to 74 years old,73765,12,6168,2013,2024,1.0,1.0,False,Proportion
+92828,People with type 1 diabetes who received a blood glucose test - Retired,53703,9,6164,2015,2023,0.968,0.996,False,Proportion
+92829,People with type 2 diabetes who received a blood glucose test - Retired,53736,9,6164,2015,2023,1.0,1.0,False,Proportion
+92830,People with type 1 diabetes who received a blood pressure check - Retired,53703,9,6164,2015,2023,0.966,0.997,False,Proportion
+92831,People with type 2 diabetes who received a blood pressure check - Retired,53736,9,6164,2015,2023,1.0,1.0,False,Proportion
+92832,People with type 1 diabetes who received a cholesterol check - Retired,53703,9,6164,2015,2023,0.965,0.995,False,Proportion
+92833,People with type 2 diabetes who received a cholesterol check - Retired,53736,9,6164,2015,2023,1.0,1.0,False,Proportion
+92834,People with type 1 diabetes who received a serum creatinine test - Retired,53703,9,6164,2015,2023,0.965,0.996,False,Proportion
+92835,People with type 2 diabetes who received a serum creatinine test - Retired,53736,9,6164,2015,2023,1.0,1.0,False,Proportion
+92836,People with type 1 diabetes who received urinary albumin test - Retired,53703,9,6164,2015,2023,0.953,0.984,False,Proportion
+92837,People with type 2 diabetes who received urinary albumin test - Retired,53736,9,6164,2015,2023,1.0,1.0,False,Proportion
+92842,People with type 1 diabetes who have received an annual foot check - Retired,53703,9,6164,2015,2023,0.964,0.995,False,Proportion
+92843,People with type 2 diabetes who have received an annual foot check - Retired,53736,9,6164,2015,2023,1.0,1.0,False,Proportion
+92870,People with type 1 diabetes whose smoking status is recorded - Retired,53702,9,6164,2015,2023,0.969,1.0,False,Proportion
+92871,People with type 2 diabetes whose smoking status is recorded - Retired,53740,9,6164,2015,2023,1.0,1.0,False,Proportion
+92872,People with type 1 diabetes who received 8 care processes - Retired,53703,9,6164,2015,2023,0.946,0.974,False,Proportion
+92873,People with type 2 diabetes who received 8 care processes - Retired,53736,9,6164,2015,2023,1.0,1.0,False,Proportion
+92878,People with type 1 diabetes who achieved a blood glucose level of 58 mmol/mol or less - Retired,53702,9,6164,2015,2023,0.963,1.0,False,Proportion
+92879,People with type 2 diabetes who achieved a blood glucose level of 58 mmol/mol or less - Retired,53740,9,6164,2015,2023,1.0,1.0,False,Proportion
+92882,People with type 1 diabetes who achieved a blood pressure of 140/80 or less - Retired,53707,9,6164,2015,2023,0.962,1.0,False,Proportion
+92883,People with type 2 diabetes who achieved a blood pressure of 140/80 or less - Retired,53740,9,6164,2015,2023,1.0,1.0,False,Proportion
+92950,People with type 1 diabetes who have had their BMI recorded - Retired,53707,9,6164,2015,2023,0.969,1.0,False,Proportion
+92951,People with type 2 diabetes who have had their BMI recorded - Retired,53740,9,6164,2015,2023,1.0,1.0,False,Proportion
+93438,% who have a positive experience of their GP practice,43101,7,6166,2018,2024,1.0,1.0,False,Proportion
+93443,% reporting learning disability,43105,7,6166,2018,2024,1.0,1.0,False,Proportion
+93444,% reporting a long-term mental health problem,43090,7,6166,2018,2024,1.0,1.0,False,Proportion
+93705,"Last BP reading of patients (<80 yrs, with CHD) in the last 12 months is <= 140/90 mmHg (denominator incl. PCAs)",36970,6,6168,2019,2024,1.0,1.0,False,Proportion
+93706,"Last BP reading of patients (80+ yrs, with CHD) in the last 12 months is <= 150/90 mmHg (denominator incl. PCAs)",36970,6,6168,2019,2024,0.999,0.998,False,Proportion
+93707,"Last BP reading of patients (<80 yrs, with a history of stroke or TIA) in the last 12 months is <= 140/90 mmHg (denominator incl. PCAs)",36970,6,6168,2019,2024,1.0,1.0,False,Proportion
+93708,"Last BP reading of patients (80+ yrs, with a history of stroke or TIA) in the last 12 months is <= 150/90 mmHg (denominator incl. PCAs)",36970,6,6168,2019,2024,0.998,0.996,False,Proportion
+93709,"Last BP reading of patients (<80 yrs, with hypertension), in the last 12 months is <= 140/90 mmHg (denominator incl. PCAs)",36971,6,6168,2019,2024,1.0,1.0,False,Proportion
+93710,"Last BP reading of patients (80+ yrs, with hypertension), in the last 12 months is <= 150/90 mmHg (denominator incl. PCAs)",36971,6,6168,2019,2024,0.999,0.999,False,Proportion
+93711,Last BP in patients with diabetes is <= 140/80 mmHg (denominator incl. PCAs),36970,6,6168,2019,2024,1.0,1.0,False,Proportion
+93712,IFCC-HbA1c <= 58 mmol/mol in patients with diabetes without frailty (denominator incl. PCAs),36970,6,6168,2019,2024,1.0,1.0,False,Proportion
+93713,IFCC-HbA1c <= 75 mmol/mol in patients with diabetes and frailty (denominator incl. PCAs),36970,6,6168,2019,2024,0.999,0.997,False,Proportion
+93714,"Patients with diabetes (40+ yrs, no history of CVD) treated with a statin (denominator incl. PCAs)",36971,6,6168,2019,2024,1.0,1.0,False,Proportion
+93715,Patients with diabetes and a history of CVD (excl. haem. stroke) treated with a statin (denominator incl. PCAs),36971,6,6168,2019,2024,1.0,1.0,False,Proportion
+93716,"Patients with COPD with a MRC dyspnoea score >=3  in the last 12 months, who have had an offer of referral to a pulm. rehab. clinic (denominator incl. PCAs)",36970,6,6168,2019,2024,0.998,0.995,False,Proportion
+93719,Record of BMI in the last 12 months for patients on the MH register (denominator incl. PCAs),36970,6,6168,2019,2024,1.0,1.0,False,Proportion
+93790,Patients with Asthma: review in the last 12 months (denominator incl. PCAs),30817,5,6168,2020,2024,1.0,1.0,False,Proportion
+93791,Patients with Asthma (6-19 yrs): Second-hand smoking status recorded in the last 12 months (denominator incl. PCAs),30817,5,6168,2020,2024,1.0,0.999,False,Proportion
+93792,Patients with COPD who had a review in the last 12 months (denominator incl. PCAs),30817,5,6168,2020,2024,1.0,0.999,False,Proportion
+93793,Patients' heart failure diagnosis confirmed by an ECG or specialist assessment (denominator incl. PCAs),30817,5,6168,2020,2024,0.998,0.984,False,Proportion
+93794,Patients with heart failure due to LVSD treated with beta-blockers (denominator incl. PCAs),30818,5,6168,2020,2024,1.0,0.998,False,Proportion
+93795,"Patients with heart failure who had a review in the last 12 months, including the assessment of functional capacity (denominator incl. PCAs)",30817,5,6168,2020,2024,1.0,0.999,False,Proportion
+93796,Patients on the Non-Diabetic Hyperglycaemia register who have had an HbA1c or fasting blood glucose test in the preceding 12 months (denominator incl. PCAs),30817,5,6168,2020,2024,1.0,1.0,False,Proportion
+93797,Non-Diabetic Hyperglycaemia (NDH): QOF prevalence,30818,5,6168,2020,2024,1.0,1.0,False,Proportion
+93919,Patients with psychosis who have a current record of alcohol consumption,24659,4,6168,2021,2024,1.0,1.0,False,Proportion
+93920,Patients with psychosis who have a current record of a lipid profile,24659,4,6168,2021,2024,1.0,1.0,False,Proportion
+93921,Patients with psychosis who have a current record of blood glucose or HbA1c,24659,4,6168,2021,2024,1.0,1.0,False,Proportion
+93922,Patients with cancer reviewed within 12 months of diagnosis (denominator incl. PCAs),24659,4,6168,2021,2024,1.0,0.998,False,Proportion
+93923,Patients with cancer who had an opportunity for a discussion within 3 months of diagnosis (denominator incl. PCAs),24659,4,6168,2021,2024,1.0,0.999,False,Proportion
+93924,Babies who received at least 3 doses of a DTaP vaccine before the age of 8 months,24660,4,6168,2021,2024,0.999,0.998,False,Proportion
+93925,Children who received at least 1 dose of MMR vaccine between the ages of 1 and 1.5 yrs,24660,4,6168,2021,2024,0.999,0.998,False,Proportion
+93926,"Children, aged 5, who received a reinforcing dose of DTaP/IPV and at least 2 doses of an MMR vaccine between the ages of 1 and 5 yrs",24660,4,6168,2021,2024,0.999,0.998,False,Proportion
+93927,"Patients, aged 80, who received a shingles vaccine between the ages of 70 and 79 yrs",24660,4,6168,2021,2024,0.999,0.998,False,Proportion
+94118,% with a long-standing health condition (2024 definition),6166,1,6166,2024,2024,1.0,1.0,False,Proportion
+94119,"% reporting a joint problem, such as arthritis",6166,1,6166,2024,2024,1.0,1.0,False,Proportion
+94126,% of patients who had a good experience when contacting their GP practice,6166,1,6166,2024,2024,1.0,1.0,False,Proportion
+94127,% of patients who felt the waiting time for their appointment was acceptable,6166,1,6166,2024,2024,1.0,1.0,False,Proportion
+94128,% of face-to-face appointments,6166,1,6166,2024,2024,1.0,1.0,False,Proportion
+94129,% of patients whose needs were met at their last GP practice appointment,6166,1,6166,2024,2024,1.0,1.0,False,Proportion
+94130,% of patients reporting to suffer from 'long Covid',6166,1,6166,2024,2024,0.999,0.999,False,Proportion
+94136,Obesity: QOF prevalence (new definition),12334,2,6168,2023,2024,1.0,1.0,False,Proportion
+94138,Hypertension patients with a recent blood pressure reading,30033,5,6110,2021,2025,1.0,1.0,False,Proportion
+94140,Hypertension patients treated to appropriate threshold,24249,4,6110,2022,2025,0.999,0.999,False,Proportion
+94141,Patients with QRISK ≥ 20% treated with lipid lowering therapy,30009,5,6109,2021,2025,0.997,0.997,False,Proportion
+94142,CKD patients treated with lipid lowering therapy,24227,4,6110,2022,2025,0.995,0.995,False,Proportion
+94143,CKD patients with a record of monitoring ACR test,12180,2,6110,2024,2025,0.99,0.99,False,Proportion
+94144,CKD patients treated to appropriate blood pressure threshold,24217,4,6110,2022,2025,0.991,0.991,False,Proportion
+94146,People with type 1 diabetes who received all 9 care process checks (including retinal screening) - Retired,30637,5,6152,2019,2023,0.95,1.0,False,Proportion
+94147,People with type 2 diabetes who received all 9 care process checks (including retinal screening) - Retired,30655,5,6152,2019,2023,1.0,1.0,False,Proportion
+94148,People with type 1 diabetes who received retinal screening - Retired,30637,5,6152,2019,2023,0.946,1.0,False,Proportion
+94149,People with type 2 diabetes who received retinal screening - Retired,30655,5,6152,2019,2023,1.0,1.0,False,Proportion
+94150,People with type 1 diabetes who achieved all three treatment targets - Retired,36737,6,6152,2018,2023,0.94,1.0,False,Proportion
+94151,People with type 2 diabetes who achieved all three treatment targets - Retired,36758,6,6152,2018,2023,1.0,1.0,False,Proportion
+94152,People with type 1 diabetes who were prescribed statins for combined prevention of cardiovascular disease - Retired,36737,6,6152,2018,2023,0.906,0.996,False,Proportion
+94153,People with type 2 diabetes who were prescribed statins for combined prevention of cardiovascular disease - Retired,36758,6,6152,2018,2023,1.0,1.0,False,Proportion
+94154,Lower GI endoscopy procedures,98001,16,6168,2009,2024,1.0,1.0,False,Crude rate
+94155,Upper GI endoscopy procedures,98001,16,6168,2009,2024,1.0,1.0,False,Crude rate
+94176,Prevalence of type 1 diabetes among practices participating in the National Diabetes Audit,42871,7,6153,2018,2024,1.0,1.0,False,Proportion
+94177,Prevalence of type 2 diabetes among practices participating in the National Diabetes Audit,42897,7,6153,2018,2024,1.0,1.0,False,Proportion
+94240,Deprivation score (IMD 2025),6143,1,6143,2025,2025,0.0,0.0,False,Score
+94256,People with type 1 diabetes who achieved all three treatment targets (new definition),6134,1,6134,2024,2024,0.633,0.999,False,Proportion
+94257,People with type 2 diabetes who achieved all three treatment targets (new definition),6139,1,6139,2024,2024,0.999,1.0,False,Proportion
+94258,People with type 1 diabetes who achieved a blood pressure of 140/90 or less,6134,1,6134,2024,2024,0.671,0.999,False,Proportion
+94259,People with type 2 diabetes who achieved a blood pressure of 140/90 or less,6139,1,6139,2024,2024,0.999,1.0,False,Proportion
+94261,People with type 1 diabetes who received all 9 care process checks (including retinal screening),6139,1,6139,2024,2024,0.0,0.0,False,Proportion
+94262,People with type 1 diabetes who received 8 care processes,6134,1,6134,2024,2024,0.768,1.0,False,Proportion
+94263,People with type 1 diabetes who received a blood glucose test,6134,1,6134,2024,2024,0.769,1.0,False,Proportion
+94264,People with type 1 diabetes who received a blood pressure check,6134,1,6134,2024,2024,0.751,1.0,False,Proportion
+94265,People with type 1 diabetes who received a cholesterol check,6134,1,6134,2024,2024,0.751,1.0,False,Proportion
+94266,People with type 1 diabetes who received a serum creatinine test,6134,1,6134,2024,2024,0.751,1.0,False,Proportion
+94267,People with type 1 diabetes who received urinary albumin test,6134,1,6134,2024,2024,0.751,1.0,False,Proportion
+94268,People with type 1 diabetes who received retinal screening,6139,1,6139,2024,2024,0.0,0.0,False,Proportion
+94269,People with type 1 diabetes who have received an annual foot check,6134,1,6134,2024,2024,0.751,1.0,False,Proportion
+94270,People with type 1 diabetes who have had their BMI recorded,6134,1,6134,2024,2024,0.751,1.0,False,Proportion
+94271,People with type 1 diabetes whose smoking status is recorded,6134,1,6134,2024,2024,0.751,1.0,False,Proportion
+94272,People with type 2 diabetes who received all 9 care process checks (including retinal screening),6139,1,6139,2024,2024,0.0,0.0,False,Proportion
+94273,People with type 2 diabetes who received 8 care processes,6139,1,6139,2024,2024,0.999,1.0,False,Proportion
+94274,People with type 2 diabetes who received a blood glucose test,6139,1,6139,2024,2024,0.999,1.0,False,Proportion
+94275,People with type 2 diabetes who received a blood pressure check,6139,1,6139,2024,2024,0.999,1.0,False,Proportion
+94276,People with type 2 diabetes who received a cholesterol check,6139,1,6139,2024,2024,0.999,1.0,False,Proportion
+94277,People with type 2 diabetes who received a serum creatinine test,6139,1,6139,2024,2024,0.999,1.0,False,Proportion
+94278,People with type 2 diabetes who received urinary albumin test,6139,1,6139,2024,2024,0.999,1.0,False,Proportion
+94279,People with type 2 diabetes who received retinal screening,6139,1,6139,2024,2024,0.0,0.0,False,Proportion
+94280,People with type 2 diabetes who have received an annual foot check,6139,1,6139,2024,2024,0.999,1.0,False,Proportion
+94281,People with type 2 diabetes who have had their BMI recorded,6139,1,6139,2024,2024,0.999,1.0,False,Proportion
+94282,People with type 2 diabetes whose smoking status is recorded,6139,1,6139,2024,2024,0.999,1.0,False,Proportion
+94283,People with type 1 diabetes who achieved a blood glucose level of 58 mmol/mol or less,6134,1,6134,2024,2024,0.673,1.0,False,Proportion
+94284,People with type 1 diabetes who were prescribed statins for combined prevention of cardiovascular disease,6134,1,6134,2024,2024,0.459,0.997,False,Proportion
+94285,People with type 2 diabetes who achieved a blood glucose level of 58 mmol/mol or less,6139,1,6139,2024,2024,0.999,1.0,False,Proportion
+94286,People with type 2 diabetes who were prescribed statins for combined prevention of cardiovascular disease,6139,1,6139,2024,2024,0.998,1.0,False,Proportion

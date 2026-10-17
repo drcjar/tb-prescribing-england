@@ -1,0 +1,3 @@
+scan,pairs,nominal_p05,frac_p05,strong_p001,inflation_lambda,fdr_q05
+lag (t-1),20112,4346,0.2161,894,2.34,1423
+lead (t+1),19624,4156,0.2118,982,2.34,1523

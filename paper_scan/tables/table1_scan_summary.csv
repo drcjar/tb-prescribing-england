@@ -1,0 +1,7 @@
+unit,exposure,pairs,pct_significant,median_abs_z,inflation_lambda
+Upper-tier areas (151),year before,32608,18.8,0.97,2.1
+Upper-tier areas (151),year after,32527,19.2,0.99,2.2
+Lower-tier areas (294),year before,20112,21.6,1.03,2.3
+Lower-tier areas (294),year after,19624,21.2,1.03,2.3
+"GP practices (~6,200)",year before,12296,44.9,1.71,6.4
+"GP practices (~6,200)",year after,10788,49.7,1.94,8.3

@@ -1,0 +1,8 @@
+drug,outcome,between_areas,within_areas
+Diabetes drugs,Diabetes,0.77,0.03
+Inhaled therapy,COPD,0.89,0.01
+Antihypertensives,Hypertension,0.81,-0.08
+Antidepressants,Depression,0.73,-0.06
+Dementia drugs,Dementia,0.44,0.15
+Antiplatelets,Stroke,0.76,-0.0
+Nitrates / CCBs,CHD,0.78,0.06

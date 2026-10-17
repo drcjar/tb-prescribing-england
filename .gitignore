@@ -6,3 +6,8 @@ PROGRESS.md
 outputs_run.log
 outputs/logs/
 outputs/logs_*.txt
+
+# large regenerable panels (rebuild with build_wide_outcomes.py / build_practice_*.py)
+data/processed/*_outcomes_long.csv
+data/processed/*_outcomes_long.csv.gz
+data/processed/practice_section_exposure.csv.gz

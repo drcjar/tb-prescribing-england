@@ -1,0 +1,519 @@
+indicator_id,indicator,n_area_years,n_years,n_areas,first_year,last_year,count_complete,denom_complete,pooled,value_type,unit
+108,Under 75 mortality rate from all causes,3825,25,153,2001,2025,0.987,0.987,False,Directly standardised rate,"per 100,000"
+200,Learning disability: QOF prevalence,1683,11,153,2014,2024,0.998,0.998,False,Proportion,%
+212,Stroke: QOF prevalence,1989,13,153,2012,2024,0.998,0.998,False,Proportion,%
+219,Hypertension: QOF prevalence,1989,13,153,2012,2024,0.998,0.998,False,Proportion,%
+241,Diabetes: QOF prevalence,1989,13,153,2012,2024,0.998,0.998,False,Proportion,%
+247,Dementia: QOF prevalence,1989,13,153,2012,2024,0.998,0.998,False,Proportion,%
+253,COPD: QOF prevalence,1995,16,153,2009,2024,0.995,0.995,False,Proportion,%
+258,CKD: QOF prevalence,1836,12,153,2012,2024,0.998,0.998,False,Proportion,%
+262,Heart Failure: QOF prevalence,1989,13,153,2012,2024,0.998,0.998,False,Proportion,%
+273,CHD: QOF prevalence,1989,13,153,2012,2024,0.998,0.998,False,Proportion,%
+280,Atrial fibrillation: QOF prevalence,1989,13,153,2012,2024,0.998,0.998,False,Proportion,%
+342,% reporting a long-term back problem,894,6,149,2011,2016,1.0,1.0,False,Proportion,%
+384,% reporting arthritis or long-term joint problem,894,6,149,2011,2016,1.0,1.0,False,Proportion,%
+811,Children in care immunisations,1928,13,153,2012,2024,0.982,0.986,False,Proportion,%
+848,Depression: QOF prevalence,1836,12,153,2012,2024,0.998,0.998,False,Proportion,%
+1179,People aged 65-74 registered blind or partially sighted,918,6,153,2007,2022,0.93,1.0,False,Crude rate,"per 100,000"
+1180,People aged 75+ registered blind or partially sighted,918,6,153,2007,2022,0.937,1.0,False,Crude rate,"per 100,000"
+1203,"Mortality rate from lung cancer, all ages",3366,22,153,2002,2023,0.987,0.987,True,Directly standardised rate,"per 100,000"
+1204,"Mortality rate from chronic obstructive pulmonary disease, all ages",3366,22,153,2002,2023,0.987,0.987,True,Directly standardised rate,"per 100,000"
+1205,Lung cancer registrations,1640,11,151,2008,2018,0.987,0.0,True,Directly standardised rate,"per 100,000"
+1206,Oral cancer registrations,1640,11,151,2008,2018,0.987,0.0,True,Directly standardised rate,"per 100,000"
+1210,Proportion of local smoking population who successfully quit smoking,1926,13,153,2013,2025,0.944,0.0,False,Proportion,%
+1211,Smokers that have successfully quit at 4 weeks (CO validated),1462,10,151,2013,2022,0.901,0.0,False,Crude rate,"per 100,000 smokers aged 16+"
+1212,Completeness of NS-SEC recording by Stop Smoking Services,1463,10,151,2013,2022,0.908,0.941,False,Proportion,%
+1730,Percentage people living in 20% most deprived areas in England,459,3,153,2012,2014,1.0,1.0,False,Proportion,%
+10301,Pupil absence,2104,14,153,2010,2024,0.998,0.998,False,Proportion,%
+10401,First time entrants to the youth justice system,1836,12,153,2014,2025,0.953,0.953,False,Crude rate,"per 100,000"
+10601,Adults with a learning disability who live in their own home or with their family,1933,13,153,2011,2023,0.988,0.989,False,Proportion,%
+10602,Adults in contact with secondary mental health services who live in stable and appropriate accommodation,1476,10,149,2011,2020,0.0,0.0,False,Proportion,%
+11202,"Violent crime - violence offences per 1,000 population",1530,10,153,2015,2024,0.993,0.993,False,Crude rate,"per 1,000"
+11401,The rate of complaints about noise,1490,12,153,2010,2023,0.985,0.985,False,Crude rate,"per 1,000"
+20101,Low birth weight of term babies,2997,21,153,2005,2025,0.984,0.985,False,Proportion,%
+20601,Reception prevalence of overweight (including obesity),2907,19,153,2006,2024,0.915,0.915,False,Proportion,%
+20602,Year 6 prevalence of overweight (including obesity),2907,19,153,2006,2024,0.917,0.917,False,Proportion,%
+21001,Emergency Hospital Admissions for Intentional Self-Harm,2130,14,153,2010,2023,0.983,0.983,False,Directly standardised rate,"per 100,000"
+22301,Self reported wellbeing: people with a low satisfaction score,1808,12,153,2011,2022,0.0,0.0,False,Proportion,%
+22302,Self reported wellbeing: people with a low worthwhile score,1814,12,153,2011,2022,0.0,0.0,False,Proportion,%
+22303,Self reported wellbeing: people with a low happiness score,1814,12,153,2011,2022,0.0,0.0,False,Proportion,%
+22304,Self reported wellbeing: people with a high anxiety score,1814,12,153,2011,2022,0.0,0.0,False,Proportion,%
+22401,Emergency hospital admissions due to falls in people aged 65 and over,2283,15,153,2010,2024,0.983,0.983,False,Directly standardised rate,"per 100,000"
+22402,Emergency hospital admissions due to falls in people aged 65 to 79,2283,15,153,2010,2024,0.983,0.983,False,Directly standardised rate,"per 100,000"
+22403,Emergency hospital admissions due to falls in people aged 80 plus,2283,15,153,2010,2024,0.983,0.983,False,Directly standardised rate,"per 100,000"
+30301,Population vaccination coverage: Hepatitis B (1 year old),2233,15,153,2010,2024,0.702,0.646,False,Proportion,%
+30302,Population vaccination coverage: Hepatitis B (2 years old),2233,15,153,2010,2024,0.678,0.637,False,Proportion,%
+30303,Population vaccination coverage: Dtap IPV  Hib HepB (1 year old),2233,15,153,2010,2024,0.978,0.978,False,Proportion,%
+30304,Population vaccination coverage: Dtap  IPV  Hib HepB (2 years old),2233,15,153,2010,2024,0.978,0.978,False,Proportion,%
+30306,Population vaccination coverage: PCV,2084,14,153,2010,2024,0.978,0.978,False,Proportion,%
+30307,Population vaccination coverage: Hib and  MenC booster (2 years old),2233,15,153,2010,2024,0.978,0.978,False,Proportion,%
+30308,Population vaccination coverage: PCV booster,2233,15,153,2010,2024,0.978,0.978,False,Proportion,%
+30309,Population vaccination coverage: MMR for one dose (2 years old),2233,15,153,2010,2024,0.978,0.978,False,Proportion,%
+30310,Population vaccination coverage: MMR for one dose (5 years old),2233,15,153,2010,2024,0.978,0.978,False,Proportion,%
+30311,Population vaccination coverage: MMR for two doses (5 years old),2233,15,153,2010,2024,0.978,0.978,False,Proportion,%
+30313,Population vaccination coverage: PPV,2074,14,151,2010,2024,0.992,0.992,False,Proportion,%
+30314,Population vaccination coverage: Flu (aged 65 and over),2233,15,153,2010,2024,0.979,0.979,False,Proportion,%
+30315,Population vaccination coverage: Flu (at risk individuals),2233,15,153,2010,2024,0.979,0.979,False,Proportion,%
+40401,Under 75 mortality rate from cardiovascular disease,3825,25,153,2001,2025,0.987,0.987,False,Directly standardised rate,"per 100,000"
+40501,Under 75 mortality rate from cancer,3825,25,153,2001,2025,0.987,0.987,False,Directly standardised rate,"per 100,000"
+40601,Under 75 mortality rate from liver disease,3825,25,153,2001,2025,0.987,0.987,False,Directly standardised rate,"per 100,000"
+40701,Under 75 mortality rate from respiratory disease,3825,25,153,2001,2025,0.987,0.987,True,Directly standardised rate,"per 100,000"
+41001,Suicide rate,3292,22,153,2002,2023,0.997,0.988,True,Directly standardised rate,"per 100,000"
+41101,Emergency readmissions within 30 days of discharge from hospital,1617,11,153,2014,2024,0.84,0.84,False,Indirectly standardised proportion,%
+41201,Preventable sight loss: age related macular degeneration (AMD),2247,15,153,2010,2024,0.968,0.965,False,Crude rate,"per 100,000"
+41202,Preventable sight loss: glaucoma,2247,15,153,2010,2024,0.931,0.924,False,Crude rate,"per 100,000"
+41203,Preventable sight loss: diabetic eye disease,2247,15,153,2010,2024,0.737,0.728,False,Crude rate,"per 100,000"
+41204,Preventable sight loss: sight loss certifications,2247,15,153,2010,2024,0.972,0.97,False,Crude rate,"per 100,000"
+41401,Hip fractures in people aged 65 and over,2283,15,153,2010,2024,0.983,0.983,False,Directly standardised rate,"per 100,000"
+41402,Hip fractures in people aged 65 to 79,2283,15,153,2010,2024,0.983,0.983,False,Directly standardised rate,"per 100,000"
+41403,Hip fractures in people aged 80 and over,2283,15,153,2010,2024,0.983,0.983,False,Directly standardised rate,"per 100,000"
+90244,Successful completion of drug treatment: opiate users,2235,15,153,2010,2024,0.975,0.977,False,Proportion,%
+90245,Successful completion of drug treatment: non opiate users,2235,15,153,2010,2024,0.977,0.977,False,Proportion,%
+90280,Social Isolation: percentage of adult social care users who have as much social contact as they would like,2082,14,153,2010,2024,0.426,0.984,False,Proportion,%
+90282,Gap in the employment rate between those with a physical or mental long term health condition (aged 16 to 64) and the overall employment rate,1488,10,153,2013,2022,0.0,0.0,False,Gap,Percentage points
+90283,Gap in the employment rate between those who are in receipt of long term support for a learning disability (aged 18 to 64) and the overall employment rate,1782,12,153,2011,2022,0.0,0.0,False,Gap,Percentage points
+90284,Hospital admissions caused by unintentional and deliberate injuries in children (aged 0 to 14 years),2283,15,153,2010,2024,0.983,0.983,False,Crude rate,"per 10,000"
+90285,Hospital admissions caused by unintentional and deliberate injuries in young people (aged 15 to 24 years),2283,15,153,2010,2024,0.983,0.983,False,Crude rate,"per 10,000"
+90286,Sickness absence: the percentage of employees who had at least one day off in the previous week,1375,9,153,2014,2022,0.0,0.0,True,Proportion,%
+90287,Sickness absence:  the percentage of working days lost due to sickness absence,1377,9,153,2014,2022,0.0,0.0,True,Proportion,%
+90290,Proportion of eligible children in reception measured in the NCMP (reception participation rate),2293,15,153,2010,2024,0.856,0.444,False,Proportion,%
+90291,Proportion of eligible children in year 6 measured in the NCMP (year 6 participation rate),2293,15,153,2010,2024,0.856,0.444,False,Proportion,%
+90292,Proportion of eligible children measured in the NCMP (total participation rate),2293,15,153,2010,2024,0.856,0.444,False,Proportion,%
+90312,Proportion of records with valid ethnicity code in the NCMP,2891,19,153,2006,2024,0.883,0.883,False,Proportion,%
+90313,Proportion of records with valid child postcode in the NCMP,2891,19,153,2006,2024,0.93,0.93,False,Proportion,%
+90314,Proportion of records with height rounded to X.0 or X.5 in the NCMP,2891,19,153,2006,2024,0.945,0.945,False,Proportion,%
+90315,Proportion of records with weight rounded to X.0 or X.5 in the NCMP,2891,19,153,2006,2024,0.945,0.945,False,Proportion,%
+90316,Reception prevalence of underweight,2907,19,153,2006,2024,0.841,0.842,False,Proportion,%
+90317,Reception prevalence of healthy weight,2907,19,153,2006,2024,0.916,0.916,False,Proportion,%
+90319,Reception prevalence of obesity (including severe obesity),2907,19,153,2006,2024,0.913,0.913,False,Proportion,%
+90320,Year 6 prevalence of underweight,2907,19,153,2006,2024,0.892,0.892,False,Proportion,%
+90321,Year 6 prevalence of healthy weight,2907,19,153,2006,2024,0.918,0.918,False,Proportion,%
+90323,Year 6 prevalence of obesity (including severe obesity),2907,19,153,2006,2024,0.916,0.916,False,Proportion,%
+90357,"The percentage of the population exposed to road, rail and air transport noise of 65dB(A) or more, during the daytime",596,4,153,2006,2021,0.993,0.993,False,Proportion,%
+90358,"The percentage of the population exposed to road, rail and air transport noise of 55 dB(A) or more during the night-time",596,4,153,2006,2021,0.993,0.993,False,Proportion,%
+90402,"Children leaving care: rate per 10,000 children aged under 18",882,6,147,2012,2017,0.994,0.995,False,Crude rate,"per 10,000"
+90414,Marital breakup: % of adults,149,1,149,2011,2011,1.0,1.0,False,Proportion,%
+90443,Osteoporosis: QOF prevalence,1989,13,153,2012,2024,0.998,0.998,False,Crude rate,%
+90535,Depression and anxiety among social care users: % of social care users,1029,7,147,2012,2018,0.0,0.0,False,Proportion,%
+90581,Mental Health: QOF prevalence,1989,13,153,2012,2024,0.998,0.998,False,Proportion,%
+90586,Satisfaction with social care support: % service users extremely satisfied or very satisfied with their care and support,1029,7,147,2011,2017,0.0,0.706,False,Proportion,%
+90589,Satisfaction with social care protection: % of service users,1029,7,147,2011,2017,0.0,0.705,False,Proportion,%
+90600,Patients with severe mental health issues having a comprehensive care plan (denominator incl. PCAs),1989,13,153,2012,2024,0.998,0.998,False,Proportion,%
+90603,Record of a BP check in the last 12 months for patients on the MH register (denominator incl. PCAs),1989,13,153,2012,2024,0.998,0.998,False,Proportion,%
+90616,Smoking status of patients with certain conditions recorded in the last 12 months (denominator incl. PCAs),417,3,149,2014,2018,1.0,1.0,False,Proportion,%
+90617,Smoking cessation support and treatment offered to patients with certain conditions (denominator incl. PCAs),1989,13,153,2012,2024,0.998,0.998,False,Proportion,%
+90630,Children in low income families (all dependent children under 20),1637,11,149,2006,2016,0.999,0.999,False,Proportion,%
+90631,School readiness: percentage of children achieving a good level of development at the end of Reception,610,4,153,2021,2024,1.0,1.0,False,Proportion,%
+90632,School readiness: percentage of children with free school meal status achieving a good level of development at the end of Reception,610,4,153,2021,2024,0.998,0.993,False,Proportion,%
+90633,School readiness: percentage of children achieving the expected level in the phonics screening check in Year 1,1788,12,153,2011,2024,0.984,0.984,False,Proportion,%
+90634,School readiness: percentage of children with free school meal status achieving the expected level in the phonics screening check in Year 1,1788,12,153,2011,2024,0.984,0.984,False,Proportion,%
+90635,"Gap in the employment rate for those who are in contact with secondary mental health services  (aged 18 to 69) and on the Care Plan Approach, and the overall employment rate",1478,10,151,2011,2020,0.0,0.0,False,Gap,Percentage points
+90637,"Violent crime - sexual offences per 1,000 population",1530,10,153,2015,2024,0.993,0.993,False,Crude rate,"per 1,000"
+90638,Social Isolation: percentage of adult carers who have as much social contact as they would like,898,6,153,2012,2023,0.659,0.986,False,Proportion,%
+90646,Depression: QOF incidence - new diagnosis,1791,12,153,2013,2024,0.998,0.998,False,Crude rate,%
+90729,"Genital warts diagnostic rate per 100,000",2142,14,153,2012,2025,0.999,0.999,False,Crude rate,"per 100,000"
+90742,"Syphilis diagnostic rate per 100,000",2142,14,153,2012,2025,0.999,0.999,False,Crude rate,"per 100,000"
+90759,"Gonorrhoea diagnostic rate per 100,000",2142,14,153,2012,2025,0.999,0.999,False,Crude rate,"per 100,000"
+90790,"HIV diagnosed prevalence rate per 1,000 aged 15 to 59 years",2142,14,153,2011,2024,0.996,0.996,False,Crude rate,"per 1,000"
+90791,HIV late diagnosis,2142,14,153,2010,2023,0.993,0.99,True,Proportion,%
+90801,Child mortality rate (1 to 17 years),3366,22,153,2002,2023,0.987,0.987,True,Directly standardised rate,"per 100,000"
+90803,Children in care,1050,7,153,2018,2024,0.988,0.996,False,Crude rate,"per 10,000"
+90804,Children killed and seriously injured (KSI) on England's roads,1683,11,153,2012,2022,0.949,0.952,True,Crude rate,"per 100,000"
+90810,Hospital admissions for asthma (under 19 years),1836,12,153,2013,2024,0.973,0.983,False,Crude rate,"per 100,000"
+90812,Hospital admissions for mental health conditions (under 18 years),2142,14,153,2010,2023,0.975,0.983,False,Crude rate,"per 100,000"
+90813,Hospital admissions as a result of self-harm (10 to 24 years),1989,13,153,2011,2023,0.982,0.983,False,Directly standardised rate,"per 100,000"
+90832,Hospital admissions caused by unintentional and deliberate injuries in children (aged 0 to 4 years),2283,15,153,2010,2024,0.983,0.983,False,Crude rate,"per 10,000"
+90848,Children entering the youth justice system (10-17 yrs),1194,8,151,2013,2020,1.0,1.0,False,Crude rate,"per 1,000"
+90851,The percentage of people resident in the area living in each national deprivation quintile,16,8,2,2010,2017,0.0,0.0,False,Proportion,%
+90861,Under 75 mortality rate from alcoholic liver disease,3366,22,153,2002,2023,0.987,0.987,True,Directly standardised rate,"per 100,000"
+90875,Under 75 mortality rate from non-alcoholic fatty liver disease (NAFLD),3213,21,153,2002,2022,0.98,0.98,True,Crude rate,"per 100,000"
+90886,"Children on child protection plans: Rate per 10,000 children <18",1331,9,151,2012,2020,0.983,0.989,False,Crude rate,"per 10,000"
+90892,Hospital admission rate due to liver disease,1989,13,153,2010,2022,0.976,0.976,False,Directly standardised rate,"per 100,000"
+90898,Pupils with special educational needs (SEN),1631,11,153,2015,2025,1.0,1.0,False,Proportion,%
+90903,Pupils with Learning Difficulties: % of school aged pupils,735,5,147,2013,2017,1.0,1.0,False,Crude rate,%
+90916,Unaccompanied Asylum Seeking Children looked after: count,1469,10,147,2008,2018,0.722,0.0,False,Count,population
+90922,Children eligible for free school meals,1778,12,153,2014,2025,1.0,1.0,False,Proportion,%
+90929,Hospital admission rate for alcoholic liver disease,1989,13,153,2010,2022,0.976,0.976,False,Directly standardised rate,"per 100,000"
+90932,Persons entering drug misuse treatment - Percentage of eligible persons completing a course of hepatitis B vaccination,735,5,147,2012,2016,0.893,0.893,False,Proportion,%
+90933,Asthma: QOF prevalence,765,5,153,2020,2024,0.999,0.999,False,Proportion,%
+90938,Persons in drug misuse treatment who inject drugs - Percentage of eligible persons who have received a hepatitis C test,881,6,147,2012,2017,0.993,0.993,False,Proportion,%
+90986,Hospital admissions due to stroke,3366,22,153,2003,2024,0.986,0.986,False,Directly standardised rate,"per 100,000"
+90987,Hospital admissions due to heart failure,3366,22,153,2003,2024,0.986,0.986,False,Directly standardised rate,"per 100,000"
+90988,Hospital admissions due to coronary heart disease,3366,22,153,2003,2024,0.986,0.986,False,Directly standardised rate,"per 100,000"
+91046,"Genital herpes diagnosis rate per 100,000",2142,14,153,2012,2025,0.999,0.999,False,Crude rate,"per 100,000"
+91058,Proportion of deaths at home (or usual place of residence) from heart failure,1812,12,151,2012,2023,1.0,1.0,True,Proportion,%
+91106,Over 74 mortality rate from stroke,2907,19,153,2005,2023,0.987,0.987,True,Directly standardised rate,"per 100,000"
+91117,Estimated prevalence of opiate and/or crack cocaine use,743,5,153,2011,2022,0.992,0.992,False,Crude rate,"per 1,000"
+91126,Unemployment (model-based),1957,13,153,2013,2025,0.915,0.0,False,Proportion,%
+91133,Long term claimants of Jobseeker's Allowance,1224,8,153,2016,2023,1.0,1.0,False,Crude rate,"per 1,000"
+91161,Primary school fixed period exclusions: rate per 100 pupils,735,5,147,2012,2016,0.992,0.99,False,Proportion,%
+91162,Secondary school fixed period exclusions: rate per 100 pupils,734,5,147,2012,2016,0.992,0.99,False,Proportion,%
+91163,Under 75 mortality rate from colorectal cancer,3366,22,153,2002,2023,0.987,0.987,True,Directly standardised rate,"per 100,000"
+91165,Under 75 mortality rate from accidents,3366,22,153,2002,2023,0.987,0.987,True,Directly standardised rate,"per 100,000"
+91166,Under 75 mortality rate from ischaemic heart disease,3366,22,153,2002,2023,0.987,0.987,True,Directly standardised rate,"per 100,000"
+91167,Under 75 mortality rate from stroke,3366,22,153,2002,2023,0.987,0.987,True,Directly standardised rate,"per 100,000"
+91215,Dementia care plan has been reviewed in the last 12 months (denominator incl. PCAs),592,4,151,2017,2020,1.0,1.0,False,Proportion,%
+91243,Newly diagnosed patients with depression who had a review 10-56 days after diagnosis (denominator incl. PCAs),1836,12,153,2013,2024,0.998,0.998,False,Proportion,%
+91269,Rheumatoid Arthritis: QOF prevalence,1836,12,153,2013,2024,0.998,0.998,False,Crude rate,%
+91280,Smoking: QOF prevalence,1836,12,153,2013,2024,0.998,0.998,False,Proportion,%
+91281,Dementia: Direct standardised rate of emergency admissions (aged 65 years and over),596,4,149,2016,2019,0.998,0.998,False,Directly standardised rate,"per 100,000"
+91306,"New STI diagnoses (excluding chlamydia aged 24 years and under) per 100,000",2142,14,153,2012,2025,0.997,0.997,False,Crude rate,"per 100,000"
+91307,"STI testing rate (exclude chlamydia aged 24 years and under) per 100,000",2142,14,153,2012,2025,1.0,1.0,False,Crude rate,"per 100,000"
+91308,STI testing positivity (excluding chlamydia aged 24 years and under),2142,14,153,2012,2025,0.998,0.998,False,Proportion,%
+91324,Newborn Hearing Screening: Coverage,1794,12,153,2013,2024,0.916,0.916,False,Proportion,%
+91361,TB incidence (three year average),3307,23,151,2001,2023,0.982,0.982,True,Crude rate,"per 100,000"
+91365,Proportion of pulmonary TB notifications that were culture confirmed,3713,25,153,2000,2024,0.798,0.798,False,Proportion,%
+91366,Proportion of culture confirmed TB notifications with drug susceptibility testing reported for the four first line agents,3784,25,153,2000,2024,0.794,0.784,False,Proportion,%
+91367,Proportion of drug sensitive TB notifications who had completed a full course of treatment by 12 months,3449,23,153,2001,2023,0.861,0.861,False,Proportion,%
+91368,Proportion of drug sensitive TB cases who were lost to follow up at last reported outcome,2826,19,149,2001,2019,0.889,0.889,False,Proportion,%
+91369,Proportion of drug sensitive TB notifications who had died at last reported outcome,3490,23,153,2001,2023,0.613,0.613,False,Proportion,%
+91373,Proportion of TB notifications offered an HIV test,1964,13,153,2012,2024,0.84,0.84,False,Proportion,%
+91380,Alcohol-specific mortality,2907,19,153,2006,2024,0.987,0.987,False,Directly standardised rate,"per 100,000"
+91381,"Mortality from chronic liver disease, all ages",2907,19,153,2006,2024,0.987,0.987,False,Directly standardised rate,"per 100,000"
+91450,Proportion of pulmonary TB notifications starting treatment within two months of symptom onset,2042,14,152,2011,2024,0.722,0.722,False,Proportion,%
+91451,Proportion of pulmonary TB notifications starting treatment within four months of symptom onset,2042,14,152,2011,2024,0.73,0.73,False,Proportion,%
+91514,"Chlamydia detection rate per 100,000 aged 15 to 24 years",2096,14,153,2012,2025,0.996,0.996,False,Crude rate,"per 100,000"
+91521,"Chlamydia diagnostic rate per 100,000",2142,14,153,2012,2025,0.996,0.996,False,Crude rate,"per 100,000"
+91522,"Chlamydia diagnostic rate per 100,000 aged 25 years and over",2142,14,153,2012,2025,0.997,0.997,False,Crude rate,"per 100,000"
+91523,"All new STI diagnoses rate per 100,000",2142,14,153,2012,2025,0.997,0.997,False,Crude rate,"per 100,000"
+91546,Cost per smoking quitter,1893,13,153,2013,2025,0.891,0.94,False,Crude rate,£
+91547,Smoking prevalence in adults (aged 15 and over) - current smokers (QOF),1495,10,153,2013,2022,0.999,0.999,False,Proportion,%
+91720,Cancer screening coverage: bowel cancer,1673,11,153,2015,2025,1.0,1.0,False,Proportion,%
+91733,People invited for an NHS Health Check per year,1953,13,153,2013,2025,1.0,1.0,False,Proportion,%
+91734,People receiving an NHS Health Check per year,1953,13,153,2013,2025,1.0,1.0,False,Proportion,%
+91735,People taking up an NHS Health Check invite per year,1953,13,153,2013,2025,1.0,0.982,False,Crude rate,%
+91736,Proportion of local smoking population who set a quit date,1368,9,152,2017,2025,0.911,0.0,False,Proportion,%
+91743,Premature births (less than 37 weeks gestation),2527,17,153,2007,2023,0.986,0.986,True,Crude rate,"per 1,000"
+91745,Dementia: Short stay emergency admissions (aged 65 years and over),596,4,149,2016,2019,0.995,0.995,False,Proportion,%
+91818,"All new HIV diagnoses rate per 100,000",1530,10,153,2015,2024,0.995,0.995,False,Crude rate,"per 100,000"
+91871,"School pupils with social, emotional and mental health needs",1659,11,153,2015,2025,0.978,0.978,False,Proportion,%
+91872,Deprivation score (IMD 2015),147,1,147,2015,2015,0.0,0.0,False,Score,
+91884,Direct standardised rate of mortality: People with dementia (aged 65 years and older),918,6,153,2018,2023,1.0,1.0,False,Directly standardised rate,"per 100,000"
+91891,Dementia: Recorded prevalence (aged 65 years and older),594,4,149,2017,2020,1.0,1.0,False,Proportion,%
+91893,Place of death - care home: People with dementia (aged 65 years and older),1208,8,153,2016,2023,0.983,0.983,False,Proportion,%
+91894,Place of death - hospital: People with dementia (aged 65 years and older),1208,8,153,2016,2023,0.98,0.98,False,Proportion,%
+91895,Place of death - home: People with dementia (aged 65 years and older),1208,8,153,2016,2023,0.958,0.958,False,Proportion,%
+92127,Children with Moderate Learning Difficulties known to schools,889,6,149,2015,2020,0.987,0.987,False,Crude rate,"per 1,000"
+92129,Children with Severe Learning Difficulties known to schools,889,6,149,2015,2020,0.987,0.987,False,Crude rate,"per 1,000"
+92135,Children with learning difficulties known to schools,889,6,149,2015,2020,0.987,0.987,False,Crude rate,"per 1,000"
+92196,Infant mortality rate,3366,22,153,2002,2023,0.987,0.987,True,Crude rate,"per 1,000"
+92240,Admissions of babies under 14 days,1810,12,153,2013,2024,0.979,0.979,False,Crude rate,"per 1,000"
+92302,Emergency hospital admissions for COPD (aged 35 and over),2142,14,153,2010,2023,0.983,0.983,False,Directly standardised rate,"per 100,000"
+92304,Smoking prevalence in adults (aged 18 and over) - current smokers (GPPS) (old method),1484,10,151,2013,2022,0.0,0.999,False,Proportion,%
+92306,Smoking prevalence in adults (aged 18 and over) - ex smoker (GPPS) (old method),1484,10,151,2013,2022,0.0,0.999,False,Proportion,%
+92308,Smoking prevalence in adults (aged 18 and over) - never smoked (GPPS) (old method),1484,10,151,2013,2022,0.0,0.999,False,Proportion,%
+92309,Supporting information - % population aged under 18,2287,15,153,2010,2024,1.0,1.0,False,Proportion,%
+92310,Supporting information - % population aged 65+,2287,15,153,2010,2024,1.0,1.0,False,Proportion,%
+92313,Percentage of people in employment,2142,14,153,2011,2024,0.99,0.99,False,Proportion,%
+92315,Percentage of looked after children whose emotional wellbeing is a cause for concern,1642,11,153,2014,2024,0.868,0.886,False,Proportion,%
+92323,Incidence rate of alcohol-related cancer,2064,14,151,2005,2018,0.989,0.989,True,Directly standardised rate,"per 100,000"
+92326,"Mortality rate from a range of specified communicable diseases, including influenza",3366,22,153,2002,2023,0.987,0.987,True,Directly standardised rate,"per 100,000"
+92371,Newborn and Infant Physical Examination Screening Coverage,1055,7,153,2016,2024,0.719,0.719,False,Proportion,%
+92407,Potential years of life lost due to smoking related illness,735,5,149,2013,2017,0.992,0.992,True,Directly standardised rate,"per 100,000"
+92432,Deaths from drug misuse,3312,22,153,2002,2023,1.0,1.0,True,Directly standardised rate,"per 100,000"
+92443,Smoking Prevalence in adults (aged 18 and over) - current smokers (APS),2255,15,153,2011,2025,0.585,0.075,True,Proportion,%
+92445,Smoking prevalence in adults in routine and manual occupations (aged 18 to 64) - current smokers (APS),2085,14,153,2011,2024,0.0,0.359,True,Proportion,%
+92447,Successful completion of alcohol treatment,2235,15,153,2010,2024,0.977,0.977,False,Proportion,%
+92453,"Temporary Resident Care Home Deaths, Persons, All Ages (%)",918,6,153,2019,2024,0.987,0.987,False,Proportion,%
+92454,Adults in treatment at specialist drug misuse services: rate per 1000 population,1028,7,149,2013,2020,0.997,0.997,False,Crude rate,"per 1,000"
+92455,Adults in treatment at specialist alcohol misuse services: rate per 1000 population,1028,7,149,2013,2020,0.997,0.997,False,Crude rate,"per 1,000"
+92456,First time offenders,1683,11,153,2012,2022,0.942,0.942,False,Crude rate,"per 100,000"
+92464,Reception prevalence of overweight,2907,19,153,2006,2024,0.913,0.913,False,Proportion,%
+92465,Year 6 prevalence of overweight,2907,19,153,2006,2024,0.916,0.916,False,Proportion,%
+92477,Emergency admissions (0 to 4 years),2295,15,153,2010,2024,0.983,0.983,False,Crude rate,"per 1,000"
+92517,Breastfeeding prevalence at 6 to 8 weeks,1492,10,153,2015,2024,0.945,0.945,False,Proportion,%
+92530,Stillbirth rate,3366,22,153,2002,2023,0.987,0.987,True,Crude rate,"per 1,000"
+92531,Low birth weight of all babies,2238,15,153,2010,2024,0.98,0.98,False,Proportion,%
+92532,Very low birth weight of all babies,2238,15,153,2010,2024,0.979,0.98,False,Proportion,%
+92534,Smoking Prevalence in adults (aged 18 and over) - ex smokers (APS),2255,15,153,2011,2025,0.0,0.075,True,Proportion,%
+92536,Smoking prevalence in adults (aged 18 and over) with serious mental illness (SMI),147,1,147,2014,2014,0.959,0.959,False,Proportion,%
+92538,Smoking Prevalence in adults (aged 18 and over) - never smoked (APS),2255,15,153,2011,2025,0.0,0.075,True,Proportion,%
+92543,Proportion of children aged 2 to 2 and a half years receiving ASQ-3 as part of the Healthy Child Programme or integrated review,1492,10,153,2015,2024,0.928,0.925,False,Proportion,%
+92544,Adults with substance misuse treatment need who successfully engage in community based structured treatment following release from prison,1500,10,153,2015,2024,0.955,0.953,False,Proportion,%
+92563,Persistent absentees - Primary school,1490,10,153,2014,2024,0.992,0.992,False,Proportion,%
+92564,Persistent absentees - Secondary school,1490,10,153,2014,2024,0.992,0.992,False,Proportion,%
+92616,Self-reported well-being - high satisfaction score: % of respondents,1470,10,149,2011,2020,0.0,0.0,False,Proportion,%
+92617,Self-reported well-being - high happiness score: % of respondents,1470,10,149,2011,2020,0.0,0.0,False,Proportion,%
+92622,Hospital admissions for diabetes (under 19 years),1836,12,153,2013,2024,0.944,0.983,False,Crude rate,"per 100,000"
+92623,Hospital admissions for epilepsy (under 19 years),1836,12,153,2013,2024,0.862,0.983,False,Crude rate,"per 100,000"
+92644,People in prison who have a mental illness or a significant mental illness,149,1,149,2018,2018,0.0,0.0,False,Proportion,%
+92670,Adjusted antibiotic prescribing in primary care by the NHS,1500,10,153,2015,2024,1.0,1.0,False,Indirectly standardised ratio,per STAR-PU
+92702,Emergency admissions (under 18 years),2289,15,153,2010,2024,0.983,0.983,False,Crude rate,"per 1,000"
+92705,Neonatal mortality rate,3366,22,153,2002,2023,0.987,0.987,True,Crude rate,"per 1,000"
+92706,Post-neonatal mortality rate,3366,22,153,2002,2023,0.987,0.987,True,Crude rate,"per 1,000"
+92708,Resident population,153,1,153,2024,2024,1.0,0.0,False,Count,
+92818,"Children in need due to family stress or  dysfunction or absent parenting:  rate per 10,000 children aged under 18",293,2,147,2016,2017,0.997,0.997,False,Crude rate,"per 10,000"
+92819,"Children in need due to abuse or neglect: rate per 10,000 children aged under 18 years",440,3,147,2016,2018,0.991,0.995,False,Crude rate,"per 10,000"
+92820,"Children in need due to parent disability or illness: rate per 10,000 children under 18",440,3,147,2016,2018,0.964,0.991,False,Crude rate,"per 10,000"
+92821,"Children in need due to child disability or illness: rate per 10,000 children aged under 18 years",440,3,147,2016,2018,0.986,0.995,False,Crude rate,"per 10,000"
+92822,"Children in need due to socially unacceptable behaviour: rate per 10,000  aged under 18",440,3,147,2016,2018,0.945,0.982,False,Crude rate,"per 10,000"
+92841,"Typhoid & paratyphoid incidence rate/100,000",1964,13,153,2011,2023,0.987,0.987,False,Crude rate,"per 100,000"
+92852,"Children subject to a child protection plan with initial category of neglect:  rate per 10,000 children aged under 18",441,3,147,2016,2018,0.984,0.998,False,Crude rate,"per 10,000"
+92853,"Children subject to a child protection plan with initial category of abuse: rate per 10,000 children aged under 18",441,3,147,2016,2018,0.991,0.995,False,Crude rate,"per 10,000"
+92856,"Children who started to be looked after  due to abuse or neglect:  rate per 10,000 children aged under 18",439,3,147,2016,2018,0.995,1.0,False,Crude rate,"per 10,000"
+92857,"Children who started to be looked after due to family stress or  dysfunction or absent parenting:  rate per 10,000 children aged under 18",293,2,147,2016,2017,1.0,1.0,False,Crude rate,"per 10,000"
+92860,Supporting information - % population from ethnic minorities,294,2,147,2015,2016,0.983,0.993,False,Proportion,%
+92863,Domestic abuse related incidents and crimes,1530,10,153,2015,2024,0.0,0.0,False,Crude rate,"per 1,000"
+92897,Population vaccination coverage BCG: areas offering universal BCG only,1039,7,151,2015,2021,0.581,0.084,False,Proportion,%
+92899,Economic inactivity rate,2099,14,153,2011,2024,0.988,0.992,False,Proportion,%
+92906,Admission episodes for alcohol-specific conditions,1224,8,153,2016,2023,0.98,0.98,False,Directly standardised rate,"per 100,000"
+92949,Estimated dementia diagnosis rate (aged 65 and older),1506,10,153,2017,2026,0.998,0.998,False,Crude rate,per 100
+92953,"Mortality rate from oral cancer, all ages",1989,13,153,2009,2021,0.987,0.987,True,Directly standardised rate,"per 100,000"
+92955,"Legionnaires' disease confirmed incidence rate/100,000",1530,10,153,2015,2024,0.987,0.888,False,Crude rate,"per 100,000"
+93014,Percentage of physically active adults,1530,10,153,2015,2024,0.0,1.0,False,Proportion,%
+93015,Percentage of physically inactive adults,1530,10,153,2015,2024,0.0,1.0,False,Proportion,%
+93026,"Dementia: Crude Recorded Prevalence (aged under 65 years) per 10,000",594,4,149,2017,2020,1.0,1.0,False,Crude rate,"per 10,000"
+93027,Dementia (aged under 65 years) as a proportion of total dementia (all ages) per 100,594,4,149,2017,2020,1.0,1.0,False,Proportion,%
+93040,Dementia: Quality rating of residential care and nursing home beds (aged 65 years and older),905,6,153,2018,2023,0.999,0.999,False,Proportion,%
+93041,Dementia: Residential care and nursing home bed capacity (aged 65 years and over),728,5,153,2018,2023,1.0,1.0,False,Crude rate,%
+93043,Dementia: Percentage of assessed residential care and nursing home beds (aged 65 years and over),905,6,153,2018,2023,0.999,0.999,False,Proportion,%
+93074,Access to Healthy Assets & Hazards Index,153,1,153,2026,2026,1.0,1.0,False,Proportion,%
+93077,Proportion of the population meeting the recommended '5 a day' on a 'usual day' (adults) (old method),755,5,151,2015,2019,0.0,1.0,False,Proportion,%
+93081,Resident population (aged 65 and over),153,1,153,2022,2022,1.0,1.0,False,Proportion,%
+93084,Resident population (aged 0 to 15),153,1,153,2022,2022,1.0,1.0,False,Proportion,%
+93086,Back pain prevalence in people of all ages,147,1,147,2012,2012,1.0,1.0,False,Crude rate,%
+93088,"Overweight (including obesity) prevalence in adults, (using adjusted self-reported height and weight)",1530,10,153,2015,2024,0.0,1.0,False,Proportion,%
+93090,Severe back pain prevalence in people of all ages,148,1,148,2012,2012,1.0,1.0,False,Crude rate,%
+93091,Prevalence of severe hip osteoarthritis in people aged  45 and over,149,1,149,2012,2012,1.0,1.0,False,Proportion,%
+93092,Low birth weight of live babies,153,1,153,2020,2020,0.987,0.987,True,Proportion,%
+93093,Prevalence of hip osteoarthritis in people aged  45 and over,151,1,151,2012,2012,1.0,1.0,False,Proportion,%
+93094,Children in poverty: Income Deprivation Affecting Children Index (IDACI) (aged 0 to 15),151,1,151,2019,2019,1.0,1.0,False,Proportion,%
+93095,Prevalence of severe knee osteoarthritis in people aged  45 and over,149,1,149,2012,2012,1.0,1.0,False,Proportion,%
+93096,Prevalence of knee osteoarthritis in people aged  45 and over,151,1,151,2012,2012,1.0,1.0,False,Proportion,%
+93097,Unemployment: people claiming out of work benefit (aged 16 to 64),153,1,153,2024,2024,1.0,1.0,False,Proportion,%
+93098,Long-term unemployment: people claiming out of work benefit for over 12 months (aged 16 to 64),153,1,153,2024,2024,1.0,1.0,False,Crude rate,"per 1,000"
+93111,Affordability of home ownership,3672,24,153,2002,2025,1.0,0.985,False,Ratio,
+93119,"Measles incidence rate/100,000",2122,14,153,2012,2025,0.987,0.987,False,Crude rate,"per 100,000"
+93120,"Measles 5-year incidence rate/100,000",1515,10,153,2014,2023,0.987,0.987,True,Crude rate,"per 100,000"
+93124,"Acute hepatitis B incidence rate/100,000",1213,8,153,2016,2023,0.969,0.969,False,Crude rate,"per 100,000"
+93177,"Hepatitis C detection rate/100,000",765,5,153,2018,2022,0.987,1.0,False,Crude rate,"per 100,000"
+93183,Proportion of eligible adults with a learning disability having a GP health check (%),587,4,147,2014,2017,0.986,0.988,False,Proportion,%
+93193,Percentage of dependent drinkers,147,1,147,2014,2014,0.993,0.993,False,Proportion,%
+93194,Reception prevalence of severe obesity,2907,19,153,2006,2024,0.905,0.905,False,Proportion,%
+93195,Year 6 prevalence of severe obesity,2907,19,153,2006,2024,0.91,0.91,False,Proportion,%
+93203,"16 to 17 year olds not in education, employment or training (NEET) or whose activity is not known",1506,10,153,2016,2025,0.983,0.99,False,Proportion,%
+93226,Resident population (aged 85 and over),153,1,153,2022,2022,1.0,1.0,False,Proportion,%
+93234,Cancer incidence: all cancers,151,1,151,2017,2017,1.0,1.0,True,Indirectly standardised ratio,per 100
+93236,Cancer incidence: colorectal cancer,151,1,151,2017,2017,1.0,1.0,True,Indirectly standardised ratio,per 100
+93237,Cancer incidence: lung cancer,151,1,151,2017,2017,1.0,1.0,True,Indirectly standardised ratio,per 100
+93250,Mortality from all causes,153,1,153,2021,2021,1.0,1.0,True,Indirectly standardised ratio,per 100
+93252,Mortality from all causes (aged under 75),153,1,153,2021,2021,1.0,1.0,True,Indirectly standardised ratio,per 100
+93253,Mortality from cancer,153,1,153,2021,2021,1.0,1.0,True,Indirectly standardised ratio,per 100
+93254,Mortality from cancer (aged under 75),153,1,153,2021,2021,1.0,1.0,True,Indirectly standardised ratio,per 100
+93255,Mortality from cardiovascular disease,153,1,153,2021,2021,1.0,1.0,True,Indirectly standardised ratio,per 100
+93256,Mortality from cardiovascular disease (aged under 75),153,1,153,2021,2021,1.0,1.0,True,Indirectly standardised ratio,per 100
+93257,Mortality from coronary heart disease,153,1,153,2021,2021,1.0,1.0,True,Indirectly standardised ratio,per 100
+93259,Mortality from stroke,153,1,153,2021,2021,1.0,1.0,True,Indirectly standardised ratio,per 100
+93260,Mortality from respiratory diseases,153,1,153,2021,2021,1.0,1.0,True,Indirectly standardised ratio,per 100
+93268,Poverty: English Indices of Deprivation,151,1,151,2019,2019,1.0,1.0,False,Proportion,%
+93275,Poverty: Index of Multiple Deprivation,151,1,151,2019,2019,0.0,0.0,False,Score,Score
+93279,Older people in poverty: Income Deprivation Affecting Older People Index (IDAOPI) (aged 60 and over),151,1,151,2019,2019,1.0,1.0,False,Proportion,%
+93315,"STEC  (Shiga toxin-producing Escherichia coli) serogroup O157 5-year incidence rate/100,000",1219,8,153,2013,2023,0.987,0.987,True,Crude rate,"per 100,000"
+93316,"STEC (Shiga toxin-producing Escherichia coli) serogroup O157 incidence rate/100,000",2260,15,153,2011,2025,0.987,0.987,False,Crude rate,"per 100,000"
+93347,Estimated diabetes diagnosis rate,589,5,147,2014,2018,0.0,0.0,False,Proportion,%
+93351,Average weekly earnings,2243,15,153,2011,2025,0.0,0.0,False,Median,£
+93355,"Non-typhoidal Salmonella incidence rate/100,000",1680,11,153,2015,2025,0.987,0.987,False,Crude rate,"per 100,000"
+93356,"Campylobacter incidence rate/100,000",1671,11,153,2015,2025,0.987,0.987,False,Crude rate,"per 100,000"
+93357,"Shigella incidence rate/100,000",1668,11,153,2015,2025,0.987,0.987,False,Crude rate,"per 100,000"
+93372,% reporting a long term MSK problem who also report depression or anxiety,441,3,147,2014,2016,0.0,1.0,False,Proportion,%
+93375,Average health related quality of life score for adults who reported having a long term MSK problem.,441,3,147,2014,2016,0.0,1.0,False,Score,Score
+93376,% reporting depression or anxiety,441,3,147,2014,2016,0.0,1.0,False,Proportion,%
+93377,Percentage reporting a long-term Musculoskeletal (MSK) problem,908,6,153,2018,2023,0.0,0.987,False,Proportion,%
+93378,Average Attainment 8 score,1643,11,153,2014,2024,0.64,0.817,False,Mean,Score
+93379,"Giardia incidence rate/100,000",1680,11,153,2015,2025,0.987,0.987,False,Crude rate,"per 100,000"
+93380,"Cryptosporidium incidence rate/100,000",1680,11,153,2015,2025,0.987,0.987,False,Crude rate,"per 100,000"
+93381,Average Attainment 8 score of children in care,1512,10,153,2015,2024,0.862,0.864,False,Mean,Score
+93382,Odds of smoking for those with a routine and manual occupation compared to the odds of smoking for those with other occupations,2098,14,153,2011,2024,0.0,0.629,True,Ratio,
+93383,Oesophageal cancer registrations,1640,11,151,2008,2018,0.987,0.0,True,Directly standardised rate,"per 100,000"
+93386,Population vaccination coverage: Flu (2 to 3 years old),1645,11,153,2014,2024,0.978,0.978,False,Proportion,%
+93431,Child development: percentage of children achieving the expected level in communication skills at 2 to 2 and a half years,1194,8,153,2017,2024,0.84,0.84,False,Proportion,%
+93432,Child development: percentage of children achieving the expected level in gross motor skills at 2 to 2 and a half years,1194,8,153,2017,2024,0.838,0.838,False,Proportion,%
+93433,Child development: percentage of children achieving the expected level in fine motor skills at 2 to 2 and a half years,1194,8,153,2017,2024,0.838,0.838,False,Proportion,%
+93434,Child development: percentage of children achieving the expected level in problem solving skills at 2 to 2 and a half years,1194,8,153,2017,2024,0.838,0.838,False,Proportion,%
+93435,Child development: percentage of children achieving the expected level in personal social skills at 2 to 2 and a half years,1194,8,153,2017,2024,0.832,0.832,False,Proportion,%
+93436,Child development: percentage of children achieving a good level of development at 2 to 2 and a half years,1194,8,153,2017,2024,0.838,0.838,False,Proportion,%
+93439,Percentage of adults walking for travel at least three days per week,1224,8,153,2015,2022,0.0,0.961,False,Proportion,%
+93453,"Percentage reporting at least two long-term conditions, at least one of which is MSK related",908,6,153,2018,2023,0.0,0.987,False,Proportion,%
+93454,Smoking prevalence in adults with a long-term mental health condition (aged 18 and over) - current smokers (GPPS) (old method),1490,10,151,2013,2022,0.0,0.984,False,Proportion,%
+93455,Smoking prevalence in adults with anxiety or depression (aged 18 and over) - current smokers (GPPS),596,4,149,2013,2016,0.0,0.98,False,Proportion,%
+93456,"Listeria incidence rate/100,000",2260,15,153,2011,2025,0.987,0.987,False,Crude rate,"per 100,000"
+93463,"Scarlet fever notification rate/100,000 aged 0-9 yrs",1480,10,151,2012,2021,0.98,0.98,False,Crude rate,"per 100,000"
+93466,"Mumps incidence rate/100,000",2108,14,153,2012,2025,0.987,0.987,False,Crude rate,"per 100,000"
+93467,"Mumps 5-year incidence rate/100,000",459,3,153,2021,2023,0.987,0.987,True,Crude rate,"per 100,000"
+93469,Proportion of New Birth Visits (NBVs) completed within 14 days,1196,8,153,2017,2024,0.971,0.971,False,Proportion,%
+93470,Proportion of infants receiving a 6 to 8 week review,1194,8,153,2017,2024,0.964,0.963,False,Proportion,%
+93471,Proportion of children receiving a 12-month review,1194,8,153,2017,2024,0.956,0.951,False,Proportion,%
+93472,Proportion of children who received a 2 to 2 and a half year review,1194,8,153,2017,2024,0.967,0.967,False,Proportion,%
+93480,Mortality from causes considered preventable (aged under 75),153,1,153,2021,2021,1.0,1.0,True,Indirectly standardised ratio,per 100
+93491,"Listeria 5-year incidence rate/100,000",1063,7,153,2014,2023,0.987,0.987,True,Crude rate,"per 100,000"
+93494,School readiness: percentage of children achieving at least the expected level in communication and language skills at the end of Reception,610,4,153,2021,2024,1.0,1.0,False,Proportion,%
+93495,Estimated prevalence of common mental disorders: % of population aged 16 & over,149,2,147,2016,2017,0.987,0.987,False,Proportion,%
+93496,Estimated prevalence of common mental disorders: % of population aged 65 & over,149,2,147,2016,2017,0.987,0.987,False,Proportion,%
+93513,Reoffending levels: percentage of offenders who reoffend,1224,8,153,2016,2023,1.0,0.987,False,Proportion,%
+93515,"Pertussis incidence rate/100,000",2424,16,153,2010,2025,0.987,0.988,False,Crude rate,"per 100,000"
+93546,Prompt antiretroviral therapy (ART) initiation in people newly diagnosed with HIV,765,5,153,2019,2023,0.992,0.99,True,Proportion,%
+93550,Virological success in people accessing HIV care,765,5,153,2020,2024,0.993,0.993,False,Proportion,%
+93553,Deprivation score (IMD 2019),153,1,153,2019,2019,0.0,0.0,False,Score,
+93563,Percentage of 5 year olds with experience of visually obvious dental decay,1040,7,153,2007,2023,0.0,0.912,False,Proportion,%
+93568,"Rate of prescriptions for nicotine replacement products per 100,000 smokers",738,5,148,2014,2018,0.989,0.989,False,Crude rate,"per 100,000 smokers aged 18+"
+93569,School readiness: percentage of children achieving at least the expected level of development in communication and language and literacy skills at the end of Reception,610,4,153,2021,2024,1.0,1.0,False,Proportion,%
+93570,Percentage of physically active children and young people,1208,8,153,2017,2024,0.0,0.782,False,Proportion,%
+93572,Reoffending levels: average number of reoffences per reoffender,1224,8,153,2016,2023,1.0,0.98,False,Crude rate,per re-offender
+93581,Mortality for people referred to secondary mental health services (aged 18 to 74),1224,8,153,2016,2023,0.987,0.987,True,Directly standardised rate,"per 100,000"
+93582,Excess mortality for people referred to secondary mental health services (aged 18 to 74),1224,8,153,2016,2023,0.0,0.0,True,Ratio,%
+93587,Estimated number of children and young people with mental disorders  – aged 5 to 17,147,1,147,2017,2017,0.0,1.0,False,Count,Count
+93605,Population vaccination coverage: MenB booster (2 years),1061,7,153,2018,2024,0.97,0.97,False,Proportion,%
+93606,Population vaccination coverage: MenB (1 year),1210,8,153,2017,2024,0.969,0.969,False,Proportion,%
+93607,Population vaccination coverage: DTaP and IPV booster (5 years),1508,10,153,2015,2024,0.969,0.969,False,Proportion,%
+93608,Population vaccination coverage:  Rotavirus (Rota) (1 year),1359,9,153,2016,2024,0.967,0.967,False,Proportion,%
+93622,"Attended contacts with community and outpatient mental health services, per 100,000",1071,7,153,2017,2023,0.96,0.987,False,Directly standardised rate,"per 100,000"
+93623,"New referrals to secondary mental health services, per 100,000",1071,7,153,2017,2023,0.946,0.987,False,Directly standardised rate,"per 100,000"
+93624,"Inpatient stays in secondary mental health services, per 100,000",1071,7,153,2017,2023,0.933,0.987,False,Directly standardised rate,"per 100,000"
+93644,"Mortality rate from asthma, all ages",3366,22,153,2002,2023,0.987,0.987,True,Directly standardised rate,"per 100,000"
+93648,Population vaccination coverage: Meningococcal ACWY conjugate vaccine (MenACWY) (14 to 15 years),1357,9,153,2016,2024,0.968,0.969,False,Proportion,%
+93670,Odds of smoking with a long-term mental health condition compared to the odds of smoking without (old method),1484,10,151,2013,2022,0.0,0.973,False,Ratio,
+93671,Percentage of cancers diagnosed at stages 1 and 2,1530,10,153,2013,2022,0.993,0.898,False,Proportion,%
+93672,Smoking prevalence in adults (aged 18 and over) admitted to treatment for substance misuse (NDTMS) - all opiates,596,4,149,2016,2019,0.928,0.928,False,Proportion,%
+93673,Smoking prevalence in adults (aged 18 and over) admitted to treatment for substance misuse (NDTMS) - non-opiates,596,4,149,2016,2019,0.909,0.909,False,Proportion,%
+93674,Smoking prevalence in adults (aged 18 and over) admitted to treatment for substance misuse (NDTMS) - alcohol,1346,9,153,2016,2024,0.938,0.938,False,Proportion,%
+93675,Smoking prevalence in adults (aged 18 and over) admitted to treatment for substance misuse (NDTMS) - alcohol & non-opiates,596,4,149,2016,2019,0.904,0.904,False,Proportion,%
+93691,Population vaccination coverage: Flu (primary school aged children),910,6,153,2019,2024,0.974,0.976,False,Proportion,%
+93697,Population vaccination coverage: Shingles vaccination coverage (71 years),759,5,153,2018,2022,0.97,0.968,False,Proportion,%
+93700,Children in relative low income families (under 16s),612,4,153,2021,2024,1.0,1.0,False,Proportion,%
+93701,Children in absolute low income families (under 16s),612,4,153,2021,2024,1.0,1.0,False,Proportion,%
+93720,Under 75 mortality rate from liver disease considered preventable,3366,22,153,2002,2023,0.987,0.987,True,Directly standardised rate,"per 100,000"
+93721,Under 75 mortality rate from causes considered preventable,3672,24,153,2001,2024,0.987,0.987,False,Directly standardised rate,"per 100,000"
+93722,Under 75 mortality rate from cardiovascular disease considered preventable,3366,22,153,2002,2023,0.987,0.987,True,Directly standardised rate,"per 100,000"
+93723,Under 75 mortality rate from cancer considered preventable,3366,22,153,2002,2023,0.987,0.987,True,Directly standardised rate,"per 100,000"
+93724,Under 75 mortality rate from respiratory disease considered preventable,3366,22,153,2002,2023,0.987,0.987,True,Directly standardised rate,"per 100,000"
+93727,Mortality due to cardiovascular disease for people referred to secondary mental health services (aged 18 to 74),1224,8,153,2016,2023,0.987,0.987,True,Directly standardised rate,"per 100,000"
+93728,Mortality due to cancer for people referred to secondary mental health services (aged 18 to 74),1224,8,153,2016,2023,0.987,0.987,True,Directly standardised rate,"per 100,000"
+93729,Mortality due to liver disease for people referred to secondary mental health services (aged 18 to 74),1224,8,153,2016,2023,0.984,0.987,True,Directly standardised rate,"per 100,000"
+93730,Mortality due to respiratory disease for people referred to secondary mental health services (aged 18 to 74),1224,8,153,2016,2023,0.983,0.987,True,Directly standardised rate,"per 100,000"
+93731,Excess mortality due to cardiovascular disease for people referred to secondary mental health services (aged 18 to 74),1224,8,153,2016,2023,0.0,0.0,True,Ratio,%
+93732,Excess mortality due to cancer for people referred to secondary mental health services (aged 18 to 74),1224,8,153,2016,2023,0.0,0.0,True,Ratio,%
+93733,Excess mortality due to liver disease for people referred to secondary mental health services (aged 18 to 74),1224,8,153,2016,2023,0.0,0.0,True,Ratio,%
+93734,Excess mortality due to respiratory disease for people referred to secondary mental health services (aged 18 to 74),1224,8,153,2016,2023,0.0,0.0,True,Ratio,%
+93737,Homelessness - households owed a duty under the Homelessness Reduction Act (main applicant aged 16 to 24),910,6,153,2019,2024,0.92,0.921,False,Crude rate,"per 1,000"
+93738,Homelessness - households owed a duty under the Homelessness Reduction Act (main applicant aged 55 and over),910,6,153,2019,2024,0.919,0.931,False,Crude rate,"per 1,000"
+93742,Odds ratio of reporting a mental health condition among people with and without an MSK condition,908,6,153,2018,2023,0.0,0.0,False,Ratio,Score
+93747,Population density: people per square kilometre,153,1,153,2022,2022,1.0,1.0,False,Crude rate,persons/km2
+93748,Smoking attributable mortality,918,6,153,2014,2023,0.987,0.987,True,Directly standardised rate,"per 100,000"
+93749,Smoking attributable deaths from cancer,918,6,153,2014,2023,0.987,0.987,True,Directly standardised rate,"per 100,000"
+93750,Smoking attributable deaths from heart disease,918,6,153,2014,2023,0.987,0.987,True,Directly standardised rate,"per 100,000"
+93751,Smoking attributable deaths from stroke,918,6,153,2014,2023,0.987,0.987,True,Directly standardised rate,"per 100,000"
+93753,Smoking attributable hospital admissions,1071,7,153,2013,2022,0.987,0.987,False,Directly standardised rate,"per 100,000"
+93754,Killed and seriously injured casualties on England's roads,1200,8,153,2017,2024,0.993,0.993,False,Crude rate,per billion vehicle miles
+93760,"Mycoplasma genitalium diagnostic rate per 100,000",1071,7,153,2019,2025,0.975,0.998,False,Crude rate,"per 100,000"
+93761,"Trichomoniasis diagnostic rate per 100,000",2142,14,153,2012,2025,0.997,0.997,False,Crude rate,"per 100,000"
+93763,Alcohol-related mortality,1377,9,153,2016,2024,0.987,0.987,False,Directly standardised rate,"per 100,000"
+93764,Admission episodes for alcohol-related conditions (Narrow),1224,8,153,2016,2023,0.98,0.98,False,Directly standardised rate,"per 100,000"
+93765,Admission episodes for alcohol-related conditions (Broad),1224,8,153,2016,2023,0.98,0.98,False,Directly standardised rate,"per 100,000"
+93766,Admission episodes for alcohol-related unintentional injuries (Narrow),1224,8,153,2016,2023,0.98,0.98,False,Directly standardised rate,"per 100,000"
+93767,Admission episodes for mental and behavioural disorders due to use of alcohol (Narrow),1224,8,153,2016,2023,0.98,0.98,False,Directly standardised rate,"per 100,000"
+93768,Admission episodes for intentional self-poisoning by and exposure to alcohol (Narrow),1224,8,153,2016,2023,0.98,0.98,False,Directly standardised rate,"per 100,000"
+93769,Admission episodes for alcohol-related cardiovascular disease (Broad),1224,8,153,2016,2023,0.98,0.98,False,Directly standardised rate,"per 100,000"
+93770,Admission episodes for mental and behavioural disorders due to use of alcohol (Broad),1224,8,153,2016,2023,0.98,0.98,False,Directly standardised rate,"per 100,000"
+93771,Admission episodes for alcoholic liver disease (Broad),1224,8,153,2016,2023,0.98,0.98,False,Directly standardised rate,"per 100,000"
+93772,Admission episodes for alcohol-related conditions (Narrow) (under 40 years),1224,8,153,2016,2023,0.98,0.98,False,Directly standardised rate,"per 100,000"
+93773,Admission episodes for alcohol-related conditions (Narrow) (40 to 64 years),1224,8,153,2016,2023,0.98,0.98,False,Directly standardised rate,"per 100,000"
+93774,Admission episodes for alcohol-related conditions (Narrow) (65 years and over),1224,8,153,2016,2023,0.98,0.98,False,Directly standardised rate,"per 100,000"
+93786,"HIV diagnosed prevalence rate per 1,000",2142,14,153,2011,2024,0.996,0.996,False,Crude rate,"per 1,000"
+93787,"New HIV diagnoses rate per 100,000",1530,10,153,2015,2024,0.995,0.995,False,Crude rate,"per 100,000"
+93788,Antiretroviral therapy (ART) coverage in people accessing HIV care,765,5,153,2020,2024,0.993,0.993,False,Proportion,%
+93797,Non-Diabetic Hyperglycaemia (NDH): QOF prevalence,765,5,153,2020,2024,0.999,0.999,False,Proportion,%
+93823,"Mortality rate from all causes, all ages",3825,25,153,2001,2025,0.987,0.987,False,Directly standardised rate,"per 100,000"
+93827,"Mortality rate for deaths involving COVID-19, all ages",765,5,153,2020,2024,0.987,0.987,False,Directly standardised rate,"per 100,000"
+93840,Under 75 mortality rate for deaths involving COVID-19,765,5,153,2020,2024,0.987,0.987,False,Directly standardised rate,"per 100,000"
+93861,Air pollution: estimated fraction of mortality attributable to particulate air pollution,1063,7,153,2018,2024,0.0,0.0,False,Proportion,%
+93863,"Acute Lyme disease laboratory confirmed incidence rate/100,000",1377,9,153,2017,2025,0.987,0.987,False,Crude rate,"per 100,000"
+93864,Food Insecurity (INDIRECT measure) – percentage of local authority population living in areas at highest risk of food insecurity,302,2,153,2021,2022,1.0,1.0,False,Proportion,%
+93865,Average Attainment 8 Score among children eligible for Free School Meals (FSM),151,1,151,2020,2020,0.821,0.821,False,Mean,Score
+93869,"The proportion of clients entering alcohol treatment identified as having a mental health treatment need, who were receiving treatment for their mental health.",765,5,153,2020,2024,0.97,0.97,False,Proportion,%
+93878,"The proportion of clients entering drug treatment identified as having a mental health treatment need, who were receiving treatment for their mental health.",765,5,153,2020,2024,0.97,0.97,False,Proportion,%
+93881,"Obesity prevalence in adults, (using adjusted self-reported height and weight)",1530,10,153,2015,2024,0.0,1.0,False,Proportion,%
+93882,The percentage of the population with a physical or mental long term health condition in employment (aged 16 to 64),455,3,153,2020,2022,0.0,0.655,False,Proportion,%
+93883,Casualties in road traffic accidents where a failed breath test (or refusal to provide a sample) occurred,445,3,153,2018,2020,0.984,0.984,True,Proportion,%
+93884,The percentage of the population who are in receipt of long term support for a learning disability that are in paid employment (aged 18 to 64),1041,7,153,2016,2022,0.985,0.986,False,Proportion,%
+93886,"The percentage of the population who are in contact with secondary mental health services and on the Care Plan Approach, that are in paid employment (aged 18 to 69)",604,4,151,2017,2020,0.949,0.957,False,Proportion,%
+93887,% people aged 16+ who agree with the statement I feel like I belong to this neighbourhood,147,1,147,2017,2017,0.0,1.0,True,Proportion,%
+93928,Initiation or continuation of PrEP among those with PrEP need,612,4,153,2021,2024,1.0,0.993,False,Proportion,%
+93929,Determining PrEP need,612,4,153,2021,2024,1.0,0.993,False,Proportion,%
+93930,A&E attendances (0 to 4 years),612,4,153,2021,2024,0.987,0.987,False,Crude rate,"per 1,000"
+93932,Baby's first feed breastmilk,765,5,153,2019,2023,0.911,0.911,False,Proportion,%
+93939,A&E attendances (under 18 years),612,4,153,2021,2024,0.987,0.987,False,Crude rate,"per 1,000"
+93954,"Mortality rate for deaths due to COVID-19, all ages",765,5,153,2020,2024,0.987,0.987,False,Directly standardised rate,"per 100,000"
+93955,Under 75 mortality rate for deaths due to COVID-19,765,5,153,2020,2024,0.987,0.987,False,Directly standardised rate,"per 100,000"
+93956,"Mortality rate from cardiovascular disease, all ages",3825,25,153,2001,2025,0.987,0.987,False,Directly standardised rate,"per 100,000"
+93957,"Mortality rate from ischaemic heart disease, all ages",3366,22,153,2002,2023,0.987,0.987,True,Directly standardised rate,"per 100,000"
+93958,"Mortality rate from stroke, all ages",3366,22,153,2002,2023,0.987,0.987,True,Directly standardised rate,"per 100,000"
+93959,"Mortality rate from cancer, all ages",3825,25,153,2001,2025,0.987,0.987,False,Directly standardised rate,"per 100,000"
+93961,"Mortality rate from colorectal cancer, all ages",3366,22,153,2002,2023,0.987,0.987,True,Directly standardised rate,"per 100,000"
+93962,"Mortality rate from liver disease, all ages",3825,25,153,2001,2025,0.987,0.987,False,Directly standardised rate,"per 100,000"
+93963,"Mortality rate from respiratory disease, all ages",3825,25,153,2001,2025,0.987,0.987,True,Directly standardised rate,"per 100,000"
+93964,"Mortality rate from accidents, all ages",3366,22,153,2002,2023,0.987,0.987,True,Directly standardised rate,"per 100,000"
+93965,Under 75 mortality rate from lung cancer,3366,22,153,2002,2023,0.987,0.987,True,Directly standardised rate,"per 100,000"
+93967,"Mortality rate from dementia and Alzheimer's disease, all ages",3825,25,153,2001,2025,0.987,0.987,False,Directly standardised rate,"per 100,000"
+93972,Age-standardised rate for suicide by age and sex,1377,9,153,2014,2022,1.0,1.0,True,Directly standardised rate,"per 100,000"
+93979,Gap in the employment rate for those who are in contact with secondary mental health services and the overall employment rate,149,1,149,2021,2021,0.0,0.0,False,Gap,Percentage points
+93981,The percentage of the population who are in contact with secondary mental health services that are in paid employment,149,1,149,2021,2021,1.0,1.0,False,Proportion,%
+93982,Percentage of adults meeting the '5-a-day' fruit and vegetable consumption recommendations (new method),765,5,153,2020,2024,0.0,1.0,False,Proportion,%
+93995,"Mortality rate for deaths involving diabetes, all ages",3366,22,153,2002,2023,0.987,0.987,True,Directly standardised rate,"per 100,000"
+93998,"Mortality rate from leukaemia and lymphoma, all ages",3366,22,153,2002,2023,0.987,0.987,True,Directly standardised rate,"per 100,000"
+93999,"Mortality rate from influenza and pneumonia, all ages",3366,22,153,2002,2023,0.987,0.987,True,Directly standardised rate,"per 100,000"
+94000,"Mortality rate from chronic lower respiratory disease, all ages",3366,22,153,2002,2023,0.987,0.987,True,Directly standardised rate,"per 100,000"
+94001,"Mortality rate from cirrhosis and other diseases of liver, all ages",3366,22,153,2002,2023,0.987,0.987,True,Directly standardised rate,"per 100,000"
+94002,"Mortality rate from accidental falls, all ages",3366,22,153,2002,2023,0.987,0.987,True,Directly standardised rate,"per 100,000"
+94003,"Mortality rate from infectious and parasitic diseases, all ages",3366,22,153,2002,2023,0.987,0.987,True,Directly standardised rate,"per 100,000"
+94004,"Mortality rate from oesophageal cancer, all ages",3366,22,153,2002,2023,0.987,0.987,True,Directly standardised rate,"per 100,000"
+94005,"Mortality rate from bladder cancer, all ages",3366,22,153,2002,2023,0.987,0.987,True,Directly standardised rate,"per 100,000"
+94006,"Mortality rate from stomach cancer, all ages",3366,22,153,2002,2023,0.987,0.987,True,Directly standardised rate,"per 100,000"
+94064,Estimated cost per capita of alcohol-related hospital admissions (Broad),306,2,153,2019,2020,0.987,0.987,False,Crude rate,£ per capita
+94068,"Mortality rate for deaths involving hypertensive disease, all ages",3366,22,153,2002,2023,0.987,0.987,True,Directly standardised rate,"per 100,000"
+94069,"Mortality rate for deaths involving dementia and Alzheimer's disease, all ages",3672,24,153,2001,2024,0.987,0.987,False,Directly standardised rate,"per 100,000"
+94070,"Mortality rate for deaths involving influenza and pneumonia, all ages",3366,22,153,2002,2023,0.987,0.987,True,Directly standardised rate,"per 100,000"
+94071,Under 75 mortality rate from leukaemia and lymphoma,3366,22,153,2002,2023,0.987,0.987,True,Directly standardised rate,"per 100,000"
+94073,Under 75 mortality rate from cirrhosis and other diseases of liver,3366,22,153,2002,2023,0.987,0.987,True,Directly standardised rate,"per 100,000"
+94074,Under 75 mortality rate from chronic lower respiratory disease,3366,22,153,2002,2023,0.987,0.987,True,Directly standardised rate,"per 100,000"
+94106,"HIV testing rate per 100,000 population",1530,10,153,2015,2024,0.999,0.999,False,Crude rate,"per 100,000"
+94111,Estimated prevalence of undiagnosed adult hypertension,153,1,153,2021,2021,1.0,1.0,False,Proportion,%
+94124,"Fast food outlets per 100,000 population",153,1,153,2024,2024,0.987,0.987,False,Crude rate,"per 100,000"
+94136,Obesity: QOF prevalence (new definition),306,2,153,2023,2024,0.997,0.997,False,Proportion,%
+94157,"Breastfeeding prevalence at 6 to 8 weeks of age, CSDS-based (Official Statistics in Development)",765,5,153,2020,2024,0.133,0.133,False,Proportion,%
+94163,Reception prevalence of short stature (height <2nd centile),2294,15,153,2009,2023,0.915,0.915,False,Proportion,%
+94164,Year 6 prevalence of short stature (height <2nd centile),2295,15,153,2009,2023,0.894,0.894,False,Proportion,%
+94165,Percentage of population from an ethnic minority background.,153,1,153,2021,2021,1.0,1.0,False,Proportion,%
+94168,"Infants who have received a new birth review, CSDS-based (Official Statistics in Development)",765,5,153,2020,2024,0.912,0.912,False,Proportion,%
+94169,"Infants who have received a 6 to 8 week review, CSDS-based (Official Statistics in Development)",765,5,153,2020,2024,0.916,0.916,False,Proportion,%
+94170,"Children who received a 12 month review, CSDS-based (Official Statistics in Development)",612,4,153,2021,2024,0.859,0.859,False,Proportion,%
+94171,"Children who have received a 2 to 2 and a half year review, CSDS-based (Official Statistics in Development)",612,4,153,2021,2024,0.891,0.891,False,Proportion,%
+94192,Estimated prevalence of diagnosed and undiagnosed type 2 diabetes,153,1,153,2021,2021,0.987,0.987,False,Proportion,%
+94193,"Mortality rate from pancreatic cancer, all ages",3366,22,153,2002,2023,0.987,0.987,True,Directly standardised rate,"per 100,000"
+94194,Emergency admissions for gastroenteritis (0 to 4 years),2142,14,153,2011,2024,0.952,0.983,False,Crude rate,"per 10,000"
+94195,Emergency admissions for lower respiratory tract infections (0 to 4 years),2142,14,153,2011,2024,0.979,0.983,False,Crude rate,"per 10,000"
+94199,Hospital admissions for drug-related mental and behavioural disorders,765,5,153,2019,2023,0.924,1.0,False,Directly standardised rate,"per 100,000"
+94200,Hospital admissions for poisoning by drug misuse,765,5,153,2019,2023,0.988,1.0,False,Directly standardised rate,"per 100,000"
+94201,Hospital admissions where drug-related mental and behavioural disorders were a factor,765,5,153,2019,2023,0.991,1.0,False,Directly standardised rate,"per 100,000"
+94202,"Mortality rate from liver cancer, all ages",3366,22,153,2002,2023,0.987,0.987,True,Directly standardised rate,"per 100,000"
+94204,indicator to test auto-update 1 - IMRG please ignore,149,1,149,2020,2020,1.0,1.0,False,Proportion,%
+94210,Percentage reporting a long-term Musculoskeletal (MSK) problem (2024 version),153,1,153,2024,2024,0.0,0.961,False,Proportion,%
+94211,Percentage reporting a long-term Musculoskeletal (MSK) problem and at least one other long-term condition (2024 version),153,1,153,2024,2024,0.0,0.961,False,Proportion,%
+94212,Odds ratio of reporting a mental health condition among people with and without an MSK condition (2024 version),153,1,153,2024,2024,0.0,0.0,False,Ratio,Score
+94233,"HIV diagnoses among people diagnosed before continuing care in England per 100,000",1530,10,153,2015,2024,0.999,0.999,False,Crude rate,"per 100,000"
+94234,Proportion of records with an NHS number in the NCMP,1814,12,153,2013,2024,0.0,0.0,False,Proportion,%
+94236,"Mortality rate for deaths involving chronic obstructive pulmonary disease, all ages",3366,22,153,2002,2023,0.987,0.987,True,Directly standardised rate,"per 100,000"
+94237,Model-based estimated prevalence of severe mental illness,153,1,153,2023,2023,0.987,0.987,False,Proportion,%
+94238,Under 75 mortality rate from heart disease and stroke,3672,24,153,2001,2024,0.987,0.987,False,Directly standardised rate,"per 100,000"
+94240,Deprivation score (IMD 2025),153,1,153,2025,2025,0.0,0.0,False,Score,
+94241,Proportion of local smoking population referred to stop smoking services,304,2,152,2024,2025,0.967,0.0,False,Proportion,%
+94243,Proportion of those setting a quit date who successfully quit smoking,1336,9,153,2017,2025,0.933,0.933,False,Proportion,%
+94244,Smoking prevalence in adults (aged 18 and over) - current smokers (GPPS),153,1,153,2024,2024,0.0,0.961,False,Proportion,%
+94245,Smoking prevalence in adults (aged 18 and over) - ex smoker (GPPS),153,1,153,2024,2024,0.0,0.961,False,Proportion,%
+94246,Smoking prevalence in adults (aged 18 and over) - never smoked (GPPS),153,1,153,2024,2024,0.0,0.961,False,Proportion,%
+94247,Smoking prevalence in adults with a long-term mental health condition (aged 18 and over) - current smokers (GPPS),153,1,153,2024,2024,0.0,0.954,False,Proportion,%
+94248,Odds of smoking with a long-term mental health condition compared to the odds of smoking without,153,1,153,2024,2024,0.0,0.0,False,Ratio,
+94252,Population vaccination coverage: Flu (secondary school aged children),306,2,153,2023,2024,0.98,0.98,False,Proportion,%
+94253,Estimated total prevalence of non-diabetic hyperglycaemia,153,1,153,2021,2021,1.0,1.0,False,Proportion,%
+94311,Percentage of less active children and young people,1196,8,153,2017,2024,0.0,0.783,False,Proportion,%
+94343,"Infants whose mothers received an antenatal review, CSDS-based (Official Statistics in Development)",765,5,153,2020,2024,0.912,0.912,False,Proportion,%
+94344,"Children aged 2 and a half years who reached the expected level of development, CSDS-based (Official Statistics in Development)",612,4,153,2021,2024,0.052,0.052,False,Proportion,%
