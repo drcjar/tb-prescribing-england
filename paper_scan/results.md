@@ -70,6 +70,34 @@ These are markers of how sick and how intensively managed a practice's populatio
 
 {{table:table5_top_disease_hits}}
 
+### Robustness: lag length, case-mix and stricter thresholds
+
+Three objections to the above can be tested directly.
+
+**A single one-year lag may be too short.** An effect of prescribing on disease may take several
+years to appear, which would make a one-year lag the wrong place to look. Repeating the practice
+scan at lags of one, two and three years, with the matching leads, does not change the
+conclusion. Inflation falls as the interval lengthens (lambda 6.4, 4.5, 3.4 at lags of one, two
+and three years) but the lead is at least as inflated as the lag at every matched distance (6.8,
+5.9, 5.0). Longer lags attenuate everything rather than revealing anything, and the backwards
+asymmetry widens rather than closes.
+
+**The surviving associations may mark sicker, more intensively managed practices.** Adding the
+practice's total prescribing volume per patient, a time-varying proxy for case-mix and activity,
+reduces the inflation but does not remove it (lambda 6.4 to 4.3 at lag one; 46% of pairs
+significant falls to 36%). Nor does it dispose of the odd candidates: peak flow meters against
+chronic kidney disease moves from z = 8.4 to 7.2, upper GI endoscopy against ostomy systems from
+3.9 to 3.1, while leg bags against bowel cancer screening coverage moves the wrong way, from 4.2
+to 5.0.
+
+**A stricter significance threshold may be the answer.** It is not, and this is the most
+important of the three. Of 12,296 pairs at lag one, 5,524 reach p < 0.05, 4,688 survive false
+discovery rate correction, and 1,869 survive a Bonferroni threshold of p < 4.1 x 10^-6. Fifteen
+per cent of all drug-outcome pairs in the scan pass the strictest correction in common use. This
+is what distinguishes a bias problem from a multiplicity problem: multiplicity corrections
+control the error rate when the null distribution is correct, and here it is not. The empirical
+null, not the threshold, is what reveals the difficulty.
+
 ### Worked example: immunosuppressants and tuberculosis
 
 The hypothesis-driven analysis reached the same place by a different route. No medicine was

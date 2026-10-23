@@ -28,6 +28,12 @@ control there is instructive in a different way: a drug given almost exclusively
 the outcome was recovered with an elasticity of 0.36, so even a perfect exposure is heavily
 attenuated by the way these data are assembled.
 
+A natural response to a scan of this size is to demand a stricter threshold. That response fails
+here: 1,869 pairs survive Bonferroni correction. Multiplicity corrections assume the null
+distribution is right, and the whole difficulty is that it is not. Nor is the problem solved by
+looking further back in time, or by adjusting for how sick and active a practice is; both reduce
+the inflation without removing it or changing the direction of the asymmetry.
+
 **What follows for practice.** We would not argue that ecological analyses of open prescribing
 data are never worth doing; they are excellent for describing prescribing and its variation. But
 an analysis that relates prescribing to disease should report, alongside any association:

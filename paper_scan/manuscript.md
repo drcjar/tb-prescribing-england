@@ -95,6 +95,28 @@ where each practice's registered patients lived, using NHS Digital practice by L
 counts, since practices do not sit where their patients live. At practice level no apportionment
 is needed, because exposure and outcome are measured on the same unit.
 
+### What these data are, and are not
+
+Every figure used here is an aggregate count published openly. For prescribing, the unit is a
+practice-month: the number of items dispensed in a BNF section, with no patient identifiers and
+no link between a prescription and the person who received it. For outcomes, the unit is a
+practice-year or area-year: the size of a disease register, or a count of deaths, admissions or
+screening tests. Nothing in this study links an individual's prescription to their own diagnosis,
+and nothing identifies an individual prescriber.
+
+"Prescribing in the year before the outcome" therefore means that the practice's total prescribing
+in one calendar year is compared with its recorded disease count in the next, across practices.
+It does not mean that a drug was given to a patient before that patient was diagnosed. This
+distinction matters for interpretation: an aggregate temporal ordering of this kind is a weak
+instrument for causal direction, which is precisely why we treat the reverse ordering as a null
+rather than reading the forward one as an effect.
+
+A related limitation applies to the outcomes. Disease registers depend on practices recording and
+coding diagnoses, which is incentivised by the Quality and Outcomes Framework but varies between
+practices and over time. Register counts are therefore a measure of recorded disease, not of
+disease, and the difference is itself correlated with how actively a practice does everything
+else, including prescribing.
+
 ### The scan
 
 For every drug-outcome pair we fitted
@@ -282,6 +304,34 @@ These are markers of how sick and how intensively managed a practice's populatio
 | Urgent suspected cancer referrals resulting in a diagnosis of cancer (Conversion rate: as % of all USC referrals) | 904 | Low protein breads,Gluten free/low protein pas | -5.3 | 1.6 |
 | Depression: QOF incidence - new diagnosis | 1303 | Mepyramine maleate,Benzocaine,Crotamiton,Menth | -6.3 | -2.6 |
 
+### Robustness: lag length, case-mix and stricter thresholds
+
+Three objections to the above can be tested directly.
+
+**A single one-year lag may be too short.** An effect of prescribing on disease may take several
+years to appear, which would make a one-year lag the wrong place to look. Repeating the practice
+scan at lags of one, two and three years, with the matching leads, does not change the
+conclusion. Inflation falls as the interval lengthens (lambda 6.4, 4.5, 3.4 at lags of one, two
+and three years) but the lead is at least as inflated as the lag at every matched distance (6.8,
+5.9, 5.0). Longer lags attenuate everything rather than revealing anything, and the backwards
+asymmetry widens rather than closes.
+
+**The surviving associations may mark sicker, more intensively managed practices.** Adding the
+practice's total prescribing volume per patient, a time-varying proxy for case-mix and activity,
+reduces the inflation but does not remove it (lambda 6.4 to 4.3 at lag one; 46% of pairs
+significant falls to 36%). Nor does it dispose of the odd candidates: peak flow meters against
+chronic kidney disease moves from z = 8.4 to 7.2, upper GI endoscopy against ostomy systems from
+3.9 to 3.1, while leg bags against bowel cancer screening coverage moves the wrong way, from 4.2
+to 5.0.
+
+**A stricter significance threshold may be the answer.** It is not, and this is the most
+important of the three. Of 12,296 pairs at lag one, 5,524 reach p < 0.05, 4,688 survive false
+discovery rate correction, and 1,869 survive a Bonferroni threshold of p < 4.1 x 10^-6. Fifteen
+per cent of all drug-outcome pairs in the scan pass the strictest correction in common use. This
+is what distinguishes a bias problem from a multiplicity problem: multiplicity corrections
+control the error rate when the null distribution is correct, and here it is not. The empirical
+null, not the threshold, is what reveals the difficulty.
+
 ### Worked example: immunosuppressants and tuberculosis
 
 The hypothesis-driven analysis reached the same place by a different route. No medicine was
@@ -333,6 +383,12 @@ detected effects one to several hundred times larger than any that plausibly exi
 control there is instructive in a different way: a drug given almost exclusively to people with
 the outcome was recovered with an elasticity of 0.36, so even a perfect exposure is heavily
 attenuated by the way these data are assembled.
+
+A natural response to a scan of this size is to demand a stricter threshold. That response fails
+here: 1,869 pairs survive Bonferroni correction. Multiplicity corrections assume the null
+distribution is right, and the whole difficulty is that it is not. Nor is the problem solved by
+looking further back in time, or by adjusting for how sick and active a practice is; both reduce
+the inflation without removing it or changing the direction of the asymmetry.
 
 **What follows for practice.** We would not argue that ecological analyses of open prescribing
 data are never worth doing; they are excellent for describing prescribing and its variation. But

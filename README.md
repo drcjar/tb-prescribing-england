@@ -96,3 +96,30 @@ data.
 Main paper: figures 1-4 and tables 1-2. Everything else (hospital results, sensitivity analyses,
 power simulation, regional models, coverage, original design, drug definitions) is supplementary.
 The full-length manuscript remains at `paper/manuscript.md`.
+
+## Hypothesis-free prescribing and disease scan (October 2026)
+
+The tuberculosis analysis asked whether one disease could be linked to a handful of drug groups.
+It could not, and the more useful question turned out to be the general one: can these data
+support any claim that a medicine affects a disease? That scan is the current work, and the
+tuberculosis analysis is now a worked example inside it (`paper_scan/`).
+
+| Script | Does |
+|---|---|
+| `fetch_prescribing_wide.py` | practice x month x BNF section (194 sections), 2014-2024 |
+| `fetch_fingertips_wide.py` | all indicators published for upper- and lower-tier local authorities |
+| `fetch_fingertips_practice.py` | all 197 indicators published for GP practices |
+| `build_wide_exposure.py` / `build_practice_exposure.py` | area and practice exposure panels |
+| `build_wide_outcomes.py` / `build_practice_outcomes.py` | outcome panels and catalogues |
+| `scan_prescribing_outcomes.py` / `scan_practice.py` | the scans, with lead as empirical null |
+| `scan_practice_lags.py` | robustness to lag length and to practice case-mix |
+| `analyse_scan.py`, `scan_figures.py` | calibration, figures and tables |
+
+Large intermediate panels (`data/processed/*_outcomes_long.csv*`,
+`practice_section_exposure.csv.gz`) exceed GitHub's file size limit and are gitignored; rebuild
+them with the build scripts above.
+
+**Status of the tuberculosis manuscript.** `paper/` holds the completed standalone TB paper
+(draft 5, three rounds of review, BMJ Open submission package in `paper/submission/`). It is
+superseded by `paper_scan/`, which makes the same argument more generally with TB as its worked
+example. It is kept for the record and because its supplement is the detailed case study.

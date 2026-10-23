@@ -22,6 +22,28 @@ where each practice's registered patients lived, using NHS Digital practice by L
 counts, since practices do not sit where their patients live. At practice level no apportionment
 is needed, because exposure and outcome are measured on the same unit.
 
+### What these data are, and are not
+
+Every figure used here is an aggregate count published openly. For prescribing, the unit is a
+practice-month: the number of items dispensed in a BNF section, with no patient identifiers and
+no link between a prescription and the person who received it. For outcomes, the unit is a
+practice-year or area-year: the size of a disease register, or a count of deaths, admissions or
+screening tests. Nothing in this study links an individual's prescription to their own diagnosis,
+and nothing identifies an individual prescriber.
+
+"Prescribing in the year before the outcome" therefore means that the practice's total prescribing
+in one calendar year is compared with its recorded disease count in the next, across practices.
+It does not mean that a drug was given to a patient before that patient was diagnosed. This
+distinction matters for interpretation: an aggregate temporal ordering of this kind is a weak
+instrument for causal direction, which is precisely why we treat the reverse ordering as a null
+rather than reading the forward one as an effect.
+
+A related limitation applies to the outcomes. Disease registers depend on practices recording and
+coding diagnoses, which is incentivised by the Quality and Outcomes Framework but varies between
+practices and over time. Register counts are therefore a measure of recorded disease, not of
+disease, and the difference is itself correlated with how actively a practice does everything
+else, including prescribing.
+
 ### The scan
 
 For every drug-outcome pair we fitted
